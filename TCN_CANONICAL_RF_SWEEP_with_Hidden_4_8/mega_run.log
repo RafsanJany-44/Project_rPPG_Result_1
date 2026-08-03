@@ -1,0 +1,178 @@
+[2026-07-30 15:06:08] ======================================================================
+[2026-07-30 15:06:08] MEGA RUN start | device=cuda | models=12 | epochs<= 300 | root=Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8
+[2026-07-30 15:06:08] models: ['tcn_rf31_h4', 'tcn_rf61_h4', 'tcn_rf121_h4', 'tcn_rf31_h8', 'tcn_rf61_h8', 'tcn_rf121_h8', 'tcn_rf31_h4_causal', 'tcn_rf61_h4_causal', 'tcn_rf121_h4_causal', 'tcn_rf31_h8_causal', 'tcn_rf61_h8_causal', 'tcn_rf121_h8_causal']
+[2026-07-30 15:06:08] ======================================================================
+[2026-07-30 15:06:08] ----------------------------------------------------------------------
+[2026-07-30 15:06:08] [1/12] MODEL: tcn_rf31_h4
+[2026-07-30 15:06:08]   built 'tcn_rf31_h4': params=345, reach=29 samples (0.97s @30fps)
+[2026-07-30 15:10:50]     epoch   1 | train_loss=3.1451 val_loss=3.0969 val_hr_mae=5.553 lr=3.0e-04
+[2026-07-30 15:52:47]     epoch  10 | train_loss=3.0698 val_loss=3.0547 val_hr_mae=4.284 lr=3.0e-04
+[2026-07-30 16:38:31]     epoch  20 | train_loss=3.0410 val_loss=3.0184 val_hr_mae=3.621 lr=3.0e-04
+[2026-07-30 17:23:54]     epoch  30 | train_loss=3.0432 val_loss=3.0196 val_hr_mae=3.860 lr=3.0e-04
+[2026-07-30 18:07:35]     epoch  40 | train_loss=3.0343 val_loss=3.0127 val_hr_mae=3.781 lr=1.5e-04
+[2026-07-30 18:51:25]     epoch  50 | train_loss=3.0348 val_loss=3.0120 val_hr_mae=3.815 lr=7.5e-05
+[2026-07-30 19:35:10]     epoch  60 | train_loss=3.0336 val_loss=3.0125 val_hr_mae=3.544 lr=7.5e-05
+[2026-07-30 20:18:59]     epoch  70 | train_loss=3.0337 val_loss=3.0105 val_hr_mae=3.661 lr=3.7e-05
+[2026-07-30 21:02:42]     epoch  80 | train_loss=3.0325 val_loss=3.0116 val_hr_mae=3.620 lr=1.0e-05
+[2026-07-30 21:41:58]     early stop at epoch 89 (no val-loss improvement for 30)
+[2026-07-30 21:41:58]   trained 'tcn_rf31_h4': epochs_run=89 best_val_loss=3.0100 best_val_hr_mae=3.495
+[2026-07-30 21:47:38]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf31_h4/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-07-30 21:47:38]   DONE 'tcn_rf31_h4': val_model_mae=nan val_chrom_mae=nan
+[2026-07-30 21:47:38] ----------------------------------------------------------------------
+[2026-07-30 21:47:38] [2/12] MODEL: tcn_rf61_h4
+[2026-07-30 21:47:38]   built 'tcn_rf61_h4': params=457, reach=61 samples (2.03s @30fps)
+[2026-07-30 21:52:05]     epoch   1 | train_loss=3.1506 val_loss=3.1083 val_hr_mae=21.599 lr=3.0e-04
+[2026-07-30 22:31:55]     epoch  10 | train_loss=3.1361 val_loss=3.0958 val_hr_mae=154.470 lr=3.0e-04
+[2026-07-30 23:16:07]     epoch  20 | train_loss=3.0535 val_loss=3.0119 val_hr_mae=4.228 lr=3.0e-04
+[2026-07-31 00:02:20]     epoch  30 | train_loss=3.0459 val_loss=3.0121 val_hr_mae=4.075 lr=1.5e-04
+[2026-07-31 00:50:24]     epoch  40 | train_loss=3.0459 val_loss=3.0111 val_hr_mae=4.032 lr=3.7e-05
+[2026-07-31 01:40:03]     epoch  50 | train_loss=3.0473 val_loss=3.0109 val_hr_mae=4.318 lr=1.9e-05
+[2026-07-31 02:19:28]     early stop at epoch 58 (no val-loss improvement for 30)
+[2026-07-31 02:19:28]   trained 'tcn_rf61_h4': epochs_run=58 best_val_loss=3.0097 best_val_hr_mae=4.011
+[2026-07-31 02:26:22]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf61_h4/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-07-31 02:26:22]   DONE 'tcn_rf61_h4': val_model_mae=nan val_chrom_mae=nan
+[2026-07-31 02:26:22] ----------------------------------------------------------------------
+[2026-07-31 02:26:22] [3/12] MODEL: tcn_rf121_h4
+[2026-07-31 02:26:22]   built 'tcn_rf121_h4': params=569, reach=125 samples (4.17s @30fps)
+[2026-07-31 02:31:12]     epoch   1 | train_loss=3.1550 val_loss=3.1022 val_hr_mae=151.646 lr=3.0e-04
+[2026-07-31 03:15:47]     epoch  10 | train_loss=3.1350 val_loss=3.0893 val_hr_mae=152.998 lr=3.0e-04
+[2026-07-31 04:02:52]     epoch  20 | train_loss=3.1390 val_loss=3.0910 val_hr_mae=154.115 lr=3.0e-04
+[2026-07-31 04:47:50]     epoch  30 | train_loss=3.0975 val_loss=3.0691 val_hr_mae=5.058 lr=1.5e-04
+[2026-07-31 05:31:16]     epoch  40 | train_loss=3.0959 val_loss=3.0709 val_hr_mae=5.142 lr=7.5e-05
+[2026-07-31 06:14:37]     epoch  50 | train_loss=3.0985 val_loss=3.0657 val_hr_mae=5.003 lr=1.9e-05
+[2026-07-31 06:58:11]     epoch  60 | train_loss=3.0986 val_loss=3.0660 val_hr_mae=5.072 lr=1.0e-05
+[2026-07-31 07:06:53]     early stop at epoch 62 (no val-loss improvement for 30)
+[2026-07-31 07:06:53]   trained 'tcn_rf121_h4': epochs_run=62 best_val_loss=3.0634 best_val_hr_mae=5.003
+[2026-07-31 07:12:44]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf121_h4/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-07-31 07:12:44]   DONE 'tcn_rf121_h4': val_model_mae=nan val_chrom_mae=nan
+[2026-07-31 07:12:44] ----------------------------------------------------------------------
+[2026-07-31 07:12:44] [4/12] MODEL: tcn_rf31_h8
+[2026-07-31 07:12:44]   built 'tcn_rf31_h8': params=1169, reach=29 samples (0.97s @30fps)
+[2026-07-31 07:17:04]     epoch   1 | train_loss=3.1459 val_loss=3.0914 val_hr_mae=11.745 lr=3.0e-04
+[2026-07-31 07:55:58]     epoch  10 | train_loss=3.0522 val_loss=3.0149 val_hr_mae=3.882 lr=3.0e-04
+[2026-07-31 08:39:00]     epoch  20 | train_loss=3.0428 val_loss=3.0152 val_hr_mae=3.935 lr=3.0e-04
+[2026-07-31 09:21:58]     epoch  30 | train_loss=3.0349 val_loss=3.0120 val_hr_mae=3.745 lr=7.5e-05
+[2026-07-31 10:04:59]     epoch  40 | train_loss=3.0333 val_loss=3.0138 val_hr_mae=3.885 lr=3.7e-05
+[2026-07-31 10:48:04]     epoch  50 | train_loss=3.0351 val_loss=3.0135 val_hr_mae=3.820 lr=1.0e-05
+[2026-07-31 11:31:08]     epoch  60 | train_loss=3.0327 val_loss=3.0132 val_hr_mae=3.738 lr=1.0e-05
+[2026-07-31 11:35:26]     early stop at epoch 61 (no val-loss improvement for 30)
+[2026-07-31 11:35:26]   trained 'tcn_rf31_h8': epochs_run=61 best_val_loss=3.0106 best_val_hr_mae=3.676
+[2026-07-31 11:40:50]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf31_h8/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-07-31 11:40:50]   DONE 'tcn_rf31_h8': val_model_mae=nan val_chrom_mae=nan
+[2026-07-31 11:40:50] ----------------------------------------------------------------------
+[2026-07-31 11:40:50] [5/12] MODEL: tcn_rf61_h8
+[2026-07-31 11:40:50]   built 'tcn_rf61_h8': params=1585, reach=61 samples (2.03s @30fps)
+[2026-07-31 11:45:09]     epoch   1 | train_loss=3.1600 val_loss=3.1100 val_hr_mae=154.442 lr=3.0e-04
+[2026-07-31 12:23:58]     epoch  10 | train_loss=3.1357 val_loss=3.1009 val_hr_mae=154.470 lr=3.0e-04
+[2026-07-31 13:07:22]     epoch  20 | train_loss=3.1324 val_loss=3.0958 val_hr_mae=11.146 lr=3.0e-04
+[2026-07-31 13:51:18]     epoch  30 | train_loss=3.0380 val_loss=3.0210 val_hr_mae=3.985 lr=3.0e-04
+[2026-07-31 14:37:42]     epoch  40 | train_loss=3.0364 val_loss=3.0180 val_hr_mae=3.903 lr=3.0e-04
+[2026-07-31 15:24:43]     epoch  50 | train_loss=3.0341 val_loss=3.0157 val_hr_mae=3.803 lr=1.5e-04
+[2026-07-31 16:09:24]     epoch  60 | train_loss=3.0316 val_loss=3.0145 val_hr_mae=3.823 lr=3.7e-05
+[2026-07-31 16:53:49]     epoch  70 | train_loss=3.0315 val_loss=3.0124 val_hr_mae=3.760 lr=1.9e-05
+[2026-07-31 17:29:22]     early stop at epoch 78 (no val-loss improvement for 30)
+[2026-07-31 17:29:22]   trained 'tcn_rf61_h8': epochs_run=78 best_val_loss=3.0123 best_val_hr_mae=3.635
+[2026-07-31 17:35:07]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf61_h8/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-07-31 17:35:07]   DONE 'tcn_rf61_h8': val_model_mae=nan val_chrom_mae=nan
+[2026-07-31 17:35:07] ----------------------------------------------------------------------
+[2026-07-31 17:35:07] [6/12] MODEL: tcn_rf121_h8
+[2026-07-31 17:35:07]   built 'tcn_rf121_h8': params=2001, reach=125 samples (4.17s @30fps)
+[2026-07-31 17:39:35]     epoch   1 | train_loss=3.1468 val_loss=3.0900 val_hr_mae=5.690 lr=3.0e-04
+[2026-07-31 18:19:42]     epoch  10 | train_loss=3.0429 val_loss=3.0217 val_hr_mae=4.342 lr=3.0e-04
+[2026-07-31 19:04:18]     epoch  20 | train_loss=3.0373 val_loss=3.0128 val_hr_mae=3.998 lr=1.5e-04
+[2026-07-31 19:48:58]     epoch  30 | train_loss=3.0331 val_loss=3.0148 val_hr_mae=4.074 lr=7.5e-05
+[2026-07-31 20:33:41]     epoch  40 | train_loss=3.0279 val_loss=3.0134 val_hr_mae=3.759 lr=1.9e-05
+[2026-07-31 21:18:15]     epoch  50 | train_loss=3.0298 val_loss=3.0121 val_hr_mae=3.652 lr=1.0e-05
+[2026-07-31 22:02:47]     epoch  60 | train_loss=3.0282 val_loss=3.0128 val_hr_mae=3.725 lr=1.0e-05
+[2026-07-31 22:20:34]     early stop at epoch 64 (no val-loss improvement for 30)
+[2026-07-31 22:20:34]   trained 'tcn_rf121_h8': epochs_run=64 best_val_loss=3.0110 best_val_hr_mae=3.502
+[2026-07-31 22:26:31]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf121_h8/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-07-31 22:26:31]   DONE 'tcn_rf121_h8': val_model_mae=nan val_chrom_mae=nan
+[2026-07-31 22:26:31] ----------------------------------------------------------------------
+[2026-07-31 22:26:31] [7/12] MODEL: tcn_rf31_h4_causal
+[2026-07-31 22:26:31]   built 'tcn_rf31_h4_causal': params=345, reach=29 samples (0.97s @30fps)
+[2026-07-31 22:30:55]     epoch   1 | train_loss=3.1448 val_loss=3.0969 val_hr_mae=7.174 lr=3.0e-04
+[2026-07-31 23:11:08]     epoch  10 | train_loss=3.0517 val_loss=3.0267 val_hr_mae=4.298 lr=3.0e-04
+[2026-07-31 23:57:07]     epoch  20 | train_loss=3.0499 val_loss=3.0214 val_hr_mae=3.657 lr=3.0e-04
+[2026-08-01 00:45:27]     epoch  30 | train_loss=3.0439 val_loss=3.0232 val_hr_mae=3.873 lr=7.5e-05
+[2026-08-01 01:30:57]     epoch  40 | train_loss=3.0435 val_loss=3.0246 val_hr_mae=3.948 lr=3.7e-05
+[2026-08-01 02:02:20]     early stop at epoch 47 (no val-loss improvement for 30)
+[2026-08-01 02:02:20]   trained 'tcn_rf31_h4_causal': epochs_run=47 best_val_loss=3.0196 best_val_hr_mae=3.657
+[2026-08-01 02:08:03]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf31_h4_causal/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-01 02:08:03]   DONE 'tcn_rf31_h4_causal': val_model_mae=nan val_chrom_mae=nan
+[2026-08-01 02:08:03] ----------------------------------------------------------------------
+[2026-08-01 02:08:03] [8/12] MODEL: tcn_rf61_h4_causal
+[2026-08-01 02:08:03]   built 'tcn_rf61_h4_causal': params=457, reach=61 samples (2.03s @30fps)
+[2026-08-01 02:12:45]     epoch   1 | train_loss=3.1515 val_loss=3.1039 val_hr_mae=137.396 lr=3.0e-04
+[2026-08-01 02:55:00]     epoch  10 | train_loss=3.1358 val_loss=3.0967 val_hr_mae=153.554 lr=3.0e-04
+[2026-08-01 03:42:03]     epoch  20 | train_loss=3.1350 val_loss=3.0960 val_hr_mae=154.289 lr=1.5e-04
+[2026-08-01 04:28:49]     epoch  30 | train_loss=3.1181 val_loss=3.0992 val_hr_mae=6.328 lr=3.7e-05
+[2026-08-01 05:14:11]     epoch  40 | train_loss=3.1001 val_loss=3.0806 val_hr_mae=4.692 lr=3.7e-05
+[2026-08-01 06:00:52]     epoch  50 | train_loss=3.0873 val_loss=3.0638 val_hr_mae=4.108 lr=3.7e-05
+[2026-08-01 06:45:43]     epoch  60 | train_loss=3.0755 val_loss=3.0576 val_hr_mae=4.011 lr=3.7e-05
+[2026-08-01 07:30:16]     epoch  70 | train_loss=3.0659 val_loss=3.0442 val_hr_mae=3.740 lr=3.7e-05
+[2026-08-01 08:14:45]     epoch  80 | train_loss=3.0570 val_loss=3.0329 val_hr_mae=3.716 lr=3.7e-05
+[2026-08-01 08:59:23]     epoch  90 | train_loss=3.0520 val_loss=3.0309 val_hr_mae=3.711 lr=3.7e-05
+[2026-08-01 09:43:56]     epoch 100 | train_loss=3.0584 val_loss=3.0723 val_hr_mae=8.742 lr=3.7e-05
+[2026-08-01 10:28:28]     epoch 110 | train_loss=3.0456 val_loss=3.0296 val_hr_mae=3.815 lr=1.0e-05
+[2026-08-01 11:13:08]     epoch 120 | train_loss=3.0456 val_loss=3.0294 val_hr_mae=3.941 lr=1.0e-05
+[2026-08-01 11:48:47]     early stop at epoch 128 (no val-loss improvement for 30)
+[2026-08-01 11:48:47]   trained 'tcn_rf61_h4_causal': epochs_run=128 best_val_loss=3.0279 best_val_hr_mae=3.624
+[2026-08-01 11:54:33]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf61_h4_causal/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-01 11:54:33]   DONE 'tcn_rf61_h4_causal': val_model_mae=nan val_chrom_mae=nan
+[2026-08-01 11:54:33] ----------------------------------------------------------------------
+[2026-08-01 11:54:33] [9/12] MODEL: tcn_rf121_h4_causal
+[2026-08-01 11:54:33]   built 'tcn_rf121_h4_causal': params=569, reach=125 samples (4.17s @30fps)
+[2026-08-01 11:59:05]     epoch   1 | train_loss=3.1594 val_loss=3.1050 val_hr_mae=40.939 lr=3.0e-04
+[2026-08-01 12:39:33]     epoch  10 | train_loss=3.1332 val_loss=3.1000 val_hr_mae=153.257 lr=3.0e-04
+[2026-08-01 13:24:24]     epoch  20 | train_loss=3.1366 val_loss=3.0968 val_hr_mae=154.456 lr=7.5e-05
+[2026-08-01 14:09:10]     epoch  30 | train_loss=3.1338 val_loss=3.0985 val_hr_mae=154.456 lr=1.9e-05
+[2026-08-01 14:36:13]     early stop at epoch 36 (no val-loss improvement for 30)
+[2026-08-01 14:36:13]   trained 'tcn_rf121_h4_causal': epochs_run=36 best_val_loss=3.0896 best_val_hr_mae=40.201
+[2026-08-01 14:42:13]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf121_h4_causal/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-01 14:42:13]   DONE 'tcn_rf121_h4_causal': val_model_mae=nan val_chrom_mae=nan
+[2026-08-01 14:42:13] ----------------------------------------------------------------------
+[2026-08-01 14:42:13] [10/12] MODEL: tcn_rf31_h8_causal
+[2026-08-01 14:42:13]   built 'tcn_rf31_h8_causal': params=1169, reach=29 samples (0.97s @30fps)
+[2026-08-01 14:46:36]     epoch   1 | train_loss=3.1456 val_loss=3.0903 val_hr_mae=12.657 lr=3.0e-04
+[2026-08-01 15:26:34]     epoch  10 | train_loss=3.0623 val_loss=3.0404 val_hr_mae=4.872 lr=3.0e-04
+[2026-08-01 16:11:01]     epoch  20 | train_loss=3.0576 val_loss=3.0426 val_hr_mae=5.501 lr=3.0e-04
+[2026-08-01 16:55:44]     epoch  30 | train_loss=3.0442 val_loss=3.0266 val_hr_mae=4.172 lr=7.5e-05
+[2026-08-01 17:40:39]     epoch  40 | train_loss=3.0439 val_loss=3.0250 val_hr_mae=4.003 lr=3.7e-05
+[2026-08-01 18:26:50]     epoch  50 | train_loss=3.0456 val_loss=3.0248 val_hr_mae=3.870 lr=1.0e-05
+[2026-08-01 19:13:31]     epoch  60 | train_loss=3.0434 val_loss=3.0248 val_hr_mae=3.913 lr=1.0e-05
+[2026-08-01 19:18:04]     early stop at epoch 61 (no val-loss improvement for 30)
+[2026-08-01 19:18:04]   trained 'tcn_rf31_h8_causal': epochs_run=61 best_val_loss=3.0227 best_val_hr_mae=3.720
+[2026-08-01 19:23:43]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf31_h8_causal/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-01 19:23:43]   DONE 'tcn_rf31_h8_causal': val_model_mae=nan val_chrom_mae=nan
+[2026-08-01 19:23:43] ----------------------------------------------------------------------
+[2026-08-01 19:23:43] [11/12] MODEL: tcn_rf61_h8_causal
+[2026-08-01 19:23:43]   built 'tcn_rf61_h8_causal': params=1585, reach=61 samples (2.03s @30fps)
+[2026-08-01 19:28:08]     epoch   1 | train_loss=3.1574 val_loss=3.1027 val_hr_mae=31.936 lr=3.0e-04
+[2026-08-01 20:10:25]     epoch  10 | train_loss=3.1355 val_loss=3.0985 val_hr_mae=153.599 lr=3.0e-04
+[2026-08-01 20:54:42]     epoch  20 | train_loss=3.1323 val_loss=3.0943 val_hr_mae=154.274 lr=1.5e-04
+[2026-08-01 21:36:44]     epoch  30 | train_loss=3.0531 val_loss=3.0306 val_hr_mae=4.134 lr=1.5e-04
+[2026-08-01 22:18:47]     epoch  40 | train_loss=3.0466 val_loss=3.0247 val_hr_mae=3.807 lr=1.5e-04
+[2026-08-01 23:00:57]     epoch  50 | train_loss=3.0447 val_loss=3.0268 val_hr_mae=3.954 lr=7.5e-05
+[2026-08-01 23:42:56]     epoch  60 | train_loss=3.0431 val_loss=3.0262 val_hr_mae=3.836 lr=1.9e-05
+[2026-08-02 00:27:12]     epoch  70 | train_loss=3.0438 val_loss=3.0257 val_hr_mae=3.836 lr=1.0e-05
+[2026-08-02 00:36:19]     early stop at epoch 72 (no val-loss improvement for 30)
+[2026-08-02 00:36:19]   trained 'tcn_rf61_h8_causal': epochs_run=72 best_val_loss=3.0237 best_val_hr_mae=3.686
+[2026-08-02 00:42:21]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf61_h8_causal/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-02 00:42:21]   DONE 'tcn_rf61_h8_causal': val_model_mae=nan val_chrom_mae=nan
+[2026-08-02 00:42:21] ----------------------------------------------------------------------
+[2026-08-02 00:42:21] [12/12] MODEL: tcn_rf121_h8_causal
+[2026-08-02 00:42:21]   built 'tcn_rf121_h8_causal': params=2001, reach=125 samples (4.17s @30fps)
+[2026-08-02 00:46:59]     epoch   1 | train_loss=3.1596 val_loss=3.0880 val_hr_mae=5.283 lr=3.0e-04
+[2026-08-02 01:28:35]     epoch  10 | train_loss=3.0551 val_loss=3.0305 val_hr_mae=4.092 lr=3.0e-04
+[2026-08-02 02:15:22]     epoch  20 | train_loss=3.0567 val_loss=3.0256 val_hr_mae=3.949 lr=1.5e-04
+[2026-08-02 03:01:42]     epoch  30 | train_loss=3.0435 val_loss=3.0259 val_hr_mae=3.939 lr=3.7e-05
+[2026-08-02 03:47:25]     epoch  40 | train_loss=3.0410 val_loss=3.0256 val_hr_mae=3.929 lr=1.9e-05
+[2026-08-02 04:33:22]     epoch  50 | train_loss=3.0434 val_loss=3.0246 val_hr_mae=3.934 lr=1.0e-05
+[2026-08-02 04:37:58]     early stop at epoch 51 (no val-loss improvement for 30)
+[2026-08-02 04:37:58]   trained 'tcn_rf121_h8_causal': epochs_run=51 best_val_loss=3.0238 best_val_hr_mae=3.650
+[2026-08-02 04:44:08]   WARNING: eval CSV not found at Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/tcn_rf121_h8_causal/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-02 04:44:08]   DONE 'tcn_rf121_h8_causal': val_model_mae=nan val_chrom_mae=nan
+[2026-08-02 04:44:08] ======================================================================
+[2026-08-02 04:44:08] MEGA RUN complete. Summary -> Result_Lab/TCN_CANONICAL_RF_SWEEP_with_Hidden_4_8/MEGA_SUMMARY.csv
+[2026-08-02 04:44:08] ======================================================================

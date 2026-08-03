@@ -1,0 +1,57 @@
+[BATCH] RUN_EVAL is False — reusing existing evaluation:
+        /media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_2/Result_Lab_OLD/tcn_small/EVAL_WIN_S-8.0/tables/PSD_TOP_PEAKS_SUMMARY.csv
+
+==============================================================================
+STAGE 1/2 — diagnosis_psd.py
+==============================================================================
+
+Loading data from /media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_2/Result_Lab_OLD/tcn_small/EVAL_WIN_S-8.0/tables/PSD_TOP_PEAKS_SUMMARY.csv …
+Loaded 7,185 windows from /media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_2/Result_Lab_OLD/tcn_small/EVAL_WIN_S-8.0/tables/PSD_TOP_PEAKS_SUMMARY.csv
+Datasets: {'PURE': 3670, 'UBFC': 2462, 'TokyoTech': 1053}
+
+Building report …
+  Generating section A …
+  Generating section B …
+  Generating section C …
+  Generating section D …
+  Generating section E …
+  Generating section F …
+  Generating section G …
+  Computing analysis text …
+
+Report saved → /media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_2/Result_Lab_OLD/tcn_small/EVAL_WIN_S-8.0/failure_atlas.html
+File size:  83 KB
+
+Open the .html file in any browser — all charts are interactive.
+[BATCH] Completed STAGE 1/2 — diagnosis_psd.py in 0.0 min
+
+==============================================================================
+STAGE 2/2 — diagnosis_psd_subjects.py
+==============================================================================
+
+Loading data …
+Loaded 7,185 windows | 3 datasets | 182 subjects
+Computing per-subject statistics …
+  182 subjects processed
+Generating subject summaries …
+  Classification CSV → /media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_2/Result_Lab_OLD/tcn_small/EVAL_WIN_S-8.0/subject_classification.csv
+Building interactive HTML …
+  HTML report → /media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_2/Result_Lab_OLD/tcn_small/EVAL_WIN_S-8.0/subject_atlas.html  (815 KB)
+
+============================================================
+SUBJECT RISK SUMMARY
+============================================================
+  🟢 LOW       : 69 subjects
+  🟡 MEDIUM    : 42 subjects
+  🟠 HIGH      : 36 subjects
+  🔴 CRITICAL  : 35 subjects
+
+Top 5 subjects by model error rate:
+  🔴 TokyoTech    'Subj_03_Pre_Relax_Frag3   MAE=9.23  errors=100.0%  dominant=2bin
+  🔴 TokyoTech    'Subj_03_Exercise_Frag4    MAE=6.92  errors=92.3%  dominant=2bin
+  🔴 TokyoTech    'Subj_03_Exercise_Frag5    MAE=6.35  errors=84.6%  dominant=2bin
+  🔴 TokyoTech    'Subj_03_Pre_Relax_Frag2   MAE=5.77  errors=76.9%  dominant=2bin
+  🔴 TokyoTech    'Subj_06_Post_Relax_Frag9  MAE=11.54  errors=76.9%  dominant=2bin
+
+Open subject_atlas.html in any browser.
+[BATCH] Completed STAGE 2/2 — diagnosis_psd_subjects.py in 0.0 min
