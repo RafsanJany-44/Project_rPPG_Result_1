@@ -1,0 +1,9 @@
+model,status,epochs_run,best_val_loss,best_val_hr_mae,params,reach_samples,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae
+branch1_projector,ok,31,0.7929401773655649,4.7831631922342,3,1,,,,
+branch2_tcn_rf31_h8,ok,214,0.5742456290134226,3.8956081721977083,1169,29,,,,
+three_branch_mi_static_linear,ok,36,0.5245982172227732,2.5861320540294988,169573,96,,,,
+three_branch_mmi_static_linear,ok,36,0.5271817589320081,2.6763702439949015,43517,96,,,,
+three_branch_mmi_mlp,ok,36,0.5291980566437712,2.5442762835179966,43652,96,,,,
+three_branch_mmi_se_attention,ok,40,0.5259170417151053,2.5512222564432703,43814,96,,,,
+three_branch_mmi_lightweight_attention,ok,43,0.5246850461633605,2.8113353156328427,43823,96,,,,
+three_branch_mmi_branch_attention,ok,53,0.5291336259220735,2.486562894233053,43571,96,,,,

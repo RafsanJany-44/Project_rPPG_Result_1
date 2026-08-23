@@ -1,0 +1,112 @@
+[2026-08-19 02:19:53] ======================================================================
+[2026-08-19 02:19:53] MEGA RUN start | device=cuda | models=6 | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]
+[2026-08-19 02:19:53] models: ['branch1_projector', 'branch2_tcn_rf31_h8', 'three_branch_mi_static_linear', 'three_branch_mmi_static_linear', 'branch3_MiUNet', 'branch3_MMiUNet']
+[2026-08-19 02:19:53] ======================================================================
+[2026-08-19 02:19:53] ----------------------------------------------------------------------
+[2026-08-19 02:19:53] [1/6] MODEL: branch1_projector
+[2026-08-19 02:19:53]   built 'branch1_projector': params=3, reach=1 samples (0.03s @30fps)
+[2026-08-19 02:21:42]     epoch   1 | train_loss=0.8078 val_loss=0.6400 val_hr_mae=3.368 lr=3.0e-04
+[2026-08-19 02:36:37]     epoch  10 | train_loss=0.7824 val_loss=0.6401 val_hr_mae=3.341 lr=3.0e-04
+[2026-08-19 02:52:45]     epoch  20 | train_loss=0.7827 val_loss=0.6401 val_hr_mae=3.328 lr=7.5e-05
+[2026-08-19 03:09:22]     epoch  30 | train_loss=0.7825 val_loss=0.6400 val_hr_mae=3.336 lr=1.9e-05
+[2026-08-19 03:18:44]     early stop at epoch 36 (no val-loss improvement for 30)
+[2026-08-19 03:18:44]   trained 'branch1_projector': epochs_run=36 best_val_loss=0.6398 best_val_hr_mae=3.235
+[2026-08-19 03:23:37]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/branch1_projector/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-19 03:23:37]   DONE 'branch1_projector': val_model_mae=nan val_chrom_mae=nan
+[2026-08-19 03:23:37] ----------------------------------------------------------------------
+[2026-08-19 03:23:37] [2/6] MODEL: branch2_tcn_rf31_h8
+[2026-08-19 03:23:37]   built 'branch2_tcn_rf31_h8': params=1169, reach=29 samples (0.97s @30fps)
+[2026-08-19 03:25:17]     epoch   1 | train_loss=0.8080 val_loss=0.6443 val_hr_mae=3.231 lr=3.0e-04
+[2026-08-19 03:40:07]     epoch  10 | train_loss=0.5437 val_loss=0.4634 val_hr_mae=4.697 lr=3.0e-04
+[2026-08-19 03:56:40]     epoch  20 | train_loss=0.5134 val_loss=0.4045 val_hr_mae=2.970 lr=3.0e-04
+[2026-08-19 04:13:03]     epoch  30 | train_loss=0.5014 val_loss=0.4009 val_hr_mae=2.474 lr=1.5e-04
+[2026-08-19 04:29:30]     epoch  40 | train_loss=0.4940 val_loss=0.3864 val_hr_mae=2.435 lr=1.5e-04
+[2026-08-19 04:45:56]     epoch  50 | train_loss=0.4892 val_loss=0.3840 val_hr_mae=2.636 lr=1.5e-04
+[2026-08-19 05:02:23]     epoch  60 | train_loss=0.4882 val_loss=0.3952 val_hr_mae=3.138 lr=1.5e-04
+[2026-08-19 05:18:50]     epoch  70 | train_loss=0.4815 val_loss=0.3720 val_hr_mae=2.835 lr=7.5e-05
+[2026-08-19 05:35:17]     epoch  80 | train_loss=0.4803 val_loss=0.3700 val_hr_mae=2.787 lr=7.5e-05
+[2026-08-19 05:51:47]     epoch  90 | train_loss=0.4771 val_loss=0.3735 val_hr_mae=2.946 lr=3.7e-05
+[2026-08-19 06:08:14]     epoch 100 | train_loss=0.4767 val_loss=0.3688 val_hr_mae=2.844 lr=3.7e-05
+[2026-08-19 06:24:43]     epoch 110 | train_loss=0.4773 val_loss=0.3670 val_hr_mae=2.930 lr=3.7e-05
+[2026-08-19 06:41:09]     epoch 120 | train_loss=0.4750 val_loss=0.3670 val_hr_mae=2.969 lr=1.0e-05
+[2026-08-19 06:57:35]     epoch 130 | train_loss=0.4764 val_loss=0.3680 val_hr_mae=2.927 lr=1.0e-05
+[2026-08-19 07:14:01]     epoch 140 | train_loss=0.4750 val_loss=0.3680 val_hr_mae=2.932 lr=1.0e-05
+[2026-08-19 07:30:33]     epoch 150 | train_loss=0.4750 val_loss=0.3672 val_hr_mae=2.956 lr=1.0e-05
+[2026-08-19 07:46:56]     epoch 160 | train_loss=0.4749 val_loss=0.3692 val_hr_mae=3.000 lr=1.0e-05
+[2026-08-19 08:03:20]     epoch 170 | train_loss=0.4758 val_loss=0.3672 val_hr_mae=3.014 lr=1.0e-05
+[2026-08-19 08:19:45]     epoch 180 | train_loss=0.4738 val_loss=0.3665 val_hr_mae=2.939 lr=1.0e-05
+[2026-08-19 08:36:15]     epoch 190 | train_loss=0.4746 val_loss=0.3665 val_hr_mae=3.003 lr=1.0e-05
+[2026-08-19 08:52:43]     epoch 200 | train_loss=0.4740 val_loss=0.3664 val_hr_mae=3.021 lr=1.0e-05
+[2026-08-19 09:09:03]     epoch 210 | train_loss=0.4740 val_loss=0.3669 val_hr_mae=3.026 lr=1.0e-05
+[2026-08-19 09:24:54]     epoch 220 | train_loss=0.4751 val_loss=0.3665 val_hr_mae=2.992 lr=1.0e-05
+[2026-08-19 09:40:41]     epoch 230 | train_loss=0.4753 val_loss=0.3664 val_hr_mae=2.941 lr=1.0e-05
+[2026-08-19 09:56:30]     epoch 240 | train_loss=0.4747 val_loss=0.3661 val_hr_mae=3.032 lr=1.0e-05
+[2026-08-19 10:12:20]     epoch 250 | train_loss=0.4745 val_loss=0.3662 val_hr_mae=3.032 lr=1.0e-05
+[2026-08-19 10:24:59]     early stop at epoch 258 (no val-loss improvement for 30)
+[2026-08-19 10:24:59]   trained 'branch2_tcn_rf31_h8': epochs_run=258 best_val_loss=0.3656 best_val_hr_mae=2.421
+[2026-08-19 10:30:14]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/branch2_tcn_rf31_h8/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-19 10:30:14]   DONE 'branch2_tcn_rf31_h8': val_model_mae=nan val_chrom_mae=nan
+[2026-08-19 10:30:14] ----------------------------------------------------------------------
+[2026-08-19 10:30:14] [3/6] MODEL: three_branch_mi_static_linear
+[2026-08-19 10:30:14]   built 'three_branch_mi_static_linear': params=169573, reach=96 samples (3.20s @30fps)
+[2026-08-19 10:32:02]     epoch   1 | train_loss=0.6302 val_loss=0.4100 val_hr_mae=6.740 lr=3.0e-04
+[2026-08-19 10:48:03]     epoch  10 | train_loss=0.3786 val_loss=0.2417 val_hr_mae=2.000 lr=3.0e-04
+[2026-08-19 11:07:01]     epoch  20 | train_loss=0.3577 val_loss=0.2158 val_hr_mae=1.976 lr=3.0e-04
+[2026-08-19 11:25:35]     epoch  30 | train_loss=0.3375 val_loss=0.2173 val_hr_mae=1.579 lr=1.5e-04
+[2026-08-19 11:45:06]     epoch  40 | train_loss=0.3247 val_loss=0.2146 val_hr_mae=1.699 lr=7.5e-05
+[2026-08-19 12:03:54]     epoch  50 | train_loss=0.3181 val_loss=0.2160 val_hr_mae=1.586 lr=1.9e-05
+[2026-08-19 12:22:40]     epoch  60 | train_loss=0.3169 val_loss=0.2169 val_hr_mae=1.601 lr=1.0e-05
+[2026-08-19 12:24:29]     early stop at epoch 61 (no val-loss improvement for 30)
+[2026-08-19 12:24:29]   trained 'three_branch_mi_static_linear': epochs_run=61 best_val_loss=0.2104 best_val_hr_mae=1.552
+[2026-08-19 12:30:47]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/three_branch_mi_static_linear/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-19 12:30:47]   DONE 'three_branch_mi_static_linear': val_model_mae=nan val_chrom_mae=nan
+[2026-08-19 12:30:47] ----------------------------------------------------------------------
+[2026-08-19 12:30:47] [4/6] MODEL: three_branch_mmi_static_linear
+[2026-08-19 12:30:47]   built 'three_branch_mmi_static_linear': params=43517, reach=96 samples (3.20s @30fps)
+[2026-08-19 12:32:41]     epoch   1 | train_loss=0.7417 val_loss=0.6052 val_hr_mae=11.767 lr=3.0e-04
+[2026-08-19 12:49:21]     epoch  10 | train_loss=0.4066 val_loss=0.2762 val_hr_mae=2.304 lr=3.0e-04
+[2026-08-19 13:09:43]     epoch  20 | train_loss=0.3885 val_loss=0.2567 val_hr_mae=1.860 lr=3.0e-04
+[2026-08-19 13:29:40]     epoch  30 | train_loss=0.3775 val_loss=0.2336 val_hr_mae=1.914 lr=3.0e-04
+[2026-08-19 13:49:24]     epoch  40 | train_loss=0.3682 val_loss=0.2285 val_hr_mae=1.832 lr=3.0e-04
+[2026-08-19 14:08:20]     epoch  50 | train_loss=0.3608 val_loss=0.2195 val_hr_mae=1.732 lr=3.0e-04
+[2026-08-19 14:27:06]     epoch  60 | train_loss=0.3523 val_loss=0.2187 val_hr_mae=1.635 lr=1.5e-04
+[2026-08-19 14:45:53]     epoch  70 | train_loss=0.3470 val_loss=0.2199 val_hr_mae=1.583 lr=1.5e-04
+[2026-08-19 15:04:44]     epoch  80 | train_loss=0.3421 val_loss=0.2153 val_hr_mae=1.646 lr=3.7e-05
+[2026-08-19 15:23:31]     epoch  90 | train_loss=0.3384 val_loss=0.2161 val_hr_mae=1.588 lr=1.9e-05
+[2026-08-19 15:42:21]     epoch 100 | train_loss=0.3372 val_loss=0.2142 val_hr_mae=1.565 lr=1.0e-05
+[2026-08-19 15:49:52]     early stop at epoch 104 (no val-loss improvement for 30)
+[2026-08-19 15:49:52]   trained 'three_branch_mmi_static_linear': epochs_run=104 best_val_loss=0.2135 best_val_hr_mae=1.543
+[2026-08-19 15:56:46]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/three_branch_mmi_static_linear/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-19 15:56:46]   DONE 'three_branch_mmi_static_linear': val_model_mae=nan val_chrom_mae=nan
+[2026-08-19 15:56:46] ----------------------------------------------------------------------
+[2026-08-19 15:56:46] [5/6] MODEL: branch3_MiUNet
+[2026-08-19 15:56:47]   built 'branch3_MiUNet': params=168401, reach=96 samples (3.20s @30fps)
+[2026-08-19 15:58:32]     epoch   1 | train_loss=0.6984 val_loss=0.5863 val_hr_mae=10.697 lr=3.0e-04
+[2026-08-19 16:14:16]     epoch  10 | train_loss=0.3826 val_loss=0.2552 val_hr_mae=2.046 lr=3.0e-04
+[2026-08-19 16:31:49]     epoch  20 | train_loss=0.3592 val_loss=0.2264 val_hr_mae=1.765 lr=3.0e-04
+[2026-08-19 16:49:26]     epoch  30 | train_loss=0.3398 val_loss=0.2267 val_hr_mae=1.613 lr=1.5e-04
+[2026-08-19 17:07:02]     epoch  40 | train_loss=0.3249 val_loss=0.2076 val_hr_mae=1.563 lr=1.5e-04
+[2026-08-19 17:24:36]     epoch  50 | train_loss=0.3101 val_loss=0.2221 val_hr_mae=1.624 lr=7.5e-05
+[2026-08-19 17:42:04]     epoch  60 | train_loss=0.3040 val_loss=0.2169 val_hr_mae=1.599 lr=1.9e-05
+[2026-08-19 17:59:39]     epoch  70 | train_loss=0.3012 val_loss=0.2170 val_hr_mae=1.608 lr=1.0e-05
+[2026-08-19 17:59:39]     early stop at epoch 70 (no val-loss improvement for 30)
+[2026-08-19 17:59:39]   trained 'branch3_MiUNet': epochs_run=70 best_val_loss=0.2076 best_val_hr_mae=1.487
+[2026-08-19 18:05:34]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/branch3_MiUNet/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-19 18:05:34]   DONE 'branch3_MiUNet': val_model_mae=nan val_chrom_mae=nan
+[2026-08-19 18:05:34] ----------------------------------------------------------------------
+[2026-08-19 18:05:34] [6/6] MODEL: branch3_MMiUNet
+[2026-08-19 18:05:34]   built 'branch3_MMiUNet': params=42345, reach=96 samples (3.20s @30fps)
+[2026-08-19 18:07:20]     epoch   1 | train_loss=0.6851 val_loss=0.5074 val_hr_mae=7.634 lr=3.0e-04
+[2026-08-19 18:23:01]     epoch  10 | train_loss=0.3914 val_loss=0.2619 val_hr_mae=2.063 lr=3.0e-04
+[2026-08-19 18:40:26]     epoch  20 | train_loss=0.3702 val_loss=0.2299 val_hr_mae=1.982 lr=3.0e-04
+[2026-08-19 18:57:53]     epoch  30 | train_loss=0.3540 val_loss=0.2298 val_hr_mae=1.690 lr=1.5e-04
+[2026-08-19 19:15:19]     epoch  40 | train_loss=0.3467 val_loss=0.2250 val_hr_mae=1.657 lr=1.5e-04
+[2026-08-19 19:32:47]     epoch  50 | train_loss=0.3403 val_loss=0.2247 val_hr_mae=1.728 lr=7.5e-05
+[2026-08-19 19:50:15]     epoch  60 | train_loss=0.3383 val_loss=0.2214 val_hr_mae=1.695 lr=1.9e-05
+[2026-08-19 20:05:56]     early stop at epoch 69 (no val-loss improvement for 30)
+[2026-08-19 20:05:56]   trained 'branch3_MMiUNet': epochs_run=69 best_val_loss=0.2146 best_val_hr_mae=1.640
+[2026-08-19 20:11:49]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/branch3_MMiUNet/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-19 20:11:49]   DONE 'branch3_MMiUNet': val_model_mae=nan val_chrom_mae=nan
+[2026-08-19 20:11:49] ======================================================================
+[2026-08-19 20:11:49] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/MEGA_SUMMARY.csv
+[2026-08-19 20:11:49] ======================================================================

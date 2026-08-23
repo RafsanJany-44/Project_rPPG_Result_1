@@ -1,0 +1,6 @@
+model,status,epochs_run,best_val_loss,best_val_hr_mae,params,reach_samples,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae
+two_projection_CHROM_ADAPTIVE,ok,51,2.827049776311968,2.2148850094572907,6,-1,,,,
+plain_k1,ok,43,2.8515364920464332,2.8255854122975945,3,1,,,,
+adaptive_trend,ok,43,2.8373937221393613,2.0995475410416304,3,-1,,,,
+two_branch_adaptive,ok,300,2.829491678356674,2.421723079775401,6,-1,,,,
+adaptive_detrend,FAILED: [Errno 2] No such file or directory,62,2.808605295303167,1.8345914039781024,7,-1,,,,

@@ -1,0 +1,7 @@
+model,status,epochs_run,best_val_loss,best_val_hr_mae,params,reach_samples,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae
+branch1_projector,ok,36,0.6397767280815504,3.2353200676681295,3,1,,,,
+branch2_tcn_rf31_h8,ok,258,0.3655996066861617,2.4205268512360467,1169,29,,,,
+three_branch_mi_static_linear,ok,61,0.21042269435993494,1.5518539986313515,169573,96,,,,
+three_branch_mmi_static_linear,ok,104,0.21349574678614355,1.5433098013733573,43517,96,,,,
+branch3_MiUNet,ok,70,0.2076363801486155,1.4874226407345164,168401,96,,,,
+branch3_MMiUNet,ok,69,0.21455897662329013,1.6396166220348967,42345,96,,,,

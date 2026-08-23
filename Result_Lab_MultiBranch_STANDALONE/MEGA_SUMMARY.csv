@@ -1,0 +1,2 @@
+model,status,epochs_run,best_val_loss,best_val_hr_mae,params,reach_samples,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae
+branch3_unet,ok,109,2.6039563816288642,2.71682844188801,168401,96,,,,

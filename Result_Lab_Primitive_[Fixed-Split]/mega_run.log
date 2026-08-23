@@ -1,0 +1,104 @@
+[2026-08-17 15:29:10] ======================================================================
+[2026-08-17 15:29:10] MEGA RUN start | device=cuda | models=6 | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Primitive_Fixed-Split_CE_Pearson
+[2026-08-17 15:29:10] models: ['two_projection_CHROM_ADAPTIVE', 'plain_k1', 'adaptive_trend', 'two_branch_adaptive', 'adaptive_detrend', 'plain_k3']
+[2026-08-17 15:29:10] ======================================================================
+[2026-08-17 15:29:10] ----------------------------------------------------------------------
+[2026-08-17 15:29:10] [1/6] MODEL: two_projection_CHROM_ADAPTIVE
+[2026-08-17 15:29:10]   built 'two_projection_CHROM_ADAPTIVE': params=6, reach=-1 samples (-0.03s @30fps)
+[2026-08-17 15:33:08]     epoch   1 | train_loss=3.3481 val_loss=2.9502 val_hr_mae=3.318 lr=3.0e-04
+[2026-08-17 16:07:26]     epoch  10 | train_loss=3.0319 val_loss=2.8295 val_hr_mae=2.265 lr=3.0e-04
+[2026-08-17 16:44:51]     epoch  20 | train_loss=3.0307 val_loss=2.8296 val_hr_mae=2.227 lr=1.5e-04
+[2026-08-17 17:22:20]     epoch  30 | train_loss=3.0292 val_loss=2.8292 val_hr_mae=2.238 lr=7.5e-05
+[2026-08-17 18:00:07]     epoch  40 | train_loss=3.0297 val_loss=2.8294 val_hr_mae=2.242 lr=1.9e-05
+[2026-08-17 18:37:37]     epoch  50 | train_loss=3.0308 val_loss=2.8302 val_hr_mae=2.264 lr=1.0e-05
+[2026-08-17 18:41:20]     early stop at epoch 51 (no val-loss improvement for 30)
+[2026-08-17 18:41:20]   trained 'two_projection_CHROM_ADAPTIVE': epochs_run=51 best_val_loss=2.8270 best_val_hr_mae=2.215
+[2026-08-17 18:46:18]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Primitive_Fixed-Split_CE_Pearson/two_projection_CHROM_ADAPTIVE/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-17 18:46:18]   DONE 'two_projection_CHROM_ADAPTIVE': val_model_mae=nan val_chrom_mae=nan
+[2026-08-17 18:46:18] ----------------------------------------------------------------------
+[2026-08-17 18:46:18] [2/6] MODEL: plain_k1
+[2026-08-17 18:46:18]   built 'plain_k1': params=3, reach=1 samples (0.03s @30fps)
+[2026-08-17 18:50:05]     epoch   1 | train_loss=3.3325 val_loss=2.8959 val_hr_mae=3.163 lr=3.0e-04
+[2026-08-17 19:23:47]     epoch  10 | train_loss=3.0866 val_loss=2.8577 val_hr_mae=2.924 lr=3.0e-04
+[2026-08-17 20:01:28]     epoch  20 | train_loss=3.0866 val_loss=2.8573 val_hr_mae=2.900 lr=1.5e-04
+[2026-08-17 20:39:13]     epoch  30 | train_loss=3.0873 val_loss=2.8582 val_hr_mae=2.919 lr=7.5e-05
+[2026-08-17 21:17:21]     epoch  40 | train_loss=3.0878 val_loss=2.8567 val_hr_mae=2.858 lr=1.9e-05
+[2026-08-17 21:28:59]     early stop at epoch 43 (no val-loss improvement for 30)
+[2026-08-17 21:28:59]   trained 'plain_k1': epochs_run=43 best_val_loss=2.8515 best_val_hr_mae=2.826
+[2026-08-17 21:34:23]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Primitive_Fixed-Split_CE_Pearson/plain_k1/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-17 21:34:23]   DONE 'plain_k1': val_model_mae=nan val_chrom_mae=nan
+[2026-08-17 21:34:23] ----------------------------------------------------------------------
+[2026-08-17 21:34:23] [3/6] MODEL: adaptive_trend
+[2026-08-17 21:34:23]   built 'adaptive_trend': params=3, reach=-1 samples (-0.03s @30fps)
+[2026-08-17 21:38:27]     epoch   1 | train_loss=3.3080 val_loss=2.8826 val_hr_mae=2.606 lr=3.0e-04
+[2026-08-17 22:14:39]     epoch  10 | train_loss=3.0644 val_loss=2.8427 val_hr_mae=2.204 lr=3.0e-04
+[2026-08-17 22:52:47]     epoch  20 | train_loss=3.0643 val_loss=2.8428 val_hr_mae=2.192 lr=1.5e-04
+[2026-08-17 23:31:05]     epoch  30 | train_loss=3.0650 val_loss=2.8441 val_hr_mae=2.206 lr=7.5e-05
+[2026-08-18 00:09:33]     epoch  40 | train_loss=3.0659 val_loss=2.8429 val_hr_mae=2.207 lr=1.9e-05
+[2026-08-18 00:21:00]     early stop at epoch 43 (no val-loss improvement for 30)
+[2026-08-18 00:21:00]   trained 'adaptive_trend': epochs_run=43 best_val_loss=2.8374 best_val_hr_mae=2.100
+[2026-08-18 00:26:05]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Primitive_Fixed-Split_CE_Pearson/adaptive_trend/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-18 00:26:05]   DONE 'adaptive_trend': val_model_mae=nan val_chrom_mae=nan
+[2026-08-18 00:26:05] ----------------------------------------------------------------------
+[2026-08-18 00:26:05] [4/6] MODEL: two_branch_adaptive
+[2026-08-18 00:26:05]   built 'two_branch_adaptive': params=6, reach=-1 samples (-0.03s @30fps)
+[2026-08-18 00:29:55]     epoch   1 | train_loss=3.4433 val_loss=3.0497 val_hr_mae=3.896 lr=3.0e-04
+[2026-08-18 01:04:34]     epoch  10 | train_loss=3.0965 val_loss=2.9477 val_hr_mae=3.088 lr=3.0e-04
+[2026-08-18 01:42:53]     epoch  20 | train_loss=3.0954 val_loss=2.9424 val_hr_mae=3.111 lr=3.0e-04
+[2026-08-18 02:21:11]     epoch  30 | train_loss=3.0933 val_loss=2.9234 val_hr_mae=2.896 lr=3.0e-04
+[2026-08-18 02:59:29]     epoch  40 | train_loss=3.0913 val_loss=2.9111 val_hr_mae=2.850 lr=3.0e-04
+[2026-08-18 03:37:45]     epoch  50 | train_loss=3.0901 val_loss=2.9030 val_hr_mae=2.842 lr=1.5e-04
+[2026-08-18 04:16:05]     epoch  60 | train_loss=3.0810 val_loss=2.9018 val_hr_mae=2.833 lr=1.5e-04
+[2026-08-18 04:53:15]     epoch  70 | train_loss=3.0741 val_loss=2.9076 val_hr_mae=2.834 lr=3.7e-05
+[2026-08-18 05:30:08]     epoch  80 | train_loss=3.0667 val_loss=2.9010 val_hr_mae=2.849 lr=1.9e-05
+[2026-08-18 06:06:54]     epoch  90 | train_loss=3.0612 val_loss=2.8974 val_hr_mae=2.831 lr=1.0e-05
+[2026-08-18 06:43:29]     epoch 100 | train_loss=3.0575 val_loss=2.8883 val_hr_mae=2.784 lr=1.0e-05
+[2026-08-18 07:20:18]     epoch 110 | train_loss=3.0520 val_loss=2.8821 val_hr_mae=2.749 lr=1.0e-05
+[2026-08-18 07:57:02]     epoch 120 | train_loss=3.0467 val_loss=2.8715 val_hr_mae=2.706 lr=1.0e-05
+[2026-08-18 08:33:59]     epoch 130 | train_loss=3.0459 val_loss=2.8618 val_hr_mae=2.636 lr=1.0e-05
+[2026-08-18 09:16:24]     epoch 140 | train_loss=3.0400 val_loss=2.8549 val_hr_mae=2.587 lr=1.0e-05
+[2026-08-18 10:10:19]     epoch 150 | train_loss=3.0373 val_loss=2.8504 val_hr_mae=2.544 lr=1.0e-05
+[2026-08-18 11:02:49]     epoch 160 | train_loss=3.0336 val_loss=2.8462 val_hr_mae=2.525 lr=1.0e-05
+[2026-08-18 11:56:14]     epoch 170 | train_loss=3.0327 val_loss=2.8434 val_hr_mae=2.477 lr=1.0e-05
+[2026-08-18 12:50:38]     epoch 180 | train_loss=3.0306 val_loss=2.8415 val_hr_mae=2.488 lr=1.0e-05
+[2026-08-18 13:41:59]     epoch 190 | train_loss=3.0329 val_loss=2.8392 val_hr_mae=2.477 lr=1.0e-05
+[2026-08-18 14:36:21]     epoch 200 | train_loss=3.0292 val_loss=2.8385 val_hr_mae=2.475 lr=1.0e-05
+[2026-08-18 15:28:27]     epoch 210 | train_loss=3.0294 val_loss=2.8371 val_hr_mae=2.467 lr=1.0e-05
+[2026-08-18 16:20:41]     epoch 220 | train_loss=3.0286 val_loss=2.8359 val_hr_mae=2.477 lr=1.0e-05
+[2026-08-18 17:12:47]     epoch 230 | train_loss=3.0294 val_loss=2.8349 val_hr_mae=2.478 lr=1.0e-05
+[2026-08-18 17:57:26]     epoch 240 | train_loss=3.0261 val_loss=2.8338 val_hr_mae=2.467 lr=1.0e-05
+[2026-08-18 18:35:05]     epoch 250 | train_loss=3.0272 val_loss=2.8333 val_hr_mae=2.451 lr=1.0e-05
+[2026-08-18 19:12:45]     epoch 260 | train_loss=3.0257 val_loss=2.8326 val_hr_mae=2.449 lr=1.0e-05
+[2026-08-18 19:50:24]     epoch 270 | train_loss=3.0269 val_loss=2.8312 val_hr_mae=2.441 lr=1.0e-05
+[2026-08-18 20:28:17]     epoch 280 | train_loss=3.0276 val_loss=2.8308 val_hr_mae=2.454 lr=1.0e-05
+[2026-08-18 21:06:06]     epoch 290 | train_loss=3.0234 val_loss=2.8302 val_hr_mae=2.459 lr=1.0e-05
+[2026-08-18 21:43:50]     epoch 300 | train_loss=3.0226 val_loss=2.8295 val_hr_mae=2.460 lr=1.0e-05
+[2026-08-18 21:43:50]   trained 'two_branch_adaptive': epochs_run=300 best_val_loss=2.8295 best_val_hr_mae=2.422
+[2026-08-18 21:48:44]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Primitive_Fixed-Split_CE_Pearson/two_branch_adaptive/last-EVAL_WIN_S-8.0/tables/ALL_EVAL_RESULTS.csv
+[2026-08-18 21:48:44]   DONE 'two_branch_adaptive': val_model_mae=nan val_chrom_mae=nan
+[2026-08-18 21:48:44] ----------------------------------------------------------------------
+[2026-08-18 21:48:44] [5/6] MODEL: adaptive_detrend
+[2026-08-18 21:48:44]   built 'adaptive_detrend': params=7, reach=-1 samples (-0.03s @30fps)
+[2026-08-18 21:52:33]     epoch   1 | train_loss=3.3516 val_loss=2.9460 val_hr_mae=3.139 lr=3.0e-04
+[2026-08-18 22:26:45]     epoch  10 | train_loss=3.0266 val_loss=2.8110 val_hr_mae=1.863 lr=3.0e-04
+[2026-08-18 23:04:56]     epoch  20 | train_loss=3.0255 val_loss=2.8099 val_hr_mae=1.900 lr=1.5e-04
+[2026-08-18 23:42:47]     epoch  30 | train_loss=3.0238 val_loss=2.8101 val_hr_mae=1.912 lr=3.7e-05
+[2026-08-19 00:23:28]     epoch  40 | train_loss=3.0242 val_loss=2.8097 val_hr_mae=1.911 lr=1.9e-05
+[2026-08-19 01:05:50]     epoch  50 | train_loss=3.0255 val_loss=2.8103 val_hr_mae=1.912 lr=1.0e-05
+[2026-08-19 01:45:53]     epoch  60 | train_loss=3.0225 val_loss=2.8102 val_hr_mae=1.912 lr=1.0e-05
+[2026-08-19 01:53:53]     early stop at epoch 62 (no val-loss improvement for 30)
+[2026-08-19 01:53:53]   trained 'adaptive_detrend': epochs_run=62 best_val_loss=2.8086 best_val_hr_mae=1.835
+[2026-08-19 01:55:21]   ERROR on 'adaptive_detrend': [Errno 2] No such file or directory
+[2026-08-19 01:55:21] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_split_fixed/longNight_run.py", line 364, in main
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_split_fixed/longNight_run.py", line 301, in run_eval_for_model
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_split_fixed/eval.py", line 1216, in main
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_split_fixed/eval.py", line 134, in resolve_npz_path
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/pathlib.py", line 907, in cwd
+    return cls(os.getcwd())
+               ^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory
+
+[2026-08-19 01:55:21] ----------------------------------------------------------------------
+[2026-08-19 01:55:21] [6/6] MODEL: plain_k3
+[2026-08-19 01:55:21]   built 'plain_k3': params=9, reach=3 samples (0.10s @30fps)

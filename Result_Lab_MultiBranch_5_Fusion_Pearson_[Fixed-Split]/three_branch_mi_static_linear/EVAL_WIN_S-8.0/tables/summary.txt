@@ -1,0 +1,54 @@
+================================================================================
+EVALUATION CONFIGURATION
+================================================================================
+
+Checkpoint:    /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_5_Fusion_[Fixed-Split]/three_branch_mi_static_linear/last_model.pt
+Manifest:      /media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv
+Window:        8.0s
+Stride:        1.0s
+HR Range (MODEL/CHROM): 40.0-180.0 BPM
+HR Range (GT):          40.0-150.0 BPM
+G_SNR threshold: 1.7
+
+================================================================================
+SPLIT-WISE SUMMARY
+================================================================================
+
+Split: train
+  N=144
+  Model: HR MAE=1.050 BPM | Pearson=0.678
+  CHROM: HR MAE=2.133 BPM | Pearson=0.375
+
+Split: val
+  N=38
+  Model: HR MAE=1.149 BPM | Pearson=0.636
+  CHROM: HR MAE=1.970 BPM | Pearson=0.337
+
+================================================================================
+DATASET + SPLIT SUMMARY
+================================================================================
+
+Dataset=PURE | Split=train | N=47
+  Model: HR MAE=0.628 | Pearson=0.832
+  CHROM: HR MAE=0.693 | Pearson=0.644
+
+Dataset=PURE | Split=val | N=12
+  Model: HR MAE=0.231 | Pearson=0.864
+  CHROM: HR MAE=0.309 | Pearson=0.711
+
+Dataset=TokyoTech | Split=train | N=63
+  Model: HR MAE=1.172 | Pearson=0.719
+  CHROM: HR MAE=3.370 | Pearson=0.232
+
+Dataset=TokyoTech | Split=val | N=18
+  Model: HR MAE=1.731 | Pearson=0.675
+  CHROM: HR MAE=3.013 | Pearson=0.126
+
+Dataset=UBFC | Split=train | N=34
+  Model: HR MAE=1.407 | Pearson=0.390
+  CHROM: HR MAE=1.830 | Pearson=0.269
+
+Dataset=UBFC | Split=val | N=8
+  Model: HR MAE=1.216 | Pearson=0.206
+  CHROM: HR MAE=2.116 | Pearson=0.247
+
