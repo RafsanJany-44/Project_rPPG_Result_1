@@ -1,0 +1,189 @@
+[2026-08-24 02:43:28] ==========================================================================
+[2026-08-24 02:43:28] MEGA RUN start | device=cuda | models=6 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_STAGE-A_fft_[Fixed-Split]
+[2026-08-24 02:43:28] models: ['branch1_projector', 'branch2_tcn_rf31_h8', 'branch3_MiUNet', 'branch3_MMiUNet', 'three_branch_mi_static_linear', 'three_branch_mmi_static_linear']
+[2026-08-24 02:43:28] ==========================================================================
+[2026-08-24 02:43:28] --------------------------------------------------------------------------
+[2026-08-24 02:43:28] [1/6] MODEL: branch1_projector
+[2026-08-24 02:43:29]   built 'branch1_projector': params=3, reach=1 samples (0.03s @30fps)
+[2026-08-24 02:47:24]     epoch   1 | train_loss=2.0839 val_loss=1.5702 val_hr_mae=3.142 lr=3.0e-04
+[2026-08-24 03:21:16]     epoch  10 | train_loss=1.8417 val_loss=1.5357 val_hr_mae=2.859 lr=3.0e-04
+[2026-08-24 03:58:24]     epoch  20 | train_loss=1.8415 val_loss=1.5388 val_hr_mae=2.905 lr=1.5e-04
+[2026-08-24 04:35:39]     epoch  30 | train_loss=1.8420 val_loss=1.5391 val_hr_mae=2.896 lr=7.5e-05
+[2026-08-24 05:12:47]     epoch  40 | train_loss=1.8426 val_loss=1.5379 val_hr_mae=2.892 lr=1.9e-05
+[2026-08-24 05:23:59]     early stop at epoch 43 (no val-loss improvement for 30)
+[2026-08-24 05:23:59]   trained 'branch1_projector': epochs_run=43 best_val_loss=1.5340 best_val_hr_mae=2.810
+[2026-08-24 05:23:59]   evaluating 'branch1_projector' under protocol 'old' ...
+[2026-08-24 05:27:36]   evaluating 'branch1_projector' under protocol 'prism' ...
+[2026-08-24 05:28:23]   evaluating 'branch1_projector' under protocol 'toolbox' ...
+[2026-08-24 05:28:51]   DONE 'branch1_projector' [old]: val_model_mae=1.771
+[2026-08-24 05:28:51]   DONE 'branch1_projector' [prism]: val_model_mae=0.769
+[2026-08-24 05:28:51]   DONE 'branch1_projector' [toolbox]: val_model_mae=0.460
+[2026-08-24 05:28:51] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-24 05:28:51] 
+protocol             old  prism  toolbox
+model                                   
+branch1_projector  1.771  0.769     0.46
+[2026-08-24 05:28:51] --------------------------------------------------------------------------
+[2026-08-24 05:28:51] [2/6] MODEL: branch2_tcn_rf31_h8
+[2026-08-24 05:28:51]   built 'branch2_tcn_rf31_h8': params=1169, reach=29 samples (0.97s @30fps)
+[2026-08-24 05:32:42]     epoch   1 | train_loss=2.0168 val_loss=1.7002 val_hr_mae=3.018 lr=3.0e-04
+[2026-08-24 06:06:51]     epoch  10 | train_loss=1.5978 val_loss=1.3432 val_hr_mae=3.326 lr=3.0e-04
+[2026-08-24 06:45:06]     epoch  20 | train_loss=1.5686 val_loss=1.3117 val_hr_mae=2.536 lr=1.5e-04
+[2026-08-24 07:23:15]     epoch  30 | train_loss=1.5602 val_loss=1.3023 val_hr_mae=2.301 lr=7.5e-05
+[2026-08-24 08:01:20]     epoch  40 | train_loss=1.5558 val_loss=1.3058 val_hr_mae=2.285 lr=1.9e-05
+[2026-08-24 08:39:31]     epoch  50 | train_loss=1.5561 val_loss=1.3039 val_hr_mae=2.297 lr=1.0e-05
+[2026-08-24 09:10:00]     early stop at epoch 58 (no val-loss improvement for 30)
+[2026-08-24 09:10:00]   trained 'branch2_tcn_rf31_h8': epochs_run=58 best_val_loss=1.3020 best_val_hr_mae=2.227
+[2026-08-24 09:10:00]   evaluating 'branch2_tcn_rf31_h8' under protocol 'old' ...
+[2026-08-24 09:14:07]   evaluating 'branch2_tcn_rf31_h8' under protocol 'prism' ...
+[2026-08-24 09:14:55]   evaluating 'branch2_tcn_rf31_h8' under protocol 'toolbox' ...
+[2026-08-24 09:15:21]   DONE 'branch2_tcn_rf31_h8' [old]: val_model_mae=0.994
+[2026-08-24 09:15:21]   DONE 'branch2_tcn_rf31_h8' [prism]: val_model_mae=0.724
+[2026-08-24 09:15:21]   DONE 'branch2_tcn_rf31_h8' [toolbox]: val_model_mae=0.721
+[2026-08-24 09:15:21] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-24 09:15:21] 
+protocol               old  prism  toolbox
+model                                     
+branch1_projector    1.771  0.769    0.460
+branch2_tcn_rf31_h8  0.994  0.724    0.721
+[2026-08-24 09:15:21] --------------------------------------------------------------------------
+[2026-08-24 09:15:21] [3/6] MODEL: branch3_MiUNet
+[2026-08-24 09:15:21]   built 'branch3_MiUNet': params=168401, reach=96 samples (3.20s @30fps)
+[2026-08-24 09:19:08]     epoch   1 | train_loss=1.8871 val_loss=1.5318 val_hr_mae=4.865 lr=3.0e-04
+[2026-08-24 09:53:55]     epoch  10 | train_loss=1.3364 val_loss=1.1269 val_hr_mae=2.963 lr=3.0e-04
+[2026-08-24 10:32:24]     epoch  20 | train_loss=1.1905 val_loss=0.9887 val_hr_mae=2.172 lr=3.0e-04
+[2026-08-24 11:10:46]     epoch  30 | train_loss=1.1122 val_loss=0.9521 val_hr_mae=1.918 lr=3.0e-04
+[2026-08-24 11:49:18]     epoch  40 | train_loss=1.0500 val_loss=0.9272 val_hr_mae=1.796 lr=3.0e-04
+[2026-08-24 12:27:45]     epoch  50 | train_loss=1.0065 val_loss=0.9330 val_hr_mae=1.828 lr=1.5e-04
+[2026-08-24 13:05:54]     epoch  60 | train_loss=0.9876 val_loss=0.9274 val_hr_mae=1.866 lr=3.7e-05
+[2026-08-24 13:44:35]     epoch  70 | train_loss=0.9782 val_loss=0.9312 val_hr_mae=1.868 lr=1.9e-05
+[2026-08-24 14:15:23]     early stop at epoch 78 (no val-loss improvement for 30)
+[2026-08-24 14:15:23]   trained 'branch3_MiUNet': epochs_run=78 best_val_loss=0.9173 best_val_hr_mae=1.753
+[2026-08-24 14:15:23]   evaluating 'branch3_MiUNet' under protocol 'old' ...
+[2026-08-24 14:19:33]   evaluating 'branch3_MiUNet' under protocol 'prism' ...
+[2026-08-24 14:20:22]   evaluating 'branch3_MiUNet' under protocol 'toolbox' ...
+[2026-08-24 14:20:50]   DONE 'branch3_MiUNet' [old]: val_model_mae=1.747
+[2026-08-24 14:20:50]   DONE 'branch3_MiUNet' [prism]: val_model_mae=1.234
+[2026-08-24 14:20:50]   DONE 'branch3_MiUNet' [toolbox]: val_model_mae=0.393
+[2026-08-24 14:20:50] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-24 14:20:50] 
+protocol               old  prism  toolbox
+model                                     
+branch1_projector    1.771  0.769    0.460
+branch2_tcn_rf31_h8  0.994  0.724    0.721
+branch3_MiUNet       1.747  1.234    0.393
+[2026-08-24 14:20:50] --------------------------------------------------------------------------
+[2026-08-24 14:20:50] [4/6] MODEL: branch3_MMiUNet
+[2026-08-24 14:20:50]   built 'branch3_MMiUNet': params=42345, reach=96 samples (3.20s @30fps)
+[2026-08-24 14:24:44]     epoch   1 | train_loss=1.9332 val_loss=1.5061 val_hr_mae=4.120 lr=3.0e-04
+[2026-08-24 15:00:31]     epoch  10 | train_loss=1.4813 val_loss=1.2429 val_hr_mae=2.314 lr=3.0e-04
+[2026-08-24 15:39:14]     epoch  20 | train_loss=1.3307 val_loss=1.1040 val_hr_mae=2.176 lr=3.0e-04
+[2026-08-24 17:20:23] ==========================================================================
+[2026-08-24 17:20:23] MEGA RUN start | device=cuda | models=3 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_STAGE-A_fft_[Fixed-Split]
+[2026-08-24 17:20:23] models: ['branch3_MMiUNet', 'three_branch_mi_static_linear', 'three_branch_mmi_static_linear']
+[2026-08-24 17:20:23] ==========================================================================
+[2026-08-24 17:20:23] --------------------------------------------------------------------------
+[2026-08-24 17:20:23] [1/3] MODEL: branch3_MMiUNet
+[2026-08-24 17:20:23]   checkpoint already exists — skipping training for 'branch3_MMiUNet'
+[2026-08-24 17:20:23]   evaluating 'branch3_MMiUNet' under protocol 'old' ...
+[2026-08-24 17:21:17] ==========================================================================
+[2026-08-24 17:21:17] MEGA RUN start | device=cuda | models=3 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_STAGE-A_fft_[Fixed-Split]
+[2026-08-24 17:21:17] models: ['branch3_MMiUNet', 'three_branch_mi_static_linear', 'three_branch_mmi_static_linear']
+[2026-08-24 17:21:17] ==========================================================================
+[2026-08-24 17:21:17] --------------------------------------------------------------------------
+[2026-08-24 17:21:17] [1/3] MODEL: branch3_MMiUNet
+[2026-08-24 17:21:17]   built 'branch3_MMiUNet': params=42345, reach=96 samples (3.20s @30fps)
+[2026-08-24 17:25:10]     epoch   1 | train_loss=2.0023 val_loss=1.5839 val_hr_mae=4.217 lr=3.0e-04
+[2026-08-24 18:00:28]     epoch  10 | train_loss=1.4835 val_loss=1.2496 val_hr_mae=2.491 lr=3.0e-04
+[2026-08-24 18:39:57]     epoch  20 | train_loss=1.3172 val_loss=1.1049 val_hr_mae=2.070 lr=3.0e-04
+[2026-08-24 19:18:00]     epoch  30 | train_loss=1.2641 val_loss=1.0574 val_hr_mae=2.018 lr=3.0e-04
+[2026-08-24 19:55:56]     epoch  40 | train_loss=1.2122 val_loss=1.0150 val_hr_mae=1.792 lr=3.0e-04
+[2026-08-24 20:33:48]     epoch  50 | train_loss=1.1622 val_loss=0.9927 val_hr_mae=2.014 lr=3.0e-04
+[2026-08-24 21:11:40]     epoch  60 | train_loss=1.1240 val_loss=0.9753 val_hr_mae=1.890 lr=3.0e-04
+[2026-08-24 21:49:39]     epoch  70 | train_loss=1.0990 val_loss=0.9557 val_hr_mae=1.785 lr=1.5e-04
+[2026-08-24 22:27:31]     epoch  80 | train_loss=1.0829 val_loss=0.9537 val_hr_mae=1.770 lr=7.5e-05
+[2026-08-24 23:05:14]     epoch  90 | train_loss=1.0723 val_loss=0.9545 val_hr_mae=1.831 lr=3.7e-05
+[2026-08-24 23:43:13]     epoch 100 | train_loss=1.0690 val_loss=0.9500 val_hr_mae=1.782 lr=1.0e-05
+[2026-08-25 00:18:04]     early stop at epoch 109 (no val-loss improvement for 30)
+[2026-08-25 00:18:04]   trained 'branch3_MMiUNet': epochs_run=109 best_val_loss=0.9493 best_val_hr_mae=1.708
+[2026-08-25 00:18:04]   evaluating 'branch3_MMiUNet' under protocol 'old' ...
+[2026-08-25 00:23:19]   evaluating 'branch3_MMiUNet' under protocol 'prism' ...
+[2026-08-25 00:24:16]   evaluating 'branch3_MMiUNet' under protocol 'toolbox' ...
+[2026-08-25 00:24:47]   DONE 'branch3_MMiUNet' [old]: val_model_mae=1.566
+[2026-08-25 00:24:47]   DONE 'branch3_MMiUNet' [prism]: val_model_mae=0.804
+[2026-08-25 00:24:47]   DONE 'branch3_MMiUNet' [toolbox]: val_model_mae=0.463
+[2026-08-25 00:24:47] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-25 00:24:47] 
+protocol           old  prism  toolbox
+model                                 
+branch3_MMiUNet  1.566  0.804    0.463
+[2026-08-25 00:24:47] --------------------------------------------------------------------------
+[2026-08-25 00:24:47] [2/3] MODEL: three_branch_mi_static_linear
+[2026-08-25 00:24:47]   built 'three_branch_mi_static_linear': params=169573, reach=96 samples (3.20s @30fps)
+[2026-08-25 00:29:09]     epoch   1 | train_loss=1.7574 val_loss=1.2517 val_hr_mae=2.361 lr=3.0e-04
+[2026-08-25 01:08:18]     epoch  10 | train_loss=1.2680 val_loss=1.0319 val_hr_mae=1.927 lr=3.0e-04
+[2026-08-25 01:51:52]     epoch  20 | train_loss=1.1423 val_loss=0.9567 val_hr_mae=2.092 lr=3.0e-04
+[2026-08-25 02:35:49]     epoch  30 | train_loss=1.0624 val_loss=0.9328 val_hr_mae=1.742 lr=3.0e-04
+[2026-08-25 03:17:59]     epoch  40 | train_loss=1.0129 val_loss=0.9349 val_hr_mae=1.860 lr=1.5e-04
+[2026-08-25 04:01:12]     epoch  50 | train_loss=0.9921 val_loss=0.9412 val_hr_mae=1.897 lr=3.7e-05
+[2026-08-25 04:45:02]     epoch  60 | train_loss=0.9865 val_loss=0.9420 val_hr_mae=1.973 lr=1.0e-05
+[2026-08-25 04:45:02]     early stop at epoch 60 (no val-loss improvement for 30)
+[2026-08-25 04:45:02]   trained 'three_branch_mi_static_linear': epochs_run=60 best_val_loss=0.9328 best_val_hr_mae=1.661
+[2026-08-25 04:45:02]   evaluating 'three_branch_mi_static_linear' under protocol 'old' ...
+[2026-08-25 04:51:20]   evaluating 'three_branch_mi_static_linear' under protocol 'prism' ...
+[2026-08-25 04:52:30]   evaluating 'three_branch_mi_static_linear' under protocol 'toolbox' ...
+[2026-08-25 04:53:14]   DONE 'three_branch_mi_static_linear' [old]: val_model_mae=1.651
+[2026-08-25 04:53:14]   DONE 'three_branch_mi_static_linear' [prism]: val_model_mae=1.758
+[2026-08-25 04:53:14]   DONE 'three_branch_mi_static_linear' [toolbox]: val_model_mae=0.448
+[2026-08-25 04:53:14] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-25 04:53:14] 
+protocol                         old  prism  toolbox
+model                                               
+branch3_MMiUNet                1.566  0.804    0.463
+three_branch_mi_static_linear  1.651  1.758    0.448
+[2026-08-25 04:53:14] --------------------------------------------------------------------------
+[2026-08-25 04:53:14] [3/3] MODEL: three_branch_mmi_static_linear
+[2026-08-25 04:53:14]   built 'three_branch_mmi_static_linear': params=43517, reach=96 samples (3.20s @30fps)
+[2026-08-25 04:57:40]     epoch   1 | train_loss=1.8820 val_loss=1.5298 val_hr_mae=2.884 lr=3.0e-04
+[2026-08-25 05:37:14]     epoch  10 | train_loss=1.5250 val_loss=1.2721 val_hr_mae=2.467 lr=3.0e-04
+[2026-08-25 06:20:21]     epoch  20 | train_loss=1.4834 val_loss=1.2554 val_hr_mae=2.492 lr=3.0e-04
+[2026-08-25 06:59:36]     epoch  30 | train_loss=1.3588 val_loss=1.1376 val_hr_mae=2.309 lr=3.0e-04
+[2026-08-25 07:39:05]     epoch  40 | train_loss=1.3194 val_loss=1.0997 val_hr_mae=2.187 lr=3.0e-04
+[2026-08-25 08:18:34]     epoch  50 | train_loss=1.2833 val_loss=1.0538 val_hr_mae=2.380 lr=3.0e-04
+[2026-08-25 08:58:04]     epoch  60 | train_loss=1.2363 val_loss=1.0235 val_hr_mae=1.977 lr=3.0e-04
+[2026-08-25 09:37:33]     epoch  70 | train_loss=1.2056 val_loss=0.9991 val_hr_mae=2.029 lr=3.0e-04
+[2026-08-25 10:17:04]     epoch  80 | train_loss=1.1696 val_loss=0.9755 val_hr_mae=2.002 lr=3.0e-04
+[2026-08-25 10:56:40]     epoch  90 | train_loss=1.1345 val_loss=0.9729 val_hr_mae=1.869 lr=1.5e-04
+[2026-08-25 11:36:39]     epoch 100 | train_loss=1.1121 val_loss=0.9607 val_hr_mae=1.915 lr=7.5e-05
+[2026-08-25 12:19:26]     epoch 110 | train_loss=1.1014 val_loss=0.9582 val_hr_mae=1.961 lr=7.5e-05
+[2026-08-25 12:59:48]     epoch 120 | train_loss=1.0949 val_loss=0.9580 val_hr_mae=1.948 lr=3.7e-05
+[2026-08-25 13:39:19]     epoch 130 | train_loss=1.0921 val_loss=0.9572 val_hr_mae=1.937 lr=1.9e-05
+[2026-08-25 14:18:33]     epoch 140 | train_loss=1.0878 val_loss=0.9579 val_hr_mae=1.923 lr=1.0e-05
+[2026-08-25 14:56:33]     epoch 150 | train_loss=1.0877 val_loss=0.9574 val_hr_mae=1.951 lr=1.0e-05
+[2026-08-25 15:34:44]     epoch 160 | train_loss=1.0880 val_loss=0.9571 val_hr_mae=1.969 lr=1.0e-05
+[2026-08-25 16:12:59]     epoch 170 | train_loss=1.0866 val_loss=0.9549 val_hr_mae=1.913 lr=1.0e-05
+[2026-08-25 16:16:47]     early stop at epoch 171 (no val-loss improvement for 30)
+[2026-08-25 16:16:47]   trained 'three_branch_mmi_static_linear': epochs_run=171 best_val_loss=0.9544 best_val_hr_mae=1.847
+[2026-08-25 16:16:47]   evaluating 'three_branch_mmi_static_linear' under protocol 'old' ...
+[2026-08-25 16:21:42]   evaluating 'three_branch_mmi_static_linear' under protocol 'prism' ...
+[2026-08-25 16:22:37]   evaluating 'three_branch_mmi_static_linear' under protocol 'toolbox' ...
+[2026-08-25 16:23:11]   DONE 'three_branch_mmi_static_linear' [old]: val_model_mae=2.552
+[2026-08-25 16:23:11]   DONE 'three_branch_mmi_static_linear' [prism]: val_model_mae=7.137
+[2026-08-25 16:23:11]   DONE 'three_branch_mmi_static_linear' [toolbox]: val_model_mae=3.121
+[2026-08-25 16:23:11] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-25 16:23:11] 
+protocol                          old  prism  toolbox
+model                                                
+branch3_MMiUNet                 1.566  0.804    0.463
+three_branch_mi_static_linear   1.651  1.758    0.448
+three_branch_mmi_static_linear  2.552  7.137    3.121
+[2026-08-25 16:23:11] ==========================================================================
+[2026-08-25 16:23:11] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_STAGE-A_fft_[Fixed-Split]/MEGA_SUMMARY.csv
+[2026-08-25 16:23:11] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_MultiBranch_STAGE-A_fft_[Fixed-Split]/MEGA_PROTOCOL_ABLATION.csv
+[2026-08-25 16:23:11] ==========================================================================
