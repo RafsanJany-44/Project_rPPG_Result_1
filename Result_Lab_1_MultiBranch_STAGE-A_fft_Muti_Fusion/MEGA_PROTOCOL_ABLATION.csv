@@ -1,0 +1,4 @@
+model,prism,toolbox
+three_branch_mi_lightweight_attention,36.44669678996893,33.65562744557171
+three_branch_mi_mlp,1.6301628719601828,0.5550254755941938
+three_branch_mi_se_attention,0.6530530829172134,0.3753949621659145

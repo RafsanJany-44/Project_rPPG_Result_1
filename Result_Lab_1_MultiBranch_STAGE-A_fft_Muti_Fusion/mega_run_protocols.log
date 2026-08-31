@@ -1,0 +1,100 @@
+[2026-08-30 17:46:48] ==========================================================================
+[2026-08-30 17:46:48] MEGA RUN start | device=cuda | models=4 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_MultiBranch_STAGE-A_fft_Muti_Fusion
+[2026-08-30 17:46:48] models: ['three_branch_mi_mlp', 'three_branch_mi_se_attention', 'three_branch_mi_lightweight_attention', 'three_branch_mi_branch_attention']
+[2026-08-30 17:46:48] ==========================================================================
+[2026-08-30 17:46:48] --------------------------------------------------------------------------
+[2026-08-30 17:46:48] [1/4] MODEL: three_branch_mi_mlp
+[2026-08-30 17:46:48]   built 'three_branch_mi_mlp': params=169764, reach=96 samples (3.20s @30fps)
+[2026-08-30 17:50:45]     epoch   1 | train_loss=1.8805 val_loss=1.4932 val_hr_mae=5.475 lr=3.0e-04
+[2026-08-30 18:24:07]     epoch  10 | train_loss=1.2700 val_loss=1.0513 val_hr_mae=2.023 lr=3.0e-04
+[2026-08-30 19:00:40]     epoch  20 | train_loss=1.1436 val_loss=0.9582 val_hr_mae=2.014 lr=3.0e-04
+[2026-08-30 19:36:58]     epoch  30 | train_loss=1.0534 val_loss=0.9554 val_hr_mae=1.710 lr=3.0e-04
+[2026-08-30 20:13:31]     epoch  40 | train_loss=1.0057 val_loss=0.9400 val_hr_mae=1.839 lr=1.5e-04
+[2026-08-30 20:49:53]     epoch  50 | train_loss=0.9863 val_loss=0.9448 val_hr_mae=1.949 lr=3.7e-05
+[2026-08-30 21:22:43]     early stop at epoch 59 (no val-loss improvement for 30)
+[2026-08-30 21:22:43]   trained 'three_branch_mi_mlp': epochs_run=59 best_val_loss=0.9312 best_val_hr_mae=1.710
+[2026-08-30 21:22:43]   evaluating 'three_branch_mi_mlp' under protocol 'old' ...
+[2026-08-30 21:27:46]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_MultiBranch_STAGE-A_fft_Muti_Fusion/three_branch_mi_mlp/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-08-30 21:27:46]   evaluating 'three_branch_mi_mlp' under protocol 'prism' ...
+[2026-08-30 21:28:37]   evaluating 'three_branch_mi_mlp' under protocol 'toolbox' ...
+[2026-08-30 21:29:07]   DONE 'three_branch_mi_mlp' [old]: val_model_mae=nan
+[2026-08-30 21:29:07]   DONE 'three_branch_mi_mlp' [prism]: val_model_mae=1.630
+[2026-08-30 21:29:07]   DONE 'three_branch_mi_mlp' [toolbox]: val_model_mae=0.555
+[2026-08-30 21:29:07] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-30 21:29:07] 
+protocol             prism  toolbox
+model                              
+three_branch_mi_mlp   1.63    0.555
+[2026-08-30 21:29:07] --------------------------------------------------------------------------
+[2026-08-30 21:29:07] [2/4] MODEL: three_branch_mi_se_attention
+[2026-08-30 21:29:07]   built 'three_branch_mi_se_attention': params=170006, reach=96 samples (3.20s @30fps)
+[2026-08-30 21:32:49]     epoch   1 | train_loss=2.0666 val_loss=1.8980 val_hr_mae=14.110 lr=3.0e-04
+[2026-08-30 22:05:53]     epoch  10 | train_loss=2.0090 val_loss=1.8793 val_hr_mae=131.067 lr=3.0e-04
+[2026-08-30 22:42:33]     epoch  20 | train_loss=1.4823 val_loss=1.2527 val_hr_mae=2.216 lr=1.5e-04
+[2026-08-30 23:19:20]     epoch  30 | train_loss=1.4410 val_loss=1.2244 val_hr_mae=2.256 lr=1.5e-04
+[2026-08-30 23:57:43]     epoch  40 | train_loss=1.3636 val_loss=1.1608 val_hr_mae=2.046 lr=1.5e-04
+[2026-08-31 00:37:10]     epoch  50 | train_loss=1.3294 val_loss=1.1271 val_hr_mae=2.044 lr=1.5e-04
+[2026-08-31 01:23:16]     epoch  60 | train_loss=1.3081 val_loss=1.0961 val_hr_mae=2.122 lr=1.5e-04
+[2026-08-31 02:12:10]     epoch  70 | train_loss=1.2893 val_loss=1.0628 val_hr_mae=2.123 lr=1.5e-04
+[2026-08-31 02:54:15]     epoch  80 | train_loss=1.2687 val_loss=1.0545 val_hr_mae=2.104 lr=7.5e-05
+[2026-08-31 03:33:15]     epoch  90 | train_loss=1.2560 val_loss=1.0531 val_hr_mae=2.041 lr=7.5e-05
+[2026-08-31 04:11:44]     epoch 100 | train_loss=1.2455 val_loss=1.0463 val_hr_mae=1.970 lr=3.7e-05
+[2026-08-31 04:50:29]     epoch 110 | train_loss=1.2395 val_loss=1.0541 val_hr_mae=2.090 lr=3.7e-05
+[2026-08-31 05:37:55]     epoch 120 | train_loss=1.2349 val_loss=1.0421 val_hr_mae=2.085 lr=1.0e-05
+[2026-08-31 06:22:09]     epoch 130 | train_loss=1.2344 val_loss=1.0439 val_hr_mae=2.087 lr=1.0e-05
+[2026-08-31 07:05:58]     epoch 140 | train_loss=1.2292 val_loss=1.0444 val_hr_mae=2.057 lr=1.0e-05
+[2026-08-31 07:43:24]     epoch 150 | train_loss=1.2259 val_loss=1.0405 val_hr_mae=2.063 lr=1.0e-05
+[2026-08-31 08:20:48]     epoch 160 | train_loss=1.2265 val_loss=1.0405 val_hr_mae=2.085 lr=1.0e-05
+[2026-08-31 08:35:47]     early stop at epoch 164 (no val-loss improvement for 30)
+[2026-08-31 08:35:47]   trained 'three_branch_mi_se_attention': epochs_run=164 best_val_loss=1.0399 best_val_hr_mae=1.947
+[2026-08-31 08:35:47]   evaluating 'three_branch_mi_se_attention' under protocol 'old' ...
+[2026-08-31 08:40:53]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_MultiBranch_STAGE-A_fft_Muti_Fusion/three_branch_mi_se_attention/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-08-31 08:40:53]   evaluating 'three_branch_mi_se_attention' under protocol 'prism' ...
+[2026-08-31 08:41:52]   evaluating 'three_branch_mi_se_attention' under protocol 'toolbox' ...
+[2026-08-31 08:42:24]   DONE 'three_branch_mi_se_attention' [old]: val_model_mae=nan
+[2026-08-31 08:42:24]   DONE 'three_branch_mi_se_attention' [prism]: val_model_mae=0.653
+[2026-08-31 08:42:24]   DONE 'three_branch_mi_se_attention' [toolbox]: val_model_mae=0.375
+[2026-08-31 08:42:24] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-31 08:42:24] 
+protocol                      prism  toolbox
+model                                       
+three_branch_mi_mlp           1.630    0.555
+three_branch_mi_se_attention  0.653    0.375
+[2026-08-31 08:42:24] --------------------------------------------------------------------------
+[2026-08-31 08:42:24] [3/4] MODEL: three_branch_mi_lightweight_attention
+[2026-08-31 08:42:24]   built 'three_branch_mi_lightweight_attention': params=170223, reach=96 samples (3.20s @30fps)
+[2026-08-31 08:46:11]     epoch   1 | train_loss=2.0716 val_loss=1.8933 val_hr_mae=106.321 lr=3.0e-04
+[2026-08-31 09:19:47]     epoch  10 | train_loss=1.9887 val_loss=1.8745 val_hr_mae=153.208 lr=3.0e-04
+[2026-08-31 09:57:18]     epoch  20 | train_loss=1.9683 val_loss=1.8671 val_hr_mae=155.796 lr=3.0e-04
+[2026-08-31 10:34:46]     epoch  30 | train_loss=1.9608 val_loss=1.8532 val_hr_mae=160.812 lr=1.5e-04
+[2026-08-31 11:12:02]     epoch  40 | train_loss=1.9574 val_loss=1.8572 val_hr_mae=160.945 lr=7.5e-05
+[2026-08-31 11:49:17]     epoch  50 | train_loss=1.9557 val_loss=1.8590 val_hr_mae=160.945 lr=1.9e-05
+[2026-08-31 12:26:41]     epoch  60 | train_loss=1.9516 val_loss=1.8571 val_hr_mae=160.945 lr=1.0e-05
+[2026-08-31 12:26:41]     early stop at epoch 60 (no val-loss improvement for 30)
+[2026-08-31 12:26:41]   trained 'three_branch_mi_lightweight_attention': epochs_run=60 best_val_loss=1.8532 best_val_hr_mae=13.747
+[2026-08-31 12:26:41]   evaluating 'three_branch_mi_lightweight_attention' under protocol 'old' ...
+[2026-08-31 12:31:49]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_MultiBranch_STAGE-A_fft_Muti_Fusion/three_branch_mi_lightweight_attention/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-08-31 12:31:49]   evaluating 'three_branch_mi_lightweight_attention' under protocol 'prism' ...
+[2026-08-31 12:32:48]   evaluating 'three_branch_mi_lightweight_attention' under protocol 'toolbox' ...
+[2026-08-31 12:33:21]   DONE 'three_branch_mi_lightweight_attention' [old]: val_model_mae=nan
+[2026-08-31 12:33:21]   DONE 'three_branch_mi_lightweight_attention' [prism]: val_model_mae=36.447
+[2026-08-31 12:33:21]   DONE 'three_branch_mi_lightweight_attention' [toolbox]: val_model_mae=33.656
+[2026-08-31 12:33:21] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-08-31 12:33:21] 
+protocol                                prism  toolbox
+model                                                 
+three_branch_mi_lightweight_attention  36.447   33.656
+three_branch_mi_mlp                     1.630    0.555
+three_branch_mi_se_attention            0.653    0.375
+[2026-08-31 12:33:21] --------------------------------------------------------------------------
+[2026-08-31 12:33:21] [4/4] MODEL: three_branch_mi_branch_attention
+[2026-08-31 12:33:21]   built 'three_branch_mi_branch_attention': params=169651, reach=96 samples (3.20s @30fps)
+[2026-08-31 12:37:07]     epoch   1 | train_loss=1.8498 val_loss=1.2982 val_hr_mae=2.431 lr=3.0e-04
+[2026-08-31 13:10:49]     epoch  10 | train_loss=1.2735 val_loss=1.0538 val_hr_mae=2.051 lr=3.0e-04
+[2026-08-31 13:48:18]     epoch  20 | train_loss=1.1532 val_loss=0.9743 val_hr_mae=1.864 lr=3.0e-04
+[2026-08-31 14:33:58]     epoch  30 | train_loss=1.0594 val_loss=0.9361 val_hr_mae=1.893 lr=1.5e-04
+[2026-08-31 15:24:45]     epoch  40 | train_loss=1.0255 val_loss=0.9487 val_hr_mae=1.886 lr=7.5e-05
+[2026-08-31 16:04:38]     epoch  50 | train_loss=1.0134 val_loss=0.9521 val_hr_mae=1.934 lr=1.9e-05

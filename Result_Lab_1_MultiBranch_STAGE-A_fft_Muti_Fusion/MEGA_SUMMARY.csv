@@ -1,0 +1,10 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+three_branch_mi_mlp,old,no_csv,,,,,169764,59,96,1.70985039635325
+three_branch_mi_mlp,prism,ok,1.6301628719601828,2.052269848240953,,,169764,59,96,1.70985039635325
+three_branch_mi_mlp,toolbox,ok,0.5550254755941938,0.6642781291645468,,,169764,59,96,1.70985039635325
+three_branch_mi_se_attention,old,no_csv,,,,,170006,164,96,1.9471897973163543
+three_branch_mi_se_attention,prism,ok,0.6530530829172134,2.052269848240953,,,170006,164,96,1.9471897973163543
+three_branch_mi_se_attention,toolbox,ok,0.3753949621659145,0.6642781291645468,,,170006,164,96,1.9471897973163543
+three_branch_mi_lightweight_attention,old,no_csv,,,,,170223,60,96,13.747193491829035
+three_branch_mi_lightweight_attention,prism,ok,36.44669678996893,2.052269848240953,,,170223,60,96,13.747193491829035
+three_branch_mi_lightweight_attention,toolbox,ok,33.65562744557171,0.6642781291645468,,,170223,60,96,13.747193491829035
