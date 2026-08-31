@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_CROSS_MATCHED/Eval_On_UBFC — PRISM Evaluation Protocol
+====================================================================================
+Description                : UBFC cross-matched seed checkpoint evaluated on UBFC: held-out 0.8-1.0 UBFC validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/UBFC_CROSS_MATCHED/UBFC_CROSS_MATCHED_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.8–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 52
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.582886 BPM
+Pooled measurement MAE     : 0.595797 BPM
+Pooled measurement RMSE    : 0.791356 BPM
+Pooled measurement MAPE    : 0.621819 %
+Pooled measurement Pearson : 0.998139
+Absolute-error SD           : 0.520836 BPM
+Accuracy within 5 BPM      : 100.000 %
+Recording-macro MAE SE     : 0.067508 BPM
+Pooled MAE standard error  : 0.072227 BPM
+Official-formula RMSE +/-  : 0.155882
+Pooled MAPE standard error : 0.079960 %
+Pooled Pearson std. error  : 0.008624
+Mean waveform Pearson      : 0.749542
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
