@@ -1,0 +1,31 @@
+====================================================================================
+PURE_CHECKPOINT/Eval_On_COHFACE — PRISM Evaluation Protocol
+====================================================================================
+Description                : Locally trained PURE checkpoint evaluated on COHFACE (complete external dataset)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/PURE/PURE_RhythmMamba_Epoch29.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 810
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 29.670158 BPM
+Pooled measurement MAE     : 29.614122 BPM
+Pooled measurement RMSE    : 38.625846 BPM
+Pooled measurement MAPE    : 44.791747 %
+Pooled measurement Pearson : 0.177299
+Absolute-error SD           : 24.798382 BPM
+Accuracy within 5 BPM      : 25.926 %
+Recording-macro MAE SE     : 1.147981 BPM
+Pooled MAE standard error  : 0.871326 BPM
+Official-formula RMSE +/-  : 64.418131
+Pooled MAPE standard error : 1.446203 %
+Pooled Pearson std. error  : 0.034623
+Mean waveform Pearson      : 0.010187
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
