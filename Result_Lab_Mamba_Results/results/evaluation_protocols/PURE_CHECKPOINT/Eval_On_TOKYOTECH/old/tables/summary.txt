@@ -1,0 +1,31 @@
+====================================================================================
+PURE_CHECKPOINT/Eval_On_TOKYOTECH — Old Protocol
+====================================================================================
+Description                : Locally trained PURE checkpoint evaluated on TOKYOTECH (complete external dataset)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/PURE/PURE_RhythmMamba_Epoch29.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1521
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 5.897436 BPM
+Pooled measurement MAE     : 5.897436 BPM
+Pooled measurement RMSE    : 16.767113 BPM
+Pooled measurement MAPE    : 8.020403 %
+Pooled measurement Pearson : 0.516072
+Absolute-error SD           : 15.695743 BPM
+Accuracy within 5 BPM      : 85.602 %
+Recording-macro MAE SE     : 2.499266 BPM
+Pooled MAE standard error  : 0.402455 BPM
+Official-formula RMSE +/-  : 31.157822
+Pooled MAPE standard error : 0.577300 %
+Pooled Pearson std. error  : 0.021977
+Mean waveform Pearson      : -0.463340
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

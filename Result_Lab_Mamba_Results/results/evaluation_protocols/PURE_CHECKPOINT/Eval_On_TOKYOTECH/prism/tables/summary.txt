@@ -1,0 +1,31 @@
+====================================================================================
+PURE_CHECKPOINT/Eval_On_TOKYOTECH — PRISM Evaluation Protocol
+====================================================================================
+Description                : Locally trained PURE checkpoint evaluated on TOKYOTECH (complete external dataset)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/PURE/PURE_RhythmMamba_Epoch29.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 153
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 3.554400 BPM
+Pooled measurement MAE     : 3.554400 BPM
+Pooled measurement RMSE    : 10.132079 BPM
+Pooled measurement MAPE    : 4.725135 %
+Pooled measurement Pearson : 0.734583
+Absolute-error SD           : 9.488164 BPM
+Accuracy within 5 BPM      : 88.889 %
+Recording-macro MAE SE     : 1.349993 BPM
+Pooled MAE standard error  : 0.767073 BPM
+Official-formula RMSE +/-  : 39.669529
+Pooled MAPE standard error : 1.099800 %
+Pooled Pearson std. error  : 0.055217
+Mean waveform Pearson      : -0.485181
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
