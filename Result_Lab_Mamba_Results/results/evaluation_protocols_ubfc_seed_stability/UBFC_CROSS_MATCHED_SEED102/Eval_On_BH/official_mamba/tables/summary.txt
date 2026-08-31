@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_CROSS_MATCHED_SEED102/Eval_On_BH — Official RhythmMamba Evaluation
+====================================================================================
+Description                : UBFC cross-matched seed checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/UBFC_CROSS_MATCHED_SEED102/UBFC_CROSS_MATCHED_SEED102_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 105
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 3.358622 BPM
+Pooled measurement MAE     : 3.358622 BPM
+Pooled measurement RMSE    : 7.462950 BPM
+Pooled measurement MAPE    : 4.808547 %
+Pooled measurement Pearson : 0.812443
+Absolute-error SD           : 6.664480 BPM
+Accuracy within 5 BPM      : 86.667 %
+Recording-macro MAE SE     : 0.650387 BPM
+Pooled MAE standard error  : 0.650387 BPM
+Official-formula RMSE +/-  : 25.815071
+Pooled MAPE standard error : 0.977730 %
+Pooled Pearson std. error  : 0.057449
+Mean waveform Pearson      : -0.000299
+Mean SNR                    : 5.849497 dB
+SNR standard error         : 0.921208 dB
