@@ -1,0 +1,166 @@
+evaluation_run,checkpoint,dataset,protocol,aggregation,split_begin,split_end,number_of_recordings,number_of_measurements,mae_bpm,mae_standard_error_bpm,recording_macro_rmse_bpm,accuracy_within_5_bpm_percent,completion_status
+checkpoint_diagnosis,PURE_BEST_EPOCH22,COHFACE,Official,recording,0.0,1.0,160,160,21.824932493249328,1.5510429799145287,21.824932493249328,30.625000000000004,PASSED
+checkpoint_diagnosis,PURE_BEST_EPOCH22,COHFACE,Old,window_to_recording,0.0,1.0,160,8242,40.573249881911394,0.9618953006417732,49.17515414449741,19.6554234409124,PASSED
+checkpoint_diagnosis,PURE_BEST_EPOCH22,COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,29.629983084542413,1.0677171558089904,35.78201648288367,24.938271604938272,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,Official,recording,0.0,1.0,105,105,6.372637263726372,1.4790283177513361,6.372637263726372,87.61904761904762,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,12.969817260237429,1.4457566457123319,19.480528715706782,72.85365395453691,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,9.460117885044642,1.2233786572237055,12.745393927573948,76.67304015296367,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,Official,recording,0.0,1.0,160,160,21.64941494149415,1.5482713187061887,21.64941494149415,28.749999999999996,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,Old,window_to_recording,0.0,1.0,160,8242,44.10033994524516,1.1451930839981108,52.67022573147706,18.7939820431934,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,29.67015838623047,1.1479809981628475,35.873275979941056,25.925925925925924,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),PURE,Official,recording,0.6,1.0,24,24,0.4050405040504034,0.05736970649856848,0.4050405040504034,100.0,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),PURE,Old,window_to_recording,0.6,1.0,24,1464,1.2202707837764726,0.2530406333151458,2.4059587436576018,98.15573770491804,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),PURE,PRISM,window_to_recording,0.6,1.0,24,153,0.9098052978515625,0.12506359276842635,1.3133573671090526,97.38562091503267,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,Official,recording,0.0,1.0,9,9,0.9600960096009585,0.4472583213320896,0.9600960096009585,100.0,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,5.897435897435897,2.499265553096152,12.01868439462398,85.60157790927022,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,3.5544002757352944,1.349992620229686,6.559368349936714,88.88888888888889,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,Official,recording,0.0,1.0,60,60,11.332133213321331,2.024882129538959,11.332133213321331,58.333333333333336,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,22.64072978303748,2.049599964117228,30.2297806156027,42.1301775147929,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,17.98364975873162,1.7083245321177722,23.843689265990335,45.09803921568628,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,Official,recording,0.0,1.0,42,42,1.208692297801208,0.25640204897481716,1.208692297801208,95.23809523809523,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,Old,window_to_recording,0.0,1.0,42,2280,1.6358744267925398,0.18363777376816148,3.300335572629643,95.52631578947368,PASSED
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,PRISM,window_to_recording,0.0,1.0,42,239,1.26068115234375,0.20460913213590942,1.8919879736528535,94.97907949790795,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,Official,recording,0.0,1.0,105,105,2.8237109425228244,0.5474372819486684,2.8237109425228244,91.42857142857143,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,8.717262905162064,1.1110154316009964,13.941154888449574,80.25549502160436,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,6.155587332589286,0.8128404863016675,8.60586638030698,81.83556405353728,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,Official,recording,0.0,1.0,160,160,4.448694869486948,0.5499312117916858,4.448694869486948,77.5,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,Old,window_to_recording,0.0,1.0,160,8242,11.068525745416832,0.6312864688833386,16.035517437708044,58.77214268381461,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,8.88845934186663,0.6620929617231894,11.98056307716536,61.85185185185185,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,Official,recording,0.0,1.0,59,59,0.6956627866176434,0.14242430036607825,0.6956627866176434,98.30508474576271,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,Old,window_to_recording,0.0,1.0,59,3576,3.982084233850341,0.9955631093345662,7.61366123350754,92.08612975391499,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,PRISM,window_to_recording,0.0,1.0,59,374,2.922128303287682,0.7879742622182306,4.501599085936357,92.51336898395722,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,Official,recording,0.0,1.0,9,9,2.400240024002402,0.9972957985652888,2.400240024002402,77.77777777777779,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,8.712031558185403,2.807264262632429,15.614202690466065,77.51479289940828,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,4.7370461856617645,2.505650017875896,6.709140469586198,83.66013071895425,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,Official,recording,0.0,1.0,60,60,7.866786678667866,1.6751043450643979,7.866786678667866,68.33333333333333,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,19.06587771203156,1.6881691168025463,25.500037105054748,44.023668639053255,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,16.812313304227942,1.6001688099598366,21.887917888600978,43.627450980392155,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,Official,recording,0.72,1.0,12,12,0.6300630063006286,0.20948454911144535,0.6300630063006286,100.0,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,Old,window_to_recording,0.72,1.0,12,668,1.0699971473398944,0.13510284599037306,2.2319961846250203,97.75449101796407,PASSED
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,PRISM,window_to_recording,0.72,1.0,12,70,1.036834716796875,0.4350777206005458,1.7749514338737367,98.57142857142858,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,BH-rPPG,Official,recording,0.0,1.0,105,105,3.086022888003086,0.8456964774058293,3.086022888003086,92.38095238095238,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,9.721184473789515,1.2218177949722995,14.834855054371522,77.88840879203457,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,6.303902762276786,0.826449182278864,8.838440633429023,80.68833652007649,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,COHFACE,Official,recording,0.0,1.0,160,160,6.838433843384339,0.7920024720099235,6.838433843384339,68.75,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,COHFACE,Old,window_to_recording,0.0,1.0,160,8242,13.283627670937927,0.6810144211309697,17.919157014031605,47.82819703955351,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,10.397791181291854,0.6615068321595724,13.311995602423107,52.96296296296297,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,PURE,Official,recording,0.8,1.0,12,12,0.22502250225022222,0.07685981672636867,0.22502250225022222,100.0,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,PURE,Old,window_to_recording,0.8,1.0,12,735,0.7612871875440611,0.09547414618218147,1.4879072622584044,98.91156462585035,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,PURE,PRISM,window_to_recording,0.8,1.0,12,77,1.265444074358259,0.42516501441795584,2.5653352658714685,94.8051948051948,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,TokyoTech,Official,recording,0.0,1.0,9,9,3.780378037803781,2.934778100363031,3.780378037803781,88.88888888888889,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,4.483892176199869,2.3634678276211925,7.341584562342997,86.3905325443787,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,3.8638844209558822,2.4997094186044087,4.834500191068092,86.9281045751634,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-PHYS,Official,recording,0.0,1.0,60,60,9.153915391539153,1.7181313149824586,9.153915391539153,61.66666666666667,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,18.21282051282052,1.703033804680674,24.221329439952004,45.81854043392505,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,15.654655905330882,1.5362346477972484,20.480453699782142,45.78431372549019,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-rPPG,Official,recording,0.0,1.0,42,42,1.5044361579015042,0.33260145390201273,1.5044361579015042,92.85714285714286,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-rPPG,Old,window_to_recording,0.0,1.0,42,2280,1.8703500056419657,0.32775515614551914,4.023707364760859,95.7017543859649,PASSED
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-rPPG,PRISM,window_to_recording,0.0,1.0,42,239,1.0849434988839286,0.1754876823001257,1.6054529616112792,95.39748953974896,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),BH-rPPG,Official,recording,0.0,1.0,105,105,3.5900732930435906,0.8497304528775628,3.5900732930435906,89.52380952380953,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,7.750668267306923,1.0059688238212685,11.737084278569137,78.4144279541612,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,5.580426897321429,0.7787866681999469,7.492612783844262,79.92351816443595,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),COHFACE,Official,recording,0.0,1.0,160,160,8.02317731773177,0.7370279154948175,8.02317731773177,58.12500000000001,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),COHFACE,Old,window_to_recording,0.0,1.0,160,8242,15.525591916228034,0.6348778475216516,20.353676110541443,40.12375636981315,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,10.882298060825892,0.5547534440425647,14.135143563108794,47.03703703703704,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),PURE,Official,recording,0.0,1.0,59,59,0.6773558711803374,0.16557044972730672,0.6773558711803374,96.61016949152543,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),PURE,Old,window_to_recording,0.0,1.0,59,3576,2.863175639886227,0.8797023961320184,4.926126224841888,93.20469798657717,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),PURE,PRISM,window_to_recording,0.0,1.0,59,374,2.686585063795777,0.9107351915049045,4.1625693546259805,92.7807486631016,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),TokyoTech,Official,recording,0.0,1.0,9,9,1.2001200120012026,0.33707969889694267,1.2001200120012026,100.0,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,6.500986193293886,3.2128048461390986,10.401511771224646,81.85404339250493,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,4.28323184742647,2.6491747798609073,5.8330194400972,84.31372549019608,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-PHYS,Official,recording,0.0,1.0,60,60,7.452745274527453,1.3579014547577462,7.452745274527453,61.66666666666667,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,18.024457593688364,1.534228457085386,23.81515429175605,42.60355029585799,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,15.45937930836397,1.3450837880612359,20.37738420911906,43.23529411764706,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-rPPG,Official,recording,0.8,1.0,9,9,0.5400540054005395,0.2245218953959768,0.5400540054005395,100.0,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-rPPG,Old,window_to_recording,0.8,1.0,9,497,0.8034992630628061,0.07804679648804637,1.4853108134686108,98.59154929577466,PASSED
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-rPPG,PRISM,window_to_recording,0.8,1.0,9,52,0.5828857421875,0.06750756845311302,0.7298724049398815,100.0,PASSED
+evaluation_protocols_official,Released PURE cross,BH-rPPG,Official,recording,0.0,1.0,105,105,2.725986884402727,0.7005710356833661,2.725986884402727,94.28571428571428,PASSED
+evaluation_protocols_official,Released PURE cross,BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,7.112722422302255,0.7692043274845742,11.296357332240296,78.26413676498215,PASSED
+evaluation_protocols_official,Released PURE cross,BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,5.185076032366071,0.6209502619456335,7.16937088260402,80.87954110898661,PASSED
+evaluation_protocols_official,Released PURE cross,COHFACE,Official,recording,0.0,1.0,160,160,5.88996399639964,0.6668627786543833,5.88996399639964,68.75,PASSED
+evaluation_protocols_official,Released PURE cross,COHFACE,Old,window_to_recording,0.0,1.0,160,8242,13.686401834294145,0.5555759780689181,18.87675313246525,44.30963358408153,PASSED
+evaluation_protocols_official,Released PURE cross,COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,11.67791748046875,0.6174949406522634,15.103844737803513,47.03703703703704,PASSED
+evaluation_protocols_official,Released PURE cross,PURE,Official,recording,0.6,1.0,24,24,0.36003600360035976,0.13375753450440336,0.36003600360035976,100.0,PASSED
+evaluation_protocols_official,Released PURE cross,PURE,Old,window_to_recording,0.6,1.0,24,1464,0.6196001837488799,0.05647590199217245,1.1743237115853133,99.4535519125683,PASSED
+evaluation_protocols_official,Released PURE cross,PURE,PRISM,window_to_recording,0.6,1.0,24,153,0.6182261875697544,0.1189522744097157,0.9000570807305367,98.0392156862745,PASSED
+evaluation_protocols_official,Released PURE cross,TokyoTech,Official,recording,0.0,1.0,9,9,0.6600660066006598,0.2366668580097849,0.6600660066006598,100.0,PASSED
+evaluation_protocols_official,Released PURE cross,TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,3.1196581196581192,1.4659253925334912,5.194893032772471,87.83694937541091,PASSED
+evaluation_protocols_official,Released PURE cross,TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,3.0194450827205883,1.8110827385683503,4.015526991646396,86.9281045751634,PASSED
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,Official,recording,0.0,1.0,60,60,9.17191719171917,1.7988064816968696,9.17191719171917,63.33333333333333,PASSED
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,18.351282051282055,1.841806099079345,24.368463945158812,47.02169625246548,PASSED
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,16.141285615808822,1.657951933623431,21.312631975646,47.74509803921569,PASSED
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,Official,recording,0.0,1.0,42,42,0.9515237238009514,0.24042822143851042,0.9515237238009514,95.23809523809523,PASSED
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,Old,window_to_recording,0.0,1.0,42,2280,0.9044722381892422,0.08860529945994072,1.7472731447960246,97.93859649122807,PASSED
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,PRISM,window_to_recording,0.0,1.0,42,239,0.9354509626116071,0.21968895901702745,1.4035655099756763,96.65271966527197,PASSED
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,Official,recording,0.0,1.0,105,105,2.0316317346020325,0.3447612154112881,2.0316317346020325,95.23809523809523,PASSED
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,5.191975456849406,0.7150088084625961,8.29103728629457,85.77869622393386,PASSED
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,3.6215122767857144,0.4734934708523403,4.854616085282792,86.9980879541109,PASSED
+evaluation_protocols_official,Released UBFC cross,COHFACE,Official,recording,0.0,1.0,160,160,3.3719621962196227,0.5072166977033502,3.3719621962196227,84.375,PASSED
+evaluation_protocols_official,Released UBFC cross,COHFACE,Old,window_to_recording,0.0,1.0,160,8242,7.551830070027012,0.5512622643627962,11.047488331190944,68.24799805872361,PASSED
+evaluation_protocols_official,Released UBFC cross,COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,5.923272269112724,0.4585940470079949,8.200889373035164,70.49382716049382,PASSED
+evaluation_protocols_official,Released UBFC cross,PURE,Official,recording,0.0,1.0,59,59,1.9863003249477493,0.8076276496666639,1.9863003249477493,91.52542372881356,PASSED
+evaluation_protocols_official,Released UBFC cross,PURE,Old,window_to_recording,0.0,1.0,59,3576,4.07044544991169,0.8950916333587406,7.678024554996811,90.04474272930649,PASSED
+evaluation_protocols_official,Released UBFC cross,PURE,PRISM,window_to_recording,0.0,1.0,59,374,4.733653218636501,1.072363510740699,7.529398836036095,89.03743315508021,PASSED
+evaluation_protocols_official,Released UBFC cross,TokyoTech,Official,recording,0.0,1.0,9,9,0.6000600060006005,0.17890332853283605,0.6000600060006005,100.0,PASSED
+evaluation_protocols_official,Released UBFC cross,TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,4.840236686390532,2.7710235372528254,7.729364420494235,85.79881656804734,PASSED
+evaluation_protocols_official,Released UBFC cross,TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,3.6075367647058822,2.4060188316164104,4.818969483993238,87.58169934640523,PASSED
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,Official,recording,0.0,1.0,60,60,6.669666966696671,1.2627480115061704,6.669666966696671,68.33333333333333,PASSED
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,18.960256410256413,1.71791019309102,25.385539477625585,44.16173570019724,PASSED
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,16.332900103400736,1.5252461242541353,21.697330401592318,45.3921568627451,PASSED
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,Official,recording,0.72,1.0,12,12,0.450045004500448,0.16637468506464814,0.450045004500448,100.0,PASSED
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,Old,window_to_recording,0.72,1.0,12,668,0.6441306518328341,0.13336327418017324,1.2367180023488296,98.65269461077844,PASSED
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,PRISM,window_to_recording,0.72,1.0,12,70,0.423431396484375,0.06293325645240842,0.5151128811139508,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),BH-rPPG,Official,recording,0.0,1.0,105,105,3.5900732930435906,0.8497304528775628,3.5900732930435906,89.52380952380953,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,7.750668267306923,1.0059688238212685,11.737084278569137,78.4144279541612,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,5.580426897321429,0.7787866681999469,7.492612783844262,79.92351816443595,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),COHFACE,Official,recording,0.0,1.0,160,160,8.02317731773177,0.7370279154948175,8.02317731773177,58.12500000000001,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),COHFACE,Old,window_to_recording,0.0,1.0,160,8242,15.525591916228034,0.6348778475216516,20.353676110541443,40.12375636981315,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,10.882298060825892,0.5547534440425647,14.135143563108794,47.03703703703704,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),PURE,Official,recording,0.0,1.0,59,59,0.6773558711803374,0.16557044972730672,0.6773558711803374,96.61016949152543,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),PURE,Old,window_to_recording,0.0,1.0,59,3576,2.863175639886227,0.8797023961320184,4.926126224841888,93.20469798657717,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),PURE,PRISM,window_to_recording,0.0,1.0,59,374,2.686585063795777,0.9107351915049045,4.1625693546259805,92.7807486631016,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),TokyoTech,Official,recording,0.0,1.0,9,9,1.2001200120012026,0.33707969889694267,1.2001200120012026,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,6.500986193293886,3.2128048461390986,10.401511771224646,81.85404339250493,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,4.28323184742647,2.6491747798609073,5.8330194400972,84.31372549019608,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-PHYS,Official,recording,0.0,1.0,60,60,7.452745274527453,1.3579014547577462,7.452745274527453,61.66666666666667,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,18.024457593688364,1.534228457085386,23.81515429175605,42.60355029585799,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,15.45937930836397,1.3450837880612359,20.37738420911906,43.23529411764706,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-rPPG,Official,recording,0.8,1.0,9,9,0.5400540054005395,0.2245218953959768,0.5400540054005395,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-rPPG,Old,window_to_recording,0.8,1.0,9,497,0.8034992630628061,0.07804679648804637,1.4853108134686108,98.59154929577466,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-rPPG,PRISM,window_to_recording,0.8,1.0,9,52,0.5828857421875,0.06750756845311302,0.7298724049398815,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),BH-rPPG,Official,recording,0.0,1.0,105,105,2.8391410569628395,0.6661024929797618,2.8391410569628395,90.47619047619048,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,8.97015873015873,1.183575021487184,13.82267470319543,79.16588390005636,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,6.040544782366071,0.8552472427323862,8.468154741863316,82.02676864244742,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),COHFACE,Official,recording,0.0,1.0,160,160,5.275652565256525,0.640500369736164,5.275652565256525,72.5,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),COHFACE,Old,window_to_recording,0.0,1.0,160,8242,12.720290023636391,0.6554510224116173,18.24920477724084,52.924047561271536,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,9.776625497000557,0.6981824555651831,13.29346888428302,59.25925925925925,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),PURE,Official,recording,0.0,1.0,59,59,2.4073593800057953,1.0660789815816096,2.4073593800057953,93.22033898305084,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),PURE,Old,window_to_recording,0.0,1.0,59,3576,3.1111307866839017,0.7542397105043656,6.365575306695681,93.23266219239373,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),PURE,PRISM,window_to_recording,0.0,1.0,59,374,3.534755752969885,0.8804643093309087,5.998348438059415,91.97860962566845,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),TokyoTech,Official,recording,0.0,1.0,9,9,1.980198019801981,1.1321909549422882,1.980198019801981,88.88888888888889,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,2.6232741617357003,1.3364141406028223,4.321902729912149,90.8612754766601,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,1.497156479779412,0.6052795652797892,2.468735849711636,94.77124183006535,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-PHYS,Official,recording,0.0,1.0,60,60,7.929792979297931,1.6281178633771363,7.929792979297931,63.33333333333333,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,18.784516765286,1.6627239775494405,25.03866743970671,43.757396449704146,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,15.761826459099264,1.4416958930939845,20.971634414940013,43.92156862745098,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-rPPG,Official,recording,0.8,1.0,9,9,0.5400540054005378,0.2078668835966256,0.5400540054005378,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-rPPG,Old,window_to_recording,0.8,1.0,9,497,0.6639090952313031,0.06085976163586143,1.254855422646254,99.19517102615694,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-rPPG,PRISM,window_to_recording,0.8,1.0,9,52,0.4964192708333333,0.06544939977454854,0.6248211002882582,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),BH-rPPG,Official,recording,0.0,1.0,105,105,3.358621576443358,0.6503866330251187,3.358621576443358,86.66666666666667,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),BH-rPPG,Old,window_to_recording,0.0,1.0,105,5323,9.436569294384421,1.204338980255529,13.699001715829867,76.83637046778132,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),BH-rPPG,PRISM,window_to_recording,0.0,1.0,105,523,6.836321149553571,1.0026793809621588,8.820977526538051,78.0114722753346,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),COHFACE,Official,recording,0.0,1.0,160,160,4.786228622862286,0.710033158722324,4.786228622862286,80.625,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),COHFACE,Old,window_to_recording,0.0,1.0,160,8242,9.02779748060523,0.611257855418366,13.002326999141445,63.85586022809998,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),COHFACE,PRISM,window_to_recording,0.0,1.0,160,810,7.2594451904296875,0.6059949031447831,9.848782388983786,67.90123456790124,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),PURE,Official,recording,0.0,1.0,59,59,0.8055042792414818,0.28283232889164445,0.8055042792414818,96.61016949152543,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),PURE,Old,window_to_recording,0.0,1.0,59,3576,3.151804440805836,0.912235663656128,5.53669763552487,93.68008948545862,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),PURE,PRISM,window_to_recording,0.0,1.0,59,374,3.333439492140209,1.017980717742688,5.2040800074571445,93.31550802139037,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),TokyoTech,Official,recording,0.0,1.0,9,9,0.7200720072007193,0.28145309089849446,0.7200720072007193,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),TokyoTech,Old,window_to_recording,0.0,1.0,9,1521,3.5476660092044705,1.9910971206931294,5.944827900371418,89.48060486522024,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),TokyoTech,PRISM,window_to_recording,0.0,1.0,9,153,2.4457146139705883,1.4650715092703808,3.588699028255645,92.15686274509804,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-PHYS,Official,recording,0.0,1.0,60,60,8.613861386138614,1.7638285169189516,8.613861386138614,66.66666666666666,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-PHYS,Old,window_to_recording,0.0,1.0,60,10140,18.132741617357,1.6477567191626818,24.0205732225572,43.98422090729783,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-PHYS,PRISM,window_to_recording,0.0,1.0,60,1020,15.87729061351103,1.4089531186966968,21.142657016948622,44.80392156862745,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-rPPG,Official,recording,0.8,1.0,9,9,0.6000600060005988,0.21542813509889133,0.6000600060005988,100.0,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-rPPG,Old,window_to_recording,0.8,1.0,9,497,1.041648837541007,0.3478691217313949,2.4652312347616974,98.39034205231388,PASSED
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-rPPG,PRISM,window_to_recording,0.8,1.0,9,52,0.5320231119791666,0.05886798622625571,0.6710628228790101,100.0,PASSED

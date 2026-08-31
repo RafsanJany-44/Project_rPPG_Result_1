@@ -1,0 +1,76 @@
+evaluation_run,checkpoint,dataset,protocol,evaluation_unit,total_count,correct_count,harmonic_1p5x_count,harmonic_2x_count,harmonic_0p5x_count,other_large_error_count
+checkpoint_diagnosis,PURE_BEST_EPOCH22,COHFACE,Official,recording,160,47,59,25,0,29
+checkpoint_diagnosis,PURE_BEST_EPOCH22,COHFACE,Old,window,8242,1388,1978,3448,43,1385
+checkpoint_diagnosis,PURE_BEST_EPOCH22,COHFACE,PRISM,window,810,185,247,221,4,153
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,Official,recording,105,90,4,6,0,5
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,Old,window,5323,3514,368,643,14,784
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,PRISM,window,523,387,40,39,0,57
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,Official,recording,160,42,64,21,0,33
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,Old,window,8242,1317,1946,3777,19,1183
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,PRISM,window,810,201,240,229,0,140
+evaluation_protocols,Our PURE intra (epoch 29),PURE,Official,recording,24,24,0,0,0,0
+evaluation_protocols,Our PURE intra (epoch 29),PURE,Old,window,1464,1424,1,8,0,31
+evaluation_protocols,Our PURE intra (epoch 29),PURE,PRISM,window,153,148,0,0,0,5
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,Official,recording,9,8,0,0,0,1
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,Old,window,1521,1238,29,72,0,182
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,PRISM,window,153,132,3,3,0,15
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,Official,recording,60,34,10,4,0,12
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,Old,window,10136,3686,1426,2203,71,2750
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,PRISM,window,1020,428,150,168,8,266
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,Old,window,2280,2156,7,2,0,115
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,PRISM,window,239,227,1,0,0,11
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,Official,recording,105,93,3,0,0,9
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,Old,window,5323,3929,217,361,15,801
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,PRISM,window,523,418,28,18,3,56
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,Official,recording,160,118,13,0,1,28
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,Old,window,8242,4390,382,209,491,2770
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,PRISM,window,810,489,49,17,31,224
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,Official,recording,59,57,0,0,0,2
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,Old,window,3558,3257,33,100,13,155
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,PRISM,window,374,344,4,9,2,15
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,Official,recording,9,7,0,0,0,2
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,Old,window,1521,1099,16,68,40,298
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,PRISM,window,153,124,1,1,4,23
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,Official,recording,60,39,7,1,0,13
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,Old,window,10132,3901,1297,1684,216,3034
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,PRISM,window,1020,412,143,133,18,314
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,Official,recording,12,12,0,0,0,0
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,Old,window,668,648,0,0,1,19
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,PRISM,window,70,69,0,0,0,1
+evaluation_protocols_official,Released PURE cross,BH-rPPG,Official,recording,105,97,1,1,0,6
+evaluation_protocols_official,Released PURE cross,BH-rPPG,Old,window,5323,3954,328,183,25,833
+evaluation_protocols_official,Released PURE cross,BH-rPPG,PRISM,window,523,416,25,9,1,72
+evaluation_protocols_official,Released PURE cross,COHFACE,Official,recording,160,109,10,1,0,40
+evaluation_protocols_official,Released PURE cross,COHFACE,Old,window,8242,3126,836,312,386,3582
+evaluation_protocols_official,Released PURE cross,COHFACE,PRISM,window,810,354,84,25,20,327
+evaluation_protocols_official,Released PURE cross,PURE,Official,recording,24,24,0,0,0,0
+evaluation_protocols_official,Released PURE cross,PURE,Old,window,1464,1447,0,1,0,16
+evaluation_protocols_official,Released PURE cross,PURE,PRISM,window,153,150,0,0,0,3
+evaluation_protocols_official,Released PURE cross,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_official,Released PURE cross,TokyoTech,Old,window,1521,1289,5,5,11,211
+evaluation_protocols_official,Released PURE cross,TokyoTech,PRISM,window,153,131,0,0,1,21
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,Official,recording,60,36,8,2,0,14
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,Old,window,10126,4172,1242,1825,107,2780
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,PRISM,window,1020,463,145,149,13,250
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,Old,window,2280,2222,1,0,1,56
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,PRISM,window,239,231,0,0,0,8
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,Official,recording,105,98,1,0,0,6
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,Old,window,5323,4364,155,134,32,638
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,PRISM,window,523,447,17,3,2,54
+evaluation_protocols_official,Released UBFC cross,COHFACE,Official,recording,160,132,10,0,0,18
+evaluation_protocols_official,Released UBFC cross,COHFACE,Old,window,8242,5276,343,57,284,2282
+evaluation_protocols_official,Released UBFC cross,COHFACE,PRISM,window,810,561,52,3,9,185
+evaluation_protocols_official,Released UBFC cross,PURE,Official,recording,59,54,1,1,0,3
+evaluation_protocols_official,Released UBFC cross,PURE,Old,window,3557,3159,65,95,17,221
+evaluation_protocols_official,Released UBFC cross,PURE,PRISM,window,374,329,7,17,3,18
+evaluation_protocols_official,Released UBFC cross,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_official,Released UBFC cross,TokyoTech,Old,window,1521,1253,1,9,52,206
+evaluation_protocols_official,Released UBFC cross,TokyoTech,PRISM,window,153,132,0,0,5,16
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,Official,recording,60,39,6,1,0,14
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,Old,window,10124,3942,1337,1642,211,2992
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,PRISM,window,1020,434,150,133,13,290
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,Official,recording,12,12,0,0,0,0
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,Old,window,668,658,0,0,0,10
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,PRISM,window,70,70,0,0,0,0
