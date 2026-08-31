@@ -1,0 +1,79 @@
+================================================================================
+EVALUATION CONFIGURATION
+================================================================================
+
+Protocol:      PRISM Protocol  (key='prism')
+Checkpoint:    /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_MultiBranch_STAGE-A_fft_Muti_Fusion/three_branch_mi_branch_attention/last_model.pt
+Manifest:      /media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv
+Window:        10.0s
+Stride:        10.0s
+Aggregation:   window
+FFT nfft:      16384  (None = signal length)
+Bandpass:      0.75-2.5 Hz, order 2
+Note:          protocol-only evaluation (no dual-band harmonic check)
+HR range:      45.0-150.0 BPM (GT max 150.0)
+Hann taper:    False
+G_SNR thresh:  1.7
+
+================================================================================
+SPLIT-WISE SUMMARY
+================================================================================
+
+Split: train
+  N=288
+  Model: HR MAE=0.916 BPM | Pearson=0.610
+  CHROM: HR MAE=1.142 BPM | Pearson=0.377
+
+Split: val
+  N=76
+  Model: HR MAE=1.495 BPM | Pearson=0.585
+  CHROM: HR MAE=2.052 BPM | Pearson=0.342
+
+================================================================================
+EXTENDED METRICS (MAE / RMSE / SD / Acc@5BPM)
+================================================================================
+
+Split: train
+  Model: MAE=0.916  RMSE=1.556  SD=1.258  Acc@5=97.2%
+  CHROM: MAE=1.142  RMSE=2.096  SD=1.758  Acc@5=95.1%
+
+Split: val
+  Model: MAE=1.495  RMSE=3.122  SD=2.740  Acc@5=89.5%
+  CHROM: MAE=2.052  RMSE=4.953  SD=4.507  Acc@5=86.8%
+
+================================================================================
+DATASET + SPLIT SUMMARY
+================================================================================
+
+Dataset=PURE | Split=train | N=47
+  Model: HR MAE=0.509 | Pearson=0.751
+  CHROM: HR MAE=0.837 | Pearson=0.635
+
+Dataset=PURE | Split=val | N=12
+  Model: HR MAE=0.252 | Pearson=0.775
+  CHROM: HR MAE=0.456 | Pearson=0.706
+
+Dataset=TokyoTech | Split=train | N=63
+  Model: HR MAE=0.964 | Pearson=0.635
+  CHROM: HR MAE=1.213 | Pearson=0.239
+
+Dataset=TokyoTech | Split=val | N=18
+  Model: HR MAE=2.118 | Pearson=0.612
+  CHROM: HR MAE=2.945 | Pearson=0.131
+
+Dataset=UBFC | Split=train | N=34
+  Model: HR MAE=1.390 | Pearson=0.369
+  CHROM: HR MAE=1.431 | Pearson=0.277
+
+Dataset=UBFC | Split=val | N=8
+  Model: HR MAE=1.959 | Pearson=0.237
+  CHROM: HR MAE=2.439 | Pearson=0.271
+
+Dataset=unknown | Split=train | N=144
+  Model: HR MAE=nan | Pearson=nan
+  CHROM: HR MAE=nan | Pearson=nan
+
+Dataset=unknown | Split=val | N=38
+  Model: HR MAE=nan | Pearson=nan
+  CHROM: HR MAE=nan | Pearson=nan
+
