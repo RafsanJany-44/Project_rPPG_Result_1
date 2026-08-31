@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_CROSS_MATCHED_SEED101/Eval_On_UBFC_PHYS — Old Protocol
+====================================================================================
+Description                : UBFC cross-matched seed checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/UBFC_CROSS_MATCHED_SEED101/UBFC_CROSS_MATCHED_SEED101_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 10140
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 18.784517 BPM
+Pooled measurement MAE     : 18.784517 BPM
+Pooled measurement RMSE    : 29.016759 BPM
+Pooled measurement MAPE    : 31.311847 %
+Pooled measurement Pearson : 0.108779
+Absolute-error SD           : 22.115927 BPM
+Accuracy within 5 BPM      : 43.757 %
+Recording-macro MAE SE     : 1.662724 BPM
+Pooled MAE standard error  : 0.219627 BPM
+Official-formula RMSE +/-  : 15.978959
+Pooled MAPE standard error : 0.439350 %
+Pooled Pearson std. error  : 0.009873
+Mean waveform Pearson      : -0.021981
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
