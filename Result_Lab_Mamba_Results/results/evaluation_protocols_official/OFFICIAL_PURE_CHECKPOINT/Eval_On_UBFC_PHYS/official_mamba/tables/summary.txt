@@ -1,0 +1,31 @@
+====================================================================================
+OFFICIAL_PURE_CHECKPOINT/Eval_On_UBFC_PHYS — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Released official PURE checkpoint evaluated on UBFC_PHYS (complete external dataset)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/Official_Checkpoints/PURE_cross_RhythmMamba.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 60
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 9.171917 BPM
+Pooled measurement MAE     : 9.171917 BPM
+Pooled measurement RMSE    : 16.681317 BPM
+Pooled measurement MAPE    : 12.665591 %
+Pooled measurement Pearson : 0.259103
+Absolute-error SD           : 13.933495 BPM
+Accuracy within 5 BPM      : 63.333 %
+Recording-macro MAE SE     : 1.798806 BPM
+Pooled MAE standard error  : 1.798806 BPM
+Official-formula RMSE +/-  : 99.880546
+Pooled MAPE standard error : 2.611959 %
+Pooled Pearson std. error  : 0.126822
+Mean waveform Pearson      : -0.023838
+Mean SNR                    : -2.658963 dB
+SNR standard error         : 1.808388 dB
