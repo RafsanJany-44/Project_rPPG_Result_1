@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_CHECKPOINT/Eval_On_PURE — PRISM Evaluation Protocol
+====================================================================================
+Description                : Locally trained UBFC checkpoint evaluated on PURE (complete external dataset)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/UBFC/UBFC_RhythmMamba_Epoch29.pth
+Dataset / split            : PURE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 59
+Expected recordings        : 59
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 374
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.922128 BPM
+Pooled measurement MAE     : 3.057372 BPM
+Pooled measurement RMSE    : 10.811479 BPM
+Pooled measurement MAPE    : 4.713318 %
+Pooled measurement Pearson : 0.886873
+Absolute-error SD           : 10.370176 BPM
+Accuracy within 5 BPM      : 92.513 %
+Recording-macro MAE SE     : 0.787974 BPM
+Pooled MAE standard error  : 0.536229 BPM
+Official-formula RMSE +/-  : 32.813546
+Pooled MAPE standard error : 0.821129 %
+Pooled Pearson std. error  : 0.023954
+Mean waveform Pearson      : 0.630988
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
