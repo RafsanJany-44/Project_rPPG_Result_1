@@ -1,0 +1,31 @@
+====================================================================================
+OFFICIAL_PURE_CHECKPOINT/Eval_On_PURE — Old Protocol
+====================================================================================
+Description                : Released official PURE checkpoint evaluated on PURE (native held-out split)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/Official_Checkpoints/PURE_cross_RhythmMamba.pth
+Dataset / split            : PURE / 0.6–1.0
+Aggregation                : window_to_recording
+Recordings                 : 24
+Expected recordings        : 24
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1464
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.619600 BPM
+Pooled measurement MAE     : 0.627732 BPM
+Pooled measurement RMSE    : 1.641129 BPM
+Pooled measurement MAPE    : 0.904408 %
+Pooled measurement Pearson : 0.998760
+Absolute-error SD           : 1.516331 BPM
+Accuracy within 5 BPM      : 99.454 %
+Recording-macro MAE SE     : 0.056476 BPM
+Pooled MAE standard error  : 0.039630 BPM
+Official-formula RMSE +/-  : 1.465861
+Pooled MAPE standard error : 0.076272 %
+Pooled Pearson std. error  : 0.001302
+Mean waveform Pearson      : 0.757766
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
