@@ -1,0 +1,31 @@
+====================================================================================
+PURE_BEST_EPOCH22/Eval_On_COHFACE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : PURE 0.0-0.6 model selected by the lowest PURE 0.6-1.0 validation loss, evaluated on complete COHFACE
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/PURE/PURE_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 160
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 21.824932 BPM
+Pooled measurement MAE     : 21.824932 BPM
+Pooled measurement RMSE    : 29.346979 BPM
+Pooled measurement MAPE    : 33.716859 %
+Pooled measurement Pearson : 0.130060
+Absolute-error SD           : 19.619314 BPM
+Accuracy within 5 BPM      : 30.625 %
+Recording-macro MAE SE     : 1.551043 BPM
+Pooled MAE standard error  : 1.551043 BPM
+Official-formula RMSE +/-  : 98.430246
+Pooled MAPE standard error : 2.579842 %
+Pooled Pearson std. error  : 0.078880
+Mean waveform Pearson      : 0.095000
+Mean SNR                    : -9.893175 dB
+SNR standard error         : 0.296253 dB
