@@ -1,0 +1,31 @@
+====================================================================================
+PURE_CHECKPOINT/Eval_On_PURE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Locally trained PURE checkpoint evaluated on PURE (native held-out split)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/PURE/PURE_RhythmMamba_Epoch29.pth
+Dataset / split            : PURE / 0.6–1.0
+Aggregation                : recording
+Recordings                 : 24
+Expected recordings        : 24
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 24
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.405041 BPM
+Pooled measurement MAE     : 0.405041 BPM
+Pooled measurement RMSE    : 0.493000 BPM
+Pooled measurement MAPE    : 0.535187 %
+Pooled measurement Pearson : 0.999890
+Absolute-error SD           : 0.281053 BPM
+Accuracy within 5 BPM      : 100.000 %
+Recording-macro MAE SE     : 0.057370 BPM
+Pooled MAE standard error  : 0.057370 BPM
+Official-formula RMSE +/-  : 0.047586
+Pooled MAPE standard error : 0.098560 %
+Pooled Pearson std. error  : 0.003157
+Mean waveform Pearson      : 0.635552
+Mean SNR                    : 12.299451 dB
+SNR standard error         : 1.150767 dB

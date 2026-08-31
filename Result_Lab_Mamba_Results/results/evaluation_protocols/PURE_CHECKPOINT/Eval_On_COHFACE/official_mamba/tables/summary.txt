@@ -1,0 +1,31 @@
+====================================================================================
+PURE_CHECKPOINT/Eval_On_COHFACE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Locally trained PURE checkpoint evaluated on COHFACE (complete external dataset)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/PURE/PURE_RhythmMamba_Epoch29.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 160
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 21.649415 BPM
+Pooled measurement MAE     : 21.649415 BPM
+Pooled measurement RMSE    : 29.193154 BPM
+Pooled measurement MAPE    : 33.082733 %
+Pooled measurement Pearson : 0.164517
+Absolute-error SD           : 19.584255 BPM
+Accuracy within 5 BPM      : 28.750 %
+Recording-macro MAE SE     : 1.548271 BPM
+Pooled MAE standard error  : 1.548271 BPM
+Official-formula RMSE +/-  : 98.524620
+Pooled MAPE standard error : 2.539307 %
+Pooled Pearson std. error  : 0.078472
+Mean waveform Pearson      : -0.004183
+Mean SNR                    : -9.741341 dB
+SNR standard error         : 0.312216 dB

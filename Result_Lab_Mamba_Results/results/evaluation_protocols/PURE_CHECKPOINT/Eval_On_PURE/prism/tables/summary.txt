@@ -1,0 +1,31 @@
+====================================================================================
+PURE_CHECKPOINT/Eval_On_PURE — PRISM Evaluation Protocol
+====================================================================================
+Description                : Locally trained PURE checkpoint evaluated on PURE (native held-out split)
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Catch_The_Mamba/Mamba_Hunt/results/models/PURE/PURE_RhythmMamba_Epoch29.pth
+Dataset / split            : PURE / 0.6–1.0
+Aggregation                : window_to_recording
+Recordings                 : 24
+Expected recordings        : 24
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 153
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.909805 BPM
+Pooled measurement MAE     : 0.901166 BPM
+Pooled measurement RMSE    : 1.731701 BPM
+Pooled measurement MAPE    : 1.178124 %
+Pooled measurement Pearson : 0.998677
+Absolute-error SD           : 1.478745 BPM
+Accuracy within 5 BPM      : 97.386 %
+Recording-macro MAE SE     : 0.125064 BPM
+Pooled MAE standard error  : 0.119549 BPM
+Official-formula RMSE +/-  : 1.122403
+Pooled MAPE standard error : 0.114994 %
+Pooled Pearson std. error  : 0.004185
+Mean waveform Pearson      : 0.591280
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
