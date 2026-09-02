@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-09-01T23:33:30.233091+00:00",
+  "experiment": "PURE_A3",
+  "source_dataset": "PURE",
+  "setup": "A3",
+  "official_augmentation": true,
+  "offline_augmentation": true,
+  "offline_probability": 0.5,
+  "online_rgb_gain": true,
+  "online_rgb_probability": 0.5,
+  "online_rgb_range": [
+    0.85,
+    1.15
+  ],
+  "augmentation_order": "offline_selection -> official_temporal_flip -> online_rgb",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "validation_augmentation": false,
+  "training_clips_per_epoch": 596,
+  "validation_clips": 154,
+  "max_epochs": 60,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 100,
+  "learning_rate": 0.0003,
+  "completed_utc": "2026-09-02T02:49:16.350198+00:00",
+  "epochs_completed": 60,
+  "stopped_early": false,
+  "best_epoch": 56,
+  "best_clean_validation_loss": 4.634823650508732,
+  "best_checkpoint": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/augmentation_stage1/PURE_A3/PURE_A3_RhythmMamba_Best.pth",
+  "history": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/augmentation_stage1/PURE_A3/PURE_A3_training_history.csv",
+  "training_hours": 3.2628100727565794,
+  "status": "PASSED"
+}

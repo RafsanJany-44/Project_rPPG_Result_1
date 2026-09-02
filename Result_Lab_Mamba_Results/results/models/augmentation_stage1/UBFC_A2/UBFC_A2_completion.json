@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-09-01T19:34:01.188674+00:00",
+  "experiment": "UBFC_A2",
+  "source_dataset": "UBFC",
+  "setup": "A2",
+  "official_augmentation": true,
+  "offline_augmentation": true,
+  "offline_probability": 0.5,
+  "online_rgb_gain": false,
+  "online_rgb_probability": 0.0,
+  "online_rgb_range": [
+    0.85,
+    1.15
+  ],
+  "augmentation_order": "offline_selection -> official_temporal_flip -> online_rgb",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "validation_augmentation": false,
+  "training_clips_per_epoch": 378,
+  "validation_clips": 105,
+  "max_epochs": 60,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 100,
+  "learning_rate": 0.0003,
+  "completed_utc": "2026-09-01T22:01:06.379484+00:00",
+  "epochs_completed": 60,
+  "stopped_early": false,
+  "best_epoch": 57,
+  "best_clean_validation_loss": 4.647896753038679,
+  "best_checkpoint": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/augmentation_stage1/UBFC_A2/UBFC_A2_RhythmMamba_Best.pth",
+  "history": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/augmentation_stage1/UBFC_A2/UBFC_A2_training_history.csv",
+  "training_hours": 2.451441683070217,
+  "status": "PASSED"
+}
