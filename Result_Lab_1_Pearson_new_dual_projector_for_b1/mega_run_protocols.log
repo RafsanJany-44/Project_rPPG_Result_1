@@ -1,0 +1,35 @@
+[2026-09-02 11:41:20] ==========================================================================
+[2026-09-02 11:41:20] MEGA RUN start | device=cuda | models=5 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Pearson_new_dual_projector_for_b1
+[2026-09-02 11:41:20] models: ['ablation_step1_chrom_b1', 'ablation_step2_chrom_b1_aux', 'ablation_step3_chrom_b1_deriv_b2', 'ablation_step4_chrom_b1_deriv_b2_aux', 'ablation_step5_perchannel_b1_deriv_b2_aux']
+[2026-09-02 11:41:20] ==========================================================================
+[2026-09-02 11:41:20] --------------------------------------------------------------------------
+[2026-09-02 11:41:20] [1/5] MODEL: ablation_step1_chrom_b1
+[2026-09-02 11:41:20]   built 'ablation_step1_chrom_b1': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-02 11:43:24]     epoch   1 | train_loss=0.6486 val_loss=0.3484 val_hr_mae=4.434 lr=3.0e-04
+[2026-09-02 12:00:40]     epoch  10 | train_loss=0.3816 val_loss=0.2455 val_hr_mae=1.925 lr=3.0e-04
+[2026-09-02 12:24:53]     epoch  20 | train_loss=0.3550 val_loss=0.2239 val_hr_mae=1.946 lr=1.5e-04
+[2026-09-02 12:47:27]     epoch  30 | train_loss=0.3422 val_loss=0.2209 val_hr_mae=1.678 lr=7.5e-05
+[2026-09-02 13:10:05]     epoch  40 | train_loss=0.3304 val_loss=0.2154 val_hr_mae=1.649 lr=3.7e-05
+[2026-09-02 13:33:08]     epoch  50 | train_loss=0.3257 val_loss=0.2156 val_hr_mae=1.633 lr=1.9e-05
+[2026-09-02 13:56:28]     epoch  60 | train_loss=0.3253 val_loss=0.2173 val_hr_mae=1.593 lr=1.0e-05
+[2026-09-02 14:21:28]     epoch  70 | train_loss=0.3231 val_loss=0.2166 val_hr_mae=1.549 lr=1.0e-05
+[2026-09-02 14:29:25]     early stop at epoch 73 (no val-loss improvement for 30)
+[2026-09-02 14:29:25]   trained 'ablation_step1_chrom_b1': epochs_run=73 best_val_loss=0.2142 best_val_hr_mae=1.519
+[2026-09-02 14:29:26]   evaluating 'ablation_step1_chrom_b1' under protocol 'old' ...
+[2026-09-02 14:36:27]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Pearson_new_dual_projector_for_b1/ablation_step1_chrom_b1/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-02 14:36:27]   evaluating 'ablation_step1_chrom_b1' under protocol 'prism' ...
+[2026-09-02 14:37:39]   evaluating 'ablation_step1_chrom_b1' under protocol 'toolbox' ...
+[2026-09-02 14:38:20]   DONE 'ablation_step1_chrom_b1' [old]: val_model_mae=nan
+[2026-09-02 14:38:20]   DONE 'ablation_step1_chrom_b1' [prism]: val_model_mae=1.181
+[2026-09-02 14:38:20]   DONE 'ablation_step1_chrom_b1' [toolbox]: val_model_mae=0.331
+[2026-09-02 14:38:20] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-02 14:38:20] 
+protocol                 prism  toolbox
+model                                  
+ablation_step1_chrom_b1  1.181    0.331
+[2026-09-02 14:38:20] --------------------------------------------------------------------------
+[2026-09-02 14:38:20] [2/5] MODEL: ablation_step2_chrom_b1_aux
+[2026-09-02 14:38:20]   built 'ablation_step2_chrom_b1_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-02 14:41:11]     epoch   1 | train_loss=1.4818 val_loss=0.5009 val_hr_mae=8.625 lr=3.0e-04
+[2026-09-02 15:05:57]     epoch  10 | train_loss=0.8991 val_loss=0.2524 val_hr_mae=2.029 lr=3.0e-04

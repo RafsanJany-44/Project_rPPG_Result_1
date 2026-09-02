@@ -1,0 +1,4 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+ablation_step1_chrom_b1,old,no_csv,,,,,169603,73,96,1.5187068679600253
+ablation_step1_chrom_b1,prism,ok,1.1810667968621384,2.052269848240953,,,169603,73,96,1.5187068679600253
+ablation_step1_chrom_b1,toolbox,ok,0.33077354174610446,0.6642781291645468,,,169603,73,96,1.5187068679600253
