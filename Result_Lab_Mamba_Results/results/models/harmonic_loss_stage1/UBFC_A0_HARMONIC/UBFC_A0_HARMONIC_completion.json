@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-02T06:54:57.471279+00:00",
+  "experiment": "UBFC_A0_HARMONIC",
+  "source_dataset": "UBFC",
+  "augmentation": "A0",
+  "official_augmentation": true,
+  "offline_augmentation": false,
+  "offline_probability": 0.0,
+  "online_rgb_gain": false,
+  "loss": "verified_HybridLoss_plus_harmonic_competition",
+  "harmonic_weight": 0.1,
+  "harmonic_ratios": [
+    0.5,
+    1.5,
+    2.0
+  ],
+  "harmonic_band_half_width_bpm": 2.0,
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "validation_augmentation": false,
+  "training_clips_per_epoch": 378,
+  "validation_clips": 105,
+  "maximum_epochs": 100,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_total_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 100,
+  "learning_rate": 0.0003,
+  "completed_utc": "2026-09-02T09:15:31.702935+00:00",
+  "epochs_completed": 54,
+  "stopped_early": true,
+  "best_epoch": 43,
+  "best_validation_total_loss": 4.6811720030648365,
+  "best_checkpoint": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_loss_stage1/UBFC_A0_HARMONIC/UBFC_A0_HARMONIC_RhythmMamba_Best.pth",
+  "history": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_loss_stage1/UBFC_A0_HARMONIC/UBFC_A0_HARMONIC_training_history.csv",
+  "training_hours": 2.3428419074881823,
+  "status": "PASSED"
+}
