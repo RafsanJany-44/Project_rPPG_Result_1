@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A0_HARMONIC/Eval_On_COHFACE — PRISM Evaluation Protocol
+====================================================================================
+Description                : Harmonic-loss A0 local UBFC checkpoint evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_loss_stage1/UBFC_A0_HARMONIC/UBFC_A0_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 810
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 9.222568 BPM
+Pooled measurement MAE     : 9.166938 BPM
+Pooled measurement RMSE    : 14.902725 BPM
+Pooled measurement MAPE    : 12.356664 %
+Pooled measurement Pearson : 0.303858
+Absolute-error SD           : 11.749828 BPM
+Accuracy within 5 BPM      : 59.136 %
+Recording-macro MAE SE     : 0.663841 BPM
+Pooled MAE standard error  : 0.412847 BPM
+Official-formula RMSE +/-  : 15.831322
+Pooled MAPE standard error : 0.528760 %
+Pooled Pearson std. error  : 0.033516
+Mean waveform Pearson      : 0.281234
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
