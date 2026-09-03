@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A0_HARMONIC/Eval_On_BH — Old Protocol
+====================================================================================
+Description                : Harmonic-loss A0 local UBFC checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_loss_stage1/UBFC_A0_HARMONIC/UBFC_A0_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 5323
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 6.907531 BPM
+Pooled measurement MAE     : 6.927672 BPM
+Pooled measurement RMSE    : 12.211487 BPM
+Pooled measurement MAPE    : 9.126816 %
+Pooled measurement Pearson : 0.577939
+Absolute-error SD           : 10.056231 BPM
+Accuracy within 5 BPM      : 70.487 %
+Recording-macro MAE SE     : 0.717882 BPM
+Pooled MAE standard error  : 0.137834 BPM
+Official-formula RMSE +/-  : 5.115383
+Pooled MAPE standard error : 0.170122 %
+Pooled Pearson std. error  : 0.011188
+Mean waveform Pearson      : 0.002590
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

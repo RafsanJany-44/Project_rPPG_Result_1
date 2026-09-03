@@ -1,0 +1,343 @@
+evaluation_run,checkpoint,dataset,protocol,evaluation_unit,total_count,correct_count,harmonic_1p5x_count,harmonic_2x_count,harmonic_0p5x_count,other_large_error_count
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,Official,recording,105,90,4,6,0,5
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,Old,window,5323,3514,368,643,14,784
+evaluation_protocols,Our PURE intra (epoch 29),BH-rPPG,PRISM,window,523,387,40,39,0,57
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,Official,recording,160,42,64,21,0,33
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,Old,window,8242,1317,1946,3777,19,1183
+evaluation_protocols,Our PURE intra (epoch 29),COHFACE,PRISM,window,810,201,240,229,0,140
+evaluation_protocols,Our PURE intra (epoch 29),PURE,Official,recording,24,24,0,0,0,0
+evaluation_protocols,Our PURE intra (epoch 29),PURE,Old,window,1464,1424,1,8,0,31
+evaluation_protocols,Our PURE intra (epoch 29),PURE,PRISM,window,153,148,0,0,0,5
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,Official,recording,9,8,0,0,0,1
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,Old,window,1521,1238,29,72,0,182
+evaluation_protocols,Our PURE intra (epoch 29),TokyoTech,PRISM,window,153,132,3,3,0,15
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,Official,recording,60,34,10,4,0,12
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,Old,window,10136,3686,1426,2203,71,2750
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-PHYS,PRISM,window,1020,428,150,168,8,266
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,Old,window,2280,2156,7,2,0,115
+evaluation_protocols,Our PURE intra (epoch 29),UBFC-rPPG,PRISM,window,239,227,1,0,0,11
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,Official,recording,105,93,3,0,0,9
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,Old,window,5323,3929,217,361,15,801
+evaluation_protocols,Our UBFC intra (epoch 29),BH-rPPG,PRISM,window,523,418,28,18,3,56
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,Official,recording,160,118,13,0,1,28
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,Old,window,8242,4390,382,209,491,2770
+evaluation_protocols,Our UBFC intra (epoch 29),COHFACE,PRISM,window,810,489,49,17,31,224
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,Official,recording,59,57,0,0,0,2
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,Old,window,3558,3257,33,100,13,155
+evaluation_protocols,Our UBFC intra (epoch 29),PURE,PRISM,window,374,344,4,9,2,15
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,Official,recording,9,7,0,0,0,2
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,Old,window,1521,1099,16,68,40,298
+evaluation_protocols,Our UBFC intra (epoch 29),TokyoTech,PRISM,window,153,124,1,1,4,23
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,Official,recording,60,39,7,1,0,13
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,Old,window,10132,3901,1297,1684,216,3034
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-PHYS,PRISM,window,1020,412,143,133,18,314
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,Official,recording,12,12,0,0,0,0
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,Old,window,668,648,0,0,1,19
+evaluation_protocols,Our UBFC intra (epoch 29),UBFC-rPPG,PRISM,window,70,69,0,0,0,1
+evaluation_protocols_augmentation_stage1,PURE_A1,BH-rPPG,Official,recording,105,95,4,0,0,6
+evaluation_protocols_augmentation_stage1,PURE_A1,BH-rPPG,Old,window,5323,3975,261,170,33,884
+evaluation_protocols_augmentation_stage1,PURE_A1,BH-rPPG,PRISM,window,523,411,24,14,1,73
+evaluation_protocols_augmentation_stage1,PURE_A1,COHFACE,Official,recording,160,111,12,1,1,35
+evaluation_protocols_augmentation_stage1,PURE_A1,COHFACE,Old,window,8242,3433,653,208,500,3448
+evaluation_protocols_augmentation_stage1,PURE_A1,COHFACE,PRISM,window,810,406,58,13,25,308
+evaluation_protocols_augmentation_stage1,PURE_A1,PURE,Official,recording,12,12,0,0,0,0
+evaluation_protocols_augmentation_stage1,PURE_A1,PURE,Old,window,735,730,0,1,0,4
+evaluation_protocols_augmentation_stage1,PURE_A1,PURE,PRISM,window,77,76,0,0,0,1
+evaluation_protocols_augmentation_stage1,PURE_A1,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,PURE_A1,TokyoTech,Old,window,1521,1330,0,1,12,178
+evaluation_protocols_augmentation_stage1,PURE_A1,TokyoTech,PRISM,window,153,136,0,0,0,17
+evaluation_protocols_augmentation_stage1,PURE_A1,UBFC-PHYS,Official,recording,60,37,7,1,0,15
+evaluation_protocols_augmentation_stage1,PURE_A1,UBFC-PHYS,Old,window,10123,4124,1127,1561,222,3089
+evaluation_protocols_augmentation_stage1,PURE_A1,UBFC-PHYS,PRISM,window,1020,452,125,126,15,302
+evaluation_protocols_augmentation_stage1,PURE_A1,UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols_augmentation_stage1,PURE_A1,UBFC-rPPG,Old,window,2278,2185,1,0,4,88
+evaluation_protocols_augmentation_stage1,PURE_A1,UBFC-rPPG,PRISM,window,239,231,0,0,0,8
+evaluation_protocols_augmentation_stage1,PURE_A2,BH-rPPG,Official,recording,105,99,1,0,0,5
+evaluation_protocols_augmentation_stage1,PURE_A2,BH-rPPG,Old,window,5323,4135,184,57,40,907
+evaluation_protocols_augmentation_stage1,PURE_A2,BH-rPPG,PRISM,window,523,426,18,3,3,73
+evaluation_protocols_augmentation_stage1,PURE_A2,COHFACE,Official,recording,160,107,9,1,1,42
+evaluation_protocols_augmentation_stage1,PURE_A2,COHFACE,Old,window,8242,3560,482,121,455,3624
+evaluation_protocols_augmentation_stage1,PURE_A2,COHFACE,PRISM,window,810,413,43,9,26,319
+evaluation_protocols_augmentation_stage1,PURE_A2,PURE,Official,recording,12,12,0,0,0,0
+evaluation_protocols_augmentation_stage1,PURE_A2,PURE,Old,window,735,728,0,2,0,5
+evaluation_protocols_augmentation_stage1,PURE_A2,PURE,PRISM,window,77,76,0,0,0,1
+evaluation_protocols_augmentation_stage1,PURE_A2,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,PURE_A2,TokyoTech,Old,window,1521,1376,1,1,9,134
+evaluation_protocols_augmentation_stage1,PURE_A2,TokyoTech,PRISM,window,153,141,0,0,0,12
+evaluation_protocols_augmentation_stage1,PURE_A2,UBFC-PHYS,Official,recording,60,37,7,1,0,15
+evaluation_protocols_augmentation_stage1,PURE_A2,UBFC-PHYS,Old,window,10101,4009,1126,1334,367,3265
+evaluation_protocols_augmentation_stage1,PURE_A2,UBFC-PHYS,PRISM,window,1020,448,130,102,20,320
+evaluation_protocols_augmentation_stage1,PURE_A2,UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols_augmentation_stage1,PURE_A2,UBFC-rPPG,Old,window,2279,2207,3,0,3,66
+evaluation_protocols_augmentation_stage1,PURE_A2,UBFC-rPPG,PRISM,window,239,233,0,0,0,6
+evaluation_protocols_augmentation_stage1,PURE_A3,BH-rPPG,Official,recording,105,91,3,1,0,10
+evaluation_protocols_augmentation_stage1,PURE_A3,BH-rPPG,Old,window,5323,3851,235,216,67,954
+evaluation_protocols_augmentation_stage1,PURE_A3,BH-rPPG,PRISM,window,523,400,18,19,1,85
+evaluation_protocols_augmentation_stage1,PURE_A3,COHFACE,Official,recording,160,120,11,1,1,27
+evaluation_protocols_augmentation_stage1,PURE_A3,COHFACE,Old,window,8242,3745,706,783,256,2752
+evaluation_protocols_augmentation_stage1,PURE_A3,COHFACE,PRISM,window,810,437,80,47,9,237
+evaluation_protocols_augmentation_stage1,PURE_A3,PURE,Official,recording,12,12,0,0,0,0
+evaluation_protocols_augmentation_stage1,PURE_A3,PURE,Old,window,735,731,0,1,0,3
+evaluation_protocols_augmentation_stage1,PURE_A3,PURE,PRISM,window,77,76,0,0,0,1
+evaluation_protocols_augmentation_stage1,PURE_A3,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,PURE_A3,TokyoTech,Old,window,1521,1370,1,0,7,143
+evaluation_protocols_augmentation_stage1,PURE_A3,TokyoTech,PRISM,window,153,140,1,0,0,12
+evaluation_protocols_augmentation_stage1,PURE_A3,UBFC-PHYS,Official,recording,60,37,8,1,0,14
+evaluation_protocols_augmentation_stage1,PURE_A3,UBFC-PHYS,Old,window,10120,3926,1207,1589,227,3171
+evaluation_protocols_augmentation_stage1,PURE_A3,UBFC-PHYS,PRISM,window,1020,440,135,117,16,312
+evaluation_protocols_augmentation_stage1,PURE_A3,UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols_augmentation_stage1,PURE_A3,UBFC-rPPG,Old,window,2280,2197,8,1,0,74
+evaluation_protocols_augmentation_stage1,PURE_A3,UBFC-rPPG,PRISM,window,239,235,0,0,0,4
+evaluation_protocols_augmentation_stage1,UBFC_A1,BH-rPPG,Official,recording,105,93,1,1,0,10
+evaluation_protocols_augmentation_stage1,UBFC_A1,BH-rPPG,Old,window,5323,3913,234,244,52,880
+evaluation_protocols_augmentation_stage1,UBFC_A1,BH-rPPG,PRISM,window,523,404,23,8,3,85
+evaluation_protocols_augmentation_stage1,UBFC_A1,COHFACE,Official,recording,160,74,32,0,2,52
+evaluation_protocols_augmentation_stage1,UBFC_A1,COHFACE,Old,window,8242,2885,676,137,792,3752
+evaluation_protocols_augmentation_stage1,UBFC_A1,COHFACE,PRISM,window,810,341,106,10,20,333
+evaluation_protocols_augmentation_stage1,UBFC_A1,PURE,Official,recording,59,55,0,2,0,2
+evaluation_protocols_augmentation_stage1,UBFC_A1,PURE,Old,window,3550,3145,37,172,23,173
+evaluation_protocols_augmentation_stage1,UBFC_A1,PURE,PRISM,window,372,322,5,27,3,15
+evaluation_protocols_augmentation_stage1,UBFC_A1,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,UBFC_A1,TokyoTech,Old,window,1521,1299,0,3,50,169
+evaluation_protocols_augmentation_stage1,UBFC_A1,TokyoTech,PRISM,window,153,134,0,0,2,17
+evaluation_protocols_augmentation_stage1,UBFC_A1,UBFC-PHYS,Official,recording,60,39,7,1,0,13
+evaluation_protocols_augmentation_stage1,UBFC_A1,UBFC-PHYS,Old,window,10118,3853,1247,1384,352,3282
+evaluation_protocols_augmentation_stage1,UBFC_A1,UBFC-PHYS,PRISM,window,1020,420,137,116,23,324
+evaluation_protocols_augmentation_stage1,UBFC_A1,UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,UBFC_A1,UBFC-rPPG,Old,window,497,492,0,0,0,5
+evaluation_protocols_augmentation_stage1,UBFC_A1,UBFC-rPPG,PRISM,window,52,52,0,0,0,0
+evaluation_protocols_augmentation_stage1,UBFC_A2,BH-rPPG,Official,recording,105,95,2,0,0,8
+evaluation_protocols_augmentation_stage1,UBFC_A2,BH-rPPG,Old,window,5323,3962,173,142,54,992
+evaluation_protocols_augmentation_stage1,UBFC_A2,BH-rPPG,PRISM,window,523,415,23,3,2,80
+evaluation_protocols_augmentation_stage1,UBFC_A2,COHFACE,Official,recording,160,132,8,0,1,19
+evaluation_protocols_augmentation_stage1,UBFC_A2,COHFACE,Old,window,8242,5099,305,72,293,2473
+evaluation_protocols_augmentation_stage1,UBFC_A2,COHFACE,PRISM,window,810,531,35,3,14,227
+evaluation_protocols_augmentation_stage1,UBFC_A2,PURE,Official,recording,59,54,0,4,0,1
+evaluation_protocols_augmentation_stage1,UBFC_A2,PURE,Old,window,3560,3105,62,150,20,223
+evaluation_protocols_augmentation_stage1,UBFC_A2,PURE,PRISM,window,374,320,7,27,1,19
+evaluation_protocols_augmentation_stage1,UBFC_A2,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,UBFC_A2,TokyoTech,Old,window,1521,1333,0,2,25,161
+evaluation_protocols_augmentation_stage1,UBFC_A2,TokyoTech,PRISM,window,153,141,0,0,3,9
+evaluation_protocols_augmentation_stage1,UBFC_A2,UBFC-PHYS,Official,recording,60,35,8,0,1,16
+evaluation_protocols_augmentation_stage1,UBFC_A2,UBFC-PHYS,Old,window,10123,3802,1268,1488,338,3227
+evaluation_protocols_augmentation_stage1,UBFC_A2,UBFC-PHYS,PRISM,window,1020,415,135,115,27,328
+evaluation_protocols_augmentation_stage1,UBFC_A2,UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,UBFC_A2,UBFC-rPPG,Old,window,497,490,0,0,1,6
+evaluation_protocols_augmentation_stage1,UBFC_A2,UBFC-rPPG,PRISM,window,52,52,0,0,0,0
+evaluation_protocols_augmentation_stage1,UBFC_A3,BH-rPPG,Official,recording,105,71,11,5,0,18
+evaluation_protocols_augmentation_stage1,UBFC_A3,BH-rPPG,Old,window,5323,3274,399,484,93,1073
+evaluation_protocols_augmentation_stage1,UBFC_A3,BH-rPPG,PRISM,window,523,350,48,27,4,94
+evaluation_protocols_augmentation_stage1,UBFC_A3,COHFACE,Official,recording,160,119,7,1,1,32
+evaluation_protocols_augmentation_stage1,UBFC_A3,COHFACE,Old,window,8242,4227,512,399,318,2786
+evaluation_protocols_augmentation_stage1,UBFC_A3,COHFACE,PRISM,window,810,459,59,27,16,249
+evaluation_protocols_augmentation_stage1,UBFC_A3,PURE,Official,recording,59,55,2,0,0,2
+evaluation_protocols_augmentation_stage1,UBFC_A3,PURE,Old,window,3555,3060,52,69,25,349
+evaluation_protocols_augmentation_stage1,UBFC_A3,PURE,PRISM,window,373,322,6,13,1,31
+evaluation_protocols_augmentation_stage1,UBFC_A3,TokyoTech,Official,recording,9,8,0,0,0,1
+evaluation_protocols_augmentation_stage1,UBFC_A3,TokyoTech,Old,window,1521,1313,5,33,5,165
+evaluation_protocols_augmentation_stage1,UBFC_A3,TokyoTech,PRISM,window,153,144,0,0,1,8
+evaluation_protocols_augmentation_stage1,UBFC_A3,UBFC-PHYS,Official,recording,60,34,7,0,0,19
+evaluation_protocols_augmentation_stage1,UBFC_A3,UBFC-PHYS,Old,window,10111,3489,1302,1544,423,3353
+evaluation_protocols_augmentation_stage1,UBFC_A3,UBFC-PHYS,PRISM,window,1020,385,135,120,28,352
+evaluation_protocols_augmentation_stage1,UBFC_A3,UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_augmentation_stage1,UBFC_A3,UBFC-rPPG,Old,window,497,486,0,0,3,8
+evaluation_protocols_augmentation_stage1,UBFC_A3,UBFC-rPPG,PRISM,window,52,52,0,0,0,0
+evaluation_protocols_cross_matched,Our PURE cross-matched,BH-rPPG,Official,recording,105,97,1,2,0,5
+evaluation_protocols_cross_matched,Our PURE cross-matched,BH-rPPG,Old,window,5323,3871,283,399,16,754
+evaluation_protocols_cross_matched,Our PURE cross-matched,BH-rPPG,PRISM,window,523,414,25,20,1,63
+evaluation_protocols_cross_matched,Our PURE cross-matched,COHFACE,Official,recording,160,106,5,1,3,45
+evaluation_protocols_cross_matched,Our PURE cross-matched,COHFACE,Old,window,8242,3445,440,190,613,3554
+evaluation_protocols_cross_matched,Our PURE cross-matched,COHFACE,PRISM,window,810,407,48,10,35,310
+evaluation_protocols_cross_matched,Our PURE cross-matched,PURE,Official,recording,12,12,0,0,0,0
+evaluation_protocols_cross_matched,Our PURE cross-matched,PURE,Old,window,735,727,0,1,0,7
+evaluation_protocols_cross_matched,Our PURE cross-matched,PURE,PRISM,window,77,72,0,1,0,4
+evaluation_protocols_cross_matched,Our PURE cross-matched,TokyoTech,Official,recording,9,8,0,0,0,1
+evaluation_protocols_cross_matched,Our PURE cross-matched,TokyoTech,Old,window,1521,1255,0,8,29,229
+evaluation_protocols_cross_matched,Our PURE cross-matched,TokyoTech,PRISM,window,153,130,0,0,3,20
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-PHYS,Official,recording,60,35,6,2,0,17
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-PHYS,Old,window,10103,4010,1122,1451,359,3161
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-PHYS,PRISM,window,1019,445,132,113,29,300
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-rPPG,Official,recording,42,39,0,0,0,3
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-rPPG,Old,window,2275,2162,3,1,4,105
+evaluation_protocols_cross_matched,Our PURE cross-matched,UBFC-rPPG,PRISM,window,239,228,0,0,0,11
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),BH-rPPG,Official,recording,105,94,4,1,0,6
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),BH-rPPG,Old,window,5323,3923,194,251,59,896
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),BH-rPPG,PRISM,window,523,407,19,13,1,83
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),COHFACE,Official,recording,160,86,29,0,3,42
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),COHFACE,Old,window,8242,2888,574,261,800,3719
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),COHFACE,PRISM,window,810,369,107,12,24,298
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),PURE,Official,recording,59,57,0,0,0,2
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),PURE,Old,window,3544,3280,27,17,26,194
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),PURE,PRISM,window,371,346,2,2,3,18
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),TokyoTech,Old,window,1520,1190,2,27,52,249
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),TokyoTech,PRISM,window,153,125,0,0,4,24
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-PHYS,Official,recording,60,36,6,0,1,17
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-PHYS,Old,window,10110,3759,1296,1345,424,3286
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-PHYS,PRISM,window,1020,421,130,106,24,339
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-rPPG,Old,window,497,488,0,0,0,9
+evaluation_protocols_cross_matched,Our UBFC cross-matched (seed 100),UBFC-rPPG,PRISM,window,52,52,0,0,0,0
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,BH-rPPG,Official,recording,105,98,1,0,0,6
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,BH-rPPG,Old,window,5323,4023,198,268,10,824
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,BH-rPPG,PRISM,window,523,425,18,15,0,65
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,COHFACE,Official,recording,160,103,15,1,0,41
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,COHFACE,Old,window,8242,3420,786,373,472,3191
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,COHFACE,PRISM,window,810,392,92,21,16,289
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,PURE,Official,recording,12,12,0,0,0,0
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,PURE,Old,window,735,726,1,0,0,8
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,PURE,PRISM,window,77,77,0,0,0,0
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,TokyoTech,Old,window,1521,1353,10,0,12,146
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,TokyoTech,PRISM,window,153,140,0,0,0,13
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,UBFC-PHYS,Official,recording,60,35,6,3,0,16
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,UBFC-PHYS,Old,window,10109,3962,1206,1623,265,3053
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,UBFC-PHYS,PRISM,window,1020,444,146,128,21,281
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,UBFC-rPPG,Official,recording,42,38,0,0,0,4
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,UBFC-rPPG,Old,window,2275,2136,4,0,28,107
+evaluation_protocols_harmonic_loss,PURE_A0_HARMONIC,UBFC-rPPG,PRISM,window,239,225,0,0,2,12
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,BH-rPPG,Official,recording,105,99,1,0,0,5
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,BH-rPPG,Old,window,5323,4038,192,154,26,913
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,BH-rPPG,PRISM,window,523,427,21,10,0,65
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,COHFACE,Official,recording,160,102,11,0,0,47
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,COHFACE,Old,window,8242,3389,817,511,456,3069
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,COHFACE,PRISM,window,810,398,80,39,21,272
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,PURE,Official,recording,12,12,0,0,0,0
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,PURE,Old,window,735,724,1,1,0,9
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,PURE,PRISM,window,77,74,0,0,0,3
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,TokyoTech,Old,window,1521,1312,6,6,17,180
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,TokyoTech,PRISM,window,153,135,1,0,2,15
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,UBFC-PHYS,Official,recording,60,37,7,2,0,14
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,UBFC-PHYS,Old,window,10103,3968,1187,1491,302,3155
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,UBFC-PHYS,PRISM,window,1019,451,144,116,25,283
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,UBFC-rPPG,Old,window,2276,2168,3,3,6,96
+evaluation_protocols_harmonic_loss,PURE_A2_HARMONIC,UBFC-rPPG,PRISM,window,239,223,0,0,0,16
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,BH-rPPG,Official,recording,105,83,5,0,1,16
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,BH-rPPG,Old,window,5323,3400,77,3,115,1728
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,BH-rPPG,PRISM,window,523,367,6,0,7,143
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,COHFACE,Official,recording,160,122,7,0,1,30
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,COHFACE,Old,window,8241,3772,235,49,672,3513
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,COHFACE,PRISM,window,810,454,42,4,34,276
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,PURE,Official,recording,59,52,1,0,3,3
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,PURE,Old,window,3494,2912,55,15,77,435
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,PURE,PRISM,window,371,317,11,1,13,29
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,TokyoTech,Official,recording,9,5,0,0,0,4
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,TokyoTech,Old,window,1521,1155,6,3,39,318
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,TokyoTech,PRISM,window,153,125,0,0,4,24
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,UBFC-PHYS,Official,recording,60,40,5,0,0,15
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,UBFC-PHYS,Old,window,10092,3786,1002,923,666,3715
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,UBFC-PHYS,PRISM,window,1018,415,113,75,46,369
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,UBFC-rPPG,Old,window,497,472,0,0,12,13
+evaluation_protocols_harmonic_loss,UBFC_A0_HARMONIC,UBFC-rPPG,PRISM,window,52,50,0,0,1,1
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,BH-rPPG,Official,recording,105,92,2,0,0,11
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,BH-rPPG,Old,window,5323,3933,78,21,65,1226
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,BH-rPPG,PRISM,window,523,423,6,1,2,91
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,COHFACE,Official,recording,160,130,6,0,4,20
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,COHFACE,Old,window,8242,5231,201,29,332,2449
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,COHFACE,PRISM,window,810,561,17,3,20,209
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,PURE,Official,recording,59,54,0,0,1,4
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,PURE,Old,window,3528,2996,66,19,61,386
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,PURE,PRISM,window,374,320,8,2,5,39
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,TokyoTech,Old,window,1521,1296,0,0,23,202
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,TokyoTech,PRISM,window,153,135,0,0,2,16
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,UBFC-PHYS,Official,recording,60,33,5,0,0,22
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,UBFC-PHYS,Old,window,10107,3623,1057,911,661,3855
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,UBFC-PHYS,PRISM,window,1019,375,113,71,44,416
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,UBFC-rPPG,Old,window,497,480,0,0,7,10
+evaluation_protocols_harmonic_loss,UBFC_A2_HARMONIC,UBFC-rPPG,PRISM,window,52,52,0,0,0,0
+evaluation_protocols_official,Released PURE cross,BH-rPPG,Official,recording,105,97,1,1,0,6
+evaluation_protocols_official,Released PURE cross,BH-rPPG,Old,window,5323,3954,328,183,25,833
+evaluation_protocols_official,Released PURE cross,BH-rPPG,PRISM,window,523,416,25,9,1,72
+evaluation_protocols_official,Released PURE cross,COHFACE,Official,recording,160,109,10,1,0,40
+evaluation_protocols_official,Released PURE cross,COHFACE,Old,window,8242,3126,836,312,386,3582
+evaluation_protocols_official,Released PURE cross,COHFACE,PRISM,window,810,354,84,25,20,327
+evaluation_protocols_official,Released PURE cross,PURE,Official,recording,24,24,0,0,0,0
+evaluation_protocols_official,Released PURE cross,PURE,Old,window,1464,1447,0,1,0,16
+evaluation_protocols_official,Released PURE cross,PURE,PRISM,window,153,150,0,0,0,3
+evaluation_protocols_official,Released PURE cross,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_official,Released PURE cross,TokyoTech,Old,window,1521,1289,5,5,11,211
+evaluation_protocols_official,Released PURE cross,TokyoTech,PRISM,window,153,131,0,0,1,21
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,Official,recording,60,36,8,2,0,14
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,Old,window,10126,4172,1242,1825,107,2780
+evaluation_protocols_official,Released PURE cross,UBFC-PHYS,PRISM,window,1020,463,145,149,13,250
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,Official,recording,42,40,0,0,0,2
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,Old,window,2280,2222,1,0,1,56
+evaluation_protocols_official,Released PURE cross,UBFC-rPPG,PRISM,window,239,231,0,0,0,8
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,Official,recording,105,98,1,0,0,6
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,Old,window,5323,4364,155,134,32,638
+evaluation_protocols_official,Released UBFC cross,BH-rPPG,PRISM,window,523,447,17,3,2,54
+evaluation_protocols_official,Released UBFC cross,COHFACE,Official,recording,160,132,10,0,0,18
+evaluation_protocols_official,Released UBFC cross,COHFACE,Old,window,8242,5276,343,57,284,2282
+evaluation_protocols_official,Released UBFC cross,COHFACE,PRISM,window,810,561,52,3,9,185
+evaluation_protocols_official,Released UBFC cross,PURE,Official,recording,59,54,1,1,0,3
+evaluation_protocols_official,Released UBFC cross,PURE,Old,window,3557,3159,65,95,17,221
+evaluation_protocols_official,Released UBFC cross,PURE,PRISM,window,374,329,7,17,3,18
+evaluation_protocols_official,Released UBFC cross,TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_official,Released UBFC cross,TokyoTech,Old,window,1521,1253,1,9,52,206
+evaluation_protocols_official,Released UBFC cross,TokyoTech,PRISM,window,153,132,0,0,5,16
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,Official,recording,60,39,6,1,0,14
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,Old,window,10124,3942,1337,1642,211,2992
+evaluation_protocols_official,Released UBFC cross,UBFC-PHYS,PRISM,window,1020,434,150,133,13,290
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,Official,recording,12,12,0,0,0,0
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,Old,window,668,658,0,0,0,10
+evaluation_protocols_official,Released UBFC cross,UBFC-rPPG,PRISM,window,70,70,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),BH-rPPG,Official,recording,105,94,4,1,0,6
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),BH-rPPG,Old,window,5323,3923,194,251,59,896
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),BH-rPPG,PRISM,window,523,407,19,13,1,83
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),COHFACE,Official,recording,160,86,29,0,3,42
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),COHFACE,Old,window,8242,2888,574,261,800,3719
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),COHFACE,PRISM,window,810,369,107,12,24,298
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),PURE,Official,recording,59,57,0,0,0,2
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),PURE,Old,window,3544,3280,27,17,26,194
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),PURE,PRISM,window,371,346,2,2,3,18
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),TokyoTech,Old,window,1520,1190,2,27,52,249
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),TokyoTech,PRISM,window,153,125,0,0,4,24
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-PHYS,Official,recording,60,36,6,0,1,17
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-PHYS,Old,window,10110,3759,1296,1345,424,3286
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-PHYS,PRISM,window,1020,421,130,106,24,339
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-rPPG,Old,window,497,488,0,0,0,9
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 100),UBFC-rPPG,PRISM,window,52,52,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),BH-rPPG,Official,recording,105,95,1,1,0,8
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),BH-rPPG,Old,window,5323,3988,186,385,38,726
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),BH-rPPG,PRISM,window,523,419,17,21,1,65
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),COHFACE,Official,recording,160,110,14,0,2,34
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),COHFACE,Old,window,8242,3959,510,395,415,2963
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),COHFACE,PRISM,window,810,462,57,35,17,239
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),PURE,Official,recording,59,54,0,2,0,3
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),PURE,Old,window,3556,3297,23,62,11,163
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),PURE,PRISM,window,372,338,2,12,1,19
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),TokyoTech,Official,recording,9,8,0,0,0,1
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),TokyoTech,Old,window,1521,1337,0,2,14,168
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),TokyoTech,PRISM,window,153,142,0,0,0,11
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-PHYS,Official,recording,60,36,8,1,0,15
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-PHYS,Old,window,10114,3896,1291,1586,249,3092
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-PHYS,PRISM,window,1019,420,129,124,21,325
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-rPPG,Old,window,497,492,0,0,0,5
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 101),UBFC-rPPG,PRISM,window,52,52,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),BH-rPPG,Official,recording,105,90,5,0,0,10
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),BH-rPPG,Old,window,5323,3831,282,363,32,815
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),BH-rPPG,PRISM,window,523,402,31,18,1,71
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),COHFACE,Official,recording,160,127,14,0,3,16
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),COHFACE,Old,window,8242,4847,300,101,384,2610
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),COHFACE,PRISM,window,810,541,35,11,23,200
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),PURE,Official,recording,59,57,1,0,0,1
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),PURE,Old,window,3552,3311,39,55,17,130
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),PURE,PRISM,window,373,344,3,9,2,15
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),TokyoTech,Official,recording,9,9,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),TokyoTech,Old,window,1521,1314,0,3,37,167
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),TokyoTech,PRISM,window,153,139,0,0,3,11
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-PHYS,Official,recording,60,38,8,1,0,13
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-PHYS,Old,window,10106,3887,1232,1435,350,3202
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-PHYS,PRISM,window,1020,432,130,122,20,316
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-rPPG,Official,recording,9,9,0,0,0,0
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-rPPG,Old,window,497,487,0,0,4,6
+evaluation_protocols_ubfc_seed_stability,Our UBFC cross-matched (seed 102),UBFC-rPPG,PRISM,window,52,52,0,0,0,0
