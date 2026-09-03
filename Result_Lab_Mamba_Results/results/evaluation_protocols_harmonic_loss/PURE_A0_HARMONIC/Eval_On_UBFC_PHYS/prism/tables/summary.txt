@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A0_HARMONIC/Eval_On_UBFC_PHYS — PRISM Evaluation Protocol
+====================================================================================
+Description                : Harmonic-loss A0 local PURE checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_loss_stage1/PURE_A0_HARMONIC/PURE_A0_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1020
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 16.713006 BPM
+Pooled measurement MAE     : 16.713006 BPM
+Pooled measurement RMSE    : 26.187610 BPM
+Pooled measurement MAPE    : 26.356570 %
+Pooled measurement Pearson : 0.105527
+Absolute-error SD           : 20.161011 BPM
+Accuracy within 5 BPM      : 45.882 %
+Recording-macro MAE SE     : 1.662722 BPM
+Pooled MAE standard error  : 0.631266 BPM
+Official-formula RMSE +/-  : 41.360616
+Pooled MAPE standard error : 1.178080 %
+Pooled Pearson std. error  : 0.031167
+Mean waveform Pearson      : -0.024729
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
