@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A0_L2_HARMONIC_REPLACE/Eval_On_TOKYOTECH — Old Protocol
+====================================================================================
+Description                : Stage-2 L2_HARMONIC_REPLACE, A0, local PURE checkpoint evaluated on TOKYOTECH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/PURE_A0_L2_HARMONIC_REPLACE/PURE_A0_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1521
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 3.625247 BPM
+Pooled measurement MAE     : 3.625247 BPM
+Pooled measurement RMSE    : 10.021214 BPM
+Pooled measurement MAPE    : 4.004155 %
+Pooled measurement Pearson : 0.690885
+Absolute-error SD           : 9.342500 BPM
+Accuracy within 5 BPM      : 88.429 %
+Recording-macro MAE SE     : 2.125727 BPM
+Pooled MAE standard error  : 0.239551 BPM
+Official-formula RMSE +/-  : 11.415948
+Pooled MAPE standard error : 0.243207 %
+Pooled Pearson std. error  : 0.018550
+Mean waveform Pearson      : -0.064060
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
