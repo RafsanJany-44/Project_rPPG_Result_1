@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A0_L2_HARMONIC_REPLACE/Eval_On_BH — PRISM Evaluation Protocol
+====================================================================================
+Description                : Stage-2 L2_HARMONIC_REPLACE, A0, local PURE checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/PURE_A0_L2_HARMONIC_REPLACE/PURE_A0_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 523
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 5.239903 BPM
+Pooled measurement MAE     : 5.256212 BPM
+Pooled measurement RMSE    : 10.959184 BPM
+Pooled measurement MAPE    : 7.261897 %
+Pooled measurement Pearson : 0.642871
+Absolute-error SD           : 9.616441 BPM
+Accuracy within 5 BPM      : 78.776 %
+Recording-macro MAE SE     : 0.612609 BPM
+Pooled MAE standard error  : 0.420498 BPM
+Official-formula RMSE +/-  : 18.655666
+Pooled MAPE standard error : 0.607393 %
+Pooled Pearson std. error  : 0.033558
+Mean waveform Pearson      : -0.018562
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
