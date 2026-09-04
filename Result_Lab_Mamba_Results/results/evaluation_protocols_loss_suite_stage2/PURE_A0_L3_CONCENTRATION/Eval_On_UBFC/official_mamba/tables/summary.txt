@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A0_L3_CONCENTRATION/Eval_On_UBFC — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Stage-2 L3_CONCENTRATION, A0, local PURE checkpoint evaluated on UBFC: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/PURE_A0_L3_CONCENTRATION/PURE_A0_L3_CONCENTRATION_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 42
+Expected recordings        : 42
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 42
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.417385 BPM
+Pooled measurement MAE     : 2.417385 BPM
+Pooled measurement RMSE    : 4.657663 BPM
+Pooled measurement MAPE    : 2.490822 %
+Pooled measurement Pearson : 0.964386
+Absolute-error SD           : 3.981215 BPM
+Accuracy within 5 BPM      : 83.333 %
+Recording-macro MAE SE     : 0.614315 BPM
+Pooled MAE standard error  : 0.614315 BPM
+Official-formula RMSE +/-  : 10.394583
+Pooled MAPE standard error : 0.616637 %
+Pooled Pearson std. error  : 0.041821
+Mean waveform Pearson      : 0.443173
+Mean SNR                    : -0.422852 dB
+SNR standard error         : 1.138385 dB
