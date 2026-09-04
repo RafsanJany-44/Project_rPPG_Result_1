@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_L4_CONCENTRATION_HARMONIC/Eval_On_BH — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Stage-2 L4_CONCENTRATION_HARMONIC, A2, local UBFC checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A2_L4_CONCENTRATION_HARMONIC/UBFC_A2_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 105
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.746560 BPM
+Pooled measurement MAE     : 2.746560 BPM
+Pooled measurement RMSE    : 6.222183 BPM
+Pooled measurement MAPE    : 3.906889 %
+Pooled measurement Pearson : 0.860606
+Absolute-error SD           : 5.583186 BPM
+Accuracy within 5 BPM      : 92.381 %
+Recording-macro MAE SE     : 0.544863 BPM
+Pooled MAE standard error  : 0.544863 BPM
+Official-formula RMSE +/-  : 15.951612
+Pooled MAPE standard error : 0.840556 %
+Pooled Pearson std. error  : 0.050180
+Mean waveform Pearson      : -0.007108
+Mean SNR                    : 1.316859 dB
+SNR standard error         : 0.679035 dB
