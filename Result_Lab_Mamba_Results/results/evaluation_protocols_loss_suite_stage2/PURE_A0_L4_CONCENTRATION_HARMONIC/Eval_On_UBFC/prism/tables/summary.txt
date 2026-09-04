@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A0_L4_CONCENTRATION_HARMONIC/Eval_On_UBFC — PRISM Evaluation Protocol
+====================================================================================
+Description                : Stage-2 L4_CONCENTRATION_HARMONIC, A0, local PURE checkpoint evaluated on UBFC: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/PURE_A0_L4_CONCENTRATION_HARMONIC/PURE_A0_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 42
+Expected recordings        : 42
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 239
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.076547 BPM
+Pooled measurement MAE     : 1.927894 BPM
+Pooled measurement RMSE    : 5.887156 BPM
+Pooled measurement MAPE    : 1.963118 %
+Pooled measurement Pearson : 0.945165
+Absolute-error SD           : 5.562538 BPM
+Accuracy within 5 BPM      : 94.561 %
+Recording-macro MAE SE     : 0.484388 BPM
+Pooled MAE standard error  : 0.359811 BPM
+Official-formula RMSE +/-  : 19.927105
+Pooled MAPE standard error : 0.349823 %
+Pooled Pearson std. error  : 0.021215
+Mean waveform Pearson      : 0.639964
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
