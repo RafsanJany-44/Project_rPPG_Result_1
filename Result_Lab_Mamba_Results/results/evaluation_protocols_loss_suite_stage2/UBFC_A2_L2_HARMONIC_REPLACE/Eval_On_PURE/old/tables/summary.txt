@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_L2_HARMONIC_REPLACE/Eval_On_PURE — Old Protocol
+====================================================================================
+Description                : Stage-2 L2_HARMONIC_REPLACE, A2, local UBFC checkpoint evaluated on PURE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A2_L2_HARMONIC_REPLACE/UBFC_A2_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 59
+Expected recordings        : 59
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 3576
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 7.509662 BPM
+Pooled measurement MAE     : 7.576063 BPM
+Pooled measurement RMSE    : 19.111281 BPM
+Pooled measurement MAPE    : 11.704595 %
+Pooled measurement Pearson : 0.644668
+Absolute-error SD           : 17.545493 BPM
+Accuracy within 5 BPM      : 82.522 %
+Recording-macro MAE SE     : 1.441148 BPM
+Pooled MAE standard error  : 0.293405 BPM
+Official-formula RMSE +/-  : 20.267468
+Pooled MAPE standard error : 0.453459 %
+Pooled Pearson std. error  : 0.012787
+Mean waveform Pearson      : 0.523523
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
