@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A0_L4_CONCENTRATION_HARMONIC/Eval_On_UBFC — Old Protocol
+====================================================================================
+Description                : Stage-2 L4_CONCENTRATION_HARMONIC, A0, local UBFC checkpoint evaluated on UBFC: held-out 0.8-1.0 clean source validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A0_L4_CONCENTRATION_HARMONIC/UBFC_A0_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.8–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 497
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 24.080017 BPM
+Pooled measurement MAE     : 23.764588 BPM
+Pooled measurement RMSE    : 37.207694 BPM
+Pooled measurement MAPE    : 22.846464 %
+Pooled measurement Pearson : 0.034123
+Absolute-error SD           : 28.629650 BPM
+Accuracy within 5 BPM      : 57.948 %
+Recording-macro MAE SE     : 4.467536 BPM
+Pooled MAE standard error  : 1.284215 BPM
+Official-formula RMSE +/-  : 88.028172
+Pooled MAPE standard error : 1.190355 %
+Pooled Pearson std. error  : 0.044920
+Mean waveform Pearson      : -0.010744
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
