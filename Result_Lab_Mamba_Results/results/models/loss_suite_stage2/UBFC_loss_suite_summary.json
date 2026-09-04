@@ -1,0 +1,44 @@
+{
+  "source_dataset": "UBFC",
+  "completed_utc": "2026-09-03T15:18:01.612352+00:00",
+  "planned_models": 8,
+  "successful_models": 8,
+  "failed_models": 0,
+  "successes": [
+    {
+      "experiment": "UBFC_A0_L2_HARMONIC_REPLACE",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A0_L2_HARMONIC_REPLACE/UBFC_A0_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A2_L2_HARMONIC_REPLACE",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A2_L2_HARMONIC_REPLACE/UBFC_A2_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A0_L3_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A0_L3_CONCENTRATION/UBFC_A0_L3_CONCENTRATION_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A2_L3_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A2_L3_CONCENTRATION/UBFC_A2_L3_CONCENTRATION_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A0_L4_CONCENTRATION_HARMONIC",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A0_L4_CONCENTRATION_HARMONIC/UBFC_A0_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A2_L4_CONCENTRATION_HARMONIC",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A2_L4_CONCENTRATION_HARMONIC/UBFC_A2_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A0_L5_CE_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A0_L5_CE_CONCENTRATION/UBFC_A0_L5_CE_CONCENTRATION_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A2_L5_CE_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/UBFC_A2_L5_CE_CONCENTRATION/UBFC_A2_L5_CE_CONCENTRATION_RhythmMamba_Best.pth"
+    }
+  ],
+  "failures": [],
+  "suite_hours": 20.632744531363972,
+  "status": "PASSED"
+}

@@ -1,0 +1,44 @@
+{
+  "source_dataset": "PURE",
+  "completed_utc": "2026-09-03T21:41:03.011396+00:00",
+  "planned_models": 8,
+  "successful_models": 8,
+  "failed_models": 0,
+  "successes": [
+    {
+      "experiment": "PURE_A0_L2_HARMONIC_REPLACE",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A0_L2_HARMONIC_REPLACE/PURE_A0_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A2_L2_HARMONIC_REPLACE",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A2_L2_HARMONIC_REPLACE/PURE_A2_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A0_L3_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A0_L3_CONCENTRATION/PURE_A0_L3_CONCENTRATION_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A2_L3_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A2_L3_CONCENTRATION/PURE_A2_L3_CONCENTRATION_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A0_L4_CONCENTRATION_HARMONIC",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A0_L4_CONCENTRATION_HARMONIC/PURE_A0_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A2_L4_CONCENTRATION_HARMONIC",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A2_L4_CONCENTRATION_HARMONIC/PURE_A2_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A0_L5_CE_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A0_L5_CE_CONCENTRATION/PURE_A0_L5_CE_CONCENTRATION_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A2_L5_CE_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/loss_suite_stage2/PURE_A2_L5_CE_CONCENTRATION/PURE_A2_L5_CE_CONCENTRATION_RhythmMamba_Best.pth"
+    }
+  ],
+  "failures": [],
+  "suite_hours": 27.019329684773044,
+  "status": "PASSED"
+}
