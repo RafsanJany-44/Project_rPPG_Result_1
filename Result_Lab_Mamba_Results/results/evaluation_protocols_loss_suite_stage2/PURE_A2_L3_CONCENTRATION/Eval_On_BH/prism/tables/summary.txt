@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A2_L3_CONCENTRATION/Eval_On_BH — PRISM Evaluation Protocol
+====================================================================================
+Description                : Stage-2 L3_CONCENTRATION, A2, local PURE checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/PURE_A2_L3_CONCENTRATION/PURE_A2_L3_CONCENTRATION_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 523
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 7.809187 BPM
+Pooled measurement MAE     : 7.831382 BPM
+Pooled measurement RMSE    : 17.155346 BPM
+Pooled measurement MAPE    : 11.294765 %
+Pooled measurement Pearson : 0.484547
+Absolute-error SD           : 15.263530 BPM
+Accuracy within 5 BPM      : 78.203 %
+Recording-macro MAE SE     : 1.041663 BPM
+Pooled MAE standard error  : 0.667428 BPM
+Official-formula RMSE +/-  : 37.799142
+Pooled MAPE standard error : 0.997732 %
+Pooled Pearson std. error  : 0.038324
+Mean waveform Pearson      : -0.014380
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
