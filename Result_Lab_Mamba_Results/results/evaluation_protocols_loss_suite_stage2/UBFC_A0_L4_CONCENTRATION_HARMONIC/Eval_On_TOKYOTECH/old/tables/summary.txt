@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A0_L4_CONCENTRATION_HARMONIC/Eval_On_TOKYOTECH — Old Protocol
+====================================================================================
+Description                : Stage-2 L4_CONCENTRATION_HARMONIC, A0, local UBFC checkpoint evaluated on TOKYOTECH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A0_L4_CONCENTRATION_HARMONIC/UBFC_A0_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1521
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 18.821170 BPM
+Pooled measurement MAE     : 18.821170 BPM
+Pooled measurement RMSE    : 26.250538 BPM
+Pooled measurement MAPE    : 23.305641 %
+Pooled measurement Pearson : 0.255521
+Absolute-error SD           : 18.299024 BPM
+Accuracy within 5 BPM      : 43.787 %
+Recording-macro MAE SE     : 4.447357 BPM
+Pooled MAE standard error  : 0.469206 BPM
+Official-formula RMSE +/-  : 24.277948
+Pooled MAPE standard error : 0.529018 %
+Pooled Pearson std. error  : 0.024806
+Mean waveform Pearson      : 0.105347
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
