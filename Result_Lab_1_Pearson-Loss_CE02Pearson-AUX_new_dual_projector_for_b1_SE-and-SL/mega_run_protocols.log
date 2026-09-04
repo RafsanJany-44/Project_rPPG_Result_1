@@ -1,0 +1,15 @@
+[2026-09-04 14:27:08] ==========================================================================
+[2026-09-04 14:27:08] MEGA RUN start | device=cuda | models=2 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Pearson-Loss_CE02Pearson-AUX_new_dual_projector_for_b1_SE-and-SL
+[2026-09-04 14:27:08] models: ['ablation_step4_chrom_b1_deriv_b2_aux', 'ablation_step4_chrom_b1_deriv_b2_aux_SE']
+[2026-09-04 14:27:08] ==========================================================================
+[2026-09-04 14:27:08] --------------------------------------------------------------------------
+[2026-09-04 14:27:08] [1/2] MODEL: ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-04 14:27:09]   built 'ablation_step4_chrom_b1_deriv_b2_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-04 14:35:25]     epoch   1 | train_loss=1.8347 val_loss=0.4108 val_hr_mae=5.603 lr=3.0e-04
+[2026-09-04 15:52:32]     epoch  10 | train_loss=1.3353 val_loss=0.2449 val_hr_mae=1.839 lr=3.0e-04
+[2026-09-04 17:14:39]     epoch  20 | train_loss=1.1396 val_loss=0.2237 val_hr_mae=1.770 lr=1.5e-04
+[2026-09-04 18:35:50]     epoch  30 | train_loss=1.1178 val_loss=0.2159 val_hr_mae=1.597 lr=1.5e-04
+[2026-09-04 19:57:09]     epoch  40 | train_loss=1.1023 val_loss=0.2134 val_hr_mae=1.513 lr=1.5e-04
+[2026-09-04 21:18:01]     epoch  50 | train_loss=1.0850 val_loss=0.2175 val_hr_mae=1.572 lr=7.5e-05
+[2026-09-04 22:35:15]     epoch  60 | train_loss=1.0771 val_loss=0.2151 val_hr_mae=1.674 lr=3.7e-05
+[2026-09-04 23:42:39]     epoch  70 | train_loss=1.0708 val_loss=0.2137 val_hr_mae=1.594 lr=1.0e-05
