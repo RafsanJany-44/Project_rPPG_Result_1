@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A0_L2_HARMONIC_REPLACE/Eval_On_BH — PRISM Evaluation Protocol
+====================================================================================
+Description                : Stage-2 L2_HARMONIC_REPLACE, A0, local UBFC checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A0_L2_HARMONIC_REPLACE/UBFC_A0_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 523
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 4.460815 BPM
+Pooled measurement MAE     : 4.455660 BPM
+Pooled measurement RMSE    : 9.434868 BPM
+Pooled measurement MAPE    : 6.132731 %
+Pooled measurement Pearson : 0.720819
+Absolute-error SD           : 8.316479 BPM
+Accuracy within 5 BPM      : 81.836 %
+Recording-macro MAE SE     : 0.507924 BPM
+Pooled MAE standard error  : 0.363654 BPM
+Official-formula RMSE +/-  : 15.524054
+Pooled MAPE standard error : 0.519624 %
+Pooled Pearson std. error  : 0.030366
+Mean waveform Pearson      : -0.005188
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
