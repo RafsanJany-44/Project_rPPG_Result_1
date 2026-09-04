@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-09-03T05:32:19.108224+00:00",
+  "experiment": "UBFC_A2_L4_CONCENTRATION_HARMONIC",
+  "source_dataset": "UBFC",
+  "augmentation": "A2",
+  "official_augmentation": true,
+  "offline_augmentation": true,
+  "offline_probability": 0.5,
+  "online_rgb_gain": false,
+  "loss_variant": "L4_CONCENTRATION_HARMONIC",
+  "loss_description": "0.2 Pearson + 1.0 concentration + 0.1 harmonic; CE removed",
+  "pearson_weight": 0.2,
+  "ce_weight": 0.0,
+  "concentration_weight": 1.0,
+  "harmonic_weight": 0.1,
+  "concentration_half_width_bpm": 3.0,
+  "harmonic_ratios": [
+    0.5,
+    1.5,
+    2.0
+  ],
+  "harmonic_band_half_width_bpm": 2.0,
+  "frequency_range_bpm": [
+    45,
+    149
+  ],
+  "spectral_engine": "official_sinusoidal_projection",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "validation_augmentation": false,
+  "training_clips_per_epoch": 378,
+  "validation_clips": 105,
+  "maximum_epochs": 100,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_total_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 100,
+  "learning_rate": 0.0003,
+  "completed_utc": "2026-09-03T08:29:41.972390+00:00",
+  "epochs_completed": 68,
+  "stopped_early": true,
+  "best_epoch": 57,
+  "best_validation_total_loss": 1.354644376891,
+  "best_checkpoint": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A2_L4_CONCENTRATION_HARMONIC/UBFC_A2_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth",
+  "history": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A2_L4_CONCENTRATION_HARMONIC/UBFC_A2_L4_CONCENTRATION_HARMONIC_training_history.csv",
+  "training_hours": 2.9563509231862715,
+  "status": "PASSED"
+}

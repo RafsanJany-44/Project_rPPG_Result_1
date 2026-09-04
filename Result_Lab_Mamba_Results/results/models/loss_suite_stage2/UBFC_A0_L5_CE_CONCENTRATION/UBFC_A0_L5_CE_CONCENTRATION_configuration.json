@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-03T08:29:42.433203+00:00",
+  "experiment": "UBFC_A0_L5_CE_CONCENTRATION",
+  "source_dataset": "UBFC",
+  "augmentation": "A0",
+  "official_augmentation": true,
+  "offline_augmentation": false,
+  "offline_probability": 0.0,
+  "online_rgb_gain": false,
+  "loss_variant": "L5_CE_CONCENTRATION",
+  "loss_description": "0.2 Pearson + 1.0 CE + 1.0 concentration",
+  "pearson_weight": 0.2,
+  "ce_weight": 1.0,
+  "concentration_weight": 1.0,
+  "harmonic_weight": 0.0,
+  "concentration_half_width_bpm": 3.0,
+  "harmonic_ratios": [
+    0.5,
+    1.5,
+    2.0
+  ],
+  "harmonic_band_half_width_bpm": 2.0,
+  "frequency_range_bpm": [
+    45,
+    149
+  ],
+  "spectral_engine": "official_sinusoidal_projection",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "validation_augmentation": false,
+  "training_clips_per_epoch": 378,
+  "validation_clips": 105,
+  "maximum_epochs": 100,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_total_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 100,
+  "learning_rate": 0.0003
+}
