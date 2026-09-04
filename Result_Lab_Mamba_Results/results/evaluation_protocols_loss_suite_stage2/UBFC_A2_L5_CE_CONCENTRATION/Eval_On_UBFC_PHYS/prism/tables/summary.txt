@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_L5_CE_CONCENTRATION/Eval_On_UBFC_PHYS — PRISM Evaluation Protocol
+====================================================================================
+Description                : Stage-2 L5_CE_CONCENTRATION, A2, local UBFC checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A2_L5_CE_CONCENTRATION/UBFC_A2_L5_CE_CONCENTRATION_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1020
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 15.135283 BPM
+Pooled measurement MAE     : 15.135283 BPM
+Pooled measurement RMSE    : 22.025339 BPM
+Pooled measurement MAPE    : 21.883399 %
+Pooled measurement Pearson : 0.180107
+Absolute-error SD           : 16.001212 BPM
+Accuracy within 5 BPM      : 40.686 %
+Recording-macro MAE SE     : 1.273899 BPM
+Pooled MAE standard error  : 0.501017 BPM
+Official-formula RMSE +/-  : 25.217537
+Pooled MAPE standard error : 0.831319 %
+Pooled Pearson std. error  : 0.030829
+Mean waveform Pearson      : -0.003893
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
