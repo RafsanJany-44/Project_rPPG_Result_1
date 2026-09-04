@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIMIC_CHROM Evaluation Dashboard</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
+h1 { text-align: center; margin-bottom: 5px; color: #2B579A; }
+.subtitle { text-align: center; color: #666; margin-bottom: 20px; font-size: 14px; }
+.controls { display: flex; gap: 15px; align-items: center; margin-bottom: 20px;
+             padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.controls label { font-weight: 600; font-size: 14px; }
+.controls select { padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; min-width: 200px; }
+.copy-btn { padding: 6px 14px; background: #2B579A; color: #fff; border: none; border-radius: 4px;
+             cursor: pointer; font-size: 12px; margin-bottom: 8px; }
+.copy-btn:hover { background: #1a3d6e; }
+.copy-btn:active { background: #0d2540; }
+.copied { background: #27ae60 !important; }
+.section { display: none; }
+.section.active { display: block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background: #fff;
+         box-shadow: 0 1px 3px rgba(0,0,0,0.08); font-size: 12px; }
+th { background: #2B579A; color: #fff; padding: 8px 6px; text-align: center;
+      position: sticky; top: 0; z-index: 10; white-space: nowrap; }
+td { padding: 6px; text-align: center; border: 1px solid #e0e0e0; }
+.model-name { text-align: left; font-weight: 600; white-space: nowrap; min-width: 180px; }
+.chrom-row { background: #FFF3E0; }
+.empty { color: #ccc; }
+.err-low { background: #e8f5e9; color: #2e7d32; font-weight: 600; }
+.err-high { background: #fff3e0; color: #e65100; font-weight: 600; }
+.err-extreme { background: #ffebee; color: #c62828; font-weight: 700; }
+.harm { background: #ffcdd2; color: #b71c1c; font-weight: 700; }
+.rec-list { text-align: left; font-size: 11px; max-width: 300px; word-wrap: break-word; }
+tbody tr:hover { background: #e3f2fd; }
+h3 { margin: 15px 0 8px 0; color: #2B579A; }
+</style>
+</head>
+<body>
+<h1>MIMIC_CHROM — Evaluation Dashboard</h1>
+<p class="subtitle">Auto-generated from: /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Strat-A-Loss_new_dual_projector_for_b1_SE-and-SL</p>
+
+<div class="controls">
+  <label>View:</label>
+  <select id="primary" onchange="updateView()">
+    <option value="mae">MAE Tables</option>
+    <option value="error">Error Analysis</option>
+  </select>
+
+  <label>Detail:</label>
+  <select id="secondary" onchange="updateView()">
+  </select>
+</div>
+
+<!-- MAE Window Val + Train -->
+<div id="sec_mae_window" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Validation MAE — Window-Level</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td class="err-low">0.349</td><td class="err-low">0.282</td><td class="err-low">0.146</td><td class="err-high">2.453</td><td class="err-high">2.264</td><td class="err-low">0.366</td><td>1.295</td><td>1.547</td><td>1.566</td><td>0.988</td><td>1.097</td><td>0.549</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td class="err-low">0.312</td><td class="err-low">0.481</td><td class="err-low">0.128</td><td class="err-high">3.269</td><td class="err-high">2.899</td><td class="err-low">0.269</td><td>1.207</td><td>1.627</td><td>1.538</td><td>1.073</td><td>1.360</td><td class="err-low">0.492</td></tr>
+<tr class="chrom-row"><td class="model-name">CHROM (baseline)</td><td class="err-low">0.394</td><td class="err-low">0.469</td><td class="err-low">0.403</td><td class="err-high">3.265</td><td class="err-high">2.945</td><td class="err-low">0.354</td><td>1.957</td><td class="err-high">2.191</td><td>1.755</td><td>1.352</td><td>1.528</td><td>0.664</td></tr>
+</tbody></table>
+
+  <h3>Training MAE — Window-Level</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td class="err-low">0.418</td><td>0.520</td><td class="err-low">0.339</td><td>0.958</td><td>0.949</td><td>0.720</td><td>1.338</td><td>1.453</td><td class="err-high">2.001</td><td>0.817</td><td>0.905</td><td>0.898</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td class="err-low">0.425</td><td>0.557</td><td class="err-low">0.269</td><td>0.938</td><td>1.055</td><td>0.715</td><td>1.269</td><td>1.245</td><td class="err-high">2.426</td><td>0.793</td><td>0.878</td><td>0.973</td></tr>
+<tr class="chrom-row"><td class="model-name">CHROM (baseline)</td><td>0.655</td><td>0.844</td><td>0.638</td><td class="err-high">2.438</td><td>1.213</td><td>1.001</td><td>1.807</td><td>1.437</td><td class="err-high">2.229</td><td>1.312</td><td>1.108</td><td>1.173</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- MAE Recording Val + Train -->
+<div id="sec_mae_recording" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Validation MAE — Recording-Level (summary.txt)</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td class="err-low">0.354</td><td class="err-low">0.285</td><td class="err-low">0.146</td><td class="err-high">2.453</td><td class="err-high">2.264</td><td class="err-low">0.366</td><td>1.363</td><td>1.818</td><td>1.566</td><td>1.561</td><td>1.545</td><td>0.549</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td class="err-low">0.315</td><td class="err-low">0.488</td><td class="err-low">0.128</td><td class="err-high">3.269</td><td class="err-high">2.899</td><td class="err-low">0.269</td><td>1.286</td><td>1.894</td><td>1.538</td><td>1.919</td><td>1.926</td><td class="err-low">0.492</td></tr>
+</tbody></table>
+
+  <h3>Training MAE — Recording-Level (summary.txt)</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td class="err-low">0.422</td><td>0.527</td><td class="err-low">0.339</td><td>0.958</td><td>0.949</td><td>0.720</td><td>1.343</td><td>1.448</td><td class="err-high">2.001</td><td>0.874</td><td>0.929</td><td>0.898</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td class="err-low">0.429</td><td>0.565</td><td class="err-low">0.269</td><td>0.938</td><td>1.055</td><td>0.715</td><td>1.274</td><td>1.241</td><td class="err-high">2.426</td><td>0.851</td><td>0.939</td><td>0.973</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- Error Old -->
+<div id="sec_error_old" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Training — Error Type Counts (Old@1BPM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td>5743</td><td>4298 (74.8%)</td><td>1039 (18.1%)</td><td>207 (3.6%)</td><td>85 (1.5%)</td><td>114 (2.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>114</td><td class="err-extreme">65.0 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_06_Exercise_Frag6; UBFC|vid_14; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_37; UBFC|vid_43; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_9</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td>5743</td><td>4319 (75.2%)</td><td>1049 (18.3%)</td><td>180 (3.1%)</td><td>82 (1.4%)</td><td>113 (2.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>113</td><td class="err-extreme">66.0 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_06_Exercise_Frag6; UBFC|vid_14; UBFC|vid_15; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_37; UBFC|vid_41; UBFC|vid_43; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_9</td></tr>
+</tbody></table>
+
+  <h3>Validation — Error Type Counts (Old@1BPM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td>1442</td><td>1106 (76.7%)</td><td>241 (16.7%)</td><td>46 (3.2%)</td><td>14 (1.0%)</td><td>35 (2.4%)</td><td class="harm">2</td><td class="">0</td><td class="">0</td><td>33</td><td class="err-extreme">46.0 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_08_Exercise_Frag6; TokyoTech|Subj_09_Exercise_Frag4; TokyoTech|Subj_09_Post_Relax_Frag7; TokyoTech|Subj_09_Post_Relax_Frag9; TokyoTech|Subj_09_Pre_Relax_Frag3; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4; UBFC|vid_49</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td>1442</td><td>1127 (78.2%)</td><td>221 (15.3%)</td><td>41 (2.8%)</td><td>13 (0.9%)</td><td>40 (2.8%)</td><td class="harm">1</td><td class="">0</td><td class="">0</td><td>38</td><td class="err-extreme">46.0 BPM</td><td class="rec-list">PURE|09; PURE|10; TokyoTech|Subj_08_Exercise_Frag6; TokyoTech|Subj_09_Exercise_Frag4; TokyoTech|Subj_09_Exercise_Frag5; TokyoTech|Subj_09_Post_Relax_Frag7; TokyoTech|Subj_09_Post_Relax_Frag9; TokyoTech|Subj_09_Pre_Relax_Frag2; TokyoTech|Subj_09_Pre_Relax_Frag3; UBFC|vid_20; UBFC|vid_25; UBFC|vid_32; UBFC|vid_4</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- Error PRISM -->
+<div id="sec_error_prism" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Training — Error Type Counts (PRISM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td>629</td><td>506 (80.4%)</td><td>71 (11.3%)</td><td>20 (3.2%)</td><td>10 (1.6%)</td><td>22 (3.5%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>22</td><td class="err-high">16.6 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; UBFC|vid_14; UBFC|vid_15; UBFC|vid_18; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_41; UBFC|vid_9</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td>629</td><td>500 (79.5%)</td><td>72 (11.4%)</td><td>27 (4.3%)</td><td>9 (1.4%)</td><td>21 (3.3%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>21</td><td class="err-high">13.0 BPM</td><td class="rec-list">PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_14; UBFC|vid_15; UBFC|vid_18; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_9</td></tr>
+</tbody></table>
+
+  <h3>Validation — Error Type Counts (PRISM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux</td><td>159</td><td>132 (83.0%)</td><td>22 (13.8%)</td><td>0 (0.0%)</td><td>0 (0.0%)</td><td>5 (3.1%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>5</td><td class="err-extreme">45.2 BPM</td><td class="rec-list">TokyoTech|Subj_09_Exercise_Frag4; TokyoTech|Subj_09_Post_Relax_Frag7; UBFC|vid_32; UBFC|vid_4</td></tr>
+<tr><td class="model-name">ablation_step4_chrom_b1_deriv_b2_aux_SE</td><td>159</td><td>134 (84.3%)</td><td>15 (9.4%)</td><td>2 (1.3%)</td><td>0 (0.0%)</td><td>8 (5.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>8</td><td class="err-extreme">41.6 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_09_Post_Relax_Frag7; TokyoTech|Subj_09_Post_Relax_Frag9; TokyoTech|Subj_09_Pre_Relax_Frag3; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4</td></tr>
+</tbody></table>
+
+</div>
+
+<script>
+const secondaryOptions = {
+  mae: [
+    {value: "mae_window",    label: "Window-Level MAE"},
+    {value: "mae_recording", label: "Recording-Level MAE (summary.txt)"},
+  ],
+  error: [
+    {value: "error_old",   label: "Old@1BPM Protocol Errors"},
+    {value: "error_prism", label: "PRISM Protocol Errors"},
+  ],
+};
+
+function updateView() {
+  const primary = document.getElementById("primary").value;
+  const secSelect = document.getElementById("secondary");
+
+  // Update secondary options
+  const opts = secondaryOptions[primary];
+  const currentSec = secSelect.value;
+  secSelect.innerHTML = "";
+  opts.forEach(o => {
+    const opt = document.createElement("option");
+    opt.value = o.value;
+    opt.textContent = o.label;
+    secSelect.appendChild(opt);
+  });
+
+  // Keep selection if still valid
+  if (opts.some(o => o.value === currentSec)) {
+    secSelect.value = currentSec;
+  }
+
+  // Show/hide sections
+  document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+  const activeId = "sec_" + secSelect.value;
+  const el = document.getElementById(activeId);
+  if (el) el.classList.add("active");
+}
+
+function copyTable(btn) {
+  const section = btn.parentElement;
+  const tables = section.querySelectorAll("table");
+  let text = "";
+  tables.forEach((table, idx) => {
+    // Get preceding h3
+    const h3 = table.previousElementSibling;
+    if (h3 && h3.tagName === "H3") text += h3.textContent + "\n";
+
+    const rows = table.querySelectorAll("tr");
+    rows.forEach(row => {
+      const cells = row.querySelectorAll("th, td");
+      const vals = Array.from(cells).map(c => c.textContent.trim());
+      text += vals.join("\t") + "\n";
+    });
+    text += "\n";
+  });
+
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = "Copied!";
+    btn.classList.add("copied");
+    setTimeout(() => {
+      btn.textContent = "Copy Tables";
+      btn.classList.remove("copied");
+    }, 2000);
+  });
+}
+
+// Initialize
+updateView();
+</script>
+</body>
+</html>

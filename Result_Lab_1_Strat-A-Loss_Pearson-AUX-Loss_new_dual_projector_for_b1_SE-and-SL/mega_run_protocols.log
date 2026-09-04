@@ -1,0 +1,61 @@
+[2026-09-03 15:44:28] ==========================================================================
+[2026-09-03 15:44:28] MEGA RUN start | device=cuda | models=2 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Strat-A-Loss_new_dual_projector_for_b1_SE-and-SL
+[2026-09-03 15:44:28] models: ['ablation_step4_chrom_b1_deriv_b2_aux', 'ablation_step4_chrom_b1_deriv_b2_aux_SE']
+[2026-09-03 15:44:28] ==========================================================================
+[2026-09-03 15:44:28] --------------------------------------------------------------------------
+[2026-09-03 15:44:28] [1/2] MODEL: ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-03 15:44:28]   built 'ablation_step4_chrom_b1_deriv_b2_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-03 15:49:54]     epoch   1 | train_loss=2.5855 val_loss=1.3055 val_hr_mae=2.263 lr=3.0e-04
+[2026-09-03 16:34:50]     epoch  10 | train_loss=1.8134 val_loss=1.0842 val_hr_mae=2.185 lr=3.0e-04
+[2026-09-03 17:23:35]     epoch  20 | train_loss=1.6633 val_loss=1.0266 val_hr_mae=2.051 lr=3.0e-04
+[2026-09-03 18:12:23]     epoch  30 | train_loss=1.5622 val_loss=0.9587 val_hr_mae=1.967 lr=3.0e-04
+[2026-09-03 19:01:15]     epoch  40 | train_loss=1.4950 val_loss=0.9427 val_hr_mae=1.983 lr=1.5e-04
+[2026-09-03 19:50:07]     epoch  50 | train_loss=1.4651 val_loss=0.9432 val_hr_mae=1.998 lr=7.5e-05
+[2026-09-03 20:39:04]     epoch  60 | train_loss=1.4546 val_loss=0.9419 val_hr_mae=2.046 lr=3.7e-05
+[2026-09-03 21:27:55]     epoch  70 | train_loss=1.4472 val_loss=0.9405 val_hr_mae=1.975 lr=1.0e-05
+[2026-09-03 21:42:34]     early stop at epoch 73 (no val-loss improvement for 30)
+[2026-09-03 21:42:34]   trained 'ablation_step4_chrom_b1_deriv_b2_aux': epochs_run=73 best_val_loss=0.9339 best_val_hr_mae=1.742
+[2026-09-03 21:42:35]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'old' ...
+[2026-09-03 21:49:04]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Strat-A-Loss_new_dual_projector_for_b1_SE-and-SL/ablation_step4_chrom_b1_deriv_b2_aux/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-03 21:49:04]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'prism' ...
+[2026-09-03 21:50:16]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'toolbox' ...
+[2026-09-03 21:50:55]   DONE 'ablation_step4_chrom_b1_deriv_b2_aux' [old]: val_model_mae=nan
+[2026-09-03 21:50:55]   DONE 'ablation_step4_chrom_b1_deriv_b2_aux' [prism]: val_model_mae=1.545
+[2026-09-03 21:50:55]   DONE 'ablation_step4_chrom_b1_deriv_b2_aux' [toolbox]: val_model_mae=0.549
+[2026-09-03 21:50:55] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-03 21:50:55] 
+protocol                              prism  toolbox
+model                                               
+ablation_step4_chrom_b1_deriv_b2_aux  1.545    0.549
+[2026-09-03 21:50:55] --------------------------------------------------------------------------
+[2026-09-03 21:50:55] [2/2] MODEL: ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-03 21:50:55]   built 'ablation_step4_chrom_b1_deriv_b2_aux_SE': params=170053, reach=96 samples (3.20s @30fps)
+[2026-09-03 21:55:53]     epoch   1 | train_loss=2.5958 val_loss=1.5087 val_hr_mae=3.390 lr=3.0e-04
+[2026-09-03 22:40:20]     epoch  10 | train_loss=1.8467 val_loss=1.1277 val_hr_mae=2.156 lr=3.0e-04
+[2026-09-03 23:29:40]     epoch  20 | train_loss=1.6794 val_loss=0.9907 val_hr_mae=1.808 lr=3.0e-04
+[2026-09-04 00:19:09]     epoch  30 | train_loss=1.5790 val_loss=0.9728 val_hr_mae=2.028 lr=3.0e-04
+[2026-09-04 01:00:46]     epoch  40 | train_loss=1.5100 val_loss=0.9451 val_hr_mae=1.892 lr=1.5e-04
+[2026-09-04 01:42:38]     epoch  50 | train_loss=1.4820 val_loss=0.9501 val_hr_mae=1.931 lr=7.5e-05
+[2026-09-04 02:24:25]     epoch  60 | train_loss=1.4693 val_loss=0.9453 val_hr_mae=1.952 lr=3.7e-05
+[2026-09-04 03:06:22]     epoch  70 | train_loss=1.4634 val_loss=0.9469 val_hr_mae=2.004 lr=1.0e-05
+[2026-09-04 03:43:29]     early stop at epoch 79 (no val-loss improvement for 30)
+[2026-09-04 03:43:29]   trained 'ablation_step4_chrom_b1_deriv_b2_aux_SE': epochs_run=79 best_val_loss=0.9429 best_val_hr_mae=1.808
+[2026-09-04 03:43:29]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'old' ...
+[2026-09-04 03:49:25]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Strat-A-Loss_new_dual_projector_for_b1_SE-and-SL/ablation_step4_chrom_b1_deriv_b2_aux_SE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-04 03:49:25]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'prism' ...
+[2026-09-04 03:50:30]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'toolbox' ...
+[2026-09-04 03:51:05]   DONE 'ablation_step4_chrom_b1_deriv_b2_aux_SE' [old]: val_model_mae=nan
+[2026-09-04 03:51:05]   DONE 'ablation_step4_chrom_b1_deriv_b2_aux_SE' [prism]: val_model_mae=1.926
+[2026-09-04 03:51:05]   DONE 'ablation_step4_chrom_b1_deriv_b2_aux_SE' [toolbox]: val_model_mae=0.492
+[2026-09-04 03:51:05] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-04 03:51:05] 
+protocol                                 prism  toolbox
+model                                                  
+ablation_step4_chrom_b1_deriv_b2_aux     1.545    0.549
+ablation_step4_chrom_b1_deriv_b2_aux_SE  1.926    0.492
+[2026-09-04 03:51:05] ==========================================================================
+[2026-09-04 03:51:05] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Strat-A-Loss_new_dual_projector_for_b1_SE-and-SL/MEGA_SUMMARY.csv
+[2026-09-04 03:51:05] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Strat-A-Loss_new_dual_projector_for_b1_SE-and-SL/MEGA_PROTOCOL_ABLATION.csv
+[2026-09-04 03:51:05] ==========================================================================

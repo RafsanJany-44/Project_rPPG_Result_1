@@ -1,0 +1,7 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+ablation_step4_chrom_b1_deriv_b2_aux,old,no_csv,,,,,169603,73,96,1.741599318349383
+ablation_step4_chrom_b1_deriv_b2_aux,prism,ok,1.5452289813193065,2.052269848240953,,,169603,73,96,1.741599318349383
+ablation_step4_chrom_b1_deriv_b2_aux,toolbox,ok,0.549335050042297,0.6642781291645468,,,169603,73,96,1.741599318349383
+ablation_step4_chrom_b1_deriv_b2_aux_SE,old,no_csv,,,,,170053,79,96,1.8081493083138527
+ablation_step4_chrom_b1_deriv_b2_aux_SE,prism,ok,1.92614479243861,2.052269848240953,,,170053,79,96,1.8081493083138527
+ablation_step4_chrom_b1_deriv_b2_aux_SE,toolbox,ok,0.49155315537541916,0.6642781291645468,,,170053,79,96,1.8081493083138527
