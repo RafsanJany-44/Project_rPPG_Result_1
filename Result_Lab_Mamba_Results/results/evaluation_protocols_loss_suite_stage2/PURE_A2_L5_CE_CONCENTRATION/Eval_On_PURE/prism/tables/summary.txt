@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A2_L5_CE_CONCENTRATION/Eval_On_PURE — PRISM Evaluation Protocol
+====================================================================================
+Description                : Stage-2 L5_CE_CONCENTRATION, A2, local PURE checkpoint evaluated on PURE: held-out 0.8-1.0 clean source validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/PURE_A2_L5_CE_CONCENTRATION/PURE_A2_L5_CE_CONCENTRATION_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.8–1.0
+Aggregation                : window_to_recording
+Recordings                 : 12
+Expected recordings        : 12
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 77
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 1.045118 BPM
+Pooled measurement MAE     : 1.025866 BPM
+Pooled measurement RMSE    : 1.893515 BPM
+Pooled measurement MAPE    : 1.667541 %
+Pooled measurement Pearson : 0.993926
+Absolute-error SD           : 1.591539 BPM
+Accuracy within 5 BPM      : 97.403 %
+Recording-macro MAE SE     : 0.183372 BPM
+Pooled MAE standard error  : 0.181373 BPM
+Official-formula RMSE +/-  : 1.897722
+Pooled MAPE standard error : 0.312596 %
+Pooled Pearson std. error  : 0.012708
+Mean waveform Pearson      : 0.719090
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

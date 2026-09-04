@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A2_L5_CE_CONCENTRATION/Eval_On_PURE — Old Protocol
+====================================================================================
+Description                : Stage-2 L5_CE_CONCENTRATION, A2, local PURE checkpoint evaluated on PURE: held-out 0.8-1.0 clean source validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/PURE_A2_L5_CE_CONCENTRATION/PURE_A2_L5_CE_CONCENTRATION_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.8–1.0
+Aggregation                : window_to_recording
+Recordings                 : 12
+Expected recordings        : 12
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 735
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.931335 BPM
+Pooled measurement MAE     : 0.925170 BPM
+Pooled measurement RMSE    : 1.519936 BPM
+Pooled measurement MAPE    : 1.505951 %
+Pooled measurement Pearson : 0.995981
+Absolute-error SD           : 1.205929 BPM
+Accuracy within 5 BPM      : 99.320 %
+Recording-macro MAE SE     : 0.069870 BPM
+Pooled MAE standard error  : 0.044481 BPM
+Official-formula RMSE +/-  : 0.566737
+Pooled MAPE standard error : 0.068663 %
+Pooled Pearson std. error  : 0.003308
+Mean waveform Pearson      : 0.723545
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
