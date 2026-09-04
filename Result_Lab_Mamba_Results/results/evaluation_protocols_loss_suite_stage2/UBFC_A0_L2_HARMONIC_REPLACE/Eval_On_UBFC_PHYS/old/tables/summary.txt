@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A0_L2_HARMONIC_REPLACE/Eval_On_UBFC_PHYS — Old Protocol
+====================================================================================
+Description                : Stage-2 L2_HARMONIC_REPLACE, A0, local UBFC checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A0_L2_HARMONIC_REPLACE/UBFC_A0_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 10140
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 17.390631 BPM
+Pooled measurement MAE     : 17.390631 BPM
+Pooled measurement RMSE    : 26.064707 BPM
+Pooled measurement MAPE    : 27.499514 %
+Pooled measurement Pearson : 0.167539
+Absolute-error SD           : 19.414811 BPM
+Accuracy within 5 BPM      : 42.574 %
+Recording-macro MAE SE     : 1.502058 BPM
+Pooled MAE standard error  : 0.192803 BPM
+Official-formula RMSE +/-  : 12.137297
+Pooled MAPE standard error : 0.368941 %
+Pooled Pearson std. error  : 0.009791
+Mean waveform Pearson      : -0.026280
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
