@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_L2_HARMONIC_REPLACE/Eval_On_TOKYOTECH — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Stage-2 L2_HARMONIC_REPLACE, A2, local UBFC checkpoint evaluated on TOKYOTECH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A2_L2_HARMONIC_REPLACE/UBFC_A2_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 9
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.720072 BPM
+Pooled measurement MAE     : 0.720072 BPM
+Pooled measurement RMSE    : 1.166650 BPM
+Pooled measurement MAPE    : 0.980414 %
+Pooled measurement Pearson : 0.995725
+Absolute-error SD           : 0.917915 BPM
+Accuracy within 5 BPM      : 100.000 %
+Recording-macro MAE SE     : 0.305972 BPM
+Pooled MAE standard error  : 0.305972 BPM
+Official-formula RMSE +/-  : 0.646507
+Pooled MAPE standard error : 0.423662 %
+Pooled Pearson std. error  : 0.034911
+Mean waveform Pearson      : 0.004230
+Mean SNR                    : 4.190614 dB
+SNR standard error         : 2.202866 dB
