@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A0_L4_CONCENTRATION_HARMONIC/Eval_On_UBFC_PHYS — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Stage-2 L4_CONCENTRATION_HARMONIC, A0, local UBFC checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/loss_suite_stage2/UBFC_A0_L4_CONCENTRATION_HARMONIC/UBFC_A0_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 60
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 8.154815 BPM
+Pooled measurement MAE     : 8.154815 BPM
+Pooled measurement RMSE    : 11.042311 BPM
+Pooled measurement MAPE    : 10.673907 %
+Pooled measurement Pearson : 0.437948
+Absolute-error SD           : 7.445241 BPM
+Accuracy within 5 BPM      : 41.667 %
+Recording-macro MAE SE     : 0.961176 BPM
+Pooled MAE standard error  : 0.961176 BPM
+Official-formula RMSE +/-  : 24.554390
+Pooled MAPE standard error : 1.323832 %
+Pooled Pearson std. error  : 0.118044
+Mean waveform Pearson      : -0.006672
+Mean SNR                    : -10.926598 dB
+SNR standard error         : 0.320492 dB
