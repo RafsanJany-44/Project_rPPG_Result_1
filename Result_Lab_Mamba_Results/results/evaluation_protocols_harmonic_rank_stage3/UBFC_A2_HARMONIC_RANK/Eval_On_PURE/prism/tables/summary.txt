@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_HARMONIC_RANK/Eval_On_PURE — PRISM Evaluation Protocol
+====================================================================================
+Description                : Stage-3 A2 official plus conditional harmonic-ranking UBFC checkpoint evaluated on PURE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_rank_stage3/UBFC_A2_HARMONIC_RANK/UBFC_A2_HARMONIC_RANK_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 59
+Expected recordings        : 59
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 374
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 14.700388 BPM
+Pooled measurement MAE     : 14.822730 BPM
+Pooled measurement RMSE    : 28.581768 BPM
+Pooled measurement MAPE    : 28.193513 %
+Pooled measurement Pearson : 0.489378
+Absolute-error SD           : 24.437760 BPM
+Accuracy within 5 BPM      : 70.856 %
+Recording-macro MAE SE     : 2.016389 BPM
+Pooled MAE standard error  : 1.263646 BPM
+Official-formula RMSE +/-  : 88.664087
+Pooled MAPE standard error : 2.460255 %
+Pooled Pearson std. error  : 0.045215
+Mean waveform Pearson      : 0.397140
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

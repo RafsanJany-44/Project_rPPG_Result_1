@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_HARMONIC_RANK/Eval_On_PURE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Stage-3 A2 official plus conditional harmonic-ranking UBFC checkpoint evaluated on PURE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_rank_stage3/UBFC_A2_HARMONIC_RANK/UBFC_A2_HARMONIC_RANK_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 59
+Expected recordings        : 59
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 59
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 13.894949 BPM
+Pooled measurement MAE     : 13.894949 BPM
+Pooled measurement RMSE    : 25.515693 BPM
+Pooled measurement MAPE    : 27.477910 %
+Pooled measurement Pearson : 0.531358
+Absolute-error SD           : 21.400491 BPM
+Accuracy within 5 BPM      : 71.186 %
+Recording-macro MAE SE     : 2.786107 BPM
+Pooled MAE standard error  : 2.786107 BPM
+Official-formula RMSE +/-  : 139.987246
+Pooled MAPE standard error : 5.572876 %
+Pooled Pearson std. error  : 0.112207
+Mean waveform Pearson      : 0.445098
+Mean SNR                    : 6.863263 dB
+SNR standard error         : 0.909323 dB
