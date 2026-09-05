@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A2_HARMONIC_RANK/Eval_On_BH — Old Protocol
+====================================================================================
+Description                : Stage-3 A2 official plus conditional harmonic-ranking PURE checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_rank_stage3/PURE_A2_HARMONIC_RANK/PURE_A2_HARMONIC_RANK_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 5323
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 5.619234 BPM
+Pooled measurement MAE     : 5.640992 BPM
+Pooled measurement RMSE    : 13.045600 BPM
+Pooled measurement MAPE    : 7.873614 %
+Pooled measurement Pearson : 0.593469
+Absolute-error SD           : 11.762945 BPM
+Accuracy within 5 BPM      : 82.491 %
+Recording-macro MAE SE     : 0.656504 BPM
+Pooled MAE standard error  : 0.161227 BPM
+Official-formula RMSE +/-  : 9.411991
+Pooled MAPE standard error : 0.231756 %
+Pooled Pearson std. error  : 0.011034
+Mean waveform Pearson      : 0.000828
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
