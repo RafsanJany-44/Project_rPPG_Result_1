@@ -1,0 +1,9 @@
+[2026-09-05 20:21:53] ==========================================================================
+[2026-09-05 20:21:53] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Concentration-Loss_Pearson-AUX_dual-projector-b1_derivative-b2_SL
+[2026-09-05 20:21:53] models: ['ablation_step4_chrom_b1_deriv_b2_aux']
+[2026-09-05 20:21:53] ==========================================================================
+[2026-09-05 20:21:53] --------------------------------------------------------------------------
+[2026-09-05 20:21:53] [1/1] MODEL: ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-05 20:21:54]   built 'ablation_step4_chrom_b1_deriv_b2_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-05 20:26:38]     epoch   1 | train_loss=1.8522 val_loss=0.8911 val_hr_mae=14.488 lr=3.0e-04
+[2026-09-05 21:07:47]     epoch  10 | train_loss=1.4819 val_loss=0.8510 val_hr_mae=24.067 lr=3.0e-04
