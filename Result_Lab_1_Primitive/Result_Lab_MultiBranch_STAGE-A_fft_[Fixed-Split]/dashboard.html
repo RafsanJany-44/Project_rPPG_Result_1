@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIMIC_CHROM Evaluation Dashboard</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
+h1 { text-align: center; margin-bottom: 5px; color: #2B579A; }
+.subtitle { text-align: center; color: #666; margin-bottom: 20px; font-size: 14px; }
+.controls { display: flex; gap: 15px; align-items: center; margin-bottom: 20px;
+             padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.controls label { font-weight: 600; font-size: 14px; }
+.controls select { padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; min-width: 200px; }
+.copy-btn { padding: 6px 14px; background: #2B579A; color: #fff; border: none; border-radius: 4px;
+             cursor: pointer; font-size: 12px; margin-bottom: 8px; }
+.copy-btn:hover { background: #1a3d6e; }
+.copy-btn:active { background: #0d2540; }
+.copied { background: #27ae60 !important; }
+.section { display: none; }
+.section.active { display: block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background: #fff;
+         box-shadow: 0 1px 3px rgba(0,0,0,0.08); font-size: 12px; }
+th { background: #2B579A; color: #fff; padding: 8px 6px; text-align: center;
+      position: sticky; top: 0; z-index: 10; white-space: nowrap; }
+td { padding: 6px; text-align: center; border: 1px solid #e0e0e0; }
+.model-name { text-align: left; font-weight: 600; white-space: nowrap; min-width: 180px; }
+.chrom-row { background: #FFF3E0; }
+.empty { color: #ccc; }
+.err-low { background: #e8f5e9; color: #2e7d32; font-weight: 600; }
+.err-high { background: #fff3e0; color: #e65100; font-weight: 600; }
+.err-extreme { background: #ffebee; color: #c62828; font-weight: 700; }
+.harm { background: #ffcdd2; color: #b71c1c; font-weight: 700; }
+.rec-list { text-align: left; font-size: 11px; max-width: 300px; word-wrap: break-word; }
+tbody tr:hover { background: #e3f2fd; }
+h3 { margin: 15px 0 8px 0; color: #2B579A; }
+</style>
+</head>
+<body>
+<h1>MIMIC_CHROM — Evaluation Dashboard</h1>
+<p class="subtitle">Auto-generated from: /media/data/rPPG/rPPG_Data/Experiment_Results/Result_Lab_MultiBranch_STAGE-A_fft_[Fixed-Split]/</p>
+
+<div class="controls">
+  <label>View:</label>
+  <select id="primary" onchange="updateView()">
+    <option value="mae">MAE Tables</option>
+    <option value="error">Error Analysis</option>
+  </select>
+
+  <label>Detail:</label>
+  <select id="secondary" onchange="updateView()">
+  </select>
+</div>
+
+<!-- MAE Window Val + Train -->
+<div id="sec_mae_window" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Validation MAE — Window-Level</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td class="err-low">0.358</td><td class="err-low">0.265</td><td class="err-low">0.146</td><td class="err-high">2.150</td><td class="err-high">2.667</td><td class="err-low">0.275</td><td>1.328</td><td>1.682</td><td>1.291</td><td>0.954</td><td>1.219</td><td class="err-low">0.448</td></tr>
+<tr><td class="model-name">branch_1</td><td class="err-low">0.321</td><td class="err-low">0.211</td><td class="err-low">0.320</td><td class="err-high">2.162</td><td>0.549</td><td class="err-low">0.262</td><td class="err-high">2.836</td><td class="err-high">2.014</td><td>1.114</td><td>1.411</td><td>0.809</td><td class="err-low">0.460</td></tr>
+<tr><td class="model-name">branch_2</td><td class="err-low">0.346</td><td class="err-low">0.207</td><td class="err-low">0.330</td><td>1.265</td><td>0.507</td><td class="err-low">0.256</td><td class="err-high">2.191</td><td>1.896</td><td class="err-high">2.356</td><td>1.076</td><td>0.764</td><td>0.721</td></tr>
+<tr><td class="model-name">branch_3</td><td class="err-low">0.358</td><td class="err-low">0.476</td><td class="err-low">0.137</td><td class="err-high">2.034</td><td>1.431</td><td class="err-low">0.299</td><td>1.335</td><td>1.645</td><td>0.990</td><td>0.938</td><td>1.031</td><td class="err-low">0.393</td></tr>
+<tr class="chrom-row"><td class="model-name">CHROM (baseline)</td><td class="err-low">0.394</td><td class="err-low">0.469</td><td class="err-low">0.403</td><td class="err-high">3.265</td><td class="err-high">2.945</td><td class="err-low">0.354</td><td>1.957</td><td class="err-high">2.191</td><td>1.755</td><td>1.352</td><td>1.528</td><td>0.664</td></tr>
+</tbody></table>
+
+  <h3>Training MAE — Window-Level</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td class="err-low">0.413</td><td>0.527</td><td class="err-low">0.306</td><td>0.917</td><td>0.903</td><td>0.699</td><td>1.277</td><td>1.264</td><td class="err-high">2.114</td><td>0.787</td><td>0.839</td><td>0.905</td></tr>
+<tr><td class="model-name">branch_1</td><td>0.597</td><td>0.795</td><td class="err-low">0.463</td><td class="err-high">2.024</td><td>1.501</td><td>1.503</td><td class="err-high">2.621</td><td>1.869</td><td>1.923</td><td>1.508</td><td>1.281</td><td>1.263</td></tr>
+<tr><td class="model-name">branch_2</td><td>0.777</td><td>1.445</td><td>0.956</td><td>1.933</td><td class="err-high">2.141</td><td>1.501</td><td class="err-high">2.226</td><td>1.767</td><td class="err-high">2.314</td><td>1.449</td><td>1.688</td><td>1.515</td></tr>
+<tr><td class="model-name">branch_3</td><td class="err-low">0.401</td><td>0.580</td><td class="err-low">0.318</td><td>0.940</td><td>1.026</td><td>0.724</td><td>1.322</td><td>1.258</td><td>1.972</td><td>0.800</td><td>0.887</td><td>0.886</td></tr>
+<tr class="chrom-row"><td class="model-name">CHROM (baseline)</td><td>0.655</td><td>0.844</td><td>0.638</td><td class="err-high">2.438</td><td>1.213</td><td>1.001</td><td>1.807</td><td>1.437</td><td class="err-high">2.229</td><td>1.312</td><td>1.108</td><td>1.173</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- MAE Recording Val + Train -->
+<div id="sec_mae_recording" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Validation MAE — Recording-Level (summary.txt)</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td class="err-low">0.363</td><td class="err-low">0.266</td><td class="err-low">0.146</td><td class="err-high">2.150</td><td class="err-high">2.667</td><td class="err-low">0.275</td><td>1.453</td><td>1.952</td><td>1.291</td><td>1.439</td><td>1.758</td><td class="err-low">0.448</td></tr>
+<tr><td class="model-name">branch_1</td><td class="err-low">0.325</td><td class="err-low">0.211</td><td class="err-low">0.320</td><td class="err-high">2.162</td><td>0.549</td><td class="err-low">0.262</td><td class="err-high">2.841</td><td class="err-high">2.102</td><td>1.114</td><td>1.725</td><td>0.769</td><td class="err-low">0.460</td></tr>
+<tr><td class="model-name">branch_2</td><td class="err-low">0.351</td><td class="err-low">0.205</td><td class="err-low">0.330</td><td>1.265</td><td>0.507</td><td class="err-low">0.256</td><td class="err-high">2.249</td><td>1.990</td><td class="err-high">2.356</td><td>1.184</td><td>0.724</td><td>0.721</td></tr>
+<tr><td class="model-name">branch_3</td><td class="err-low">0.364</td><td class="err-low">0.486</td><td class="err-low">0.137</td><td class="err-high">2.034</td><td>1.431</td><td class="err-low">0.299</td><td>1.442</td><td>1.911</td><td>0.990</td><td>1.382</td><td>1.234</td><td class="err-low">0.393</td></tr>
+</tbody></table>
+
+  <h3>Training MAE — Recording-Level (summary.txt)</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td class="err-low">0.417</td><td>0.537</td><td class="err-low">0.306</td><td>0.917</td><td>0.903</td><td>0.699</td><td>1.282</td><td>1.259</td><td class="err-high">2.114</td><td>0.840</td><td>0.868</td><td>0.905</td></tr>
+<tr><td class="model-name">branch_1</td><td>0.610</td><td>0.825</td><td class="err-low">0.463</td><td class="err-high">2.024</td><td>1.501</td><td>1.503</td><td class="err-high">2.618</td><td>1.859</td><td>1.923</td><td>1.703</td><td>1.365</td><td>1.263</td></tr>
+<tr><td class="model-name">branch_2</td><td>0.801</td><td>1.485</td><td>0.956</td><td>1.933</td><td class="err-high">2.141</td><td>1.501</td><td class="err-high">2.231</td><td>1.757</td><td class="err-high">2.314</td><td>1.634</td><td>1.836</td><td>1.515</td></tr>
+<tr><td class="model-name">branch_3</td><td class="err-low">0.403</td><td>0.591</td><td class="err-low">0.318</td><td>0.940</td><td>1.026</td><td>0.724</td><td>1.328</td><td>1.254</td><td>1.972</td><td>0.856</td><td>0.938</td><td>0.886</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- Error Old -->
+<div id="sec_error_old" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Training — Error Type Counts (Old@1BPM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td>5743</td><td>4286 (74.6%)</td><td>1072 (18.7%)</td><td>191 (3.3%)</td><td>89 (1.5%)</td><td>105 (1.8%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>105</td><td class="err-extreme">20.6 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; UBFC|vid_14; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_37; UBFC|vid_41; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_9</td></tr>
+<tr><td class="model-name">branch_1</td><td>5743</td><td>4039 (70.3%)</td><td>1102 (19.2%)</td><td>217 (3.8%)</td><td>97 (1.7%)</td><td>288 (5.0%)</td><td class="harm">30</td><td class="">0</td><td class="harm">1</td><td>242</td><td class="err-extreme">87.0 BPM</td><td class="rec-list">PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_05_Exercise_Frag5; TokyoTech|Subj_06_Exercise_Frag4; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Exercise_Frag6; TokyoTech|Subj_06_Post_Relax_Frag7; TokyoTech|Subj_06_Post_Relax_Frag8; TokyoTech|Subj_06_Post_Relax_Frag9; TokyoTech|Subj_06_Pre_Relax_Frag1; TokyoTech|Subj_06_Pre_Relax_Frag2; TokyoTech|Subj_06_Pre_Relax_Frag3; UBFC|vid_12; UBFC|vid_14; UBFC|vid_15; UBFC|vid_17; UBFC|vid_22; UBFC|vid_24; UBFC|vid_26; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_37; UBFC|vid_39; UBFC|vid_41; UBFC|vid_43; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_47; UBFC|vid_48; UBFC|vid_8; UBFC|vid_9</td></tr>
+<tr><td class="model-name">branch_2</td><td>5743</td><td>4046 (70.5%)</td><td>1077 (18.8%)</td><td>230 (4.0%)</td><td>108 (1.9%)</td><td>282 (4.9%)</td><td class="harm">15</td><td class="harm">1</td><td class="harm">5</td><td>257</td><td class="err-extreme">90.0 BPM</td><td class="rec-list">PURE|01; PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_05_Exercise_Frag5; TokyoTech|Subj_06_Exercise_Frag4; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Exercise_Frag6; TokyoTech|Subj_06_Post_Relax_Frag7; TokyoTech|Subj_06_Post_Relax_Frag8; TokyoTech|Subj_06_Post_Relax_Frag9; TokyoTech|Subj_06_Pre_Relax_Frag1; TokyoTech|Subj_06_Pre_Relax_Frag2; TokyoTech|Subj_06_Pre_Relax_Frag3; UBFC|vid_12; UBFC|vid_14; UBFC|vid_15; UBFC|vid_17; UBFC|vid_22; UBFC|vid_24; UBFC|vid_26; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_37; UBFC|vid_39; UBFC|vid_41; UBFC|vid_43; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_47; UBFC|vid_48; UBFC|vid_8; UBFC|vid_9</td></tr>
+<tr><td class="model-name">branch_3</td><td>5743</td><td>4300 (74.9%)</td><td>1069 (18.6%)</td><td>173 (3.0%)</td><td>93 (1.6%)</td><td>108 (1.9%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>108</td><td class="err-high">19.7 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; UBFC|vid_14; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_37; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_8; UBFC|vid_9</td></tr>
+</tbody></table>
+
+  <h3>Validation — Error Type Counts (Old@1BPM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td>1442</td><td>1126 (78.1%)</td><td>220 (15.3%)</td><td>51 (3.5%)</td><td>12 (0.8%)</td><td>33 (2.3%)</td><td class="harm">1</td><td class="">0</td><td class="">0</td><td>30</td><td class="err-extreme">46.0 BPM</td><td class="rec-list">PURE|09; PURE|10; TokyoTech|Subj_08_Exercise_Frag6; TokyoTech|Subj_09_Exercise_Frag4; TokyoTech|Subj_09_Post_Relax_Frag7; TokyoTech|Subj_09_Post_Relax_Frag9; TokyoTech|Subj_09_Pre_Relax_Frag3; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4; UBFC|vid_49</td></tr>
+<tr><td class="model-name">branch_1</td><td>1442</td><td>1123 (77.9%)</td><td>218 (15.1%)</td><td>43 (3.0%)</td><td>15 (1.0%)</td><td>43 (3.0%)</td><td class="harm">10</td><td class="">0</td><td class="">0</td><td>24</td><td class="err-extreme">53.6 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_08_Exercise_Frag6; TokyoTech|Subj_08_Post_Relax_Frag9; TokyoTech|Subj_09_Exercise_Frag4; TokyoTech|Subj_09_Post_Relax_Frag9; UBFC|vid_20; UBFC|vid_25; UBFC|vid_30; UBFC|vid_32; UBFC|vid_4; UBFC|vid_49</td></tr>
+<tr><td class="model-name">branch_2</td><td>1442</td><td>1110 (77.0%)</td><td>237 (16.4%)</td><td>43 (3.0%)</td><td>19 (1.3%)</td><td>33 (2.3%)</td><td class="harm">1</td><td class="">0</td><td class="">0</td><td>27</td><td class="err-extreme">43.3 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_08_Exercise_Frag6; TokyoTech|Subj_08_Post_Relax_Frag9; TokyoTech|Subj_09_Exercise_Frag4; TokyoTech|Subj_09_Post_Relax_Frag9; UBFC|vid_20; UBFC|vid_25; UBFC|vid_32; UBFC|vid_4; UBFC|vid_49</td></tr>
+<tr><td class="model-name">branch_3</td><td>1442</td><td>1108 (76.8%)</td><td>234 (16.2%)</td><td>47 (3.3%)</td><td>21 (1.5%)</td><td>32 (2.2%)</td><td class="harm">1</td><td class="">0</td><td class="">0</td><td>31</td><td class="err-extreme">46.0 BPM</td><td class="rec-list">PURE|09; PURE|10; TokyoTech|Subj_08_Exercise_Frag6; TokyoTech|Subj_09_Exercise_Frag4; TokyoTech|Subj_09_Post_Relax_Frag7; TokyoTech|Subj_09_Post_Relax_Frag9; TokyoTech|Subj_09_Pre_Relax_Frag3; UBFC|vid_25; UBFC|vid_32; UBFC|vid_4</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- Error PRISM -->
+<div id="sec_error_prism" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Training — Error Type Counts (PRISM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td>629</td><td>511 (81.2%)</td><td>68 (10.8%)</td><td>23 (3.7%)</td><td>7 (1.1%)</td><td>20 (3.2%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>20</td><td class="err-high">16.3 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; UBFC|vid_14; UBFC|vid_15; UBFC|vid_18; UBFC|vid_33; UBFC|vid_35; UBFC|vid_9</td></tr>
+<tr><td class="model-name">branch_1</td><td>629</td><td>490 (77.9%)</td><td>69 (11.0%)</td><td>22 (3.5%)</td><td>13 (2.1%)</td><td>35 (5.6%)</td><td class="harm">1</td><td class="">0</td><td class="">0</td><td>34</td><td class="err-extreme">47.0 BPM</td><td class="rec-list">PURE|01; PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Post_Relax_Frag8; TokyoTech|Subj_06_Pre_Relax_Frag1; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_12; UBFC|vid_14; UBFC|vid_15; UBFC|vid_27; UBFC|vid_33; UBFC|vid_41; UBFC|vid_44; UBFC|vid_9</td></tr>
+<tr><td class="model-name">branch_2</td><td>629</td><td>486 (77.3%)</td><td>67 (10.7%)</td><td>23 (3.7%)</td><td>10 (1.6%)</td><td>43 (6.8%)</td><td class="harm">1</td><td class="">0</td><td class="harm">1</td><td>41</td><td class="err-extreme">64.0 BPM</td><td class="rec-list">PURE|01; PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Exercise_Frag4; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Post_Relax_Frag8; TokyoTech|Subj_06_Post_Relax_Frag9; TokyoTech|Subj_06_Pre_Relax_Frag1; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_12; UBFC|vid_14; UBFC|vid_15; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_41; UBFC|vid_9</td></tr>
+<tr><td class="model-name">branch_3</td><td>629</td><td>492 (78.2%)</td><td>89 (14.1%)</td><td>20 (3.2%)</td><td>9 (1.4%)</td><td>19 (3.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>19</td><td class="err-high">16.5 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; UBFC|vid_14; UBFC|vid_18; UBFC|vid_33; UBFC|vid_35; UBFC|vid_9</td></tr>
+</tbody></table>
+
+  <h3>Validation — Error Type Counts (PRISM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">SL_Fusion</td><td>159</td><td>135 (84.9%)</td><td>18 (11.3%)</td><td>0 (0.0%)</td><td>0 (0.0%)</td><td>6 (3.8%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>5</td><td class="err-extreme">45.2 BPM</td><td class="rec-list">TokyoTech|Subj_09_Post_Relax_Frag7; TokyoTech|Subj_09_Post_Relax_Frag9; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4</td></tr>
+<tr><td class="model-name">branch_1</td><td>159</td><td>138 (86.8%)</td><td>14 (8.8%)</td><td>4 (2.5%)</td><td>0 (0.0%)</td><td>3 (1.9%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>3</td><td class="err-extreme">37.9 BPM</td><td class="rec-list">UBFC|vid_20; UBFC|vid_25; UBFC|vid_4</td></tr>
+<tr><td class="model-name">branch_2</td><td>159</td><td>140 (88.1%)</td><td>16 (10.1%)</td><td>1 (0.6%)</td><td>0 (0.0%)</td><td>2 (1.3%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>2</td><td class="err-extreme">38.4 BPM</td><td class="rec-list">UBFC|vid_25; UBFC|vid_4</td></tr>
+<tr><td class="model-name">branch_3</td><td>159</td><td>132 (83.0%)</td><td>17 (10.7%)</td><td>3 (1.9%)</td><td>1 (0.6%)</td><td>6 (3.8%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>6</td><td class="err-extreme">26.0 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_09_Post_Relax_Frag7; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4</td></tr>
+</tbody></table>
+
+</div>
+
+<script>
+const secondaryOptions = {
+  mae: [
+    {value: "mae_window",    label: "Window-Level MAE"},
+    {value: "mae_recording", label: "Recording-Level MAE (summary.txt)"},
+  ],
+  error: [
+    {value: "error_old",   label: "Old@1BPM Protocol Errors"},
+    {value: "error_prism", label: "PRISM Protocol Errors"},
+  ],
+};
+
+function updateView() {
+  const primary = document.getElementById("primary").value;
+  const secSelect = document.getElementById("secondary");
+
+  // Update secondary options
+  const opts = secondaryOptions[primary];
+  const currentSec = secSelect.value;
+  secSelect.innerHTML = "";
+  opts.forEach(o => {
+    const opt = document.createElement("option");
+    opt.value = o.value;
+    opt.textContent = o.label;
+    secSelect.appendChild(opt);
+  });
+
+  // Keep selection if still valid
+  if (opts.some(o => o.value === currentSec)) {
+    secSelect.value = currentSec;
+  }
+
+  // Show/hide sections
+  document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+  const activeId = "sec_" + secSelect.value;
+  const el = document.getElementById(activeId);
+  if (el) el.classList.add("active");
+}
+
+function copyTable(btn) {
+  const section = btn.parentElement;
+  const tables = section.querySelectorAll("table");
+  let text = "";
+  tables.forEach((table, idx) => {
+    // Get preceding h3
+    const h3 = table.previousElementSibling;
+    if (h3 && h3.tagName === "H3") text += h3.textContent + "\n";
+
+    const rows = table.querySelectorAll("tr");
+    rows.forEach(row => {
+      const cells = row.querySelectorAll("th, td");
+      const vals = Array.from(cells).map(c => c.textContent.trim());
+      text += vals.join("\t") + "\n";
+    });
+    text += "\n";
+  });
+
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = "Copied!";
+    btn.classList.add("copied");
+    setTimeout(() => {
+      btn.textContent = "Copy Tables";
+      btn.classList.remove("copied");
+    }, 2000);
+  });
+}
+
+// Initialize
+updateView();
+</script>
+</body>
+</html>
