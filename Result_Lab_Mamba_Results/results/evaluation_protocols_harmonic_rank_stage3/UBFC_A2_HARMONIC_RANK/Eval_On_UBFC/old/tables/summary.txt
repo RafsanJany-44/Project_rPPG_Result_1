@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_HARMONIC_RANK/Eval_On_UBFC — Old Protocol
+====================================================================================
+Description                : Stage-3 A2 official plus conditional harmonic-ranking UBFC checkpoint evaluated on UBFC: held-out 0.8-1.0 clean source validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/harmonic_rank_stage3/UBFC_A2_HARMONIC_RANK/UBFC_A2_HARMONIC_RANK_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.8–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 497
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.739932 BPM
+Pooled measurement MAE     : 0.746479 BPM
+Pooled measurement RMSE    : 2.506731 BPM
+Pooled measurement MAPE    : 0.776867 %
+Pooled measurement Pearson : 0.978756
+Absolute-error SD           : 2.393005 BPM
+Accuracy within 5 BPM      : 98.793 %
+Recording-macro MAE SE     : 0.143709 BPM
+Pooled MAE standard error  : 0.107341 BPM
+Official-formula RMSE +/-  : 4.159340
+Pooled MAPE standard error : 0.114112 %
+Pooled Pearson std. error  : 0.009215
+Mean waveform Pearson      : 0.785786
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
