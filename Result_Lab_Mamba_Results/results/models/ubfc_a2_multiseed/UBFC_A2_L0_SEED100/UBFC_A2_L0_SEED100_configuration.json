@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-05T13:06:00.629405+00:00",
+  "experiment": "UBFC_A2_L0_SEED100",
+  "source_dataset": "UBFC",
+  "augmentation": "A2",
+  "official_augmentation": true,
+  "offline_augmentation": true,
+  "offline_probability": 0.5,
+  "online_rgb_gain": false,
+  "loss_variant": "L0",
+  "loss_description": "A2 plus official 0.2 Pearson + CE loss",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "training_clips_per_epoch": 378,
+  "validation_clips": 105,
+  "maximum_epochs": 100,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_total_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 100,
+  "learning_rate": 0.0003,
+  "paired_seed_set": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ]
+}
