@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_L5_CE_CONCENTRATION_SEED100/Eval_On_COHFACE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Paired UBFC A2 five-seed experiment; L5, seed 100, evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/ubfc_a2_multiseed/UBFC_A2_L5_CE_CONCENTRATION_SEED100/UBFC_A2_L5_CE_CONCENTRATION_SEED100_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 160
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 12.218722 BPM
+Pooled measurement MAE     : 12.218722 BPM
+Pooled measurement RMSE    : 14.135985 BPM
+Pooled measurement MAPE    : 19.098263 %
+Pooled measurement Pearson : 0.140970
+Absolute-error SD           : 7.108368 BPM
+Accuracy within 5 BPM      : 21.875 %
+Recording-macro MAE SE     : 0.561966 BPM
+Pooled MAE standard error  : 0.561966 BPM
+Official-formula RMSE +/-  : 15.472519
+Pooled MAPE standard error : 1.078686 %
+Pooled Pearson std. error  : 0.078761
+Mean waveform Pearson      : 0.224027
+Mean SNR                    : -10.965534 dB
+SNR standard error         : 0.142951 dB
