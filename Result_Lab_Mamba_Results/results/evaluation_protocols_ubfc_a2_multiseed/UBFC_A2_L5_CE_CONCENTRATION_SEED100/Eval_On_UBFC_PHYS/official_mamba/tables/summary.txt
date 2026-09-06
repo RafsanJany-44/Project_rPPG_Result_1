@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_L5_CE_CONCENTRATION_SEED100/Eval_On_UBFC_PHYS — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Paired UBFC A2 five-seed experiment; L5, seed 100, evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/ubfc_a2_multiseed/UBFC_A2_L5_CE_CONCENTRATION_SEED100/UBFC_A2_L5_CE_CONCENTRATION_SEED100_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 60
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 8.505851 BPM
+Pooled measurement MAE     : 8.505851 BPM
+Pooled measurement RMSE    : 12.060870 BPM
+Pooled measurement MAPE    : 11.233884 %
+Pooled measurement Pearson : 0.330405
+Absolute-error SD           : 8.550737 BPM
+Accuracy within 5 BPM      : 50.000 %
+Recording-macro MAE SE     : 1.103895 BPM
+Pooled MAE standard error  : 1.103895 BPM
+Official-formula RMSE +/-  : 31.290068
+Pooled MAPE standard error : 1.581145 %
+Pooled Pearson std. error  : 0.123932
+Mean waveform Pearson      : -0.004217
+Mean SNR                    : -10.175440 dB
+SNR standard error         : 0.405823 dB
