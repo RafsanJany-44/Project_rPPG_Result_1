@@ -1,0 +1,4 @@
+failure_type,count,percentage
+correct,1397,91.84746877054569
+large_error,118,7.758053911900066
+sub_harmonic_half,6,0.39447731755424065
