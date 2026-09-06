@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A2_L0_SEED101/Eval_On_COHFACE — Old Protocol
+====================================================================================
+Description                : Paired UBFC A2 five-seed experiment; L0, seed 101, evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/ubfc_a2_multiseed/UBFC_A2_L0_SEED101/UBFC_A2_L0_SEED101_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 8242
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 8.361103 BPM
+Pooled measurement MAE     : 8.311818 BPM
+Pooled measurement RMSE    : 14.649790 BPM
+Pooled measurement MAPE    : 11.375005 %
+Pooled measurement Pearson : 0.416850
+Absolute-error SD           : 12.063583 BPM
+Accuracy within 5 BPM      : 64.220 %
+Recording-macro MAE SE     : 0.528393 BPM
+Pooled MAE standard error  : 0.132880 BPM
+Official-formula RMSE +/-  : 6.460695
+Pooled MAPE standard error : 0.179596 %
+Pooled Pearson std. error  : 0.010014
+Mean waveform Pearson      : 0.393813
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
