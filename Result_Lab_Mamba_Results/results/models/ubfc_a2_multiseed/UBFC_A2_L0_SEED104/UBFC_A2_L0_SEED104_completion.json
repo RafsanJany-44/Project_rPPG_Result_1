@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-05T21:43:10.493947+00:00",
+  "experiment": "UBFC_A2_L0_SEED104",
+  "source_dataset": "UBFC",
+  "augmentation": "A2",
+  "official_augmentation": true,
+  "offline_augmentation": true,
+  "offline_probability": 0.5,
+  "online_rgb_gain": false,
+  "loss_variant": "L0",
+  "loss_description": "A2 plus official 0.2 Pearson + CE loss",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "training_clips_per_epoch": 378,
+  "validation_clips": 105,
+  "maximum_epochs": 100,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_total_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 104,
+  "learning_rate": 0.0003,
+  "paired_seed_set": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "completed_utc": "2026-09-05T23:40:29.264969+00:00",
+  "epochs_completed": 45,
+  "stopped_early": true,
+  "best_epoch": 34,
+  "best_validation_total_loss": 4.652033410753522,
+  "best_checkpoint": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/ubfc_a2_multiseed/UBFC_A2_L0_SEED104/UBFC_A2_L0_SEED104_RhythmMamba_Best.pth",
+  "history": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/ubfc_a2_multiseed/UBFC_A2_L0_SEED104/UBFC_A2_L0_SEED104_training_history.csv",
+  "training_hours": 1.95521405201664,
+  "status": "PASSED"
+}
