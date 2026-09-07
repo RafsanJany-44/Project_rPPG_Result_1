@@ -1,0 +1,290 @@
+[2026-09-06 02:02:50] ==========================================================================
+[2026-09-06 02:02:50] STEP4 LOSS ABLATION start | device=cuda | configs=13 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep
+[2026-09-06 02:02:50]   G0_SE_mainP10_auxP              arch=ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-06 02:02:50]     main={'pearson': 1.0}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   G1a_SL_mainP10C01_auxP          arch=ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.1}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   G1a_SE_mainP10C01_auxP          arch=ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.1}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   G1b_SL_mainP10C02_auxP          arch=ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.2}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   G1b_SE_mainP10C02_auxP          arch=ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.2}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   G1c_SL_mainP10C05_auxP          arch=ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.5}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   G1c_SE_mainP10C05_auxP          arch=ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.5}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   G2a_SL_mainP10_auxPC05          arch=ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-06 02:02:50]     main={'pearson': 1.0}  aux={'pearson': 1.0, 'concentration': 0.5}
+[2026-09-06 02:02:50]   G2a_SE_mainP10_auxPC05          arch=ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-06 02:02:50]     main={'pearson': 1.0}  aux={'pearson': 1.0, 'concentration': 0.5}
+[2026-09-06 02:02:50]   G2b_SL_mainP10_auxPC10          arch=ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-06 02:02:50]     main={'pearson': 1.0}  aux={'pearson': 1.0, 'concentration': 1.0}
+[2026-09-06 02:02:50]   G2b_SE_mainP10_auxPC10          arch=ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-06 02:02:50]     main={'pearson': 1.0}  aux={'pearson': 1.0, 'concentration': 1.0}
+[2026-09-06 02:02:50]   G3_SL_mainP10C02_auxPC02        arch=ablation_step4_chrom_b1_deriv_b2_aux
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.2}  aux={'pearson': 1.0, 'concentration': 0.2}
+[2026-09-06 02:02:50]   G3_SE_mainP10C02_auxPC02        arch=ablation_step4_chrom_b1_deriv_b2_aux_SE
+[2026-09-06 02:02:50]     main={'pearson': 1.0, 'concentration': 0.2}  aux={'pearson': 1.0, 'concentration': 0.2}
+[2026-09-06 02:02:50] ==========================================================================
+[2026-09-06 02:02:50] --------------------------------------------------------------------------
+[2026-09-06 02:02:50] [1/13] RUN: G0_SE_mainP10_auxP
+[2026-09-06 02:02:50]   arch=ablation_step4_chrom_b1_deriv_b2_aux_SE  main={'pearson': 1.0}  aux={'pearson': 1.0}
+[2026-09-06 02:02:50]   built 'ablation_step4_chrom_b1_deriv_b2_aux_SE': params=170053, reach=96 samples (3.20s @30fps)
+[2026-09-06 02:02:50]   main loss weights: {'pearson': 1.0}
+[2026-09-06 02:02:50]   aux loss weights:  {'pearson': 1.0}
+[2026-09-06 02:05:37]     epoch   1 | train_loss=1.3845 val_loss=0.4416 val_hr_mae=4.050 lr=3.0e-04
+[2026-09-06 02:30:14]     epoch  10 | train_loss=0.8778 val_loss=0.2613 val_hr_mae=2.081 lr=3.0e-04
+[2026-09-06 02:57:23]     epoch  20 | train_loss=0.8503 val_loss=0.2374 val_hr_mae=1.970 lr=3.0e-04
+[2026-09-06 03:24:30]     epoch  30 | train_loss=0.8251 val_loss=0.2332 val_hr_mae=1.665 lr=3.0e-04
+[2026-09-06 03:51:32]     epoch  40 | train_loss=0.7986 val_loss=0.2186 val_hr_mae=1.652 lr=3.0e-04
+[2026-09-06 04:18:42]     epoch  50 | train_loss=0.7702 val_loss=0.2202 val_hr_mae=1.737 lr=1.5e-04
+[2026-09-06 04:45:51]     epoch  60 | train_loss=0.7578 val_loss=0.2199 val_hr_mae=1.689 lr=3.7e-05
+[2026-09-06 05:10:07]     early stop at epoch 69 (no val-loss improvement for 30)
+[2026-09-06 05:10:07]   trained 'ablation_step4_chrom_b1_deriv_b2_aux_SE': epochs_run=69 best_val_loss=0.2128 best_val_hr_mae=1.599
+[2026-09-06 05:10:07]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'old' ...
+[2026-09-06 05:17:25]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G0_SE_mainP10_auxP/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-06 05:17:25]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'prism' ...
+[2026-09-06 05:18:37]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'toolbox' ...
+[2026-09-06 05:19:18]   DONE 'G0_SE_mainP10_auxP' [old]: val_model_mae=nan
+[2026-09-06 05:19:18]   DONE 'G0_SE_mainP10_auxP' [prism]: val_model_mae=0.646
+[2026-09-06 05:19:18]   DONE 'G0_SE_mainP10_auxP' [toolbox]: val_model_mae=0.321
+[2026-09-06 05:19:18] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-06 05:19:18] 
+protocol            prism  toolbox
+model                             
+G0_SE_mainP10_auxP  0.646    0.321
+[2026-09-06 05:19:18] --------------------------------------------------------------------------
+[2026-09-06 05:19:18] [2/13] RUN: G1a_SL_mainP10C01_auxP
+[2026-09-06 05:19:18]   arch=ablation_step4_chrom_b1_deriv_b2_aux  main={'pearson': 1.0, 'concentration': 0.1}  aux={'pearson': 1.0}
+[2026-09-06 05:19:18]   built 'ablation_step4_chrom_b1_deriv_b2_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-06 05:19:18]   main loss weights: {'pearson': 1.0, 'concentration': 0.1}
+[2026-09-06 05:19:18]   aux loss weights:  {'pearson': 1.0}
+[2026-09-06 05:24:46]     epoch   1 | train_loss=1.5124 val_loss=0.5245 val_hr_mae=2.557 lr=3.0e-04
+[2026-09-06 06:13:37]     epoch  10 | train_loss=0.9733 val_loss=0.3405 val_hr_mae=1.960 lr=3.0e-04
+[2026-09-06 07:07:45]     epoch  20 | train_loss=0.9259 val_loss=0.3154 val_hr_mae=2.198 lr=3.0e-04
+[2026-09-06 08:01:51]     epoch  30 | train_loss=0.8908 val_loss=0.2982 val_hr_mae=1.535 lr=3.0e-04
+[2026-09-06 08:52:47]     epoch  40 | train_loss=0.8435 val_loss=0.2970 val_hr_mae=1.622 lr=1.5e-04
+[2026-09-06 09:36:19]     epoch  50 | train_loss=0.8272 val_loss=0.2975 val_hr_mae=1.638 lr=3.7e-05
+[2026-09-06 10:19:48]     epoch  60 | train_loss=0.8218 val_loss=0.2994 val_hr_mae=1.643 lr=1.9e-05
+[2026-09-06 10:28:25]     early stop at epoch 62 (no val-loss improvement for 30)
+[2026-09-06 10:28:25]   trained 'ablation_step4_chrom_b1_deriv_b2_aux': epochs_run=62 best_val_loss=0.2927 best_val_hr_mae=1.535
+[2026-09-06 10:28:25]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'old' ...
+[2026-09-06 10:34:34]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G1a_SL_mainP10C01_auxP/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-06 10:34:34]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'prism' ...
+[2026-09-06 10:35:37]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'toolbox' ...
+[2026-09-06 10:36:14]   DONE 'G1a_SL_mainP10C01_auxP' [old]: val_model_mae=nan
+[2026-09-06 10:36:14]   DONE 'G1a_SL_mainP10C01_auxP' [prism]: val_model_mae=0.808
+[2026-09-06 10:36:14]   DONE 'G1a_SL_mainP10C01_auxP' [toolbox]: val_model_mae=0.341
+[2026-09-06 10:36:14] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-06 10:36:14] 
+protocol                prism  toolbox
+model                                 
+G0_SE_mainP10_auxP      0.646    0.321
+G1a_SL_mainP10C01_auxP  0.808    0.341
+[2026-09-06 10:36:14] --------------------------------------------------------------------------
+[2026-09-06 10:36:14] [3/13] RUN: G1a_SE_mainP10C01_auxP
+[2026-09-06 10:36:14]   arch=ablation_step4_chrom_b1_deriv_b2_aux_SE  main={'pearson': 1.0, 'concentration': 0.1}  aux={'pearson': 1.0}
+[2026-09-06 10:36:14]   built 'ablation_step4_chrom_b1_deriv_b2_aux_SE': params=170053, reach=96 samples (3.20s @30fps)
+[2026-09-06 10:36:14]   main loss weights: {'pearson': 1.0, 'concentration': 0.1}
+[2026-09-06 10:36:14]   aux loss weights:  {'pearson': 1.0}
+[2026-09-06 10:40:39]     epoch   1 | train_loss=1.5214 val_loss=0.6087 val_hr_mae=4.343 lr=3.0e-04
+[2026-09-06 11:20:08]     epoch  10 | train_loss=0.9737 val_loss=0.3489 val_hr_mae=2.037 lr=3.0e-04
+[2026-09-06 12:03:50]     epoch  20 | train_loss=0.9409 val_loss=0.3165 val_hr_mae=1.822 lr=3.0e-04
+[2026-09-06 12:47:40]     epoch  30 | train_loss=0.9132 val_loss=0.3069 val_hr_mae=1.546 lr=3.0e-04
+[2026-09-06 13:28:30]     epoch  40 | train_loss=0.8853 val_loss=0.2988 val_hr_mae=1.613 lr=1.5e-04
+[2026-09-06 14:08:16]     epoch  50 | train_loss=0.8686 val_loss=0.2986 val_hr_mae=1.684 lr=7.5e-05
+[2026-09-06 14:52:54]     epoch  60 | train_loss=0.8631 val_loss=0.2983 val_hr_mae=1.555 lr=1.9e-05
+[2026-09-06 15:36:56]     early stop at epoch 69 (no val-loss improvement for 30)
+[2026-09-06 15:36:56]   trained 'ablation_step4_chrom_b1_deriv_b2_aux_SE': epochs_run=69 best_val_loss=0.2952 best_val_hr_mae=1.533
+[2026-09-06 15:36:56]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'old' ...
+[2026-09-06 15:43:00]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G1a_SE_mainP10C01_auxP/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-06 15:43:00]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'prism' ...
+[2026-09-06 15:44:04]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'toolbox' ...
+[2026-09-06 15:44:41]   DONE 'G1a_SE_mainP10C01_auxP' [old]: val_model_mae=nan
+[2026-09-06 15:44:41]   DONE 'G1a_SE_mainP10C01_auxP' [prism]: val_model_mae=0.680
+[2026-09-06 15:44:41]   DONE 'G1a_SE_mainP10C01_auxP' [toolbox]: val_model_mae=0.356
+[2026-09-06 15:44:41] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-06 15:44:41] 
+protocol                prism  toolbox
+model                                 
+G0_SE_mainP10_auxP      0.646    0.321
+G1a_SE_mainP10C01_auxP  0.680    0.356
+G1a_SL_mainP10C01_auxP  0.808    0.341
+[2026-09-06 15:44:41] --------------------------------------------------------------------------
+[2026-09-06 15:44:41] [4/13] RUN: G1b_SL_mainP10C02_auxP
+[2026-09-06 15:44:41]   arch=ablation_step4_chrom_b1_deriv_b2_aux  main={'pearson': 1.0, 'concentration': 0.2}  aux={'pearson': 1.0}
+[2026-09-06 15:44:41]   built 'ablation_step4_chrom_b1_deriv_b2_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-06 15:44:41]   main loss weights: {'pearson': 1.0, 'concentration': 0.2}
+[2026-09-06 15:44:41]   aux loss weights:  {'pearson': 1.0}
+[2026-09-06 15:49:31]     epoch   1 | train_loss=1.6408 val_loss=0.6579 val_hr_mae=2.672 lr=3.0e-04
+[2026-09-06 16:32:45]     epoch  10 | train_loss=1.0600 val_loss=0.4095 val_hr_mae=1.981 lr=3.0e-04
+[2026-09-06 17:20:30]     epoch  20 | train_loss=1.0074 val_loss=0.3947 val_hr_mae=1.917 lr=3.0e-04
+[2026-09-06 18:08:27]     epoch  30 | train_loss=0.9772 val_loss=0.3717 val_hr_mae=1.638 lr=3.0e-04
+[2026-09-06 18:56:23]     epoch  40 | train_loss=0.9442 val_loss=0.3794 val_hr_mae=1.599 lr=1.5e-04
+[2026-09-06 19:44:16]     epoch  50 | train_loss=0.9220 val_loss=0.3788 val_hr_mae=1.688 lr=7.5e-05
+[2026-09-06 20:26:36]     epoch  60 | train_loss=0.9163 val_loss=0.3799 val_hr_mae=1.656 lr=1.9e-05
+[2026-09-06 21:02:21]     early stop at epoch 69 (no val-loss improvement for 30)
+[2026-09-06 21:02:21]   trained 'ablation_step4_chrom_b1_deriv_b2_aux': epochs_run=69 best_val_loss=0.3715 best_val_hr_mae=1.494
+[2026-09-06 21:02:22]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'old' ...
+[2026-09-06 21:08:34]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G1b_SL_mainP10C02_auxP/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-06 21:08:34]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'prism' ...
+[2026-09-06 21:09:38]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'toolbox' ...
+[2026-09-06 21:10:18]   DONE 'G1b_SL_mainP10C02_auxP' [old]: val_model_mae=nan
+[2026-09-06 21:10:18]   DONE 'G1b_SL_mainP10C02_auxP' [prism]: val_model_mae=0.723
+[2026-09-06 21:10:18]   DONE 'G1b_SL_mainP10C02_auxP' [toolbox]: val_model_mae=0.330
+[2026-09-06 21:10:18] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-06 21:10:18] 
+protocol                prism  toolbox
+model                                 
+G0_SE_mainP10_auxP      0.646    0.321
+G1a_SE_mainP10C01_auxP  0.680    0.356
+G1a_SL_mainP10C01_auxP  0.808    0.341
+G1b_SL_mainP10C02_auxP  0.723    0.330
+[2026-09-06 21:10:18] --------------------------------------------------------------------------
+[2026-09-06 21:10:18] [5/13] RUN: G1b_SE_mainP10C02_auxP
+[2026-09-06 21:10:18]   arch=ablation_step4_chrom_b1_deriv_b2_aux_SE  main={'pearson': 1.0, 'concentration': 0.2}  aux={'pearson': 1.0}
+[2026-09-06 21:10:18]   built 'ablation_step4_chrom_b1_deriv_b2_aux_SE': params=170053, reach=96 samples (3.20s @30fps)
+[2026-09-06 21:10:18]   main loss weights: {'pearson': 1.0, 'concentration': 0.2}
+[2026-09-06 21:10:18]   aux loss weights:  {'pearson': 1.0}
+[2026-09-06 21:14:43]     epoch   1 | train_loss=1.6532 val_loss=0.6838 val_hr_mae=3.442 lr=3.0e-04
+[2026-09-06 21:58:57]     epoch  10 | train_loss=1.0776 val_loss=0.4382 val_hr_mae=2.011 lr=3.0e-04
+[2026-09-06 22:50:14]     epoch  20 | train_loss=1.0271 val_loss=0.3992 val_hr_mae=1.838 lr=3.0e-04
+[2026-09-06 23:34:25]     epoch  30 | train_loss=0.9855 val_loss=0.3886 val_hr_mae=1.743 lr=3.0e-04
+[2026-09-07 00:14:09]     epoch  40 | train_loss=0.9464 val_loss=0.3790 val_hr_mae=1.565 lr=1.5e-04
+[2026-09-07 01:00:05]     epoch  50 | train_loss=0.9284 val_loss=0.3752 val_hr_mae=1.678 lr=3.7e-05
+[2026-09-07 01:44:53]     epoch  60 | train_loss=0.9254 val_loss=0.3796 val_hr_mae=1.673 lr=1.9e-05
+[2026-09-07 01:48:55]     early stop at epoch 61 (no val-loss improvement for 30)
+[2026-09-07 01:48:55]   trained 'ablation_step4_chrom_b1_deriv_b2_aux_SE': epochs_run=61 best_val_loss=0.3708 best_val_hr_mae=1.514
+[2026-09-07 01:48:55]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'old' ...
+[2026-09-07 01:54:23]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G1b_SE_mainP10C02_auxP/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-07 01:54:23]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'prism' ...
+[2026-09-07 01:55:20]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'toolbox' ...
+[2026-09-07 01:55:57]   DONE 'G1b_SE_mainP10C02_auxP' [old]: val_model_mae=nan
+[2026-09-07 01:55:57]   DONE 'G1b_SE_mainP10C02_auxP' [prism]: val_model_mae=1.085
+[2026-09-07 01:55:57]   DONE 'G1b_SE_mainP10C02_auxP' [toolbox]: val_model_mae=0.295
+[2026-09-07 01:55:57] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-07 01:55:57] 
+protocol                prism  toolbox
+model                                 
+G0_SE_mainP10_auxP      0.646    0.321
+G1a_SE_mainP10C01_auxP  0.680    0.356
+G1a_SL_mainP10C01_auxP  0.808    0.341
+G1b_SE_mainP10C02_auxP  1.085    0.295
+G1b_SL_mainP10C02_auxP  0.723    0.330
+[2026-09-07 01:55:57] --------------------------------------------------------------------------
+[2026-09-07 01:55:57] [6/13] RUN: G1c_SL_mainP10C05_auxP
+[2026-09-07 01:55:57]   arch=ablation_step4_chrom_b1_deriv_b2_aux  main={'pearson': 1.0, 'concentration': 0.5}  aux={'pearson': 1.0}
+[2026-09-07 01:55:57]   built 'ablation_step4_chrom_b1_deriv_b2_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-07 01:55:57]   main loss weights: {'pearson': 1.0, 'concentration': 0.5}
+[2026-09-07 01:55:57]   aux loss weights:  {'pearson': 1.0}
+[2026-09-07 01:59:52]     epoch   1 | train_loss=2.0164 val_loss=0.9986 val_hr_mae=3.520 lr=3.0e-04
+[2026-09-07 02:39:08]     epoch  10 | train_loss=1.3453 val_loss=0.6502 val_hr_mae=2.009 lr=3.0e-04
+[2026-09-07 03:30:42]     epoch  20 | train_loss=1.2561 val_loss=0.6247 val_hr_mae=2.317 lr=3.0e-04
+[2026-09-07 04:24:16]     epoch  30 | train_loss=1.2087 val_loss=0.6010 val_hr_mae=1.822 lr=3.0e-04
+[2026-09-07 05:17:51]     epoch  40 | train_loss=1.1652 val_loss=0.5986 val_hr_mae=1.794 lr=3.0e-04
+[2026-09-07 06:06:28]     epoch  50 | train_loss=1.1322 val_loss=0.5945 val_hr_mae=1.806 lr=7.5e-05
+[2026-09-07 06:50:23]     epoch  60 | train_loss=1.1246 val_loss=0.5940 val_hr_mae=1.824 lr=3.7e-05
+[2026-09-07 07:34:25]     epoch  70 | train_loss=1.1181 val_loss=0.5942 val_hr_mae=1.739 lr=1.0e-05
+[2026-09-07 07:47:35]     early stop at epoch 73 (no val-loss improvement for 30)
+[2026-09-07 07:47:35]   trained 'ablation_step4_chrom_b1_deriv_b2_aux': epochs_run=73 best_val_loss=0.5878 best_val_hr_mae=1.655
+[2026-09-07 07:47:35]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'old' ...
+[2026-09-07 07:53:43]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G1c_SL_mainP10C05_auxP/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-07 07:53:44]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'prism' ...
+[2026-09-07 07:54:48]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'toolbox' ...
+[2026-09-07 07:55:26]   DONE 'G1c_SL_mainP10C05_auxP' [old]: val_model_mae=nan
+[2026-09-07 07:55:26]   DONE 'G1c_SL_mainP10C05_auxP' [prism]: val_model_mae=1.273
+[2026-09-07 07:55:26]   DONE 'G1c_SL_mainP10C05_auxP' [toolbox]: val_model_mae=0.526
+[2026-09-07 07:55:26] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-07 07:55:26] 
+protocol                prism  toolbox
+model                                 
+G0_SE_mainP10_auxP      0.646    0.321
+G1a_SE_mainP10C01_auxP  0.680    0.356
+G1a_SL_mainP10C01_auxP  0.808    0.341
+G1b_SE_mainP10C02_auxP  1.085    0.295
+G1b_SL_mainP10C02_auxP  0.723    0.330
+G1c_SL_mainP10C05_auxP  1.273    0.526
+[2026-09-07 07:55:26] --------------------------------------------------------------------------
+[2026-09-07 07:55:26] [7/13] RUN: G1c_SE_mainP10C05_auxP
+[2026-09-07 07:55:26]   arch=ablation_step4_chrom_b1_deriv_b2_aux_SE  main={'pearson': 1.0, 'concentration': 0.5}  aux={'pearson': 1.0}
+[2026-09-07 07:55:26]   built 'ablation_step4_chrom_b1_deriv_b2_aux_SE': params=170053, reach=96 samples (3.20s @30fps)
+[2026-09-07 07:55:26]   main loss weights: {'pearson': 1.0, 'concentration': 0.5}
+[2026-09-07 07:55:26]   aux loss weights:  {'pearson': 1.0}
+[2026-09-07 07:59:52]     epoch   1 | train_loss=2.0272 val_loss=1.0599 val_hr_mae=4.981 lr=3.0e-04
+[2026-09-07 08:39:31]     epoch  10 | train_loss=1.3747 val_loss=0.7088 val_hr_mae=2.306 lr=3.0e-04
+[2026-09-07 09:23:34]     epoch  20 | train_loss=1.2876 val_loss=0.6474 val_hr_mae=1.865 lr=3.0e-04
+[2026-09-07 10:07:33]     epoch  30 | train_loss=1.2233 val_loss=0.6164 val_hr_mae=1.764 lr=3.0e-04
+[2026-09-07 10:51:49]     epoch  40 | train_loss=1.1675 val_loss=0.6011 val_hr_mae=1.876 lr=1.5e-04
+[2026-09-07 11:43:02]     epoch  50 | train_loss=1.1426 val_loss=0.6032 val_hr_mae=1.882 lr=7.5e-05
+[2026-09-07 12:25:30]     epoch  60 | train_loss=1.1342 val_loss=0.6027 val_hr_mae=1.829 lr=1.9e-05
+[2026-09-07 13:05:36]     early stop at epoch 69 (no val-loss improvement for 30)
+[2026-09-07 13:05:36]   trained 'ablation_step4_chrom_b1_deriv_b2_aux_SE': epochs_run=69 best_val_loss=0.5984 best_val_hr_mae=1.762
+[2026-09-07 13:05:36]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'old' ...
+[2026-09-07 13:12:47]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G1c_SE_mainP10C05_auxP/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-07 13:12:47]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'prism' ...
+[2026-09-07 13:14:03]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux_SE' under protocol 'toolbox' ...
+[2026-09-07 13:14:44]   DONE 'G1c_SE_mainP10C05_auxP' [old]: val_model_mae=nan
+[2026-09-07 13:14:44]   DONE 'G1c_SE_mainP10C05_auxP' [prism]: val_model_mae=1.343
+[2026-09-07 13:14:44]   DONE 'G1c_SE_mainP10C05_auxP' [toolbox]: val_model_mae=0.431
+[2026-09-07 13:14:44] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-07 13:14:44] 
+protocol                prism  toolbox
+model                                 
+G0_SE_mainP10_auxP      0.646    0.321
+G1a_SE_mainP10C01_auxP  0.680    0.356
+G1a_SL_mainP10C01_auxP  0.808    0.341
+G1b_SE_mainP10C02_auxP  1.085    0.295
+G1b_SL_mainP10C02_auxP  0.723    0.330
+G1c_SE_mainP10C05_auxP  1.343    0.431
+G1c_SL_mainP10C05_auxP  1.273    0.526
+[2026-09-07 13:14:44] --------------------------------------------------------------------------
+[2026-09-07 13:14:44] [8/13] RUN: G2a_SL_mainP10_auxPC05
+[2026-09-07 13:14:44]   arch=ablation_step4_chrom_b1_deriv_b2_aux  main={'pearson': 1.0}  aux={'pearson': 1.0, 'concentration': 0.5}
+[2026-09-07 13:14:44]   built 'ablation_step4_chrom_b1_deriv_b2_aux': params=169603, reach=96 samples (3.20s @30fps)
+[2026-09-07 13:14:44]   main loss weights: {'pearson': 1.0}
+[2026-09-07 13:14:44]   aux loss weights:  {'pearson': 1.0, 'concentration': 0.5}
+[2026-09-07 13:24:03]     epoch   1 | train_loss=2.2572 val_loss=0.5541 val_hr_mae=6.578 lr=3.0e-04
+[2026-09-07 14:49:06]     epoch  10 | train_loss=1.6223 val_loss=0.2555 val_hr_mae=1.913 lr=3.0e-04
+[2026-09-07 16:22:15]     epoch  20 | train_loss=1.5697 val_loss=0.2390 val_hr_mae=1.766 lr=3.0e-04
+[2026-09-07 17:55:38]     epoch  30 | train_loss=1.5372 val_loss=0.2186 val_hr_mae=1.551 lr=1.5e-04
+[2026-09-07 19:28:48]     epoch  40 | train_loss=1.5155 val_loss=0.2169 val_hr_mae=1.577 lr=7.5e-05
+[2026-09-07 21:02:03]     epoch  50 | train_loss=1.4971 val_loss=0.2183 val_hr_mae=1.677 lr=3.7e-05
+[2026-09-07 22:36:35]     epoch  60 | train_loss=1.4916 val_loss=0.2197 val_hr_mae=1.709 lr=1.9e-05
+[2026-09-08 00:09:57]     epoch  70 | train_loss=1.4878 val_loss=0.2189 val_hr_mae=1.713 lr=1.0e-05
+[2026-09-08 00:38:08]     early stop at epoch 73 (no val-loss improvement for 30)
+[2026-09-08 00:38:08]   trained 'ablation_step4_chrom_b1_deriv_b2_aux': epochs_run=73 best_val_loss=0.2112 best_val_hr_mae=1.535
+[2026-09-08 00:38:09]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'old' ...
+[2026-09-08 00:44:56]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_GPU0_Step4_Loss-Ablation_Main-Aux-Sweep/G2a_SL_mainP10_auxPC05/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-08 00:44:56]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'prism' ...
+[2026-09-08 00:46:06]   evaluating 'ablation_step4_chrom_b1_deriv_b2_aux' under protocol 'toolbox' ...
+[2026-09-08 00:46:47]   DONE 'G2a_SL_mainP10_auxPC05' [old]: val_model_mae=nan
+[2026-09-08 00:46:47]   DONE 'G2a_SL_mainP10_auxPC05' [prism]: val_model_mae=1.342
+[2026-09-08 00:46:47]   DONE 'G2a_SL_mainP10_auxPC05' [toolbox]: val_model_mae=0.439
+[2026-09-08 00:46:47] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-08 00:46:47] 
+protocol                prism  toolbox
+model                                 
+G0_SE_mainP10_auxP      0.646    0.321
+G1a_SE_mainP10C01_auxP  0.680    0.356
+G1a_SL_mainP10C01_auxP  0.808    0.341
+G1b_SE_mainP10C02_auxP  1.085    0.295
+G1b_SL_mainP10C02_auxP  0.723    0.330
+G1c_SE_mainP10C05_auxP  1.343    0.431
+G1c_SL_mainP10C05_auxP  1.273    0.526
+G2a_SL_mainP10_auxPC05  1.342    0.439
+[2026-09-08 00:46:47] --------------------------------------------------------------------------
+[2026-09-08 00:46:47] [9/13] RUN: G2a_SE_mainP10_auxPC05
+[2026-09-08 00:46:47]   arch=ablation_step4_chrom_b1_deriv_b2_aux_SE  main={'pearson': 1.0}  aux={'pearson': 1.0, 'concentration': 0.5}
+[2026-09-08 00:46:47]   built 'ablation_step4_chrom_b1_deriv_b2_aux_SE': params=170053, reach=96 samples (3.20s @30fps)
+[2026-09-08 00:46:47]   main loss weights: {'pearson': 1.0}
+[2026-09-08 00:46:47]   aux loss weights:  {'pearson': 1.0, 'concentration': 0.5}
+[2026-09-08 00:56:29]     epoch   1 | train_loss=2.1485 val_loss=0.4886 val_hr_mae=4.431 lr=3.0e-04
