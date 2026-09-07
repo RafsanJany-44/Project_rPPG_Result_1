@@ -1,0 +1,17 @@
+[2026-09-08 03:48:08] ==========================================================================
+[2026-09-08 03:48:08] FINAL TWO EXPERIMENTS | device=cuda | configs=2 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Final_Step4-SE_StratA-with-CE-AUX
+[2026-09-08 03:48:08]   Step4_SE_StratA_noAUX
+[2026-09-08 03:48:08]     main={'pearson': 1.0, 'concentration': 1.0}
+[2026-09-08 03:48:08]     aux=None  disable_aux=True
+[2026-09-08 03:48:08]   Step4_SE_StratA_asymCE-AUX
+[2026-09-08 03:48:08]     main={'pearson': 1.0, 'concentration': 1.0}
+[2026-09-08 03:48:08]     aux={'b1': {'pearson': 0.2, 'ce': 1.0}, 'b2': {'pearson': 0.2, 'ce': 1.0}, 'b3': {'pearson': 1.0}}  disable_aux=False
+[2026-09-08 03:48:08] ==========================================================================
+[2026-09-08 03:48:08] --------------------------------------------------------------------------
+[2026-09-08 03:48:08] [1/2] RUN: Step4_SE_StratA_noAUX
+[2026-09-08 03:48:08]   arch=ablation_step4_chrom_b1_deriv_b2_aux_SE  main={'pearson': 1.0, 'concentration': 1.0}
+[2026-09-08 03:48:08]   aux=None  disable_aux=True
+[2026-09-08 03:48:08]   built 'ablation_step4_chrom_b1_deriv_b2_aux_SE': params=170053, reach=96 samples (3.20s @30fps)
+[2026-09-08 03:48:08]   main loss weights: {'pearson': 1.0, 'concentration': 1.0}
+[2026-09-08 03:48:08]   aux loss weights:  None
+[2026-09-08 03:48:08]   force_disable_aux: True
