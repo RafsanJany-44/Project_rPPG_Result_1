@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-07T12:46:17.935821+00:00",
+  "experiment": "PURE_A4_L0_SEED102",
+  "source_dataset": "PURE",
+  "augmentation": "A4",
+  "offline_sampling": "0.5 original; otherwise uniform jpeg/blur/gamma/contrast",
+  "official_training_augmentation": true,
+  "loss": "L0 official HybridLoss",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "maximum_epochs": 100,
+  "minimum_epochs": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest clean validation loss",
+  "saved_checkpoints": "best only",
+  "seed": 102
+}

@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-07T12:46:17.935821+00:00",
+  "experiment": "PURE_A4_L0_SEED102",
+  "source_dataset": "PURE",
+  "augmentation": "A4",
+  "offline_sampling": "0.5 original; otherwise uniform jpeg/blur/gamma/contrast",
+  "official_training_augmentation": true,
+  "loss": "L0 official HybridLoss",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "maximum_epochs": 100,
+  "minimum_epochs": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest clean validation loss",
+  "saved_checkpoints": "best only",
+  "seed": 102,
+  "completed_utc": "2026-09-07T15:24:36.056376+00:00",
+  "epochs_completed": 45,
+  "stopped_early": true,
+  "best_epoch": 34,
+  "best_validation_total_loss": 4.640269359984956,
+  "best_checkpoint": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED102/PURE_A4_L0_SEED102_RhythmMamba_Best.pth",
+  "training_history": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED102/PURE_A4_L0_SEED102_training_history.csv",
+  "training_hours": 2.6383668005957994,
+  "status": "PASSED"
+}
