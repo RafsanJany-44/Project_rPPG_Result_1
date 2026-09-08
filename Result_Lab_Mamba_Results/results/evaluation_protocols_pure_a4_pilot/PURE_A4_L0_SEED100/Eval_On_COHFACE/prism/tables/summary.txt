@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L0_SEED100/Eval_On_COHFACE — PRISM Evaluation Protocol
+====================================================================================
+Description                : PURE A4 L0 five-seed experiment; seed 100, evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED100/PURE_A4_L0_SEED100_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 810
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 9.161002 BPM
+Pooled measurement MAE     : 9.082981 BPM
+Pooled measurement RMSE    : 15.158331 BPM
+Pooled measurement MAPE    : 12.396678 %
+Pooled measurement Pearson : 0.337121
+Absolute-error SD           : 12.135669 BPM
+Accuracy within 5 BPM      : 58.889 %
+Recording-macro MAE SE     : 0.599009 BPM
+Pooled MAE standard error  : 0.426404 BPM
+Official-formula RMSE +/-  : 17.731171
+Pooled MAPE standard error : 0.587077 %
+Pooled Pearson std. error  : 0.033120
+Mean waveform Pearson      : 0.313563
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
