@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L0_SEED103/Eval_On_TOKYOTECH — Old Protocol
+====================================================================================
+Description                : PURE A4 L0 five-seed experiment; seed 103, evaluated on TOKYOTECH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED103/PURE_A4_L0_SEED103_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1521
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.107824 BPM
+Pooled measurement MAE     : 2.107824 BPM
+Pooled measurement RMSE    : 7.526154 BPM
+Pooled measurement MAPE    : 2.913527 %
+Pooled measurement Pearson : 0.830108
+Absolute-error SD           : 7.224962 BPM
+Accuracy within 5 BPM      : 94.149 %
+Recording-macro MAE SE     : 0.704808 BPM
+Pooled MAE standard error  : 0.185255 BPM
+Official-formula RMSE +/-  : 11.121089
+Pooled MAPE standard error : 0.297699 %
+Pooled Pearson std. error  : 0.014307
+Mean waveform Pearson      : -0.247754
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
