@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L0_SEED101/Eval_On_COHFACE — Old Protocol
+====================================================================================
+Description                : PURE A4 L0 five-seed experiment; seed 101, evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED101/PURE_A4_L0_SEED101_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 8242
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 11.688567 BPM
+Pooled measurement MAE     : 11.607377 BPM
+Pooled measurement RMSE    : 17.967360 BPM
+Pooled measurement MAPE    : 15.314008 %
+Pooled measurement Pearson : 0.177175
+Absolute-error SD           : 13.714766 BPM
+Accuracy within 5 BPM      : 53.009 %
+Recording-macro MAE SE     : 0.734765 BPM
+Pooled MAE standard error  : 0.151068 BPM
+Official-formula RMSE +/-  : 6.536322
+Pooled MAPE standard error : 0.186378 %
+Pooled Pearson std. error  : 0.010842
+Mean waveform Pearson      : 0.317437
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
