@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L0_SEED102/Eval_On_UBFC — Old Protocol
+====================================================================================
+Description                : PURE A4 L0 five-seed experiment; seed 102, evaluated on UBFC: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED102/PURE_A4_L0_SEED102_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 42
+Expected recordings        : 42
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 2280
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 1.872330 BPM
+Pooled measurement MAE     : 1.852632 BPM
+Pooled measurement RMSE    : 7.668688 BPM
+Pooled measurement MAPE    : 2.080221 %
+Pooled measurement Pearson : 0.908657
+Absolute-error SD           : 7.441541 BPM
+Accuracy within 5 BPM      : 96.667 %
+Recording-macro MAE SE     : 0.298452 BPM
+Pooled MAE standard error  : 0.155846 BPM
+Official-formula RMSE +/-  : 11.569576
+Pooled MAPE standard error : 0.193310 %
+Pooled Pearson std. error  : 0.008748
+Mean waveform Pearson      : 0.621053
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
