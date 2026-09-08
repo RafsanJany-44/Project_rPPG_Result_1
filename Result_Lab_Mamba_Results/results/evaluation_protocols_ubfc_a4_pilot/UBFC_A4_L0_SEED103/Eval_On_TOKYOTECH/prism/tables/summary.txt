@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L0_SEED103/Eval_On_TOKYOTECH — PRISM Evaluation Protocol
+====================================================================================
+Description                : UBFC A4 L0 five-seed experiment; seed 103, evaluated on TOKYOTECH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/ubfc_a4_pilot/UBFC_A4_L0_SEED103/UBFC_A4_L0_SEED103_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 153
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.959846 BPM
+Pooled measurement MAE     : 2.959846 BPM
+Pooled measurement RMSE    : 8.403113 BPM
+Pooled measurement MAPE    : 3.220637 %
+Pooled measurement Pearson : 0.772626
+Absolute-error SD           : 7.864580 BPM
+Accuracy within 5 BPM      : 89.542 %
+Recording-macro MAE SE     : 1.790246 BPM
+Pooled MAE standard error  : 0.635814 BPM
+Official-formula RMSE +/-  : 26.112323
+Pooled MAPE standard error : 0.642044 %
+Pooled Pearson std. error  : 0.051664
+Mean waveform Pearson      : -0.300998
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
