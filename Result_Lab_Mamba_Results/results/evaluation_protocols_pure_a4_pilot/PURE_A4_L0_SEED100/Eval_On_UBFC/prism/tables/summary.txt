@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L0_SEED100/Eval_On_UBFC — PRISM Evaluation Protocol
+====================================================================================
+Description                : PURE A4 L0 five-seed experiment; seed 100, evaluated on UBFC: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED100/PURE_A4_L0_SEED100_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 42
+Expected recordings        : 42
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 239
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 1.794913 BPM
+Pooled measurement MAE     : 1.721038 BPM
+Pooled measurement RMSE    : 5.272480 BPM
+Pooled measurement MAPE    : 1.735498 %
+Pooled measurement Pearson : 0.954253
+Absolute-error SD           : 4.983680 BPM
+Accuracy within 5 BPM      : 94.561 %
+Recording-macro MAE SE     : 0.413511 BPM
+Pooled MAE standard error  : 0.322367 BPM
+Official-formula RMSE +/-  : 16.217997
+Pooled MAPE standard error : 0.303517 %
+Pooled Pearson std. error  : 0.019422
+Mean waveform Pearson      : 0.648270
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

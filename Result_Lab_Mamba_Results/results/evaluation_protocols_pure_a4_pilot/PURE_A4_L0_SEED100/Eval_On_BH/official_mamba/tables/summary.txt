@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L0_SEED100/Eval_On_BH — Official RhythmMamba Evaluation
+====================================================================================
+Description                : PURE A4 L0 five-seed experiment; seed 100, evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/pure_a4_pilot/PURE_A4_L0_SEED100/PURE_A4_L0_SEED100_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 105
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.376238 BPM
+Pooled measurement MAE     : 2.376238 BPM
+Pooled measurement RMSE    : 4.434022 BPM
+Pooled measurement MAPE    : 3.334295 %
+Pooled measurement Pearson : 0.923973
+Absolute-error SD           : 3.743534 BPM
+Accuracy within 5 BPM      : 94.286 %
+Recording-macro MAE SE     : 0.365331 BPM
+Pooled MAE standard error  : 0.365331 BPM
+Official-formula RMSE +/-  : 7.190951
+Pooled MAPE standard error : 0.546833 %
+Pooled Pearson std. error  : 0.037685
+Mean waveform Pearson      : -0.002578
+Mean SNR                    : 7.811619 dB
+SNR standard error         : 0.849695 dB
