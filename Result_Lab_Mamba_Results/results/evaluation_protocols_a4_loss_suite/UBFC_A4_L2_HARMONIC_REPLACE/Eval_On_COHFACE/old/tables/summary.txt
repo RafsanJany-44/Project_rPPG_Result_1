@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L2_HARMONIC_REPLACE/Eval_On_COHFACE — Old Protocol
+====================================================================================
+Description                : A4 L2_HARMONIC_REPLACE, local UBFC checkpoint evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_suite/UBFC_A4_L2_HARMONIC_REPLACE/UBFC_A4_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 8242
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 12.135493 BPM
+Pooled measurement MAE     : 12.054356 BPM
+Pooled measurement RMSE    : 17.724084 BPM
+Pooled measurement MAPE    : 15.730162 %
+Pooled measurement Pearson : 0.146596
+Absolute-error SD           : 12.993678 BPM
+Accuracy within 5 BPM      : 48.653 %
+Recording-macro MAE SE     : 0.730453 BPM
+Pooled MAE standard error  : 0.143125 BPM
+Official-formula RMSE +/-  : 5.730065
+Pooled MAPE standard error : 0.173173 %
+Pooled Pearson std. error  : 0.010897
+Mean waveform Pearson      : 0.143289
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
