@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L2_HARMONIC_REPLACE/Eval_On_PURE — PRISM Evaluation Protocol
+====================================================================================
+Description                : A4 L2_HARMONIC_REPLACE, local PURE checkpoint evaluated on PURE: held-out 0.8-1.0 clean source validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_suite/PURE_A4_L2_HARMONIC_REPLACE/PURE_A4_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.8–1.0
+Aggregation                : window_to_recording
+Recordings                 : 12
+Expected recordings        : 12
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 77
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 1.963588 BPM
+Pooled measurement MAE     : 1.996087 BPM
+Pooled measurement RMSE    : 6.104269 BPM
+Pooled measurement MAPE    : 3.632819 %
+Pooled measurement Pearson : 0.936300
+Absolute-error SD           : 5.768686 BPM
+Accuracy within 5 BPM      : 92.208 %
+Recording-macro MAE SE     : 0.640093 BPM
+Pooled MAE standard error  : 0.657403 BPM
+Official-formula RMSE +/-  : 29.915300
+Pooled MAPE standard error : 1.366181 %
+Pooled Pearson std. error  : 0.040553
+Mean waveform Pearson      : 0.588285
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
