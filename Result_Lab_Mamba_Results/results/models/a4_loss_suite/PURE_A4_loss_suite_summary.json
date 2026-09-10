@@ -1,0 +1,28 @@
+{
+  "source_dataset": "PURE",
+  "completed_utc": "2026-09-09T23:29:05.650069+00:00",
+  "planned_models": 4,
+  "successful_models": 4,
+  "failed_models": 0,
+  "successes": [
+    {
+      "experiment": "PURE_A4_L1_OFFICIAL_HARMONIC",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_suite/PURE_A4_L1_OFFICIAL_HARMONIC/PURE_A4_L1_OFFICIAL_HARMONIC_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A4_L2_HARMONIC_REPLACE",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_suite/PURE_A4_L2_HARMONIC_REPLACE/PURE_A4_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A4_L3_CONCENTRATION",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_suite/PURE_A4_L3_CONCENTRATION/PURE_A4_L3_CONCENTRATION_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A4_L4_CONCENTRATION_HARMONIC",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_suite/PURE_A4_L4_CONCENTRATION_HARMONIC/PURE_A4_L4_CONCENTRATION_HARMONIC_RhythmMamba_Best.pth"
+    }
+  ],
+  "failures": [],
+  "suite_hours": 14.972467109121176,
+  "status": "PASSED"
+}
