@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L2_HARMONIC_REPLACE/Eval_On_PURE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : A4 L2_HARMONIC_REPLACE, local UBFC checkpoint evaluated on PURE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_suite/UBFC_A4_L2_HARMONIC_REPLACE/UBFC_A4_L2_HARMONIC_REPLACE_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 59
+Expected recordings        : 59
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 59
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 4.000061 BPM
+Pooled measurement MAE     : 4.000061 BPM
+Pooled measurement RMSE    : 15.057137 BPM
+Pooled measurement MAPE    : 3.574325 %
+Pooled measurement Pearson : 0.768081
+Absolute-error SD           : 14.516091 BPM
+Accuracy within 5 BPM      : 93.220 %
+Recording-macro MAE SE     : 1.889834 BPM
+Pooled MAE standard error  : 1.889834 BPM
+Official-formula RMSE +/-  : 131.725865
+Pooled MAPE standard error : 1.480979 %
+Pooled Pearson std. error  : 0.084817
+Mean waveform Pearson      : 0.607198
+Mean SNR                    : 5.742069 dB
+SNR standard error         : 1.390450 dB
