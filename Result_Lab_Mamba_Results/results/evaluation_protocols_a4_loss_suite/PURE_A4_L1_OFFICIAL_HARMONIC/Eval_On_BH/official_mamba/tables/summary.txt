@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L1_OFFICIAL_HARMONIC/Eval_On_BH — Official RhythmMamba Evaluation
+====================================================================================
+Description                : A4 L1_OFFICIAL_HARMONIC, local PURE checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_suite/PURE_A4_L1_OFFICIAL_HARMONIC/PURE_A4_L1_OFFICIAL_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 105
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 8.003086 BPM
+Pooled measurement MAE     : 8.003086 BPM
+Pooled measurement RMSE    : 12.337436 BPM
+Pooled measurement MAPE    : 11.809440 %
+Pooled measurement Pearson : 0.587884
+Absolute-error SD           : 9.389512 BPM
+Accuracy within 5 BPM      : 62.857 %
+Recording-macro MAE SE     : 0.916323 BPM
+Pooled MAE standard error  : 0.916323 BPM
+Official-formula RMSE +/-  : 26.052579
+Pooled MAPE standard error : 1.454915 %
+Pooled Pearson std. error  : 0.079708
+Mean waveform Pearson      : 0.000319
+Mean SNR                    : -4.740280 dB
+SNR standard error         : 0.710625 dB
