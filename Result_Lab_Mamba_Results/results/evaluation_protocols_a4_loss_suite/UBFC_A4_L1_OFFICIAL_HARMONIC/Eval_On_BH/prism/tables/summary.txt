@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L1_OFFICIAL_HARMONIC/Eval_On_BH — PRISM Evaluation Protocol
+====================================================================================
+Description                : A4 L1_OFFICIAL_HARMONIC, local UBFC checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_suite/UBFC_A4_L1_OFFICIAL_HARMONIC/UBFC_A4_L1_OFFICIAL_HARMONIC_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 523
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 4.228847 BPM
+Pooled measurement MAE     : 4.232572 BPM
+Pooled measurement RMSE    : 8.232021 BPM
+Pooled measurement MAPE    : 5.797587 %
+Pooled measurement Pearson : 0.760179
+Absolute-error SD           : 7.060559 BPM
+Accuracy within 5 BPM      : 80.880 %
+Recording-macro MAE SE     : 0.422055 BPM
+Pooled MAE standard error  : 0.308737 BPM
+Official-formula RMSE +/-  : 9.678404
+Pooled MAPE standard error : 0.421389 %
+Pooled Pearson std. error  : 0.028464
+Mean waveform Pearson      : -0.004130
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
