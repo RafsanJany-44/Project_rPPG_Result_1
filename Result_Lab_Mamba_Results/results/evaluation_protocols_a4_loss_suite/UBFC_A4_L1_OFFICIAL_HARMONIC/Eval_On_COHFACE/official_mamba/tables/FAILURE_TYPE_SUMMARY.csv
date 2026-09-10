@@ -1,0 +1,4 @@
+failure_type,count,percentage
+correct,137,85.625
+large_error,21,13.125
+super_harmonic_1p5x,2,1.25
