@@ -1,0 +1,112 @@
+{
+  "source_dataset": "UBFC",
+  "augmentation": "A4",
+  "seed": 100,
+  "jobs": [
+    {
+      "experiment_code": "L3_C010",
+      "loss_variant": "L3_CONCENTRATION",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 0.1,
+      "harmonic_weight": 0.0
+    },
+    {
+      "experiment_code": "L3_C025",
+      "loss_variant": "L3_CONCENTRATION",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 0.25,
+      "harmonic_weight": 0.0
+    },
+    {
+      "experiment_code": "L3_C050",
+      "loss_variant": "L3_CONCENTRATION",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 0.5,
+      "harmonic_weight": 0.0
+    },
+    {
+      "experiment_code": "L4_C025_H100",
+      "loss_variant": "L4_CONCENTRATION_HARMONIC",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 0.25,
+      "harmonic_weight": 1.0
+    },
+    {
+      "experiment_code": "L4_C025_H200",
+      "loss_variant": "L4_CONCENTRATION_HARMONIC",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 0.25,
+      "harmonic_weight": 2.0
+    },
+    {
+      "experiment_code": "L4_C050_H100",
+      "loss_variant": "L4_CONCENTRATION_HARMONIC",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 0.5,
+      "harmonic_weight": 1.0
+    },
+    {
+      "experiment_code": "L4_C050_H200",
+      "loss_variant": "L4_CONCENTRATION_HARMONIC",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 0.5,
+      "harmonic_weight": 2.0
+    },
+    {
+      "experiment_code": "L4_C100_H200",
+      "loss_variant": "L4_CONCENTRATION_HARMONIC",
+      "pearson_weight": 0.2,
+      "ce_weight": 0.0,
+      "concentration_weight": 1.0,
+      "harmonic_weight": 2.0
+    }
+  ],
+  "completed_utc": "2026-09-11T15:06:00.714372+00:00",
+  "planned_models": 8,
+  "successful_models": 8,
+  "failed_models": 0,
+  "successes": [
+    {
+      "experiment": "UBFC_A4_L3_C010",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L3_C010/UBFC_A4_L3_C010_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L3_C025",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L3_C025/UBFC_A4_L3_C025_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L3_C050",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L3_C050/UBFC_A4_L3_C050_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L4_C025_H100",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C025_H100/UBFC_A4_L4_C025_H100_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L4_C025_H200",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C025_H200/UBFC_A4_L4_C025_H200_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L4_C050_H100",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C050_H100/UBFC_A4_L4_C050_H100_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L4_C050_H200",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C050_H200/UBFC_A4_L4_C050_H200_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L4_C100_H200",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C100_H200/UBFC_A4_L4_C100_H200_RhythmMamba_Best.pth"
+    }
+  ],
+  "failures": [],
+  "suite_hours": 22.57032204245993,
+  "status": "PASSED"
+}
