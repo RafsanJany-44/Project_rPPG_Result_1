@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L3_C010/Eval_On_UBFC_PHYS — Official RhythmMamba Evaluation
+====================================================================================
+Description                : A4 L3_C010, local PURE checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/PURE_A4_L3_C010/PURE_A4_L3_C010_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 60
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 7.344734 BPM
+Pooled measurement MAE     : 7.344734 BPM
+Pooled measurement RMSE    : 12.795595 BPM
+Pooled measurement MAPE    : 10.101026 %
+Pooled measurement Pearson : 0.464344
+Absolute-error SD           : 10.477697 BPM
+Accuracy within 5 BPM      : 66.667 %
+Recording-macro MAE SE     : 1.352665 BPM
+Pooled MAE standard error  : 1.352665 BPM
+Official-formula RMSE +/-  : 44.424485
+Pooled MAPE standard error : 1.965593 %
+Pooled Pearson std. error  : 0.116292
+Mean waveform Pearson      : -0.022772
+Mean SNR                    : -3.132308 dB
+SNR standard error         : 1.519364 dB
