@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L4_C025_H100/Eval_On_PURE — Old Protocol
+====================================================================================
+Description                : A4 L4_C025_H100, local PURE checkpoint evaluated on PURE: held-out 0.8-1.0 clean source validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/PURE_A4_L4_C025_H100/PURE_A4_L4_C025_H100_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.8–1.0
+Aggregation                : window_to_recording
+Recordings                 : 12
+Expected recordings        : 12
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 735
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.793837 BPM
+Pooled measurement MAE     : 2.812245 BPM
+Pooled measurement RMSE    : 8.160215 BPM
+Pooled measurement MAPE    : 5.306480 %
+Pooled measurement Pearson : 0.892639
+Absolute-error SD           : 7.660313 BPM
+Accuracy within 5 BPM      : 95.510 %
+Recording-macro MAE SE     : 0.598459 BPM
+Pooled MAE standard error  : 0.282555 BPM
+Official-formula RMSE +/-  : 13.329279
+Pooled MAPE standard error : 0.596870 %
+Pooled Pearson std. error  : 0.016650
+Mean waveform Pearson      : 0.589373
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
