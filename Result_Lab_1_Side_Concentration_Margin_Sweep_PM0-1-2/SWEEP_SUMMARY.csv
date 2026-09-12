@@ -1,0 +1,4 @@
+run_name,model,delta_bpm,epochs_run,best_val_loss,best_val_hr_mae,params,reach_samples
+b1_3w_b2_raw_b3_mi__SE__conc_pm0,b1_3w_b2_raw_b3_mi__SE,0,81,,2.214808687467342,170006,-1
+b1_3w_b2_raw_b3_mi__SE__conc_pm1,b1_3w_b2_raw_b3_mi__SE,1,55,,160.94223464210964,170006,-1
+b1_3w_b2_raw_b3_mi__SE__conc_pm2,b1_3w_b2_raw_b3_mi__SE,2,300,,1.9273620030945386,170006,-1
