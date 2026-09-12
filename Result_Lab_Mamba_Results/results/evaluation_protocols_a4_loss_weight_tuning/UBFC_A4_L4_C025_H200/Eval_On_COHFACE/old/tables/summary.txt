@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L4_C025_H200/Eval_On_COHFACE — Old Protocol
+====================================================================================
+Description                : A4 L4_C025_H200, local UBFC checkpoint evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C025_H200/UBFC_A4_L4_C025_H200_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 8242
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 21.482888 BPM
+Pooled measurement MAE     : 21.336447 BPM
+Pooled measurement RMSE    : 26.361373 BPM
+Pooled measurement MAPE    : 28.167649 %
+Pooled measurement Pearson : -0.209031
+Absolute-error SD           : 15.481537 BPM
+Accuracy within 5 BPM      : 25.504 %
+Recording-macro MAE SE     : 1.055003 BPM
+Pooled MAE standard error  : 0.170529 BPM
+Official-formula RMSE +/-  : 8.252167
+Pooled MAPE standard error : 0.194538 %
+Pooled Pearson std. error  : 0.010773
+Mean waveform Pearson      : 0.004698
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

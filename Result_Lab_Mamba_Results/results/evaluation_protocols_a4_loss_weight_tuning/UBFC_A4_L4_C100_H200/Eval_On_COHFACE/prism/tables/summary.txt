@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L4_C100_H200/Eval_On_COHFACE — PRISM Evaluation Protocol
+====================================================================================
+Description                : A4 L4_C100_H200, local UBFC checkpoint evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C100_H200/UBFC_A4_L4_C100_H200_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 810
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 8.799274 BPM
+Pooled measurement MAE     : 8.752984 BPM
+Pooled measurement RMSE    : 13.463886 BPM
+Pooled measurement MAPE    : 11.738634 %
+Pooled measurement Pearson : 0.335742
+Absolute-error SD           : 10.230421 BPM
+Accuracy within 5 BPM      : 55.432 %
+Recording-macro MAE SE     : 0.583202 BPM
+Pooled MAE standard error  : 0.359460 BPM
+Official-formula RMSE +/-  : 11.802207
+Pooled MAPE standard error : 0.461996 %
+Pooled Pearson std. error  : 0.033138
+Mean waveform Pearson      : 0.256711
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

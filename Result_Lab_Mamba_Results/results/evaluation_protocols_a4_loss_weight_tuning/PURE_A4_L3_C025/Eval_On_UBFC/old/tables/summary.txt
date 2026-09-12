@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L3_C025/Eval_On_UBFC — Old Protocol
+====================================================================================
+Description                : A4 L3_C025, local PURE checkpoint evaluated on UBFC: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/PURE_A4_L3_C025/PURE_A4_L3_C025_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 42
+Expected recordings        : 42
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 2280
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.218414 BPM
+Pooled measurement MAE     : 2.093421 BPM
+Pooled measurement RMSE    : 6.142354 BPM
+Pooled measurement MAPE    : 2.154984 %
+Pooled measurement Pearson : 0.943767
+Absolute-error SD           : 5.774608 BPM
+Accuracy within 5 BPM      : 94.825 %
+Recording-macro MAE SE     : 0.320356 BPM
+Pooled MAE standard error  : 0.120936 BPM
+Official-formula RMSE +/-  : 6.428948
+Pooled MAPE standard error : 0.119994 %
+Pooled Pearson std. error  : 0.006927
+Mean waveform Pearson      : 0.638288
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
