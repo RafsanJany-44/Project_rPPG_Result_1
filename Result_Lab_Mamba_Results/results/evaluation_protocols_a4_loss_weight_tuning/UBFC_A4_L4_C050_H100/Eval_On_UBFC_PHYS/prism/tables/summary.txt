@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L4_C050_H100/Eval_On_UBFC_PHYS — PRISM Evaluation Protocol
+====================================================================================
+Description                : A4 L4_C050_H100, local UBFC checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C050_H100/UBFC_A4_L4_C050_H100_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1020
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 15.685784 BPM
+Pooled measurement MAE     : 15.685784 BPM
+Pooled measurement RMSE    : 22.198798 BPM
+Pooled measurement MAPE    : 21.556127 %
+Pooled measurement Pearson : 0.192183
+Absolute-error SD           : 15.708050 BPM
+Accuracy within 5 BPM      : 37.157 %
+Recording-macro MAE SE     : 1.130259 BPM
+Pooled MAE standard error  : 0.491838 BPM
+Official-formula RMSE +/-  : 24.295616
+Pooled MAPE standard error : 0.743987 %
+Pooled Pearson std. error  : 0.030758
+Mean waveform Pearson      : -0.002799
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

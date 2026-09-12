@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L4_C050_H100/Eval_On_BH — Old Protocol
+====================================================================================
+Description                : A4 L4_C050_H100, local UBFC checkpoint evaluated on BH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C050_H100/UBFC_A4_L4_C050_H100_RhythmMamba_Best.pth
+Dataset / split            : BH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 105
+Expected recordings        : 105
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 5323
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 7.293723 BPM
+Pooled measurement MAE     : 7.320308 BPM
+Pooled measurement RMSE    : 12.965872 BPM
+Pooled measurement MAPE    : 9.794625 %
+Pooled measurement Pearson : 0.548079
+Absolute-error SD           : 10.701726 BPM
+Accuracy within 5 BPM      : 67.725 %
+Recording-macro MAE SE     : 0.598120 BPM
+Pooled MAE standard error  : 0.146682 BPM
+Official-formula RMSE +/-  : 6.292965
+Pooled MAPE standard error : 0.189051 %
+Pooled Pearson std. error  : 0.011467
+Mean waveform Pearson      : -0.006709
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
