@@ -1,0 +1,2 @@
+group_field,group_value,recordings,mean_recording_mae_bpm,mean_recording_rmse_bpm,mean_waveform_pearson,mean_snr_db
+sync_method,first_180_seconds,9,4.560456045604561,4.560456045604561,0.38977452024535064,-2.181387354044354

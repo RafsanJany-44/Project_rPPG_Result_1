@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L4_C025_H200/Eval_On_TOKYOTECH — Old Protocol
+====================================================================================
+Description                : A4 L4_C025_H200, local UBFC checkpoint evaluated on TOKYOTECH: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_loss_weight_tuning/UBFC_A4_L4_C025_H200/UBFC_A4_L4_C025_H200_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1521
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 17.855358 BPM
+Pooled measurement MAE     : 17.855358 BPM
+Pooled measurement RMSE    : 27.525519 BPM
+Pooled measurement MAPE    : 20.259521 %
+Pooled measurement Pearson : -0.352011
+Absolute-error SD           : 20.948517 BPM
+Accuracy within 5 BPM      : 58.646 %
+Recording-macro MAE SE     : 5.767069 BPM
+Pooled MAE standard error  : 0.537141 BPM
+Official-formula RMSE +/-  : 27.628291
+Pooled MAPE standard error : 0.575305 %
+Pooled Pearson std. error  : 0.024016
+Mean waveform Pearson      : 0.258751
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
