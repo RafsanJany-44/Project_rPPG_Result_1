@@ -1,0 +1,61 @@
+[2026-09-13 04:17:11] ==========================================================================
+[2026-09-13 04:17:11] MEGA RUN start | device=cuda | models=3 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_SMOKE_TEST_revised_version
+[2026-09-13 04:17:11] models: ['three_branch_mi_se_attention', 'BVPNet_V2', 'adaptive_detrend']
+[2026-09-13 04:17:11] ==========================================================================
+[2026-09-13 04:17:11] --------------------------------------------------------------------------
+[2026-09-13 04:17:11] [1/3] MODEL: three_branch_mi_se_attention
+[2026-09-13 04:17:11]   built 'three_branch_mi_se_attention': params=170006, reach=96 samples (3.20s @30fps)
+[2026-09-13 04:17:46] ==========================================================================
+[2026-09-13 04:17:46] MEGA RUN start | device=cuda | models=3 | protocols=['old', 'prism', 'toolbox'] | epochs<= 50 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_SMOKE_TEST_revised_version
+[2026-09-13 04:17:46] models: ['three_branch_mi_se_attention', 'BVPNet_V2', 'adaptive_detrend']
+[2026-09-13 04:17:46] ==========================================================================
+[2026-09-13 04:17:46] --------------------------------------------------------------------------
+[2026-09-13 04:17:46] [1/3] MODEL: three_branch_mi_se_attention
+[2026-09-13 04:17:46]   built 'three_branch_mi_se_attention': params=170006, reach=96 samples (3.20s @30fps)
+[2026-09-13 04:24:40]     epoch   1 | train_loss=2.0661 val_loss=1.8992 val_hr_mae=15.038 lr=3.0e-04
+[2026-09-13 05:24:46]     epoch  10 | train_loss=1.9738 val_loss=1.8288 val_hr_mae=69.638 lr=3.0e-04
+[2026-09-13 06:31:24]     epoch  20 | train_loss=1.3685 val_loss=1.1668 val_hr_mae=2.180 lr=3.0e-04
+[2026-09-13 07:38:11]     epoch  30 | train_loss=1.2999 val_loss=1.0996 val_hr_mae=2.025 lr=3.0e-04
+[2026-09-13 08:44:59]     epoch  40 | train_loss=1.3080 val_loss=1.0665 val_hr_mae=2.102 lr=1.5e-04
+[2026-09-13 09:51:35]     epoch  50 | train_loss=1.2813 val_loss=1.0528 val_hr_mae=2.138 lr=1.5e-04
+[2026-09-13 09:51:36]   trained 'three_branch_mi_se_attention': epochs_run=50 best_val_loss=1.0477 best_val_hr_mae=1.962
+[2026-09-13 09:51:36]   evaluating 'three_branch_mi_se_attention' under protocol 'old' ...
+[2026-09-13 10:00:29]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_SMOKE_TEST_revised_version/three_branch_mi_se_attention/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-13 10:00:29]   evaluating 'three_branch_mi_se_attention' under protocol 'prism' ...
+[2026-09-13 10:01:55]   evaluating 'three_branch_mi_se_attention' under protocol 'toolbox' ...
+[2026-09-13 10:02:33]   DONE 'three_branch_mi_se_attention' [old]: val_model_mae=nan
+[2026-09-13 10:02:33]   DONE 'three_branch_mi_se_attention' [prism]: val_model_mae=0.664
+[2026-09-13 10:02:33]   DONE 'three_branch_mi_se_attention' [toolbox]: val_model_mae=0.442
+[2026-09-13 10:02:33] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-13 10:02:33] 
+protocol                      prism  toolbox
+model                                       
+three_branch_mi_se_attention  0.664    0.442
+[2026-09-13 10:02:33] --------------------------------------------------------------------------
+[2026-09-13 10:02:33] [2/3] MODEL: BVPNet_V2
+[2026-09-13 10:02:33]   built 'BVPNet_V2': params=481, reach=-1 samples (-0.03s @30fps)
+[2026-09-13 10:09:02]     epoch   1 | train_loss=1.6608 val_loss=1.2668 val_hr_mae=1.859 lr=3.0e-04
+[2026-09-13 11:07:20]     epoch  10 | train_loss=1.2784 val_loss=1.0560 val_hr_mae=1.667 lr=3.0e-04
+[2026-09-13 12:12:12]     epoch  20 | train_loss=1.2539 val_loss=1.0535 val_hr_mae=1.655 lr=3.0e-04
+[2026-09-13 12:57:31]     early stop at epoch 27 (no val-loss improvement for 10)
+[2026-09-13 12:57:31]   trained 'BVPNet_V2': epochs_run=27 best_val_loss=1.0478 best_val_hr_mae=1.612
+[2026-09-13 12:57:31]   evaluating 'BVPNet_V2' under protocol 'old' ...
+[2026-09-13 13:05:10]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_SMOKE_TEST_revised_version/BVPNet_V2/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-13 13:05:10]   evaluating 'BVPNet_V2' under protocol 'prism' ...
+[2026-09-13 13:06:32]   evaluating 'BVPNet_V2' under protocol 'toolbox' ...
+[2026-09-13 13:07:10]   DONE 'BVPNet_V2' [old]: val_model_mae=nan
+[2026-09-13 13:07:10]   DONE 'BVPNet_V2' [prism]: val_model_mae=0.513
+[2026-09-13 13:07:10]   DONE 'BVPNet_V2' [toolbox]: val_model_mae=0.471
+[2026-09-13 13:07:10] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-13 13:07:10] 
+protocol                      prism  toolbox
+model                                       
+BVPNet_V2                     0.513    0.471
+three_branch_mi_se_attention  0.664    0.442
+[2026-09-13 13:07:10] --------------------------------------------------------------------------
+[2026-09-13 13:07:10] [3/3] MODEL: adaptive_detrend
+[2026-09-13 13:07:10]   built 'adaptive_detrend': params=7, reach=-1 samples (-0.03s @30fps)
+[2026-09-13 13:13:42]     epoch   1 | train_loss=2.0455 val_loss=1.5126 val_hr_mae=2.810 lr=3.0e-04
+[2026-09-13 14:12:38]     epoch  10 | train_loss=1.6959 val_loss=1.3645 val_hr_mae=1.900 lr=3.0e-04

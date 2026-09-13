@@ -1,0 +1,7 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+three_branch_mi_se_attention,old,no_csv,,,,,170006,50,96,1.9619105978906692
+three_branch_mi_se_attention,prism,ok,0.6636466353093372,2.0522698482409525,,,170006,50,96,1.9619105978906692
+three_branch_mi_se_attention,toolbox,ok,0.44248425920837775,0.6642781291645468,,,170006,50,96,1.9619105978906692
+BVPNet_V2,old,no_csv,,,,,481,27,-1,1.6123236078375447
+BVPNet_V2,prism,ok,0.5125740466145587,2.0522698482409525,,,481,27,-1,1.6123236078375447
+BVPNet_V2,toolbox,ok,0.4708207567312529,0.6642781291645468,,,481,27,-1,1.6123236078375447
