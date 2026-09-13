@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L3_C050_SEED102/Eval_On_UBFC — Official RhythmMamba Evaluation
+====================================================================================
+Description                : A4 L3_C050, seed 102, local UBFC checkpoint evaluated on UBFC: held-out 0.8-1.0 clean source validation split
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_final_multiseed/UBFC_A4_L3_C050_SEED102/UBFC_A4_L3_C050_SEED102_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.8–1.0
+Aggregation                : recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 9
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.600060 BPM
+Pooled measurement MAE     : 0.600060 BPM
+Pooled measurement RMSE    : 1.080108 BPM
+Pooled measurement MAPE    : 0.590183 %
+Pooled measurement Pearson : 0.995241
+Absolute-error SD           : 0.898088 BPM
+Accuracy within 5 BPM      : 100.000 %
+Recording-macro MAE SE     : 0.299363 BPM
+Pooled MAE standard error  : 0.299363 BPM
+Official-formula RMSE +/-  : 0.769611
+Pooled MAPE standard error : 0.279861 %
+Pooled Pearson std. error  : 0.036829
+Mean waveform Pearson      : 0.698612
+Mean SNR                    : 3.206116 dB
+SNR standard error         : 1.687381 dB

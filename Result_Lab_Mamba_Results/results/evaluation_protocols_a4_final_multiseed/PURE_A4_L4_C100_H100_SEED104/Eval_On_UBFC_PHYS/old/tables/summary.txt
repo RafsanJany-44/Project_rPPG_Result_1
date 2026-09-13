@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L4_C100_H100_SEED104/Eval_On_UBFC_PHYS — Old Protocol
+====================================================================================
+Description                : A4 L4_C100_H100, seed 104, local PURE checkpoint evaluated on UBFC_PHYS: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_final_multiseed/PURE_A4_L4_C100_H100_SEED104/PURE_A4_L4_C100_H100_SEED104_RhythmMamba_Best.pth
+Dataset / split            : UBFC_PHYS / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 60
+Expected recordings        : 60
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 10140
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 24.525049 BPM
+Pooled measurement MAE     : 24.525049 BPM
+Pooled measurement RMSE    : 35.926591 BPM
+Pooled measurement MAPE    : 40.574137 %
+Pooled measurement Pearson : -0.067766
+Absolute-error SD           : 26.253416 BPM
+Accuracy within 5 BPM      : 37.041 %
+Recording-macro MAE SE     : 2.059098 BPM
+Pooled MAE standard error  : 0.260715 BPM
+Official-formula RMSE +/-  : 21.672234
+Pooled MAPE standard error : 0.528092 %
+Pooled Pearson std. error  : 0.009909
+Mean waveform Pearson      : -0.004312
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
