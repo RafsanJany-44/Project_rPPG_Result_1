@@ -1,0 +1,51 @@
+[2026-09-11 15:45:55] ======================================================================
+[2026-09-11 15:45:55] SIDE EXPERIMENT — Concentration margin (delta_bpm) sweep
+[2026-09-11 15:45:55]   configs : 3
+[2026-09-11 15:45:55]   results : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Concentration_Margin_Test_PM1_with_Seed_123_456_789
+[2026-09-11 15:45:55]   device  : cuda
+[2026-09-11 15:45:55] ======================================================================
+[2026-09-11 15:45:55] 
+[1/3] ── b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed123 ──
+[2026-09-11 15:45:55]   built 'b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed123' (arch=b1_3w_b2_raw_b3_mi__SE): params=170006, reach=96, delta_bpm=1
+[2026-09-11 15:45:55]   loss_weights = {'pearson': 1.0, 'concentration': 1.0}
+[2026-09-11 15:50:52]     epoch   1 | train_loss=2.8533 val_loss=2.6659 val_hr_mae=151.640 lr=3.0e-04
+[2026-09-11 16:34:29]     epoch  10 | train_loss=2.7937 val_loss=2.6446 val_hr_mae=151.473 lr=3.0e-04
+[2026-09-11 17:21:55]     epoch  20 | train_loss=2.2544 val_loss=2.0204 val_hr_mae=2.288 lr=3.0e-04
+[2026-09-11 18:09:23]     epoch  30 | train_loss=2.2245 val_loss=2.0065 val_hr_mae=2.127 lr=3.0e-04
+[2026-09-11 18:09:23]   trained 'b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed123': epochs_run=30 best_val_loss=2.0046 best_val_hr_mae=2.094
+[2026-09-11 18:09:24]     eval 'old' ...
+[2026-09-11 18:15:53]     eval 'prism' ...
+[2026-09-11 18:17:04]     eval 'toolbox' ...
+[2026-09-11 18:17:42] 
+[2/3] ── b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed456 ──
+[2026-09-11 18:17:42]   built 'b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed456' (arch=b1_3w_b2_raw_b3_mi__SE): params=170006, reach=96, delta_bpm=1
+[2026-09-11 18:17:42]   loss_weights = {'pearson': 1.0, 'concentration': 1.0}
+[2026-09-11 18:22:32]     epoch   1 | train_loss=2.6419 val_loss=2.2719 val_hr_mae=2.821 lr=3.0e-04
+[2026-09-11 19:05:33]     epoch  10 | train_loss=2.1195 val_loss=1.8965 val_hr_mae=2.247 lr=3.0e-04
+[2026-09-11 19:53:23]     epoch  20 | train_loss=1.9796 val_loss=1.7599 val_hr_mae=1.972 lr=3.0e-04
+[2026-09-11 20:41:24]     epoch  30 | train_loss=1.8901 val_loss=1.7184 val_hr_mae=1.866 lr=3.0e-04
+[2026-09-11 20:41:25]   trained 'b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed456': epochs_run=30 best_val_loss=1.7114 best_val_hr_mae=1.795
+[2026-09-11 20:41:25]     eval 'old' ...
+[2026-09-11 20:47:52]     eval 'prism' ...
+[2026-09-11 20:49:04]     eval 'toolbox' ...
+[2026-09-11 20:49:42] 
+[3/3] ── b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed789 ──
+[2026-09-11 20:49:42]   built 'b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed789' (arch=b1_3w_b2_raw_b3_mi__SE): params=170006, reach=96, delta_bpm=1
+[2026-09-11 20:49:42]   loss_weights = {'pearson': 1.0, 'concentration': 1.0}
+[2026-09-11 20:54:28]     epoch   1 | train_loss=2.6154 val_loss=2.2168 val_hr_mae=4.854 lr=3.0e-04
+[2026-09-11 21:37:36]     epoch  10 | train_loss=2.0594 val_loss=1.8135 val_hr_mae=2.201 lr=3.0e-04
+[2026-09-11 22:25:29]     epoch  20 | train_loss=1.9240 val_loss=1.7149 val_hr_mae=2.078 lr=3.0e-04
+[2026-09-11 23:13:22]     epoch  30 | train_loss=1.8454 val_loss=1.6999 val_hr_mae=2.059 lr=3.0e-04
+[2026-09-11 23:13:22]   trained 'b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed789': epochs_run=30 best_val_loss=1.6925 best_val_hr_mae=1.779
+[2026-09-11 23:13:23]     eval 'old' ...
+[2026-09-11 23:19:51]     eval 'prism' ...
+[2026-09-11 23:21:01]     eval 'toolbox' ...
+[2026-09-11 23:21:41] 
+Sweep summary saved → /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_Concentration_Margin_Test_PM1_with_Seed_123_456_789/SWEEP_SUMMARY.csv
+[2026-09-11 23:21:41] 
+                                run_name                  model  delta_bpm  epochs_run  best_val_loss  best_val_hr_mae  params  reach_samples
+b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed123 b1_3w_b2_raw_b3_mi__SE          1          30       2.004606         2.093706  170006             96
+b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed456 b1_3w_b2_raw_b3_mi__SE          1          30       1.711353         1.794763  170006             96
+b1_3w_b2_raw_b3_mi__SE__conc_pm1_seed789 b1_3w_b2_raw_b3_mi__SE          1          30       1.692511         1.778693  170006             96
+[2026-09-11 23:21:41] 
+Side experiment complete.
