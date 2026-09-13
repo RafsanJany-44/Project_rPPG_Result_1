@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L3_C050_SEED101/Eval_On_COHFACE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : A4 L3_C050, seed 101, local UBFC checkpoint evaluated on COHFACE: complete 0.0-1.0 external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_final_multiseed/UBFC_A4_L3_C050_SEED101/UBFC_A4_L3_C050_SEED101_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 160
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 3.007426 BPM
+Pooled measurement MAE     : 3.007426 BPM
+Pooled measurement RMSE    : 6.572953 BPM
+Pooled measurement MAPE    : 4.349880 %
+Pooled measurement Pearson : 0.824284
+Absolute-error SD           : 5.844579 BPM
+Accuracy within 5 BPM      : 85.625 %
+Recording-macro MAE SE     : 0.462055 BPM
+Pooled MAE standard error  : 0.462055 BPM
+Official-formula RMSE +/-  : 11.637865
+Pooled MAPE standard error : 0.723604 %
+Pooled Pearson std. error  : 0.045043
+Mean waveform Pearson      : 0.409002
+Mean SNR                    : 1.241714 dB
+SNR standard error         : 0.578878 dB
