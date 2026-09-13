@@ -1,0 +1,41 @@
+{
+  "source_dataset": "UBFC",
+  "augmentation": "A4",
+  "experiment_code": "L3_C050",
+  "loss_variant": "L3_CONCENTRATION",
+  "pearson_weight": 0.2,
+  "ce_weight": 0.0,
+  "concentration_weight": 0.5,
+  "harmonic_weight": 0.0,
+  "seeds": [
+    101,
+    102,
+    103,
+    104
+  ],
+  "completed_utc": "2026-09-13T07:05:37.443384+00:00",
+  "planned_models": 4,
+  "successful_models": 4,
+  "failed_models": 0,
+  "successes": [
+    {
+      "experiment": "UBFC_A4_L3_C050_SEED101",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/UBFC_A4_L3_C050_SEED101/UBFC_A4_L3_C050_SEED101_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L3_C050_SEED102",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/UBFC_A4_L3_C050_SEED102/UBFC_A4_L3_C050_SEED102_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L3_C050_SEED103",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/UBFC_A4_L3_C050_SEED103/UBFC_A4_L3_C050_SEED103_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "UBFC_A4_L3_C050_SEED104",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/UBFC_A4_L3_C050_SEED104/UBFC_A4_L3_C050_SEED104_RhythmMamba_Best.pth"
+    }
+  ],
+  "failures": [],
+  "suite_hours": 12.724077237425371,
+  "status": "PASSED"
+}

@@ -1,0 +1,41 @@
+{
+  "source_dataset": "PURE",
+  "augmentation": "A4",
+  "experiment_code": "L4_C100_H100",
+  "loss_variant": "L4_CONCENTRATION_HARMONIC",
+  "pearson_weight": 0.2,
+  "ce_weight": 0.0,
+  "concentration_weight": 1.0,
+  "harmonic_weight": 1.0,
+  "seeds": [
+    101,
+    102,
+    103,
+    104
+  ],
+  "completed_utc": "2026-09-13T09:57:16.779248+00:00",
+  "planned_models": 4,
+  "successful_models": 4,
+  "failed_models": 0,
+  "successes": [
+    {
+      "experiment": "PURE_A4_L4_C100_H100_SEED101",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/PURE_A4_L4_C100_H100_SEED101/PURE_A4_L4_C100_H100_SEED101_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A4_L4_C100_H100_SEED102",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/PURE_A4_L4_C100_H100_SEED102/PURE_A4_L4_C100_H100_SEED102_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A4_L4_C100_H100_SEED103",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/PURE_A4_L4_C100_H100_SEED103/PURE_A4_L4_C100_H100_SEED103_RhythmMamba_Best.pth"
+    },
+    {
+      "experiment": "PURE_A4_L4_C100_H100_SEED104",
+      "checkpoint": "/media/data/rPPG/Code/GitHub/Mamba_Hunt/results/models/a4_final_multiseed/PURE_A4_L4_C100_H100_SEED104/PURE_A4_L4_C100_H100_SEED104_RhythmMamba_Best.pth"
+    }
+  ],
+  "failures": [],
+  "suite_hours": 15.57770392301182,
+  "status": "PASSED"
+}

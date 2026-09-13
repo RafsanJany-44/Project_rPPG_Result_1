@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-13T07:56:16.643410+00:00",
+  "experiment": "PURE_A4_L4_C100_H100_SEED104",
+  "source_dataset": "PURE",
+  "augmentation": "A4",
+  "official_augmentation": true,
+  "offline_augmentation": true,
+  "offline_probability": 0.5,
+  "offline_variant_probability_each": 0.125,
+  "offline_variants": [
+    "jpeg",
+    "blur",
+    "gamma",
+    "contrast"
+  ],
+  "online_rgb_gain": false,
+  "loss_variant": "L4_CONCENTRATION_HARMONIC",
+  "weight_tuning_code": "L4_C100_H100",
+  "loss_description": "0.2 Pearson + 1 concentration + 1 harmonic; CE removed",
+  "pearson_weight": 0.2,
+  "ce_weight": 0.0,
+  "concentration_weight": 1.0,
+  "harmonic_weight": 1.0,
+  "concentration_half_width_bpm": 3.0,
+  "harmonic_ratios": [
+    0.5,
+    1.5,
+    2.0
+  ],
+  "harmonic_band_half_width_bpm": 2.0,
+  "frequency_range_bpm": [
+    45,
+    149
+  ],
+  "spectral_engine": "official_sinusoidal_projection",
+  "training_split": [
+    0.0,
+    0.8
+  ],
+  "validation_split": [
+    0.8,
+    1.0
+  ],
+  "validation_augmentation": false,
+  "training_clips_per_epoch": 596,
+  "validation_clips": 154,
+  "maximum_epochs": 100,
+  "minimum_epochs_before_early_stopping": 30,
+  "early_stopping_patience": 10,
+  "checkpoint_rule": "lowest_clean_validation_total_loss",
+  "saved_checkpoints": "best_only",
+  "seed": 104,
+  "learning_rate": 0.0003,
+  "completed_utc": "2026-09-13T09:57:16.744210+00:00",
+  "epochs_completed": 38,
+  "stopped_early": true,
+  "best_epoch": 27,
+  "best_validation_total_loss": 1.5614813426872352,
+  "best_checkpoint": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_final_multiseed/PURE_A4_L4_C100_H100_SEED104/PURE_A4_L4_C100_H100_SEED104_RhythmMamba_Best.pth",
+  "history": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/a4_final_multiseed/PURE_A4_L4_C100_H100_SEED104/PURE_A4_L4_C100_H100_SEED104_training_history.csv",
+  "training_hours": 2.0166944913969687,
+  "status": "PASSED"
+}
