@@ -1,0 +1,17 @@
+[2026-09-14 03:58:29] ==========================================================================
+[2026-09-14 03:58:29] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_TEST_b1_3w_b2_raw_b3_mi__SE_Concentration_loss_delta_bpm5
+[2026-09-14 03:58:29] models: ['b1_3w_b2_raw_b3_mi__SE']
+[2026-09-14 03:58:29] ==========================================================================
+[2026-09-14 03:58:29] --------------------------------------------------------------------------
+[2026-09-14 03:58:29] [1/1] MODEL: b1_3w_b2_raw_b3_mi__SE
+[2026-09-14 03:58:29]   built 'b1_3w_b2_raw_b3_mi__SE': params=170006, reach=96 samples (3.20s @30fps)
+[2026-09-14 04:05:21]     epoch   1 | train_loss=1.7120 val_loss=1.5696 val_hr_mae=60.160 lr=3.0e-04
+[2026-09-14 05:05:34]     epoch  10 | train_loss=1.6076 val_loss=1.5143 val_hr_mae=158.466 lr=3.0e-04
+[2026-09-14 06:12:20]     epoch  20 | train_loss=1.0706 val_loss=0.8751 val_hr_mae=2.235 lr=1.5e-04
+[2026-09-14 07:18:59]     epoch  30 | train_loss=1.0399 val_loss=0.8507 val_hr_mae=2.169 lr=1.5e-04
+[2026-09-14 08:25:40]     epoch  40 | train_loss=1.0045 val_loss=0.7998 val_hr_mae=1.921 lr=1.5e-04
+[2026-09-14 09:32:23]     epoch  50 | train_loss=0.9737 val_loss=0.8008 val_hr_mae=1.834 lr=1.5e-04
+[2026-09-14 10:39:00]     epoch  60 | train_loss=0.9562 val_loss=0.7699 val_hr_mae=1.963 lr=7.5e-05
+[2026-09-14 11:45:50]     epoch  70 | train_loss=0.9471 val_loss=0.7545 val_hr_mae=2.137 lr=3.7e-05
+[2026-09-14 12:52:44]     epoch  80 | train_loss=0.9432 val_loss=0.7458 val_hr_mae=2.025 lr=3.7e-05
+[2026-09-14 13:59:58]     epoch  90 | train_loss=0.9357 val_loss=0.7459 val_hr_mae=2.027 lr=1.9e-05
