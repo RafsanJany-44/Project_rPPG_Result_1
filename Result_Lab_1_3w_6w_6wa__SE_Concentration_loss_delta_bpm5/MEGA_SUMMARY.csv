@@ -1,0 +1,4 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+b1_3w_b2_raw_b3_mi__SE,old,no_csv,,,,,170006,121,96,1.7514704341897829
+b1_3w_b2_raw_b3_mi__SE,prism,ok,0.696277004929001,2.0522698482409525,,,170006,121,96,1.7514704341897829
+b1_3w_b2_raw_b3_mi__SE,toolbox,ok,0.4049489309216307,0.6642781291645468,,,170006,121,96,1.7514704341897829

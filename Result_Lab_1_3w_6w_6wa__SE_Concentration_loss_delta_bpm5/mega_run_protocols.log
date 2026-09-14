@@ -1,0 +1,42 @@
+[2026-09-14 03:43:05] ==========================================================================
+[2026-09-14 03:43:05] MEGA RUN start | device=cuda | models=3 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_3w_6w_6wa__SE_Concentration_loss_delta_bpm5
+[2026-09-14 03:43:05] models: ['b1_3w_b2_raw_b3_mi__SE', 'b1_6w_b2_raw_b3_mi__SE', 'b1_6wa_b2_raw_b3_mi__SE']
+[2026-09-14 03:43:05] ==========================================================================
+[2026-09-14 03:43:05] --------------------------------------------------------------------------
+[2026-09-14 03:43:05] [1/3] MODEL: b1_3w_b2_raw_b3_mi__SE
+[2026-09-14 03:43:05]   built 'b1_3w_b2_raw_b3_mi__SE': params=170006, reach=96 samples (3.20s @30fps)
+[2026-09-14 03:47:48]     epoch   1 | train_loss=1.7132 val_loss=1.5675 val_hr_mae=15.964 lr=3.0e-04
+[2026-09-14 04:25:21]     epoch  10 | train_loss=1.5896 val_loss=1.4875 val_hr_mae=15.526 lr=3.0e-04
+[2026-09-14 05:04:04]     epoch  20 | train_loss=0.9659 val_loss=0.7694 val_hr_mae=2.000 lr=3.0e-04
+[2026-09-14 05:42:47]     epoch  30 | train_loss=0.9269 val_loss=0.7468 val_hr_mae=1.947 lr=3.0e-04
+[2026-09-14 06:21:29]     epoch  40 | train_loss=0.8972 val_loss=0.7046 val_hr_mae=2.089 lr=3.0e-04
+[2026-09-14 07:00:21]     epoch  50 | train_loss=0.8409 val_loss=0.6600 val_hr_mae=1.958 lr=3.0e-04
+[2026-09-14 07:39:07]     epoch  60 | train_loss=0.8099 val_loss=0.6356 val_hr_mae=1.810 lr=1.5e-04
+[2026-09-14 08:17:41]     epoch  70 | train_loss=0.7953 val_loss=0.6364 val_hr_mae=2.011 lr=7.5e-05
+[2026-09-14 08:56:11]     epoch  80 | train_loss=0.7890 val_loss=0.6313 val_hr_mae=2.021 lr=7.5e-05
+[2026-09-14 09:35:04]     epoch  90 | train_loss=0.7811 val_loss=0.6254 val_hr_mae=1.808 lr=3.7e-05
+[2026-09-14 10:13:38]     epoch 100 | train_loss=0.7764 val_loss=0.6227 val_hr_mae=1.821 lr=1.9e-05
+[2026-09-14 10:52:25]     epoch 110 | train_loss=0.7760 val_loss=0.6230 val_hr_mae=1.896 lr=1.0e-05
+[2026-09-14 11:31:10]     epoch 120 | train_loss=0.7765 val_loss=0.6247 val_hr_mae=1.865 lr=1.0e-05
+[2026-09-14 11:35:04]     early stop at epoch 121 (no val-loss improvement for 30)
+[2026-09-14 11:35:04]   trained 'b1_3w_b2_raw_b3_mi__SE': epochs_run=121 best_val_loss=0.6215 best_val_hr_mae=1.751
+[2026-09-14 11:35:04]   evaluating 'b1_3w_b2_raw_b3_mi__SE' under protocol 'old' ...
+[2026-09-14 11:41:56]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_1_3w_6w_6wa__SE_Concentration_loss_delta_bpm5/b1_3w_b2_raw_b3_mi__SE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-14 11:41:56]   evaluating 'b1_3w_b2_raw_b3_mi__SE' under protocol 'prism' ...
+[2026-09-14 11:43:04]   evaluating 'b1_3w_b2_raw_b3_mi__SE' under protocol 'toolbox' ...
+[2026-09-14 11:43:36]   DONE 'b1_3w_b2_raw_b3_mi__SE' [old]: val_model_mae=nan
+[2026-09-14 11:43:36]   DONE 'b1_3w_b2_raw_b3_mi__SE' [prism]: val_model_mae=0.696
+[2026-09-14 11:43:36]   DONE 'b1_3w_b2_raw_b3_mi__SE' [toolbox]: val_model_mae=0.405
+[2026-09-14 11:43:36] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-14 11:43:36] 
+protocol                prism  toolbox
+model                                 
+b1_3w_b2_raw_b3_mi__SE  0.696    0.405
+[2026-09-14 11:43:36] --------------------------------------------------------------------------
+[2026-09-14 11:43:36] [2/3] MODEL: b1_6w_b2_raw_b3_mi__SE
+[2026-09-14 11:43:36]   built 'b1_6w_b2_raw_b3_mi__SE': params=170027, reach=96 samples (3.20s @30fps)
+[2026-09-14 11:47:32]     epoch   1 | train_loss=1.5177 val_loss=1.1528 val_hr_mae=2.840 lr=3.0e-04
+[2026-09-14 12:22:41]     epoch  10 | train_loss=0.9535 val_loss=0.7372 val_hr_mae=2.078 lr=3.0e-04
+[2026-09-14 13:01:32]     epoch  20 | train_loss=0.8319 val_loss=0.6469 val_hr_mae=2.121 lr=3.0e-04
+[2026-09-14 13:40:33]     epoch  30 | train_loss=0.7611 val_loss=0.6436 val_hr_mae=2.231 lr=3.0e-04
