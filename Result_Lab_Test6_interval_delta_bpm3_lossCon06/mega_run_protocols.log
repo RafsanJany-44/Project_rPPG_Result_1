@@ -1,0 +1,14 @@
+[2026-09-29 10:48:42] ==========================================================================
+[2026-09-29 10:48:42] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 200 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Test6_interval_delta_bpm3_lossCon06
+[2026-09-29 10:48:42] models: ['three_branch_mi_se_attention']
+[2026-09-29 10:48:42] ==========================================================================
+[2026-09-29 10:48:42] --------------------------------------------------------------------------
+[2026-09-29 10:48:42] [1/1] MODEL: three_branch_mi_se_attention
+[2026-09-29 10:48:42]   built 'three_branch_mi_se_attention': params=170006, reach=96 samples (3.20s @30fps)
+[2026-09-29 10:55:24]     epoch   1 | train_loss=1.6420 val_loss=1.5405 val_hr_mae=107.187 lr=3.0e-04
+[2026-09-29 11:55:01]     epoch  10 | train_loss=1.5911 val_loss=1.5214 val_hr_mae=144.415 lr=3.0e-04
+[2026-09-29 13:00:43]     epoch  20 | train_loss=1.5853 val_loss=1.5174 val_hr_mae=159.879 lr=3.0e-04
+[2026-09-29 14:06:22]     epoch  30 | train_loss=1.5798 val_loss=1.5246 val_hr_mae=145.071 lr=2.4e-04
+[2026-09-29 15:11:53]     epoch  40 | train_loss=1.5736 val_loss=1.5130 val_hr_mae=20.180 lr=1.9e-04
+[2026-09-29 16:17:31]     epoch  50 | train_loss=1.5715 val_loss=1.5146 val_hr_mae=126.495 lr=1.9e-04
+[2026-09-29 17:22:55]     epoch  60 | train_loss=1.5676 val_loss=1.5142 val_hr_mae=68.810 lr=1.5e-04
