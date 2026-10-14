@@ -1,0 +1,32 @@
+[2026-10-12 14:49:55] ==========================================================================
+[2026-10-12 14:49:55] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_GPT_seed-789
+[2026-10-12 14:49:55] models: ['b1_3w_b2_raw_b3_mi__FDF']
+[2026-10-12 14:49:55] ==========================================================================
+[2026-10-12 14:49:55] --------------------------------------------------------------------------
+[2026-10-12 14:49:55] [1/1] MODEL: b1_3w_b2_raw_b3_mi__FDF
+[2026-10-12 14:49:55]   built 'b1_3w_b2_raw_b3_mi__FDF': params=170597, reach=96 samples (3.20s @30fps)
+[2026-10-12 14:51:17]     epoch   1 | train_loss=2.1014 val_loss=2.0333 val_hr_mae=94.091 lr=3.0e-04
+[2026-10-12 15:03:21]     epoch  10 | train_loss=1.2131 val_loss=1.5139 val_hr_mae=3.738 lr=3.0e-04
+[2026-10-12 15:16:36]     epoch  20 | train_loss=1.1498 val_loss=1.4597 val_hr_mae=3.108 lr=3.0e-04
+[2026-10-12 15:30:25]     epoch  30 | train_loss=1.1346 val_loss=1.4575 val_hr_mae=3.199 lr=7.5e-05
+[2026-10-12 15:42:01]     epoch  40 | train_loss=1.1268 val_loss=1.4772 val_hr_mae=3.256 lr=3.7e-05
+[2026-10-12 15:50:51]     early stop at epoch 48 (no val-loss improvement for 30)
+[2026-10-12 15:50:51]   trained 'b1_3w_b2_raw_b3_mi__FDF': epochs_run=48 best_val_loss=1.4413 best_val_hr_mae=3.024
+[2026-10-12 15:50:51]   evaluating 'b1_3w_b2_raw_b3_mi__FDF' under protocol 'old' ...
+[2026-10-12 15:59:17]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_GPT_seed-789/b1_3w_b2_raw_b3_mi__FDF/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-12 15:59:17]   evaluating 'b1_3w_b2_raw_b3_mi__FDF' under protocol 'prism' ...
+[2026-10-12 16:00:33]   evaluating 'b1_3w_b2_raw_b3_mi__FDF' under protocol 'toolbox' ...
+[2026-10-12 16:01:11]   DONE 'b1_3w_b2_raw_b3_mi__FDF' [old]: val_model_mae=nan
+[2026-10-12 16:01:11]   DONE 'b1_3w_b2_raw_b3_mi__FDF' [prism]: val_model_mae=0.882
+[2026-10-12 16:01:11]   DONE 'b1_3w_b2_raw_b3_mi__FDF' [toolbox]: val_model_mae=0.671
+[2026-10-12 16:01:11] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-12 16:01:11] 
+protocol                 prism  toolbox
+model                                  
+b1_3w_b2_raw_b3_mi__FDF  0.882    0.671
+[2026-10-12 16:01:11] ==========================================================================
+[2026-10-12 16:01:11] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_GPT_seed-789/MEGA_SUMMARY.csv
+[2026-10-12 16:01:11] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_GPT_seed-789/MEGA_PROTOCOL_ABLATION.csv
+[2026-10-12 16:01:11] ==========================================================================
+[2026-10-12 16:01:11] Generating dashboard...
