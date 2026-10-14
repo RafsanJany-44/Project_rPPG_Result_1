@@ -1,0 +1,32 @@
+[2026-10-12 14:48:11] ==========================================================================
+[2026-10-12 14:48:11] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_CLD_seed-789
+[2026-10-12 14:48:11] models: ['three_branch_mi_freq_ffn']
+[2026-10-12 14:48:11] ==========================================================================
+[2026-10-12 14:48:11] --------------------------------------------------------------------------
+[2026-10-12 14:48:11] [1/1] MODEL: three_branch_mi_freq_ffn
+[2026-10-12 14:48:11]   built 'three_branch_mi_freq_ffn': params=220556, reach=96 samples (3.20s @30fps)
+[2026-10-12 14:49:17]     epoch   1 | train_loss=1.8957 val_loss=1.7789 val_hr_mae=5.316 lr=3.0e-04
+[2026-10-12 15:01:14]     epoch  10 | train_loss=1.1741 val_loss=1.4631 val_hr_mae=3.251 lr=3.0e-04
+[2026-10-12 15:14:35]     epoch  20 | train_loss=1.1232 val_loss=1.4553 val_hr_mae=3.270 lr=1.5e-04
+[2026-10-12 15:28:08]     epoch  30 | train_loss=1.1042 val_loss=1.4592 val_hr_mae=3.331 lr=3.7e-05
+[2026-10-12 15:40:06]     epoch  40 | train_loss=1.0999 val_loss=1.4658 val_hr_mae=3.461 lr=1.9e-05
+[2026-10-12 15:41:13]     early stop at epoch 41 (no val-loss improvement for 30)
+[2026-10-12 15:41:13]   trained 'three_branch_mi_freq_ffn': epochs_run=41 best_val_loss=1.4461 best_val_hr_mae=3.171
+[2026-10-12 15:41:13]   evaluating 'three_branch_mi_freq_ffn' under protocol 'old' ...
+[2026-10-12 15:49:54]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_CLD_seed-789/three_branch_mi_freq_ffn/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-12 15:49:54]   evaluating 'three_branch_mi_freq_ffn' under protocol 'prism' ...
+[2026-10-12 15:51:14]   evaluating 'three_branch_mi_freq_ffn' under protocol 'toolbox' ...
+[2026-10-12 15:51:54]   DONE 'three_branch_mi_freq_ffn' [old]: val_model_mae=nan
+[2026-10-12 15:51:54]   DONE 'three_branch_mi_freq_ffn' [prism]: val_model_mae=1.149
+[2026-10-12 15:51:54]   DONE 'three_branch_mi_freq_ffn' [toolbox]: val_model_mae=0.474
+[2026-10-12 15:51:54] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-12 15:51:54] 
+protocol                  prism  toolbox
+model                                   
+three_branch_mi_freq_ffn  1.149    0.474
+[2026-10-12 15:51:54] ==========================================================================
+[2026-10-12 15:51:54] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_CLD_seed-789/MEGA_SUMMARY.csv
+[2026-10-12 15:51:54] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Results_Lab_Frequency_Fusion_CLD_seed-789/MEGA_PROTOCOL_ABLATION.csv
+[2026-10-12 15:51:54] ==========================================================================
+[2026-10-12 15:51:54] Generating dashboard...

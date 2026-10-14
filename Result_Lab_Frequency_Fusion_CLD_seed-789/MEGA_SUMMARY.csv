@@ -1,0 +1,4 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+three_branch_mi_freq_ffn,old,no_csv,,,,,220556,41,96,3.1712887302781225
+three_branch_mi_freq_ffn,prism,ok,1.1486925473158958,2.0522698482409525,,,220556,41,96,3.1712887302781225
+three_branch_mi_freq_ffn,toolbox,ok,0.473627619586058,0.6642781291645468,,,220556,41,96,3.1712887302781225
