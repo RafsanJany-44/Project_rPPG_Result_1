@@ -1,0 +1,12 @@
+[2026-09-18 10:18:32] ==========================================================================
+[2026-09-18 10:18:32] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 100 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Test1
+[2026-09-18 10:18:32] models: ['three_branch_mi_se_attention']
+[2026-09-18 10:18:32] ==========================================================================
+[2026-09-18 10:18:32] --------------------------------------------------------------------------
+[2026-09-18 10:18:32] [1/1] MODEL: three_branch_mi_se_attention
+[2026-09-18 10:18:32]   built 'three_branch_mi_se_attention': params=170006, reach=96 samples (3.20s @30fps)
+[2026-09-18 10:25:07]     epoch   1 | train_loss=2.0644 val_loss=1.9027 val_hr_mae=18.393 lr=3.0e-04
+[2026-09-18 11:23:34]     epoch  10 | train_loss=1.9572 val_loss=1.8160 val_hr_mae=37.403 lr=3.0e-04
+[2026-09-18 12:28:10]     epoch  20 | train_loss=1.3474 val_loss=1.1110 val_hr_mae=1.950 lr=3.0e-04
+[2026-09-18 13:32:28]     epoch  30 | train_loss=1.2927 val_loss=1.0779 val_hr_mae=1.955 lr=3.0e-04
+[2026-09-18 14:36:55]     epoch  40 | train_loss=1.2564 val_loss=1.0287 val_hr_mae=1.798 lr=3.0e-04
