@@ -1,0 +1,46 @@
+[2026-09-22 10:50:45] ==========================================================================
+[2026-09-22 10:50:45] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 200 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Test3_interval
+[2026-09-22 10:50:45] models: ['three_branch_mi_se_attention']
+[2026-09-22 10:50:45] ==========================================================================
+[2026-09-22 10:50:45] --------------------------------------------------------------------------
+[2026-09-22 10:50:45] [1/1] MODEL: three_branch_mi_se_attention
+[2026-09-22 10:50:45]   built 'three_branch_mi_se_attention': params=170006, reach=96 samples (3.20s @30fps)
+[2026-09-22 10:57:22]     epoch   1 | train_loss=1.5484 val_loss=1.4777 val_hr_mae=154.687 lr=3.0e-04
+[2026-09-22 11:56:44]     epoch  10 | train_loss=1.5185 val_loss=1.4648 val_hr_mae=93.088 lr=3.0e-04
+[2026-09-22 13:02:35]     epoch  20 | train_loss=0.9477 val_loss=0.8239 val_hr_mae=2.321 lr=3.0e-04
+[2026-09-22 14:08:27]     epoch  30 | train_loss=0.8824 val_loss=0.7417 val_hr_mae=2.064 lr=3.0e-04
+[2026-09-22 15:14:23]     epoch  40 | train_loss=0.8594 val_loss=0.7086 val_hr_mae=1.959 lr=3.0e-04
+[2026-09-22 16:19:55]     epoch  50 | train_loss=0.8343 val_loss=0.6967 val_hr_mae=1.849 lr=3.0e-04
+[2026-09-22 17:25:24]     epoch  60 | train_loss=0.8135 val_loss=0.6823 val_hr_mae=1.795 lr=3.0e-04
+[2026-09-22 18:30:51]     epoch  70 | train_loss=0.7977 val_loss=0.6819 val_hr_mae=2.215 lr=3.0e-04
+[2026-09-22 19:36:17]     epoch  80 | train_loss=0.7826 val_loss=0.6734 val_hr_mae=1.998 lr=3.0e-04
+[2026-09-22 20:41:57]     epoch  90 | train_loss=0.7707 val_loss=0.6819 val_hr_mae=1.977 lr=3.0e-04
+[2026-09-22 21:47:41]     epoch 100 | train_loss=0.7529 val_loss=0.6616 val_hr_mae=1.846 lr=3.0e-04
+[2026-09-22 22:52:58]     epoch 110 | train_loss=0.7348 val_loss=0.6571 val_hr_mae=1.902 lr=3.0e-04
+[2026-09-22 23:58:43]     epoch 120 | train_loss=0.7177 val_loss=0.6488 val_hr_mae=1.942 lr=3.0e-04
+[2026-09-23 01:04:23]     epoch 130 | train_loss=0.7039 val_loss=0.6413 val_hr_mae=1.862 lr=3.0e-04
+[2026-09-23 02:10:21]     epoch 140 | train_loss=0.6817 val_loss=0.6433 val_hr_mae=1.983 lr=3.0e-04
+[2026-09-23 03:16:09]     epoch 150 | train_loss=0.6644 val_loss=0.6433 val_hr_mae=2.051 lr=2.4e-04
+[2026-09-23 04:22:02]     epoch 160 | train_loss=0.6303 val_loss=0.6632 val_hr_mae=2.014 lr=1.9e-04
+[2026-09-23 05:28:20]     epoch 170 | train_loss=0.6156 val_loss=0.6548 val_hr_mae=2.127 lr=1.5e-04
+[2026-09-23 06:34:05]     epoch 180 | train_loss=0.6040 val_loss=0.6552 val_hr_mae=2.156 lr=1.2e-04
+[2026-09-23 06:34:05]     early stop at epoch 180 (no val-loss improvement for 50)
+[2026-09-23 06:34:05]   trained 'three_branch_mi_se_attention': epochs_run=180 best_val_loss=0.6413 best_val_hr_mae=1.652
+[2026-09-23 06:34:05]   evaluating 'three_branch_mi_se_attention' under protocol 'old' ...
+[2026-09-23 06:41:14]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Test3_interval/three_branch_mi_se_attention/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-09-23 06:41:14]   evaluating 'three_branch_mi_se_attention' under protocol 'prism' ...
+[2026-09-23 06:42:19]   evaluating 'three_branch_mi_se_attention' under protocol 'toolbox' ...
+[2026-09-23 06:42:55]   DONE 'three_branch_mi_se_attention' [old]: val_model_mae=nan
+[2026-09-23 06:42:55]   DONE 'three_branch_mi_se_attention' [prism]: val_model_mae=1.286
+[2026-09-23 06:42:55]   DONE 'three_branch_mi_se_attention' [toolbox]: val_model_mae=0.441
+[2026-09-23 06:42:55] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-09-23 06:42:55] 
+protocol                      prism  toolbox
+model                                       
+three_branch_mi_se_attention  1.286    0.441
+[2026-09-23 06:42:55] ==========================================================================
+[2026-09-23 06:42:55] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Test3_interval/MEGA_SUMMARY.csv
+[2026-09-23 06:42:55] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Test3_interval/MEGA_PROTOCOL_ABLATION.csv
+[2026-09-23 06:42:55] ==========================================================================
+[2026-09-23 06:42:55] Generating dashboard...
