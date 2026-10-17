@@ -1,0 +1,17 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+b1_adaptive_b2_raw_b3_mi__SE,old,no_csv,,,,,170009.0,32.0,-1.0,2.9378737665943264
+b1_adaptive_b2_raw_b3_mi__SE,prism,ok,2.0090597169847775,2.0522698482409525,,,170009.0,32.0,-1.0,2.9378737665943264
+b1_adaptive_b2_raw_b3_mi__SE,toolbox,ok,0.6067154621117316,0.6642781291645468,,,170009.0,32.0,-1.0,2.9378737665943264
+branch1_projectorbranch1_projector,-,"FAILED: ""Unknown model 'branch1_projectorbranch1_projector'. Available: ['BVPNet_V2', 'FFN', 'MMMiUNet', 'MMiUNet', 'MiUNet', 'adaptive_detrend', 'adaptive_trend', 'b1_3w_b2_raw_b3_mi__FDF', 'b1_3w_b2_raw_b3_mi__FREQ', 'b1_3w_b2_raw_b3_mi__SE', 'b1_3w_b2_raw_b3_mi__SL', 'b1_6w_b2_deriv_b3_mi__SE', 'b1_6w_b2_deriv_b3_mi__SL', 'b1_6w_b2_raw_b3_mi__FDF', 'b1_6w_b2_raw_b3_mi__FREQ', 'b1_6w_b2_raw_b3_mi__SE', 'b1_6w_b2_raw_b3_mi__SL', 'b1_6wa_b2_raw_b3_mi__SE', 'b1_6wa_b2_raw_b3_mi__SL', 'b1_adaptive_b2_raw_b3_mi__FDF', 'b1_adaptive_b2_raw_b3_mi__FREQ', 'b1_adaptive_b2_raw_b3_mi__SE', 'b1_adaptive_b2_raw_b3_mi__SL', 'branch1_projector', 'branch2_tcn_rf31_h8', 'canonical_tcn_rf31', 'canonical_tcn_rf31_causal', 'canonical_tcn_rf61', 'canonical_tcn_rf61_causal', 'plain_k1', 'plain_k3', 'simple_tcn_rf121_h4', 'simple_tcn_rf121_h4_causal', 'simple_tcn_rf121_h8', 'simple_tcn_rf121_h8_causal', 'simple_tcn_rf31_h4', 'simple_tcn_rf31_h4_causal', 'simple_tcn_rf31_h8', 'simple_tcn_rf31_h8_causal', 'simple_tcn_rf61_h4', 'simple_tcn_rf61_h4_causal', 'simple_tcn_rf61_h8', 'simple_tcn_rf61_h8_causal', 'three_branch_mi_branch_attention', 'three_branch_mi_freq_ffn', 'three_branch_mi_lightweight_attention', 'three_branch_mi_mlp', 'three_branch_mi_se_attention', 'three_branch_mi_serial_fdf', 'three_branch_mi_static_linear', 'three_branch_mmi_branch_attention', 'three_branch_mmi_lightweight_attention', 'three_branch_mmi_mlp', 'three_branch_mmi_se_attention', 'three_branch_mmi_static_linear', 'two_branch_adaptive', 'two_projection_CHROM_ADAPTIVE']""",,,,,,,,
+branch2_tcn_rf31_h8,old,no_csv,,,,,1169.0,40.0,-1.0,3.955444568322994
+branch2_tcn_rf31_h8,prism,ok,0.7244217910926136,2.0522698482409525,,,1169.0,40.0,-1.0,3.955444568322994
+branch2_tcn_rf31_h8,toolbox,ok,0.4937156961294416,0.6642781291645468,,,1169.0,40.0,-1.0,3.955444568322994
+MiUNet,old,no_csv,,,,,168401.0,40.0,-1.0,3.0333086038820074
+MiUNet,prism,ok,0.6272544787363753,2.0522698482409525,,,168401.0,40.0,-1.0,3.0333086038820074
+MiUNet,toolbox,ok,0.3126206379283094,0.6642781291645468,,,168401.0,40.0,-1.0,3.0333086038820074
+three_branch_mi_se_attention,old,no_csv,,,,,170006.0,36.0,-1.0,2.6356100312101582
+three_branch_mi_se_attention,prism,ok,1.0672264357762977,2.0522698482409525,,,170006.0,36.0,-1.0,2.6356100312101582
+three_branch_mi_se_attention,toolbox,ok,0.7200332802797329,0.6642781291645468,,,170006.0,36.0,-1.0,2.6356100312101582
+two_projection_CHROM_ADAPTIVE,old,no_csv,,,,,6.0,40.0,-1.0,3.6473476571688166
+two_projection_CHROM_ADAPTIVE,prism,ok,0.7423597807871738,2.0522698482409525,,,6.0,40.0,-1.0,3.6473476571688166
+two_projection_CHROM_ADAPTIVE,toolbox,ok,0.6151406124530555,0.6642781291645468,,,6.0,40.0,-1.0,3.6473476571688166

@@ -1,0 +1,119 @@
+[2026-10-18 02:05:25] ==========================================================================
+[2026-10-18 02:05:25] MEGA RUN start | device=cuda | models=6 | protocols=['old', 'prism', 'toolbox'] | epochs<= 2 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed
+[2026-10-18 02:05:25] models: ['b1_adaptive_b2_raw_b3_mi__SE', 'branch1_projectorbranch1_projector', 'branch2_tcn_rf31_h8', 'MiUNet', 'three_branch_mi_se_attention', 'two_projection_CHROM_ADAPTIVE']
+[2026-10-18 02:05:25] ==========================================================================
+[2026-10-18 02:05:25] --------------------------------------------------------------------------
+[2026-10-18 02:05:25] [1/6] MODEL: b1_adaptive_b2_raw_b3_mi__SE
+[2026-10-18 02:05:25]   checkpoint already exists — skipping training for 'b1_adaptive_b2_raw_b3_mi__SE'
+[2026-10-18 02:05:25]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'old' ...
+[2026-10-18 02:12:41]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed/b1_adaptive_b2_raw_b3_mi__SE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 02:12:41]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'prism' ...
+[2026-10-18 02:13:48]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'toolbox' ...
+[2026-10-18 02:14:25]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [old]: val_model_mae=nan
+[2026-10-18 02:14:25]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [prism]: val_model_mae=2.009
+[2026-10-18 02:14:25]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [toolbox]: val_model_mae=0.607
+[2026-10-18 02:14:25] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 02:14:25] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.607
+[2026-10-18 02:14:25] --------------------------------------------------------------------------
+[2026-10-18 02:14:25] [2/6] MODEL: branch1_projectorbranch1_projector
+[2026-10-18 02:14:25]   ERROR on 'branch1_projectorbranch1_projector': "Unknown model 'branch1_projectorbranch1_projector'. Available: ['BVPNet_V2', 'FFN', 'MMMiUNet', 'MMiUNet', 'MiUNet', 'adaptive_detrend', 'adaptive_trend', 'b1_3w_b2_raw_b3_mi__FDF', 'b1_3w_b2_raw_b3_mi__FREQ', 'b1_3w_b2_raw_b3_mi__SE', 'b1_3w_b2_raw_b3_mi__SL', 'b1_6w_b2_deriv_b3_mi__SE', 'b1_6w_b2_deriv_b3_mi__SL', 'b1_6w_b2_raw_b3_mi__FDF', 'b1_6w_b2_raw_b3_mi__FREQ', 'b1_6w_b2_raw_b3_mi__SE', 'b1_6w_b2_raw_b3_mi__SL', 'b1_6wa_b2_raw_b3_mi__SE', 'b1_6wa_b2_raw_b3_mi__SL', 'b1_adaptive_b2_raw_b3_mi__FDF', 'b1_adaptive_b2_raw_b3_mi__FREQ', 'b1_adaptive_b2_raw_b3_mi__SE', 'b1_adaptive_b2_raw_b3_mi__SL', 'branch1_projector', 'branch2_tcn_rf31_h8', 'canonical_tcn_rf31', 'canonical_tcn_rf31_causal', 'canonical_tcn_rf61', 'canonical_tcn_rf61_causal', 'plain_k1', 'plain_k3', 'simple_tcn_rf121_h4', 'simple_tcn_rf121_h4_causal', 'simple_tcn_rf121_h8', 'simple_tcn_rf121_h8_causal', 'simple_tcn_rf31_h4', 'simple_tcn_rf31_h4_causal', 'simple_tcn_rf31_h8', 'simple_tcn_rf31_h8_causal', 'simple_tcn_rf61_h4', 'simple_tcn_rf61_h4_causal', 'simple_tcn_rf61_h8', 'simple_tcn_rf61_h8_causal', 'three_branch_mi_branch_attention', 'three_branch_mi_freq_ffn', 'three_branch_mi_lightweight_attention', 'three_branch_mi_mlp', 'three_branch_mi_se_attention', 'three_branch_mi_serial_fdf', 'three_branch_mi_static_linear', 'three_branch_mmi_branch_attention', 'three_branch_mmi_lightweight_attention', 'three_branch_mmi_mlp', 'three_branch_mmi_se_attention', 'three_branch_mmi_static_linear', 'two_branch_adaptive', 'two_projection_CHROM_ADAPTIVE']"
+[2026-10-18 02:14:25] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_STORYLine/launch_train.py", line 507, in main
+    train_info = train_one_model(name, save_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_STORYLine/launch_train.py", line 219, in train_one_model
+    model = build_model(name).to(DEVICE)
+            ^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG/Code/main_STORYLine/model_ZOO.py", line 1592, in build_model
+    raise KeyError(
+KeyError: "Unknown model 'branch1_projectorbranch1_projector'. Available: ['BVPNet_V2', 'FFN', 'MMMiUNet', 'MMiUNet', 'MiUNet', 'adaptive_detrend', 'adaptive_trend', 'b1_3w_b2_raw_b3_mi__FDF', 'b1_3w_b2_raw_b3_mi__FREQ', 'b1_3w_b2_raw_b3_mi__SE', 'b1_3w_b2_raw_b3_mi__SL', 'b1_6w_b2_deriv_b3_mi__SE', 'b1_6w_b2_deriv_b3_mi__SL', 'b1_6w_b2_raw_b3_mi__FDF', 'b1_6w_b2_raw_b3_mi__FREQ', 'b1_6w_b2_raw_b3_mi__SE', 'b1_6w_b2_raw_b3_mi__SL', 'b1_6wa_b2_raw_b3_mi__SE', 'b1_6wa_b2_raw_b3_mi__SL', 'b1_adaptive_b2_raw_b3_mi__FDF', 'b1_adaptive_b2_raw_b3_mi__FREQ', 'b1_adaptive_b2_raw_b3_mi__SE', 'b1_adaptive_b2_raw_b3_mi__SL', 'branch1_projector', 'branch2_tcn_rf31_h8', 'canonical_tcn_rf31', 'canonical_tcn_rf31_causal', 'canonical_tcn_rf61', 'canonical_tcn_rf61_causal', 'plain_k1', 'plain_k3', 'simple_tcn_rf121_h4', 'simple_tcn_rf121_h4_causal', 'simple_tcn_rf121_h8', 'simple_tcn_rf121_h8_causal', 'simple_tcn_rf31_h4', 'simple_tcn_rf31_h4_causal', 'simple_tcn_rf31_h8', 'simple_tcn_rf31_h8_causal', 'simple_tcn_rf61_h4', 'simple_tcn_rf61_h4_causal', 'simple_tcn_rf61_h8', 'simple_tcn_rf61_h8_causal', 'three_branch_mi_branch_attention', 'three_branch_mi_freq_ffn', 'three_branch_mi_lightweight_attention', 'three_branch_mi_mlp', 'three_branch_mi_se_attention', 'three_branch_mi_serial_fdf', 'three_branch_mi_static_linear', 'three_branch_mmi_branch_attention', 'three_branch_mmi_lightweight_attention', 'three_branch_mmi_mlp', 'three_branch_mmi_se_attention', 'three_branch_mmi_static_linear', 'two_branch_adaptive', 'two_projection_CHROM_ADAPTIVE']"
+
+[2026-10-18 02:14:25] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 02:14:25] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.607
+[2026-10-18 02:14:25] --------------------------------------------------------------------------
+[2026-10-18 02:14:25] [3/6] MODEL: branch2_tcn_rf31_h8
+[2026-10-18 02:14:25]   checkpoint already exists — skipping training for 'branch2_tcn_rf31_h8'
+[2026-10-18 02:14:25]   evaluating 'branch2_tcn_rf31_h8' under protocol 'old' ...
+[2026-10-18 02:20:33]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed/branch2_tcn_rf31_h8/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 02:20:33]   evaluating 'branch2_tcn_rf31_h8' under protocol 'prism' ...
+[2026-10-18 02:21:32]   evaluating 'branch2_tcn_rf31_h8' under protocol 'toolbox' ...
+[2026-10-18 02:22:01]   DONE 'branch2_tcn_rf31_h8' [old]: val_model_mae=nan
+[2026-10-18 02:22:01]   DONE 'branch2_tcn_rf31_h8' [prism]: val_model_mae=0.724
+[2026-10-18 02:22:01]   DONE 'branch2_tcn_rf31_h8' [toolbox]: val_model_mae=0.494
+[2026-10-18 02:22:01] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 02:22:01] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.607
+branch2_tcn_rf31_h8           0.724    0.494
+[2026-10-18 02:22:01] --------------------------------------------------------------------------
+[2026-10-18 02:22:01] [4/6] MODEL: MiUNet
+[2026-10-18 02:22:01]   checkpoint already exists — skipping training for 'MiUNet'
+[2026-10-18 02:22:01]   evaluating 'MiUNet' under protocol 'old' ...
+[2026-10-18 02:27:27]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed/MiUNet/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 02:27:27]   evaluating 'MiUNet' under protocol 'prism' ...
+[2026-10-18 02:28:30]   evaluating 'MiUNet' under protocol 'toolbox' ...
+[2026-10-18 02:29:01]   DONE 'MiUNet' [old]: val_model_mae=nan
+[2026-10-18 02:29:01]   DONE 'MiUNet' [prism]: val_model_mae=0.627
+[2026-10-18 02:29:01]   DONE 'MiUNet' [toolbox]: val_model_mae=0.313
+[2026-10-18 02:29:01] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 02:29:01] 
+protocol                      prism  toolbox
+model                                       
+MiUNet                        0.627    0.313
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.607
+branch2_tcn_rf31_h8           0.724    0.494
+[2026-10-18 02:29:01] --------------------------------------------------------------------------
+[2026-10-18 02:29:01] [5/6] MODEL: three_branch_mi_se_attention
+[2026-10-18 02:29:01]   checkpoint already exists — skipping training for 'three_branch_mi_se_attention'
+[2026-10-18 02:29:01]   evaluating 'three_branch_mi_se_attention' under protocol 'old' ...
+[2026-10-18 02:36:54]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed/three_branch_mi_se_attention/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 02:36:54]   evaluating 'three_branch_mi_se_attention' under protocol 'prism' ...
+[2026-10-18 02:38:15]   evaluating 'three_branch_mi_se_attention' under protocol 'toolbox' ...
+[2026-10-18 02:38:57]   DONE 'three_branch_mi_se_attention' [old]: val_model_mae=nan
+[2026-10-18 02:38:57]   DONE 'three_branch_mi_se_attention' [prism]: val_model_mae=1.067
+[2026-10-18 02:38:57]   DONE 'three_branch_mi_se_attention' [toolbox]: val_model_mae=0.720
+[2026-10-18 02:38:57] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 02:38:57] 
+protocol                      prism  toolbox
+model                                       
+MiUNet                        0.627    0.313
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.607
+branch2_tcn_rf31_h8           0.724    0.494
+three_branch_mi_se_attention  1.067    0.720
+[2026-10-18 02:38:57] --------------------------------------------------------------------------
+[2026-10-18 02:38:57] [6/6] MODEL: two_projection_CHROM_ADAPTIVE
+[2026-10-18 02:38:57]   checkpoint already exists — skipping training for 'two_projection_CHROM_ADAPTIVE'
+[2026-10-18 02:38:57]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'old' ...
+[2026-10-18 02:44:04]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed/two_projection_CHROM_ADAPTIVE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 02:44:04]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'prism' ...
+[2026-10-18 02:45:02]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'toolbox' ...
+[2026-10-18 02:45:32]   DONE 'two_projection_CHROM_ADAPTIVE' [old]: val_model_mae=nan
+[2026-10-18 02:45:32]   DONE 'two_projection_CHROM_ADAPTIVE' [prism]: val_model_mae=0.742
+[2026-10-18 02:45:32]   DONE 'two_projection_CHROM_ADAPTIVE' [toolbox]: val_model_mae=0.615
+[2026-10-18 02:45:32] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 02:45:32] 
+protocol                       prism  toolbox
+model                                        
+MiUNet                         0.627    0.313
+b1_adaptive_b2_raw_b3_mi__SE   2.009    0.607
+branch2_tcn_rf31_h8            0.724    0.494
+three_branch_mi_se_attention   1.067    0.720
+two_projection_CHROM_ADAPTIVE  0.742    0.615
+[2026-10-18 02:45:32] ==========================================================================
+[2026-10-18 02:45:32] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed/MEGA_SUMMARY.csv
+[2026-10-18 02:45:32] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048_Toolobox_Fixed/MEGA_PROTOCOL_ABLATION.csv
+[2026-10-18 02:45:32] ==========================================================================
+[2026-10-18 02:45:32] Generating dashboard...
