@@ -1,0 +1,120 @@
+[2026-10-18 15:23:25] ==========================================================================
+[2026-10-18 15:23:25] MEGA RUN start | device=cuda | models=6 | protocols=['old', 'prism', 'toolbox'] | epochs<= 2 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/test
+[2026-10-18 15:23:25] models: ['b1_adaptive_b2_raw_b3_mi__SE', 'branch1_projector', 'branch2_tcn_rf31_h8', 'MiUNet', 'three_branch_mi_se_attention', 'two_projection_CHROM_ADAPTIVE']
+[2026-10-18 15:23:25] ==========================================================================
+[2026-10-18 15:23:25] --------------------------------------------------------------------------
+[2026-10-18 15:23:25] [1/6] MODEL: b1_adaptive_b2_raw_b3_mi__SE
+[2026-10-18 15:23:25]   checkpoint already exists — skipping training for 'b1_adaptive_b2_raw_b3_mi__SE'
+[2026-10-18 15:23:25]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'old' ...
+[2026-10-18 15:30:09]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/b1_adaptive_b2_raw_b3_mi__SE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 15:30:09]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'prism' ...
+[2026-10-18 15:31:13]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'toolbox' ...
+[2026-10-18 15:31:44]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [old]: val_model_mae=nan
+[2026-10-18 15:31:44]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [prism]: val_model_mae=2.009
+[2026-10-18 15:31:44]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [toolbox]: val_model_mae=0.400
+[2026-10-18 15:31:44] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 15:31:44] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  2.009      0.4
+[2026-10-18 15:31:44] --------------------------------------------------------------------------
+[2026-10-18 15:31:44] [2/6] MODEL: branch1_projector
+[2026-10-18 15:31:44]   checkpoint already exists — skipping training for 'branch1_projector'
+[2026-10-18 15:31:44]   evaluating 'branch1_projector' under protocol 'old' ...
+[2026-10-18 15:36:24]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/branch1_projector/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 15:36:24]   evaluating 'branch1_projector' under protocol 'prism' ...
+[2026-10-18 15:37:17]   evaluating 'branch1_projector' under protocol 'toolbox' ...
+[2026-10-18 15:37:44]   DONE 'branch1_projector' [old]: val_model_mae=nan
+[2026-10-18 15:37:44]   DONE 'branch1_projector' [prism]: val_model_mae=0.775
+[2026-10-18 15:37:44]   DONE 'branch1_projector' [toolbox]: val_model_mae=0.809
+[2026-10-18 15:37:44] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 15:37:44] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.400
+branch1_projector             0.775    0.809
+[2026-10-18 15:37:44] --------------------------------------------------------------------------
+[2026-10-18 15:37:44] [3/6] MODEL: branch2_tcn_rf31_h8
+[2026-10-18 15:37:44]   checkpoint already exists — skipping training for 'branch2_tcn_rf31_h8'
+[2026-10-18 15:37:44]   evaluating 'branch2_tcn_rf31_h8' under protocol 'old' ...
+[2026-10-18 15:42:59]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/branch2_tcn_rf31_h8/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 15:42:59]   evaluating 'branch2_tcn_rf31_h8' under protocol 'prism' ...
+[2026-10-18 15:43:54]   evaluating 'branch2_tcn_rf31_h8' under protocol 'toolbox' ...
+[2026-10-18 15:44:19]   DONE 'branch2_tcn_rf31_h8' [old]: val_model_mae=nan
+[2026-10-18 15:44:19]   DONE 'branch2_tcn_rf31_h8' [prism]: val_model_mae=0.724
+[2026-10-18 15:44:19]   DONE 'branch2_tcn_rf31_h8' [toolbox]: val_model_mae=0.578
+[2026-10-18 15:44:19] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 15:44:19] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.400
+branch1_projector             0.775    0.809
+branch2_tcn_rf31_h8           0.724    0.578
+[2026-10-18 15:44:19] --------------------------------------------------------------------------
+[2026-10-18 15:44:19] [4/6] MODEL: MiUNet
+[2026-10-18 15:44:19]   checkpoint already exists — skipping training for 'MiUNet'
+[2026-10-18 15:44:19]   evaluating 'MiUNet' under protocol 'old' ...
+[2026-10-18 15:49:41]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/MiUNet/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 15:49:41]   evaluating 'MiUNet' under protocol 'prism' ...
+[2026-10-18 15:50:37]   evaluating 'MiUNet' under protocol 'toolbox' ...
+[2026-10-18 15:51:03]   DONE 'MiUNet' [old]: val_model_mae=nan
+[2026-10-18 15:51:03]   DONE 'MiUNet' [prism]: val_model_mae=0.627
+[2026-10-18 15:51:03]   DONE 'MiUNet' [toolbox]: val_model_mae=0.309
+[2026-10-18 15:51:03] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 15:51:03] 
+protocol                      prism  toolbox
+model                                       
+MiUNet                        0.627    0.309
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.400
+branch1_projector             0.775    0.809
+branch2_tcn_rf31_h8           0.724    0.578
+[2026-10-18 15:51:03] --------------------------------------------------------------------------
+[2026-10-18 15:51:03] [5/6] MODEL: three_branch_mi_se_attention
+[2026-10-18 15:51:03]   checkpoint already exists — skipping training for 'three_branch_mi_se_attention'
+[2026-10-18 15:51:03]   evaluating 'three_branch_mi_se_attention' under protocol 'old' ...
+[2026-10-18 15:57:31]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/three_branch_mi_se_attention/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 15:57:31]   evaluating 'three_branch_mi_se_attention' under protocol 'prism' ...
+[2026-10-18 15:58:34]   evaluating 'three_branch_mi_se_attention' under protocol 'toolbox' ...
+[2026-10-18 15:59:04]   DONE 'three_branch_mi_se_attention' [old]: val_model_mae=nan
+[2026-10-18 15:59:04]   DONE 'three_branch_mi_se_attention' [prism]: val_model_mae=1.067
+[2026-10-18 15:59:04]   DONE 'three_branch_mi_se_attention' [toolbox]: val_model_mae=0.376
+[2026-10-18 15:59:04] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 15:59:04] 
+protocol                      prism  toolbox
+model                                       
+MiUNet                        0.627    0.309
+b1_adaptive_b2_raw_b3_mi__SE  2.009    0.400
+branch1_projector             0.775    0.809
+branch2_tcn_rf31_h8           0.724    0.578
+three_branch_mi_se_attention  1.067    0.376
+[2026-10-18 15:59:04] --------------------------------------------------------------------------
+[2026-10-18 15:59:04] [6/6] MODEL: two_projection_CHROM_ADAPTIVE
+[2026-10-18 15:59:04]   checkpoint already exists — skipping training for 'two_projection_CHROM_ADAPTIVE'
+[2026-10-18 15:59:04]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'old' ...
+[2026-10-18 16:03:41]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/two_projection_CHROM_ADAPTIVE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-18 16:03:41]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'prism' ...
+[2026-10-18 16:04:31]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'toolbox' ...
+[2026-10-18 16:04:53]   DONE 'two_projection_CHROM_ADAPTIVE' [old]: val_model_mae=nan
+[2026-10-18 16:04:53]   DONE 'two_projection_CHROM_ADAPTIVE' [prism]: val_model_mae=0.742
+[2026-10-18 16:04:53]   DONE 'two_projection_CHROM_ADAPTIVE' [toolbox]: val_model_mae=0.872
+[2026-10-18 16:04:53] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-18 16:04:53] 
+protocol                       prism  toolbox
+model                                        
+MiUNet                         0.627    0.309
+b1_adaptive_b2_raw_b3_mi__SE   2.009    0.400
+branch1_projector              0.775    0.809
+branch2_tcn_rf31_h8            0.724    0.578
+three_branch_mi_se_attention   1.067    0.376
+two_projection_CHROM_ADAPTIVE  0.742    0.872
+[2026-10-18 16:04:53] ==========================================================================
+[2026-10-18 16:04:53] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/MEGA_SUMMARY.csv
+[2026-10-18 16:04:53] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/test/MEGA_PROTOCOL_ABLATION.csv
+[2026-10-18 16:04:53] ==========================================================================
+[2026-10-18 16:04:53] Generating dashboard...
