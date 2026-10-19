@@ -1,0 +1,55 @@
+[2026-10-19 00:15:49] ==========================================================================
+[2026-10-19 00:15:49] MEGA RUN start | device=cuda | models=6 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_SL-SL-FF-3-6-weights-GPU0_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048
+[2026-10-19 00:15:49] models: ['b1_3w_b2_raw_b3_mi__SE', 'b1_6w_b2_raw_b3_mi__SE', 'b1_adaptive_b2_raw_b3_mi__SE', 'b1_3w_b2_raw_b3_mi__SL', 'b1_3w_b2_raw_b3_mi__FREQ', 'b1_3w_b2_raw_b3_mi__FDF']
+[2026-10-19 00:15:49] ==========================================================================
+[2026-10-19 00:15:49] --------------------------------------------------------------------------
+[2026-10-19 00:15:49] [1/6] MODEL: b1_3w_b2_raw_b3_mi__SE
+[2026-10-19 00:15:49]   built 'b1_3w_b2_raw_b3_mi__SE': params=170006, reach=96 samples (3.20s @30fps)
+[2026-10-19 00:24:39]     epoch   1 | train_loss=1.0078 val_loss=1.0072 val_hr_mae=154.219 lr=3.0e-04
+[2026-10-19 01:42:57]     epoch  10 | train_loss=0.3772 val_loss=0.5492 val_hr_mae=2.626 lr=3.0e-04
+[2026-10-19 03:07:58]     epoch  20 | train_loss=0.4176 val_loss=0.5965 val_hr_mae=2.747 lr=7.5e-05
+[2026-10-19 04:29:54]     epoch  30 | train_loss=0.4635 val_loss=0.6496 val_hr_mae=2.636 lr=1.9e-05
+[2026-10-19 05:18:49]     early stop at epoch 36 (no val-loss improvement for 30)
+[2026-10-19 05:18:49]   trained 'b1_3w_b2_raw_b3_mi__SE': epochs_run=36 best_val_loss=0.5366 best_val_hr_mae=2.514
+[2026-10-19 05:18:49]   evaluating 'b1_3w_b2_raw_b3_mi__SE' under protocol 'old' ...
+[2026-10-19 05:26:16]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_SL-SL-FF-3-6-weights-GPU0_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048/b1_3w_b2_raw_b3_mi__SE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-19 05:26:16]   evaluating 'b1_3w_b2_raw_b3_mi__SE' under protocol 'prism' ...
+[2026-10-19 05:27:25]   evaluating 'b1_3w_b2_raw_b3_mi__SE' under protocol 'toolbox' ...
+[2026-10-19 05:28:00]   DONE 'b1_3w_b2_raw_b3_mi__SE' [old]: val_model_mae=nan
+[2026-10-19 05:28:00]   DONE 'b1_3w_b2_raw_b3_mi__SE' [prism]: val_model_mae=1.067
+[2026-10-19 05:28:00]   DONE 'b1_3w_b2_raw_b3_mi__SE' [toolbox]: val_model_mae=0.376
+[2026-10-19 05:28:00] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-19 05:28:00] 
+protocol                prism  toolbox
+model                                 
+b1_3w_b2_raw_b3_mi__SE  1.067    0.376
+[2026-10-19 05:28:00] --------------------------------------------------------------------------
+[2026-10-19 05:28:00] [2/6] MODEL: b1_6w_b2_raw_b3_mi__SE
+[2026-10-19 05:28:00]   built 'b1_6w_b2_raw_b3_mi__SE': params=170027, reach=96 samples (3.20s @30fps)
+[2026-10-19 05:36:11]     epoch   1 | train_loss=0.7145 val_loss=0.7334 val_hr_mae=8.977 lr=3.0e-04
+[2026-10-19 06:50:15]     epoch  10 | train_loss=0.3726 val_loss=0.5343 val_hr_mae=2.495 lr=3.0e-04
+[2026-10-19 08:12:05]     epoch  20 | train_loss=0.4031 val_loss=0.5869 val_hr_mae=2.551 lr=1.5e-04
+[2026-10-19 09:34:20]     epoch  30 | train_loss=0.4362 val_loss=0.6357 val_hr_mae=2.727 lr=3.7e-05
+[2026-10-19 10:56:34]     epoch  40 | train_loss=0.4307 val_loss=0.6399 val_hr_mae=2.678 lr=1.0e-05
+[2026-10-19 10:56:34]     early stop at epoch 40 (no val-loss improvement for 30)
+[2026-10-19 10:56:34]   trained 'b1_6w_b2_raw_b3_mi__SE': epochs_run=40 best_val_loss=0.5343 best_val_hr_mae=2.495
+[2026-10-19 10:56:34]   evaluating 'b1_6w_b2_raw_b3_mi__SE' under protocol 'old' ...
+[2026-10-19 11:04:06]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_SL-SL-FF-3-6-weights-GPU0_seed-123_CE02_PEARSON1_Margin-5BPM_nfft-2048/b1_6w_b2_raw_b3_mi__SE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-19 11:04:06]   evaluating 'b1_6w_b2_raw_b3_mi__SE' under protocol 'prism' ...
+[2026-10-19 11:05:20]   evaluating 'b1_6w_b2_raw_b3_mi__SE' under protocol 'toolbox' ...
+[2026-10-19 11:05:55]   DONE 'b1_6w_b2_raw_b3_mi__SE' [old]: val_model_mae=nan
+[2026-10-19 11:05:55]   DONE 'b1_6w_b2_raw_b3_mi__SE' [prism]: val_model_mae=0.660
+[2026-10-19 11:05:55]   DONE 'b1_6w_b2_raw_b3_mi__SE' [toolbox]: val_model_mae=0.396
+[2026-10-19 11:05:55] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-19 11:05:55] 
+protocol                prism  toolbox
+model                                 
+b1_3w_b2_raw_b3_mi__SE  1.067    0.376
+b1_6w_b2_raw_b3_mi__SE  0.660    0.396
+[2026-10-19 11:05:55] --------------------------------------------------------------------------
+[2026-10-19 11:05:55] [3/6] MODEL: b1_adaptive_b2_raw_b3_mi__SE
+[2026-10-19 11:05:55]   built 'b1_adaptive_b2_raw_b3_mi__SE': params=170009, reach=96 samples (3.20s @30fps)
+[2026-10-19 11:14:36]     epoch   1 | train_loss=0.5699 val_loss=0.5402 val_hr_mae=2.815 lr=3.0e-04
+[2026-10-19 12:32:14]     epoch  10 | train_loss=0.3509 val_loss=0.5449 val_hr_mae=2.929 lr=1.5e-04

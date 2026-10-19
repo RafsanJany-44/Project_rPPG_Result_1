@@ -1,0 +1,7 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+b1_3w_b2_raw_b3_mi__SE,old,no_csv,,,,,170006,36,96,2.5141463418261627
+b1_3w_b2_raw_b3_mi__SE,prism,ok,1.0672264357762977,2.0522698482409525,,,170006,36,96,2.5141463418261627
+b1_3w_b2_raw_b3_mi__SE,toolbox,ok,0.37617292027135596,0.6642781291645468,,,170006,36,96,2.5141463418261627
+b1_6w_b2_raw_b3_mi__SE,old,no_csv,,,,,170027,40,96,2.4949404905081467
+b1_6w_b2_raw_b3_mi__SE,prism,ok,0.6603758095520811,2.0522698482409525,,,170027,40,96,2.4949404905081467
+b1_6w_b2_raw_b3_mi__SE,toolbox,ok,0.3963788638972115,0.6642781291645468,,,170027,40,96,2.4949404905081467
