@@ -1,0 +1,158 @@
+[2026-10-19 14:00:42] ==========================================================================
+[2026-10-19 14:00:42] MEGA RUN start | device=cuda | models=6 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2
+[2026-10-19 14:00:42] models: ['b1_adaptive_b2_raw_b3_mi__SE', 'branch1_projector', 'branch2_tcn_rf31_h8', 'MiUNet', 'three_branch_mi_se_attention', 'two_projection_CHROM_ADAPTIVE']
+[2026-10-19 14:00:42] ==========================================================================
+[2026-10-19 14:00:42] --------------------------------------------------------------------------
+[2026-10-19 14:00:42] [1/6] MODEL: b1_adaptive_b2_raw_b3_mi__SE
+[2026-10-19 14:00:42]   built 'b1_adaptive_b2_raw_b3_mi__SE': params=170009, reach=96 samples (3.20s @30fps)
+[2026-10-19 14:11:37]     epoch   1 | train_loss=0.5994 val_loss=0.5460 val_hr_mae=3.242 lr=3.0e-04
+[2026-10-19 15:48:22]     epoch  10 | train_loss=0.3615 val_loss=0.5509 val_hr_mae=2.754 lr=1.5e-04
+[2026-10-19 17:30:52]     epoch  20 | train_loss=0.4312 val_loss=0.6348 val_hr_mae=2.664 lr=3.7e-05
+[2026-10-19 19:14:39]     epoch  30 | train_loss=0.5039 val_loss=0.7086 val_hr_mae=2.564 lr=1.9e-05
+[2026-10-19 19:35:24]     early stop at epoch 32 (no val-loss improvement for 30)
+[2026-10-19 19:35:24]   trained 'b1_adaptive_b2_raw_b3_mi__SE': epochs_run=32 best_val_loss=0.5323 best_val_hr_mae=2.473
+[2026-10-19 19:35:24]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'old' ...
+[2026-10-19 19:43:06]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/b1_adaptive_b2_raw_b3_mi__SE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-19 19:43:06]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'prism' ...
+[2026-10-19 19:44:25]   evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under protocol 'toolbox' ...
+[2026-10-19 19:45:03]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [old]: val_model_mae=nan
+[2026-10-19 19:45:03]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [prism]: val_model_mae=0.982
+[2026-10-19 19:45:03]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [toolbox]: val_model_mae=0.367
+[2026-10-19 19:45:03] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-19 19:45:03] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  0.982    0.367
+[2026-10-19 19:45:03] --------------------------------------------------------------------------
+[2026-10-19 19:45:03] [2/6] MODEL: branch1_projector
+[2026-10-19 19:45:03]   built 'branch1_projector': params=3, reach=1 samples (0.03s @30fps)
+[2026-10-19 19:52:37]     epoch   1 | train_loss=0.8104 val_loss=0.8035 val_hr_mae=4.811 lr=3.0e-04
+[2026-10-19 21:00:32]     epoch  10 | train_loss=0.7860 val_loss=0.8061 val_hr_mae=4.986 lr=1.5e-04
+[2026-10-19 22:15:27]     epoch  20 | train_loss=0.8908 val_loss=0.9070 val_hr_mae=4.761 lr=3.7e-05
+[2026-10-19 23:30:22]     epoch  30 | train_loss=0.9930 val_loss=1.0073 val_hr_mae=4.865 lr=1.9e-05
+[2026-10-19 23:37:58]     early stop at epoch 31 (no val-loss improvement for 30)
+[2026-10-19 23:37:58]   trained 'branch1_projector': epochs_run=31 best_val_loss=0.8035 best_val_hr_mae=4.691
+[2026-10-19 23:37:58]   evaluating 'branch1_projector' under protocol 'old' ...
+[2026-10-19 23:42:58]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/branch1_projector/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-19 23:42:58]   evaluating 'branch1_projector' under protocol 'prism' ...
+[2026-10-19 23:43:55]   evaluating 'branch1_projector' under protocol 'toolbox' ...
+[2026-10-19 23:44:24]   DONE 'branch1_projector' [old]: val_model_mae=nan
+[2026-10-19 23:44:24]   DONE 'branch1_projector' [prism]: val_model_mae=0.774
+[2026-10-19 23:44:24]   DONE 'branch1_projector' [toolbox]: val_model_mae=0.809
+[2026-10-19 23:44:24] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-19 23:44:24] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  0.982    0.367
+branch1_projector             0.774    0.809
+[2026-10-19 23:44:24] --------------------------------------------------------------------------
+[2026-10-19 23:44:24] [3/6] MODEL: branch2_tcn_rf31_h8
+[2026-10-19 23:44:24]   built 'branch2_tcn_rf31_h8': params=1169, reach=29 samples (0.97s @30fps)
+[2026-10-19 23:55:00]     epoch   1 | train_loss=0.8082 val_loss=0.8094 val_hr_mae=5.077 lr=3.0e-04
+[2026-10-20 01:37:40]     epoch  10 | train_loss=0.5241 val_loss=0.6489 val_hr_mae=4.147 lr=3.0e-04
+[2026-10-20 03:24:02]     epoch  20 | train_loss=0.6057 val_loss=0.7267 val_hr_mae=4.046 lr=7.5e-05
+[2026-10-20 05:06:47]     epoch  30 | train_loss=0.6974 val_loss=0.8124 val_hr_mae=3.658 lr=3.7e-05
+[2026-10-20 06:27:24]     early stop at epoch 38 (no val-loss improvement for 30)
+[2026-10-20 06:27:24]   trained 'branch2_tcn_rf31_h8': epochs_run=38 best_val_loss=0.6474 best_val_hr_mae=3.658
+[2026-10-20 06:27:24]   evaluating 'branch2_tcn_rf31_h8' under protocol 'old' ...
+[2026-10-20 06:33:37]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/branch2_tcn_rf31_h8/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-20 06:33:37]   evaluating 'branch2_tcn_rf31_h8' under protocol 'prism' ...
+[2026-10-20 06:34:41]   evaluating 'branch2_tcn_rf31_h8' under protocol 'toolbox' ...
+[2026-10-20 06:35:11]   DONE 'branch2_tcn_rf31_h8' [old]: val_model_mae=nan
+[2026-10-20 06:35:11]   DONE 'branch2_tcn_rf31_h8' [prism]: val_model_mae=0.726
+[2026-10-20 06:35:11]   DONE 'branch2_tcn_rf31_h8' [toolbox]: val_model_mae=0.572
+[2026-10-20 06:35:11] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-20 06:35:11] 
+protocol                      prism  toolbox
+model                                       
+b1_adaptive_b2_raw_b3_mi__SE  0.982    0.367
+branch1_projector             0.774    0.809
+branch2_tcn_rf31_h8           0.726    0.572
+[2026-10-20 06:35:11] --------------------------------------------------------------------------
+[2026-10-20 06:35:11] [4/6] MODEL: MiUNet
+[2026-10-20 06:35:11]   built 'MiUNet': params=168401, reach=96 samples (3.20s @30fps)
+[2026-10-20 06:42:52]     epoch   1 | train_loss=0.7118 val_loss=0.7339 val_hr_mae=9.024 lr=3.0e-04
+[2026-10-20 07:52:00]     epoch  10 | train_loss=0.3680 val_loss=0.5342 val_hr_mae=2.627 lr=3.0e-04
+[2026-10-20 09:08:42]     epoch  20 | train_loss=0.4225 val_loss=0.6363 val_hr_mae=2.936 lr=1.5e-04
+[2026-10-20 10:25:30]     epoch  30 | train_loss=0.4890 val_loss=0.7141 val_hr_mae=2.917 lr=3.7e-05
+[2026-10-20 11:43:16]     epoch  40 | train_loss=0.4841 val_loss=0.7100 val_hr_mae=2.671 lr=1.0e-05
+[2026-10-20 11:43:16]     early stop at epoch 40 (no val-loss improvement for 30)
+[2026-10-20 11:43:16]   trained 'MiUNet': epochs_run=40 best_val_loss=0.5342 best_val_hr_mae=2.522
+[2026-10-20 11:43:16]   evaluating 'MiUNet' under protocol 'old' ...
+[2026-10-20 11:49:09]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/MiUNet/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-20 11:49:09]   evaluating 'MiUNet' under protocol 'prism' ...
+[2026-10-20 11:50:12]   evaluating 'MiUNet' under protocol 'toolbox' ...
+[2026-10-20 11:50:43]   DONE 'MiUNet' [old]: val_model_mae=nan
+[2026-10-20 11:50:43]   DONE 'MiUNet' [prism]: val_model_mae=0.842
+[2026-10-20 11:50:43]   DONE 'MiUNet' [toolbox]: val_model_mae=0.367
+[2026-10-20 11:50:43] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-20 11:50:43] 
+protocol                      prism  toolbox
+model                                       
+MiUNet                        0.842    0.367
+b1_adaptive_b2_raw_b3_mi__SE  0.982    0.367
+branch1_projector             0.774    0.809
+branch2_tcn_rf31_h8           0.726    0.572
+[2026-10-20 11:50:43] --------------------------------------------------------------------------
+[2026-10-20 11:50:43] [5/6] MODEL: three_branch_mi_se_attention
+[2026-10-20 11:50:43]   built 'three_branch_mi_se_attention': params=170006, reach=96 samples (3.20s @30fps)
+[2026-10-20 12:00:36]     epoch   1 | train_loss=1.0114 val_loss=1.0107 val_hr_mae=154.421 lr=3.0e-04
+[2026-10-20 13:18:09]     epoch  10 | train_loss=0.3765 val_loss=0.5606 val_hr_mae=2.493 lr=3.0e-04
+[2026-10-20 14:43:02]     epoch  20 | train_loss=0.4324 val_loss=0.6321 val_hr_mae=2.922 lr=7.5e-05
+[2026-10-20 16:02:43]     epoch  30 | train_loss=0.5070 val_loss=0.7186 val_hr_mae=2.873 lr=1.9e-05
+[2026-10-20 16:50:32]     early stop at epoch 36 (no val-loss improvement for 30)
+[2026-10-20 16:50:32]   trained 'three_branch_mi_se_attention': epochs_run=36 best_val_loss=0.5485 best_val_hr_mae=2.493
+[2026-10-20 16:50:32]   evaluating 'three_branch_mi_se_attention' under protocol 'old' ...
+[2026-10-20 16:57:40]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/three_branch_mi_se_attention/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-20 16:57:40]   evaluating 'three_branch_mi_se_attention' under protocol 'prism' ...
+[2026-10-20 16:58:47]   evaluating 'three_branch_mi_se_attention' under protocol 'toolbox' ...
+[2026-10-20 16:59:20]   DONE 'three_branch_mi_se_attention' [old]: val_model_mae=nan
+[2026-10-20 16:59:20]   DONE 'three_branch_mi_se_attention' [prism]: val_model_mae=0.760
+[2026-10-20 16:59:20]   DONE 'three_branch_mi_se_attention' [toolbox]: val_model_mae=0.422
+[2026-10-20 16:59:20] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-20 16:59:20] 
+protocol                      prism  toolbox
+model                                       
+MiUNet                        0.842    0.367
+b1_adaptive_b2_raw_b3_mi__SE  0.982    0.367
+branch1_projector             0.774    0.809
+branch2_tcn_rf31_h8           0.726    0.572
+three_branch_mi_se_attention  0.760    0.422
+[2026-10-20 16:59:20] --------------------------------------------------------------------------
+[2026-10-20 16:59:20] [6/6] MODEL: two_projection_CHROM_ADAPTIVE
+[2026-10-20 16:59:20]   built 'two_projection_CHROM_ADAPTIVE': params=6, reach=-1 samples (-0.03s @30fps)
+[2026-10-20 17:04:40]     epoch   1 | train_loss=0.8006 val_loss=0.7830 val_hr_mae=3.650 lr=3.0e-04
+[2026-10-20 17:52:29]     epoch  10 | train_loss=0.7659 val_loss=0.7818 val_hr_mae=3.671 lr=3.0e-04
+[2026-10-20 18:45:39]     epoch  20 | train_loss=0.8658 val_loss=0.8809 val_hr_mae=3.600 lr=1.5e-04
+[2026-10-20 19:38:41]     epoch  30 | train_loss=0.9634 val_loss=0.9780 val_hr_mae=3.675 lr=3.7e-05
+[2026-10-20 20:31:32]     epoch  40 | train_loss=0.9630 val_loss=0.9779 val_hr_mae=3.647 lr=1.0e-05
+[2026-10-20 20:31:32]     early stop at epoch 40 (no val-loss improvement for 30)
+[2026-10-20 20:31:32]   trained 'two_projection_CHROM_ADAPTIVE': epochs_run=40 best_val_loss=0.7818 best_val_hr_mae=3.474
+[2026-10-20 20:31:32]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'old' ...
+[2026-10-20 20:36:12]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/two_projection_CHROM_ADAPTIVE/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-20 20:36:12]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'prism' ...
+[2026-10-20 20:37:03]   evaluating 'two_projection_CHROM_ADAPTIVE' under protocol 'toolbox' ...
+[2026-10-20 20:37:26]   DONE 'two_projection_CHROM_ADAPTIVE' [old]: val_model_mae=nan
+[2026-10-20 20:37:26]   DONE 'two_projection_CHROM_ADAPTIVE' [prism]: val_model_mae=0.742
+[2026-10-20 20:37:26]   DONE 'two_projection_CHROM_ADAPTIVE' [toolbox]: val_model_mae=0.872
+[2026-10-20 20:37:26] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-20 20:37:26] 
+protocol                       prism  toolbox
+model                                        
+MiUNet                         0.842    0.367
+b1_adaptive_b2_raw_b3_mi__SE   0.982    0.367
+branch1_projector              0.774    0.809
+branch2_tcn_rf31_h8            0.726    0.572
+three_branch_mi_se_attention   0.760    0.422
+two_projection_CHROM_ADAPTIVE  0.742    0.872
+[2026-10-20 20:37:26] ==========================================================================
+[2026-10-20 20:37:26] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/MEGA_SUMMARY.csv
+[2026-10-20 20:37:26] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Prime_seed-123_CE02_PEARSON1_Margin-3bpm_nfft-2048_Toolbox_Fixed_V2/MEGA_PROTOCOL_ABLATION.csv
+[2026-10-20 20:37:26] ==========================================================================
+[2026-10-20 20:37:26] Generating dashboard...
