@@ -1,0 +1,31 @@
+{
+  "selections": {
+    "PURE": [],
+    "UBFC": [
+      "vid_3",
+      "vid_10"
+    ],
+    "BH": [],
+    "UBFC_PHYS": [],
+    "COHFACE": [],
+    "TOKYOTECH": []
+  },
+  "resolved_recordings": [
+    {
+      "dataset": "UBFC",
+      "source_id": "vid_3",
+      "frame_source": "/media/data/rPPG/rPPG_Data/UBFC_rPPG/vid_3/vid_3.avi"
+    },
+    {
+      "dataset": "UBFC",
+      "source_id": "vid_10",
+      "frame_source": "/media/data/rPPG/rPPG_Data/UBFC_rPPG/vid_10/vid_10.avi"
+    }
+  ],
+  "settings": {
+    "coverage_threshold": 0.8,
+    "confirmation_frames": 3,
+    "check_every_n_frames": 1,
+    "large_box_coefficient": 1.5
+  }
+}
