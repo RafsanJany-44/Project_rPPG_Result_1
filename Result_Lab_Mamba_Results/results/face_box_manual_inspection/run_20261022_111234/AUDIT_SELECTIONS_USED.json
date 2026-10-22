@@ -1,0 +1,36 @@
+{
+  "selections": {
+    "PURE": [],
+    "UBFC": [],
+    "BH": [],
+    "UBFC_PHYS": [],
+    "COHFACE": [
+      "1_0"
+    ],
+    "TOKYOTECH": [
+      "01"
+    ]
+  },
+  "resolved_recordings": [
+    {
+      "dataset": "COHFACE",
+      "source_id": "1_0",
+      "frame_source": "/media/data/rPPG/rPPG_Data/cohface_sorted/Subj_1_0/data_1_0.avi"
+    },
+    {
+      "dataset": "TOKYOTECH",
+      "source_id": "01",
+      "frame_source": "/media/data/rPPG/rPPG_Data/TokyoTechDataset/01/30fps"
+    }
+  ],
+  "settings": {
+    "coverage_threshold": 0.8,
+    "confirmation_frames": 3,
+    "check_every_n_frames": 1,
+    "large_box_coefficient": 1.5,
+    "minimum_face_width_ratio": 0.6,
+    "maximum_face_width_ratio": 1.6,
+    "reset_eligibility": "exactly_one_detected_face",
+    "missing_or_multiple_action": "retain_box_and_clear_streak"
+  }
+}
