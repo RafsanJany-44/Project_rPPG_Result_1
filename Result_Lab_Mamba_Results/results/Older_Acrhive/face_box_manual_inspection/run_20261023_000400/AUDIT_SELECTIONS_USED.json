@@ -1,0 +1,31 @@
+{
+  "selections": {
+    "PURE": [
+      "05-05"
+    ],
+    "UBFC": [],
+    "BH": [],
+    "UBFC_PHYS": [],
+    "COHFACE": [],
+    "TOKYOTECH": []
+  },
+  "resolved_recordings": [
+    {
+      "dataset": "PURE",
+      "source_id": "05-05",
+      "frame_source": "/media/data/rPPG/rPPG_Data/PURE/ALL/ALL/05-05"
+    }
+  ],
+  "settings": {
+    "coverage_threshold": 0.8,
+    "confirmation_frames": 3,
+    "rollback_confirmation_frames": 2,
+    "provisional_confirmation_frames": 3,
+    "check_every_n_frames": 1,
+    "large_box_coefficient": 1.5,
+    "minimum_face_width_ratio": 0.6,
+    "maximum_face_width_ratio": 1.6,
+    "reset_eligibility": "exactly_one_detected_face",
+    "missing_or_multiple_action": "retain_box_and_clear_streak"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "selections": {
+    "PURE": [
+      "05-05"
+    ],
+    "UBFC": [],
+    "BH": [
+      "25_2"
+    ],
+    "UBFC_PHYS": [
+      "s8_T2"
+    ],
+    "COHFACE": [],
+    "TOKYOTECH": []
+  },
+  "resolved_recordings": [
+    {
+      "dataset": "PURE",
+      "source_id": "05-05",
+      "frame_source": "/media/data/rPPG/rPPG_Data/PURE/ALL/ALL/05-05"
+    },
+    {
+      "dataset": "BH",
+      "source_id": "25_2",
+      "frame_source": "/media/data/rPPG/rPPG_Data/Pub_BH-rPPG_FULL/25_2/25_2"
+    },
+    {
+      "dataset": "UBFC_PHYS",
+      "source_id": "s8_T2",
+      "frame_source": "/media/data/rPPG/rPPG_Data/UBFC-PHYS/s8/vid_s8_T2.avi"
+    }
+  ],
+  "settings": {
+    "coverage_threshold": 0.8,
+    "confirmation_frames": 3,
+    "rollback_confirmation_frames": 2,
+    "provisional_confirmation_frames": 3,
+    "initialization_window_frames": 60,
+    "initialization_stable_frames": 3,
+    "initialization_min_iou": 0.5,
+    "initialization_min_width_ratio": 0.67,
+    "initialization_max_width_ratio": 1.5,
+    "check_every_n_frames": 1,
+    "large_box_coefficient": 1.5,
+    "minimum_face_width_ratio": 0.6,
+    "maximum_face_width_ratio": 1.6,
+    "reset_eligibility": "exactly_one_detected_face",
+    "missing_or_multiple_action": "retain_box_and_clear_streak"
+  }
+}
