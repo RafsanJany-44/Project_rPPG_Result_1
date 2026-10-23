@@ -1,0 +1,27 @@
+[
+  {
+    "dataset": "PURE",
+    "source_id": "05-05",
+    "frame_source": "/media/data/rPPG/rPPG_Data/PURE/ALL/ALL/05-05",
+    "total_frames": 1963,
+    "checked_frames": 1963,
+    "detected_frames": 1936,
+    "missing_detection_frames": 27,
+    "multiple_face_frames": 1315,
+    "implausible_size_frames": 125,
+    "reset_count": 1,
+    "confirmed_reset_count": 0,
+    "rollback_count": 1,
+    "initial_recovery_count": 0,
+    "fixed_invalid_frames": 140,
+    "adaptive_invalid_frames": 142,
+    "fixed_mean_coverage": 0.9276898594757612,
+    "adaptive_mean_coverage": 0.9266645507346567,
+    "fixed_min_coverage": 0.0,
+    "adaptive_min_coverage": 0.0,
+    "threshold": 0.8,
+    "confirmation_frames": 3,
+    "frame_csv": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/face_box_manual_inspection/run_20261023_000400/PURE_05-05_FRAME_AUDIT.csv",
+    "comparison_video": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/face_box_manual_inspection/run_20261023_000400/PURE_05-05_FIXED_VS_CONDITIONAL.mp4"
+  }
+]

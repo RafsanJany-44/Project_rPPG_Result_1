@@ -1,0 +1,72 @@
+{
+  "selections": {
+    "PURE": [
+      "09-03"
+    ],
+    "UBFC": [
+      "vid_41"
+    ],
+    "BH": [
+      "25_2"
+    ],
+    "UBFC_PHYS": [
+      "s2_T2",
+      "s8_T2"
+    ],
+    "COHFACE": [
+      "1_0"
+    ],
+    "TOKYOTECH": [
+      "06"
+    ]
+  },
+  "resolved_recordings": [
+    {
+      "dataset": "PURE",
+      "source_id": "09-03",
+      "frame_source": "/media/data/rPPG/rPPG_Data/PURE/ALL/ALL/09-03"
+    },
+    {
+      "dataset": "UBFC",
+      "source_id": "vid_41",
+      "frame_source": "/media/data/rPPG/rPPG_Data/UBFC_rPPG/vid_41/vid_41.avi"
+    },
+    {
+      "dataset": "BH",
+      "source_id": "25_2",
+      "frame_source": "/media/data/rPPG/rPPG_Data/Pub_BH-rPPG_FULL/25_2/25_2"
+    },
+    {
+      "dataset": "UBFC_PHYS",
+      "source_id": "s2_T2",
+      "frame_source": "/media/data/rPPG/rPPG_Data/UBFC-PHYS/s2/vid_s2_T2.avi"
+    },
+    {
+      "dataset": "UBFC_PHYS",
+      "source_id": "s8_T2",
+      "frame_source": "/media/data/rPPG/rPPG_Data/UBFC-PHYS/s8/vid_s8_T2.avi"
+    },
+    {
+      "dataset": "COHFACE",
+      "source_id": "1_0",
+      "frame_source": "/media/data/rPPG/rPPG_Data/cohface_sorted/Subj_1_0/data_1_0.avi"
+    },
+    {
+      "dataset": "TOKYOTECH",
+      "source_id": "06",
+      "frame_source": "/media/data/rPPG/rPPG_Data/TokyoTechDataset/06/30fps"
+    }
+  ],
+  "settings": {
+    "coverage_threshold": 0.8,
+    "confirmation_frames": 3,
+    "rollback_confirmation_frames": 2,
+    "provisional_confirmation_frames": 3,
+    "check_every_n_frames": 1,
+    "large_box_coefficient": 1.5,
+    "minimum_face_width_ratio": 0.6,
+    "maximum_face_width_ratio": 1.6,
+    "reset_eligibility": "exactly_one_detected_face",
+    "missing_or_multiple_action": "retain_box_and_clear_streak"
+  }
+}
