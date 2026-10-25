@@ -1,0 +1,8 @@
+[2026-10-26 01:25:00] ==========================================================================
+[2026-10-26 01:25:00] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay_AUX-ce-02pearson
+[2026-10-26 01:25:00] models: ['three_branch_mi_reliability_gate']
+[2026-10-26 01:25:00] ==========================================================================
+[2026-10-26 01:25:00] --------------------------------------------------------------------------
+[2026-10-26 01:25:00] [1/1] MODEL: three_branch_mi_reliability_gate
+[2026-10-26 01:25:00]   built 'three_branch_mi_reliability_gate': params=170136, reach=96 samples (3.20s @30fps)
+[2026-10-26 01:42:08]     epoch   1 | train_loss=0.8038 val_loss=0.5923 val_hr_mae=3.790 lr=3.0e-04
