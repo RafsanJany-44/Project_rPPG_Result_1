@@ -1,0 +1,33 @@
+[2026-10-25 14:05:10] ==========================================================================
+[2026-10-25 14:05:10] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay_2
+[2026-10-25 14:05:10] models: ['three_branch_mi_reliability_gate']
+[2026-10-25 14:05:10] ==========================================================================
+[2026-10-25 14:05:10] --------------------------------------------------------------------------
+[2026-10-25 14:05:10] [1/1] MODEL: three_branch_mi_reliability_gate
+[2026-10-25 14:05:10]   built 'three_branch_mi_reliability_gate': params=170136, reach=96 samples (3.20s @30fps)
+[2026-10-25 14:15:37]     epoch   1 | train_loss=0.9512 val_loss=0.8351 val_hr_mae=4.177 lr=3.0e-04
+[2026-10-25 15:46:27]     epoch  10 | train_loss=0.5394 val_loss=0.7164 val_hr_mae=2.993 lr=3.0e-04
+[2026-10-25 17:26:53]     epoch  20 | train_loss=0.5062 val_loss=0.7114 val_hr_mae=2.740 lr=1.5e-04
+[2026-10-25 19:04:16]     epoch  30 | train_loss=0.4944 val_loss=0.7023 val_hr_mae=2.831 lr=1.5e-04
+[2026-10-25 20:39:29]     epoch  40 | train_loss=0.4832 val_loss=0.7002 val_hr_mae=2.599 lr=7.5e-05
+[2026-10-25 22:01:00]     epoch  50 | train_loss=0.4785 val_loss=0.7034 val_hr_mae=2.685 lr=1.9e-05
+[2026-10-25 23:14:31]     early stop at epoch 59 (no val-loss improvement for 30)
+[2026-10-25 23:14:31]   trained 'three_branch_mi_reliability_gate': epochs_run=59 best_val_loss=0.6927 best_val_hr_mae=2.538
+[2026-10-25 23:14:31]   evaluating 'three_branch_mi_reliability_gate' under protocol 'old' ...
+[2026-10-25 23:22:12]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay_2/three_branch_mi_reliability_gate/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-10-25 23:22:12]   evaluating 'three_branch_mi_reliability_gate' under protocol 'prism' ...
+[2026-10-25 23:23:29]   evaluating 'three_branch_mi_reliability_gate' under protocol 'toolbox' ...
+[2026-10-25 23:24:09]   DONE 'three_branch_mi_reliability_gate' [old]: val_model_mae=nan
+[2026-10-25 23:24:09]   DONE 'three_branch_mi_reliability_gate' [prism]: val_model_mae=0.669
+[2026-10-25 23:24:09]   DONE 'three_branch_mi_reliability_gate' [toolbox]: val_model_mae=0.368
+[2026-10-25 23:24:09] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-10-25 23:24:09] 
+protocol                          prism  toolbox
+model                                           
+three_branch_mi_reliability_gate  0.669    0.368
+[2026-10-25 23:24:09] ==========================================================================
+[2026-10-25 23:24:09] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay_2/MEGA_SUMMARY.csv
+[2026-10-25 23:24:09] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay_2/MEGA_PROTOCOL_ABLATION.csv
+[2026-10-25 23:24:09] ==========================================================================
+[2026-10-25 23:24:09] Generating dashboard...

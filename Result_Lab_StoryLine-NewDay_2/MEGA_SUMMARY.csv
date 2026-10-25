@@ -1,0 +1,4 @@
+model,protocol,status,eval_val_model_mae,eval_val_chrom_mae,eval_test_model_mae,eval_test_chrom_mae,params,epochs_run,reach_samples,best_val_hr_mae
+three_branch_mi_reliability_gate,old,no_csv,,,,,170136,59,96,2.5375191430232182
+three_branch_mi_reliability_gate,prism,ok,0.6690333402008021,2.0522698482409525,,,170136,59,96,2.5375191430232182
+three_branch_mi_reliability_gate,toolbox,ok,0.3682313383519729,0.6642781291645468,,,170136,59,96,2.5375191430232182
