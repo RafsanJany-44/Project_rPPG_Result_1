@@ -1,0 +1,31 @@
+[
+  {
+    "dataset": "BH",
+    "source_id": "25_2",
+    "frame_source": "/media/data/rPPG/rPPG_Data/Pub_BH-rPPG_FULL/25_2/25_2",
+    "total_frames": 901,
+    "checked_frames": 901,
+    "detected_frames": 834,
+    "missing_detection_frames": 67,
+    "multiple_face_frames": 90,
+    "implausible_size_frames": 719,
+    "reset_count": 0,
+    "confirmed_reset_count": 0,
+    "rollback_count": 0,
+    "initial_recovery_count": 0,
+    "initialization_mode": "longest_plausible_stable_startup_track",
+    "initialization_selected_frame": 12,
+    "initialization_track_length": 8,
+    "initialization_face_width": 246,
+    "fixed_invalid_frames": 832,
+    "adaptive_invalid_frames": 0,
+    "fixed_mean_coverage": 0.012238144639902217,
+    "adaptive_mean_coverage": 1.0,
+    "fixed_min_coverage": 0.0,
+    "adaptive_min_coverage": 1.0,
+    "threshold": 0.8,
+    "confirmation_frames": 3,
+    "frame_csv": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/face_box_final_manual_review/run_20261025_041616/BH_25_2_FRAME_AUDIT.csv",
+    "comparison_video": "/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/face_box_final_manual_review/run_20261025_041616/BH_25_2_FIXED_VS_CONDITIONAL.mp4"
+  }
+]

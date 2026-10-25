@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "data_type": "Standardized",
+    "label_type": "Standardized",
+    "chunk_length": 160,
+    "crop_face": true,
+    "use_large_face_box": true,
+    "large_box_coefficient": 1.5,
+    "dynamic_detection": false,
+    "detection_frequency": 30,
+    "use_median_face_box": false,
+    "width": 128,
+    "height": 128,
+    "conditional_face_box_reset": true,
+    "conditional_min_face_coverage": 0.8,
+    "conditional_confirmation_frames": 3,
+    "conditional_rollback_confirmation_frames": 2,
+    "conditional_provisional_confirmation_frames": 3,
+    "conditional_min_face_width_ratio": 0.6,
+    "conditional_max_face_width_ratio": 1.6,
+    "conditional_initialization_window_frames": 60,
+    "conditional_initialization_stable_frames": 3,
+    "conditional_initialization_min_iou": 0.5,
+    "conditional_initialization_min_width_ratio": 0.67,
+    "conditional_initialization_max_width_ratio": 1.5,
+    "conditional_initialization_min_frame_width_ratio": 0.15,
+    "conditional_fallback_recovery_confirmation_frames": 5,
+    "conditional_fallback_recovery_min_frame_width_ratio": 0.2,
+    "conditional_fallback_recovery_min_iou": 0.5,
+    "conditional_fallback_recovery_min_width_ratio": 0.67,
+    "conditional_fallback_recovery_max_width_ratio": 1.5
+  },
+  "discovered": {
+    "PURE": 59,
+    "UBFC": 42,
+    "BH": 105,
+    "UBFC_PHYS": 60,
+    "COHFACE": 160,
+    "TOKYOTECH": 9
+  },
+  "source_hashes": {
+    "/media/data/rPPG/Code/GitHub/Mamba_Hunt/Data_Preprocessing/common.py": "8ae6bd3f29349bfa3847b30eb5c26d0d7bb2218656bba4c70c096e4b6f913b57",
+    "/media/data/rPPG/Code/GitHub/Mamba_Hunt/audit_conditional_face_box.py": "6c81abfd18700b2922e650206d83ff98bb2840bbee575f01443baf7eaa31530e",
+    "/media/data/rPPG/Code/GitHub/Mamba_Hunt/audit_all_recordings_production.py": "e70c5678e1caf3028d9dc4ae51082d072852b14d850ea39cc2bd93320f9ee186",
+    "/media/data/rPPG/Code/GitHub/Mamba_Hunt/Data_Preprocessing/settings.py": "41fd8f673a93ffc9d0aee5c2653b85afef2da76f16951d855960379b22c706be"
+  }
+}

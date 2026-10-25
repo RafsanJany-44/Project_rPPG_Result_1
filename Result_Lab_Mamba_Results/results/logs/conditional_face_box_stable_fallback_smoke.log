@@ -1,0 +1,92 @@
+======================================================================
+MAMBA_HUNT CONDITIONAL FACE-BOX PREPROCESSING
+======================================================================
+Run mode   : smoke
+Datasets   : ('PURE', 'UBFC', 'BH', 'UBFC_PHYS', 'COHFACE', 'TOKYOTECH')
+Output root: /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke
+Startup    : longest unambiguous plausible stable Haar track over 60 frames; minimum width 15%
+Reset rule : exactly one plausible face; coverage < 80% for 3 consecutive frames
+Width gate : 0.60–1.60 × initial face width
+======================================================================
+INDEPENDENT PURE PREPROCESSING (SMOKE)
+======================================================================
+Raw root       : /media/data/rPPG/rPPG_Data/PURE
+Recordings     : 1
+Cache directory: /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/PURE/PURE_SizeW128_SizeH128_ClipLength160_DataTypeStandardized_DataAugNone_LabelTypeStandardized_Crop_faceTrue_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse
+Preprocessing PURE:   0%|          | 0/1 [00:00<?, ?it/s]Preprocessing PURE: 100%|██████████| 1/1 [01:41<00:00, 101.04s/it]Preprocessing PURE: 100%|██████████| 1/1 [01:41<00:00, 101.04s/it]
+Generated clips : 12
+Reused records  : 0
+Manifest files  : 1
+Face-box audit  : /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/PURE/FACE_BOX_RESET_SUMMARY.csv
+Independent PURE preprocessing: PASSED
+======================================================================
+INDEPENDENT UBFC PREPROCESSING (SMOKE)
+======================================================================
+Raw root       : /media/data/rPPG/rPPG_Data/UBFC_rPPG
+Recordings     : 1
+Cache directory: /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/UBFC/UBFC_SizeW128_SizeH128_ClipLength160_DataTypeStandardized_DataAugNone_LabelTypeStandardized_Crop_faceTrue_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse
+Preprocessing UBFC:   0%|          | 0/1 [00:00<?, ?it/s]Preprocessing UBFC: 100%|██████████| 1/1 [01:28<00:00, 88.96s/it]Preprocessing UBFC: 100%|██████████| 1/1 [01:28<00:00, 88.96s/it]
+Generated clips : 9
+Reused records  : 0
+Manifest files  : 1
+Face-box audit  : /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/UBFC/FACE_BOX_RESET_SUMMARY.csv
+Independent UBFC preprocessing: PASSED
+======================================================================
+INDEPENDENT BH PREPROCESSING (SMOKE)
+======================================================================
+Raw root       : /media/data/rPPG/rPPG_Data/Pub_BH-rPPG_FULL
+Recordings     : 1
+Cache directory: /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/BH/BH_SizeW128_SizeH128_ClipLength160_DataTypeStandardized_DataAugNone_LabelTypeStandardized_Crop_faceTrue_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse
+Preprocessing BH:   0%|          | 0/1 [00:00<?, ?it/s]Preprocessing BH: 100%|██████████| 1/1 [00:51<00:00, 51.19s/it]Preprocessing BH: 100%|██████████| 1/1 [00:51<00:00, 51.20s/it]
+Generated clips : 11
+Reused records  : 0
+Manifest files  : 1
+Face-box audit  : /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/BH/FACE_BOX_RESET_SUMMARY.csv
+Independent BH preprocessing: PASSED
+======================================================================
+INDEPENDENT UBFC_PHYS PREPROCESSING (SMOKE)
+======================================================================
+Raw root       : /media/data/rPPG/rPPG_Data/UBFC-PHYS
+Recordings     : 1
+Cache directory: /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/UBFC_PHYS/UBFC_PHYS_SizeW128_SizeH128_ClipLength160_DataTypeStandardized_DataAugNone_LabelTypeStandardized_Crop_faceTrue_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse
+Preprocessing UBFC_PHYS:   0%|          | 0/1 [00:00<?, ?it/s]Preprocessing UBFC_PHYS: 100%|██████████| 1/1 [08:05<00:00, 485.52s/it]Preprocessing UBFC_PHYS: 100%|██████████| 1/1 [08:05<00:00, 485.52s/it]
+Generated clips : 33
+Reused records  : 0
+Manifest files  : 1
+Face-box audit  : /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/UBFC_PHYS/FACE_BOX_RESET_SUMMARY.csv
+Independent UBFC_PHYS preprocessing: PASSED
+======================================================================
+INDEPENDENT COHFACE PREPROCESSING (SMOKE)
+======================================================================
+Raw root       : /media/data/rPPG/rPPG_Data/cohface_sorted
+Recordings     : 1
+Cache directory: /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/COHFACE/COHFACE_SizeW128_SizeH128_ClipLength160_DataTypeStandardized_DataAugNone_LabelTypeStandardized_Crop_faceTrue_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse
+Preprocessing COHFACE:   0%|          | 0/1 [00:00<?, ?it/s][mpeg4 @ 0x654068498580] slice end not reached but screenspace end (67 left 65D541, score= -1167)
+Preprocessing COHFACE: 100%|██████████| 1/1 [00:36<00:00, 36.61s/it]Preprocessing COHFACE: 100%|██████████| 1/1 [00:36<00:00, 36.61s/it]
+Generated clips : 11
+Reused records  : 0
+Manifest files  : 1
+Face-box audit  : /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/COHFACE/FACE_BOX_RESET_SUMMARY.csv
+Independent COHFACE preprocessing: PASSED
+======================================================================
+INDEPENDENT TOKYOTECH PREPROCESSING (SMOKE)
+======================================================================
+Raw root       : /media/data/rPPG/rPPG_Data/TokyoTechDataset
+Recordings     : 1
+Cache directory: /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/TOKYOTECH/TOKYOTECH_SizeW128_SizeH128_ClipLength160_DataTypeStandardized_DataAugNone_LabelTypeStandardized_Crop_faceTrue_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse
+Preprocessing TOKYOTECH:   0%|          | 0/1 [00:00<?, ?it/s]Preprocessing TOKYOTECH: 100%|██████████| 1/1 [03:47<00:00, 227.13s/it]Preprocessing TOKYOTECH: 100%|██████████| 1/1 [03:47<00:00, 227.13s/it]
+Generated clips : 33
+Reused records  : 0
+Manifest files  : 1
+Face-box audit  : /home/rafsan/Documents/Data/Mamba_Hunt_Data/RhythmMamba_Preprocessed_ConditionalFaceBox_Smoke/TOKYOTECH/FACE_BOX_RESET_SUMMARY.csv
+Independent TOKYOTECH preprocessing: PASSED
+======================================================================
+PREPROCESSING SUMMARY
+======================================================================
+PURE: 1 recordings, 12 clips
+UBFC: 1 recordings, 9 clips
+BH: 1 recordings, 11 clips
+UBFC_PHYS: 1 recordings, 33 clips
+COHFACE: 1 recordings, 11 clips
+TOKYOTECH: 1 recordings, 33 clips
+Independent preprocessing completed successfully.
