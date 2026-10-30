@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_A4_L0_SEED100/Eval_On_TOKYOTECH — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Clean conditional face-box; held-out source or complete external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/conditional_l0_overnight/UBFC_A4_L0_SEED100/UBFC_A4_L0_SEED100_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 9
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 0.660066 BPM
+Pooled measurement MAE     : 0.660066 BPM
+Pooled measurement RMSE    : 1.065001 BPM
+Pooled measurement MAPE    : 0.873114 %
+Pooled measurement Pearson : 0.996091
+Absolute-error SD           : 0.835787 BPM
+Accuracy within 5 BPM      : 100.000 %
+Recording-macro MAE SE     : 0.278596 BPM
+Pooled MAE standard error  : 0.278596 BPM
+Official-formula RMSE +/-  : 0.630794
+Pooled MAPE standard error : 0.385527 %
+Pooled Pearson std. error  : 0.033386
+Mean waveform Pearson      : -0.405071
+Mean SNR                    : 9.539910 dB
+SNR standard error         : 2.758050 dB
