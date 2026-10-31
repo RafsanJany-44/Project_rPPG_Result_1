@@ -1,0 +1,31 @@
+====================================================================================
+PURE_NOAUG_L0_SEED102/Eval_On_COHFACE — PRISM Evaluation Protocol
+====================================================================================
+Description                : Conditional face-box L0; clean held-out source validation or full external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/conditional_l0_overnight/PURE_NOAUG_L0_SEED102/PURE_NOAUG_L0_SEED102_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 810
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 13.207659 BPM
+Pooled measurement MAE     : 13.141683 BPM
+Pooled measurement RMSE    : 19.513790 BPM
+Pooled measurement MAPE    : 18.728962 %
+Pooled measurement Pearson : 0.216610
+Absolute-error SD           : 14.425122 BPM
+Accuracy within 5 BPM      : 44.198 %
+Recording-macro MAE SE     : 0.641663 BPM
+Pooled MAE standard error  : 0.506847 BPM
+Official-formula RMSE +/-  : 23.908251
+Pooled MAPE standard error : 0.757868 %
+Pooled Pearson std. error  : 0.034345
+Mean waveform Pearson      : 0.228612
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

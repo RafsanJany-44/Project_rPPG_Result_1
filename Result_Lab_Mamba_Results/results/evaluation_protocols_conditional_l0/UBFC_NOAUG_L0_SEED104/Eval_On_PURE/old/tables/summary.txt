@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_NOAUG_L0_SEED104/Eval_On_PURE — Old Protocol
+====================================================================================
+Description                : Conditional face-box L0; clean held-out source validation or full external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/conditional_l0_overnight/UBFC_NOAUG_L0_SEED104/UBFC_NOAUG_L0_SEED104_RhythmMamba_Best.pth
+Dataset / split            : PURE / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 59
+Expected recordings        : 59
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 3576
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 7.297196 BPM
+Pooled measurement MAE     : 7.469799 BPM
+Pooled measurement RMSE    : 19.230121 BPM
+Pooled measurement MAPE    : 13.142203 %
+Pooled measurement Pearson : 0.712515
+Absolute-error SD           : 17.720035 BPM
+Accuracy within 5 BPM      : 83.333 %
+Recording-macro MAE SE     : 1.304812 BPM
+Pooled MAE standard error  : 0.296323 BPM
+Official-formula RMSE +/-  : 20.931919
+Pooled MAPE standard error : 0.542008 %
+Pooled Pearson std. error  : 0.011737
+Mean waveform Pearson      : 0.519264
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
