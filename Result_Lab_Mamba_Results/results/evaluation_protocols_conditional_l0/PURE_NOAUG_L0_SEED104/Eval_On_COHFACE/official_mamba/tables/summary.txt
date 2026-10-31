@@ -1,0 +1,31 @@
+====================================================================================
+PURE_NOAUG_L0_SEED104/Eval_On_COHFACE — Official RhythmMamba Evaluation
+====================================================================================
+Description                : Conditional face-box L0; clean held-out source validation or full external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/conditional_l0_overnight/PURE_NOAUG_L0_SEED104/PURE_NOAUG_L0_SEED104_RhythmMamba_Best.pth
+Dataset / split            : COHFACE / 0.0–1.0
+Aggregation                : recording
+Recordings                 : 160
+Expected recordings        : 160
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 160
+Window / stride            : None / None seconds
+FFT bin spacing            : 0.540054 BPM
+Band-pass                  : 0.75–2.5 Hz, order 1
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 15.313906 BPM
+Pooled measurement MAE     : 15.313906 BPM
+Pooled measurement RMSE    : 19.881718 BPM
+Pooled measurement MAPE    : 23.885539 %
+Pooled measurement Pearson : 0.147850
+Absolute-error SD           : 12.679392 BPM
+Accuracy within 5 BPM      : 31.250 %
+Recording-macro MAE SE     : 1.002394 BPM
+Pooled MAE standard error  : 1.002394 BPM
+Official-formula RMSE +/-  : 39.068037
+Pooled MAPE standard error : 1.698079 %
+Pooled Pearson std. error  : 0.078681
+Mean waveform Pearson      : 0.124798
+Mean SNR                    : -9.379705 dB
+SNR standard error         : 0.375270 dB
