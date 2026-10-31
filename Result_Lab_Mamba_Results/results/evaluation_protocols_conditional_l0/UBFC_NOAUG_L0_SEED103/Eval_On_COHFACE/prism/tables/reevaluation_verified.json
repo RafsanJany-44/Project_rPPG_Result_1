@@ -1,0 +1,32 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-10-30T20:16:19.845890+00:00",
+  "identity": {
+    "checkpoint_sha256": "5cca2ce3ad89d2d9a18a64b9cd2a1b14e8ff3c15908b4b6c038978bc301d5a6c",
+    "manifest_sha256": "aa009531f1786c093cc076e23a77baf6007cf18efab4b9552ae8b9576f5dd889",
+    "cache_stat_sha256": "00cf4f4bd052b8169fd1a2d0b70313987d2f7a11c6815fcca26d3f59063f0675",
+    "protocol": {
+      "name": "prism",
+      "display_name": "PRISM Evaluation Protocol",
+      "mode": "window_fft",
+      "aggregation": "window_to_recording",
+      "window_seconds": 10.0,
+      "stride_seconds": 10.0,
+      "nfft": 16384,
+      "bandpass_low_hz": 0.75,
+      "bandpass_high_hz": 2.5,
+      "bandpass_order": 2,
+      "prediction_bpm_min": 45.0,
+      "prediction_bpm_max": 150.0,
+      "gt_bpm_min": 45.0,
+      "gt_bpm_max": 150.0
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "reevaluate_conditional_l0_all_protocols.py": "cfcf25e5854c2247a1cf30933948481c7c6884bc8a2e17fc795b96d3bb24156e"
+    }
+  }
+}

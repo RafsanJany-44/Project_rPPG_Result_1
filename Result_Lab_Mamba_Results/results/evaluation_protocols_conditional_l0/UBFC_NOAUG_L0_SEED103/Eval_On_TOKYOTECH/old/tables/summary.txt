@@ -1,0 +1,31 @@
+====================================================================================
+UBFC_NOAUG_L0_SEED103/Eval_On_TOKYOTECH — Old Protocol
+====================================================================================
+Description                : Conditional face-box L0; clean held-out source validation or full external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/conditional_l0_overnight/UBFC_NOAUG_L0_SEED103/UBFC_NOAUG_L0_SEED103_RhythmMamba_Best.pth
+Dataset / split            : TOKYOTECH / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 9
+Expected recordings        : 9
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 1521
+Window / stride            : 8.0 / 1.0 seconds
+FFT bin spacing            : 1.000000 BPM
+Band-pass                  : 0.67–3.0 Hz, order 3
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.390533 BPM
+Pooled measurement MAE     : 2.390533 BPM
+Pooled measurement RMSE    : 6.735542 BPM
+Pooled measurement MAPE    : 2.764818 %
+Pooled measurement Pearson : 0.856553
+Absolute-error SD           : 6.297053 BPM
+Accuracy within 5 BPM      : 90.335 %
+Recording-macro MAE SE     : 0.966998 BPM
+Pooled MAE standard error  : 0.161463 BPM
+Official-formula RMSE +/-  : 6.877957
+Pooled MAPE standard error : 0.176769 %
+Pooled Pearson std. error  : 0.013241
+Mean waveform Pearson      : -0.265477
+Mean SNR                    : nan dB
+SNR standard error         : nan dB

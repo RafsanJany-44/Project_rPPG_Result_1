@@ -1,0 +1,32 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-10-30T19:38:16.149951+00:00",
+  "identity": {
+    "checkpoint_sha256": "5cca2ce3ad89d2d9a18a64b9cd2a1b14e8ff3c15908b4b6c038978bc301d5a6c",
+    "manifest_sha256": "e0e14d484d82362ad5b9081e94de96dade864f986865183c85de905d15ffc168",
+    "cache_stat_sha256": "b16e60c3cbe9880b8e3c60c0275da3f717012b3e3793e24379c835dfbd697277",
+    "protocol": {
+      "name": "old",
+      "display_name": "Old Protocol",
+      "mode": "window_fft",
+      "aggregation": "window_to_recording",
+      "window_seconds": 8.0,
+      "stride_seconds": 1.0,
+      "nfft": 1800,
+      "bandpass_low_hz": 0.67,
+      "bandpass_high_hz": 3.0,
+      "bandpass_order": 3,
+      "prediction_bpm_min": 40.0,
+      "prediction_bpm_max": 180.0,
+      "gt_bpm_min": 40.0,
+      "gt_bpm_max": 150.0
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "reevaluate_conditional_l0_all_protocols.py": "cfcf25e5854c2247a1cf30933948481c7c6884bc8a2e17fc795b96d3bb24156e"
+    }
+  }
+}
