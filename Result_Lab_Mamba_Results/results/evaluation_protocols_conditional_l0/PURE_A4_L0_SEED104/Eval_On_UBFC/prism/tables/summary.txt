@@ -1,0 +1,31 @@
+====================================================================================
+PURE_A4_L0_SEED104/Eval_On_UBFC — PRISM Evaluation Protocol
+====================================================================================
+Description                : Conditional face-box L0; clean held-out source validation or full external dataset
+Checkpoint                 : /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_Mamba_Results/results/models/conditional_l0_overnight/PURE_A4_L0_SEED104/PURE_A4_L0_SEED104_RhythmMamba_Best.pth
+Dataset / split            : UBFC / 0.0–1.0
+Aggregation                : window_to_recording
+Recordings                 : 42
+Expected recordings        : 42
+Failed recordings          : 0
+Completion status          : PASSED
+Measurements               : 239
+Window / stride            : 10.0 / 10.0 seconds
+FFT bin spacing            : 0.109863 BPM
+Band-pass                  : 0.75–2.5 Hz, order 2
+------------------------------------------------------------------------------------
+PRIMARY recording-macro MAE: 2.269244 BPM
+Pooled measurement MAE     : 2.243234 BPM
+Pooled measurement RMSE    : 8.368085 BPM
+Pooled measurement MAPE    : 2.135012 %
+Pooled measurement Pearson : 0.890294
+Absolute-error SD           : 8.061808 BPM
+Accuracy within 5 BPM      : 93.724 %
+Recording-macro MAE SE     : 0.695848 BPM
+Pooled MAE standard error  : 0.521475 BPM
+Official-formula RMSE +/-  : 29.015566
+Pooled MAPE standard error : 0.454755 %
+Pooled Pearson std. error  : 0.029581
+Mean waveform Pearson      : 0.675907
+Mean SNR                    : nan dB
+SNR standard error         : nan dB
