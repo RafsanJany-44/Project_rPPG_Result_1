@@ -1,0 +1,32 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-10-30T21:15:40.220501+00:00",
+  "identity": {
+    "checkpoint_sha256": "76f55b83810b1c8f65eebb191b24674cd1330559a5906a8a60eed688e0bd57fe",
+    "manifest_sha256": "77fbb430f527935ea9d6d9bd298936e2a865f39732e66bd9394906efa7e83f83",
+    "cache_stat_sha256": "0dcf6265378d4a831035a34b62ec1fd2c04ab9f66fe1425211a2bb840b740d81",
+    "protocol": {
+      "name": "official_mamba",
+      "display_name": "Official RhythmMamba Evaluation",
+      "mode": "official",
+      "aggregation": "recording",
+      "window_seconds": null,
+      "stride_seconds": null,
+      "nfft": 3333,
+      "bandpass_low_hz": 0.75,
+      "bandpass_high_hz": 2.5,
+      "bandpass_order": 1,
+      "prediction_bpm_min": 45.0,
+      "prediction_bpm_max": 150.0,
+      "gt_bpm_min": 45.0,
+      "gt_bpm_max": 150.0
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "reevaluate_conditional_l0_all_protocols.py": "cfcf25e5854c2247a1cf30933948481c7c6884bc8a2e17fc795b96d3bb24156e"
+    }
+  }
+}
