@@ -1,0 +1,8 @@
+[2026-11-01 00:25:41] ==========================================================================
+[2026-11-01 00:25:41] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-Reliability_Gate_Harm
+[2026-11-01 00:25:41] models: ['three_branch_mi_reliability_gate_harm']
+[2026-11-01 00:25:41] ==========================================================================
+[2026-11-01 00:25:41] --------------------------------------------------------------------------
+[2026-11-01 00:25:41] [1/1] MODEL: three_branch_mi_reliability_gate_harm
+[2026-11-01 00:25:41]   built 'three_branch_mi_reliability_gate_harm': params=170280, reach=96 samples (3.20s @30fps)
+[2026-11-01 00:42:55]     epoch   1 | train_loss=0.6518 val_loss=0.5690 val_hr_mae=3.426 lr=3.0e-04
