@@ -1,0 +1,216 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-11-02T05:42:00.752832+00:00",
+  "identity": {
+    "checkpoint_sha256": "128056537cbdacd540f4b026e4a95e4ae0a6da98080a458c4326c3724726885a",
+    "manifest_sha256": "4e54f887de102f917fa1edc6e522cd4eee117bc528ad95ca71c2a8750b80840f",
+    "cache_stat_sha256": "36c7de2a3b29d0135fd222745a764764e8e8b14a195c1d9ba265a99b81f51d6a",
+    "protocol": {
+      "name": "prism",
+      "display_name": "PRISM Evaluation Protocol",
+      "mode": "window_fft",
+      "aggregation": "window_to_recording",
+      "window_seconds": 10.0,
+      "stride_seconds": 10.0,
+      "nfft": 16384,
+      "bandpass_low_hz": 0.75,
+      "bandpass_high_hz": 2.5,
+      "bandpass_order": 2,
+      "prediction_bpm_min": 45.0,
+      "prediction_bpm_max": 150.0,
+      "gt_bpm_min": 45.0,
+      "gt_bpm_max": 150.0
+    },
+    "output_policy": {
+      "signal_plots": true,
+      "psd_diagnostics": true,
+      "signal_tables": true,
+      "summary_plots": true
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "evaluate_selected_conditional_l0_full.py": "d5b47d0a9070369764e649ca65c5a2906755204b72080613a8bf4d3a1f5a6c92"
+    }
+  },
+  "output_files": {
+    "diagnostics/subject44_psd_diagnostic.html": [
+      293235,
+      1793598112426601670
+    ],
+    "diagnostics/subject45_psd_diagnostic.html": [
+      292969,
+      1793598113497617715
+    ],
+    "diagnostics/subject46_psd_diagnostic.html": [
+      292597,
+      1793598114439631826
+    ],
+    "diagnostics/subject47_psd_diagnostic.html": [
+      292713,
+      1793598115476647358
+    ],
+    "diagnostics/subject48_psd_diagnostic.html": [
+      292950,
+      1793598116466662185
+    ],
+    "diagnostics/subject49_psd_diagnostic.html": [
+      293004,
+      1793598117514677879
+    ],
+    "diagnostics/subject5_psd_diagnostic.html": [
+      197969,
+      1793598118529693077
+    ],
+    "diagnostics/subject8_psd_diagnostic.html": [
+      292960,
+      1793598119478707286
+    ],
+    "diagnostics/subject9_psd_diagnostic.html": [
+      292965,
+      1793598120490722437
+    ],
+    "plots/absolute_error_distribution.html": [
+      8563,
+      1793598120646724772
+    ],
+    "plots/bland_altman.html": [
+      10131,
+      1793598120706725670
+    ],
+    "plots/failure_categories.html": [
+      7993,
+      1793598120747726284
+    ],
+    "plots/predicted_vs_gt_hr.html": [
+      10521,
+      1793598120606724173
+    ],
+    "plots/recording_mae.html": [
+      8254,
+      1793598120565723560
+    ],
+    "signal_comparisons/subject44_signal_comparison.html": [
+      382923,
+      1793598112362600711
+    ],
+    "signal_comparisons/subject45_signal_comparison.html": [
+      382483,
+      1793598113431616726
+    ],
+    "signal_comparisons/subject46_signal_comparison.html": [
+      382126,
+      1793598114372630822
+    ],
+    "signal_comparisons/subject47_signal_comparison.html": [
+      382178,
+      1793598115408646339
+    ],
+    "signal_comparisons/subject48_signal_comparison.html": [
+      382313,
+      1793598116391661062
+    ],
+    "signal_comparisons/subject49_signal_comparison.html": [
+      382718,
+      1793598117445676846
+    ],
+    "signal_comparisons/subject5_signal_comparison.html": [
+      257901,
+      1793598118466692134
+    ],
+    "signal_comparisons/subject8_signal_comparison.html": [
+      382620,
+      1793598119412706298
+    ],
+    "signal_comparisons/subject9_signal_comparison.html": [
+      382211,
+      1793598120413721284
+    ],
+    "signal_tables/subject44_signals.csv": [
+      125733,
+      1793598112272599363
+    ],
+    "signal_tables/subject45_signals.csv": [
+      125877,
+      1793598113334615273
+    ],
+    "signal_tables/subject46_signals.csv": [
+      126047,
+      1793598114278629414
+    ],
+    "signal_tables/subject47_signals.csv": [
+      125952,
+      1793598115303644767
+    ],
+    "signal_tables/subject48_signals.csv": [
+      125891,
+      1793598116283659444
+    ],
+    "signal_tables/subject49_signals.csv": [
+      126221,
+      1793598117336675213
+    ],
+    "signal_tables/subject5_signals.csv": [
+      82951,
+      1793598118373690741
+    ],
+    "signal_tables/subject8_signals.csv": [
+      124094,
+      1793598119318704891
+    ],
+    "signal_tables/subject9_signals.csv": [
+      124339,
+      1793598120316719832
+    ],
+    "tables/ALL_MEASUREMENT_RESULTS.csv": [
+      20575,
+      1793598120494722497
+    ],
+    "tables/ALL_RECORDING_RESULTS.csv": [
+      3224,
+      1793598120494722497
+    ],
+    "tables/ERRORS.csv": [
+      0,
+      1793598120499722572
+    ],
+    "tables/EXTENDED_METRICS.csv": [
+      1774,
+      1793598120499722572
+    ],
+    "tables/FAILURE_TYPE_SUMMARY.csv": [
+      49,
+      1793598120499722572
+    ],
+    "tables/GROUPED_RECORDING_SUMMARY.csv": [
+      0,
+      1793598120499722572
+    ],
+    "tables/IMAGE_QUALITY_ERROR_CORRELATION.csv": [
+      0,
+      1793598120499722572
+    ],
+    "tables/NON_CORRECT_MEASUREMENTS.csv": [
+      0,
+      1793598120497722542
+    ],
+    "tables/PSD_TOP_PEAKS_SUMMARY.csv": [
+      19597,
+      1793598120499722572
+    ],
+    "tables/WORST_100_MEASUREMENTS.csv": [
+      20575,
+      1793598120497722542
+    ],
+    "tables/summary.json": [
+      2021,
+      1793598120500722586
+    ],
+    "tables/summary.txt": [
+      1627,
+      1793598120500722586
+    ]
+  }
+}

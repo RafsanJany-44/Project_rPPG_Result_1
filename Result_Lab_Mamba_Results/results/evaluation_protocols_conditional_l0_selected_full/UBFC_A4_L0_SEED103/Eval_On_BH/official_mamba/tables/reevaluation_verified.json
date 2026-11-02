@@ -1,0 +1,1368 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-11-02T05:43:31.065906+00:00",
+  "identity": {
+    "checkpoint_sha256": "128056537cbdacd540f4b026e4a95e4ae0a6da98080a458c4326c3724726885a",
+    "manifest_sha256": "77fbb430f527935ea9d6d9bd298936e2a865f39732e66bd9394906efa7e83f83",
+    "cache_stat_sha256": "0dcf6265378d4a831035a34b62ec1fd2c04ab9f66fe1425211a2bb840b740d81",
+    "protocol": {
+      "name": "official_mamba",
+      "display_name": "Official RhythmMamba Evaluation",
+      "mode": "official",
+      "aggregation": "recording",
+      "window_seconds": null,
+      "stride_seconds": null,
+      "nfft": 3333,
+      "bandpass_low_hz": 0.75,
+      "bandpass_high_hz": 2.5,
+      "bandpass_order": 1,
+      "prediction_bpm_min": 45.0,
+      "prediction_bpm_max": 150.0,
+      "gt_bpm_min": 45.0,
+      "gt_bpm_max": 150.0
+    },
+    "output_policy": {
+      "signal_plots": true,
+      "psd_diagnostics": true,
+      "signal_tables": true,
+      "summary_plots": true
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "evaluate_selected_conditional_l0_full.py": "d5b47d0a9070369764e649ca65c5a2906755204b72080613a8bf4d3a1f5a6c92"
+    }
+  },
+  "output_files": {
+    "diagnostics/BH_s00_high_psd_diagnostic.html": [
+      18768,
+      1793598121766741538
+    ],
+    "diagnostics/BH_s00_low_psd_diagnostic.html": [
+      18771,
+      1793598122591753886
+    ],
+    "diagnostics/BH_s00_medium_psd_diagnostic.html": [
+      18720,
+      1793598123449766728
+    ],
+    "diagnostics/BH_s01_high_psd_diagnostic.html": [
+      18741,
+      1793598124288779284
+    ],
+    "diagnostics/BH_s01_low_psd_diagnostic.html": [
+      18798,
+      1793598125138792004
+    ],
+    "diagnostics/BH_s01_medium_psd_diagnostic.html": [
+      18825,
+      1793598126038805471
+    ],
+    "diagnostics/BH_s02_high_psd_diagnostic.html": [
+      18788,
+      1793598126932818847
+    ],
+    "diagnostics/BH_s02_low_psd_diagnostic.html": [
+      18769,
+      1793598127822832162
+    ],
+    "diagnostics/BH_s02_medium_psd_diagnostic.html": [
+      18748,
+      1793598128787846597
+    ],
+    "diagnostics/BH_s03_high_psd_diagnostic.html": [
+      18766,
+      1793598129678859925
+    ],
+    "diagnostics/BH_s03_low_psd_diagnostic.html": [
+      18655,
+      1793598130896878142
+    ],
+    "diagnostics/BH_s03_medium_psd_diagnostic.html": [
+      18762,
+      1793598131739890750
+    ],
+    "diagnostics/BH_s04_high_psd_diagnostic.html": [
+      18814,
+      1793598132571903191
+    ],
+    "diagnostics/BH_s04_low_psd_diagnostic.html": [
+      18718,
+      1793598133453916380
+    ],
+    "diagnostics/BH_s04_medium_psd_diagnostic.html": [
+      18797,
+      1793598134296928984
+    ],
+    "diagnostics/BH_s05_high_psd_diagnostic.html": [
+      18731,
+      1793598135210942649
+    ],
+    "diagnostics/BH_s05_low_psd_diagnostic.html": [
+      18725,
+      1793598136110956103
+    ],
+    "diagnostics/BH_s05_medium_psd_diagnostic.html": [
+      18762,
+      1793598136959968794
+    ],
+    "diagnostics/BH_s06_high_psd_diagnostic.html": [
+      18843,
+      1793598137788981185
+    ],
+    "diagnostics/BH_s06_low_psd_diagnostic.html": [
+      18723,
+      1793598138609993456
+    ],
+    "diagnostics/BH_s06_medium_psd_diagnostic.html": [
+      18767,
+      1793598139464006219
+    ],
+    "diagnostics/BH_s07_high_psd_diagnostic.html": [
+      18841,
+      1793598140341019324
+    ],
+    "diagnostics/BH_s07_low_psd_diagnostic.html": [
+      18734,
+      1793598141172031741
+    ],
+    "diagnostics/BH_s07_medium_psd_diagnostic.html": [
+      18812,
+      1793598142062045039
+    ],
+    "diagnostics/BH_s08_high_psd_diagnostic.html": [
+      18718,
+      1793598142925057932
+    ],
+    "diagnostics/BH_s08_low_psd_diagnostic.html": [
+      18741,
+      1793598143821071317
+    ],
+    "diagnostics/BH_s08_medium_psd_diagnostic.html": [
+      18832,
+      1793598144681084164
+    ],
+    "diagnostics/BH_s09_high_psd_diagnostic.html": [
+      18789,
+      1793598145522096725
+    ],
+    "diagnostics/BH_s09_low_psd_diagnostic.html": [
+      18689,
+      1793598146363109286
+    ],
+    "diagnostics/BH_s09_medium_psd_diagnostic.html": [
+      18800,
+      1793598147200121786
+    ],
+    "diagnostics/BH_s10_high_psd_diagnostic.html": [
+      18811,
+      1793598148032134210
+    ],
+    "diagnostics/BH_s10_low_psd_diagnostic.html": [
+      18804,
+      1793598148881146888
+    ],
+    "diagnostics/BH_s10_medium_psd_diagnostic.html": [
+      18662,
+      1793598149724159474
+    ],
+    "diagnostics/BH_s11_high_psd_diagnostic.html": [
+      18721,
+      1793598150643173195
+    ],
+    "diagnostics/BH_s11_low_psd_diagnostic.html": [
+      18788,
+      1793598151499185974
+    ],
+    "diagnostics/BH_s11_medium_psd_diagnostic.html": [
+      18774,
+      1793598152347198632
+    ],
+    "diagnostics/BH_s12_high_psd_diagnostic.html": [
+      18798,
+      1793598153187211170
+    ],
+    "diagnostics/BH_s12_low_psd_diagnostic.html": [
+      18863,
+      1793598154044223961
+    ],
+    "diagnostics/BH_s12_medium_psd_diagnostic.html": [
+      18815,
+      1793598154892236617
+    ],
+    "diagnostics/BH_s13_high_psd_diagnostic.html": [
+      18831,
+      1793598155735249197
+    ],
+    "diagnostics/BH_s13_low_psd_diagnostic.html": [
+      18740,
+      1793598156564261567
+    ],
+    "diagnostics/BH_s13_medium_psd_diagnostic.html": [
+      18792,
+      1793598157446274727
+    ],
+    "diagnostics/BH_s14_high_psd_diagnostic.html": [
+      18746,
+      1793598158285287245
+    ],
+    "diagnostics/BH_s14_low_psd_diagnostic.html": [
+      18749,
+      1793598159130299851
+    ],
+    "diagnostics/BH_s14_medium_psd_diagnostic.html": [
+      18772,
+      1793598159979312516
+    ],
+    "diagnostics/BH_s15_high_psd_diagnostic.html": [
+      18756,
+      1793598160815324986
+    ],
+    "diagnostics/BH_s15_low_psd_diagnostic.html": [
+      18741,
+      1793598161654337500
+    ],
+    "diagnostics/BH_s15_medium_psd_diagnostic.html": [
+      18854,
+      1793598162497350072
+    ],
+    "diagnostics/BH_s16_high_psd_diagnostic.html": [
+      18731,
+      1793598163335362569
+    ],
+    "diagnostics/BH_s16_low_psd_diagnostic.html": [
+      18791,
+      1793598164164374931
+    ],
+    "diagnostics/BH_s16_medium_psd_diagnostic.html": [
+      18730,
+      1793598165009387531
+    ],
+    "diagnostics/BH_s17_high_psd_diagnostic.html": [
+      18733,
+      1793598165627396745
+    ],
+    "diagnostics/BH_s17_low_psd_diagnostic.html": [
+      18808,
+      1793598166470409314
+    ],
+    "diagnostics/BH_s17_medium_psd_diagnostic.html": [
+      18784,
+      1793598167315421911
+    ],
+    "diagnostics/BH_s18_high_psd_diagnostic.html": [
+      18693,
+      1793598168142434239
+    ],
+    "diagnostics/BH_s18_low_psd_diagnostic.html": [
+      18729,
+      1793598168992446908
+    ],
+    "diagnostics/BH_s18_medium_psd_diagnostic.html": [
+      18782,
+      1793598169832459428
+    ],
+    "diagnostics/BH_s19_high_psd_diagnostic.html": [
+      18755,
+      1793598170459468773
+    ],
+    "diagnostics/BH_s19_low_psd_diagnostic.html": [
+      18799,
+      1793598171293481202
+    ],
+    "diagnostics/BH_s19_medium_psd_diagnostic.html": [
+      18781,
+      1793598172124493585
+    ],
+    "diagnostics/BH_s20_high_psd_diagnostic.html": [
+      18725,
+      1793598172959506027
+    ],
+    "diagnostics/BH_s20_low_psd_diagnostic.html": [
+      18730,
+      1793598173800518558
+    ],
+    "diagnostics/BH_s20_medium_psd_diagnostic.html": [
+      18760,
+      1793598174640531073
+    ],
+    "diagnostics/BH_s21_high_psd_diagnostic.html": [
+      18821,
+      1793598175485543661
+    ],
+    "diagnostics/BH_s21_low_psd_diagnostic.html": [
+      18874,
+      1793598176315556025
+    ],
+    "diagnostics/BH_s21_medium_psd_diagnostic.html": [
+      18827,
+      1793598177154568522
+    ],
+    "diagnostics/BH_s22_high_psd_diagnostic.html": [
+      18766,
+      1793598177993581019
+    ],
+    "diagnostics/BH_s22_low_psd_diagnostic.html": [
+      18815,
+      1793598178837593589
+    ],
+    "diagnostics/BH_s22_medium_psd_diagnostic.html": [
+      18745,
+      1793598179667605949
+    ],
+    "diagnostics/BH_s23_high_psd_diagnostic.html": [
+      18778,
+      1793598180508618473
+    ],
+    "diagnostics/BH_s23_low_psd_diagnostic.html": [
+      18761,
+      1793598181351631025
+    ],
+    "diagnostics/BH_s23_medium_psd_diagnostic.html": [
+      18767,
+      1793598182194643577
+    ],
+    "diagnostics/BH_s24_high_psd_diagnostic.html": [
+      18843,
+      1793598183035656097
+    ],
+    "diagnostics/BH_s24_low_psd_diagnostic.html": [
+      18744,
+      1793598183858668349
+    ],
+    "diagnostics/BH_s24_medium_psd_diagnostic.html": [
+      18764,
+      1793598184700680883
+    ],
+    "diagnostics/BH_s25_high_psd_diagnostic.html": [
+      18753,
+      1793598185540693387
+    ],
+    "diagnostics/BH_s25_low_psd_diagnostic.html": [
+      18730,
+      1793598186378705859
+    ],
+    "diagnostics/BH_s25_medium_psd_diagnostic.html": [
+      18783,
+      1793598187232718569
+    ],
+    "diagnostics/BH_s26_high_psd_diagnostic.html": [
+      18811,
+      1793598188089731323
+    ],
+    "diagnostics/BH_s26_low_psd_diagnostic.html": [
+      18798,
+      1793598189008744998
+    ],
+    "diagnostics/BH_s26_medium_psd_diagnostic.html": [
+      18837,
+      1793598189994759669
+    ],
+    "diagnostics/BH_s27_high_psd_diagnostic.html": [
+      18705,
+      1793598190854772465
+    ],
+    "diagnostics/BH_s27_low_psd_diagnostic.html": [
+      18777,
+      1793598191706785140
+    ],
+    "diagnostics/BH_s27_medium_psd_diagnostic.html": [
+      18852,
+      1793598192596798380
+    ],
+    "diagnostics/BH_s28_high_psd_diagnostic.html": [
+      18736,
+      1793598193424810697
+    ],
+    "diagnostics/BH_s28_low_psd_diagnostic.html": [
+      18777,
+      1793598194420825511
+    ],
+    "diagnostics/BH_s28_medium_psd_diagnostic.html": [
+      18765,
+      1793598195292838481
+    ],
+    "diagnostics/BH_s29_high_psd_diagnostic.html": [
+      18711,
+      1793598196116850735
+    ],
+    "diagnostics/BH_s29_low_psd_diagnostic.html": [
+      18664,
+      1793598196964863346
+    ],
+    "diagnostics/BH_s29_medium_psd_diagnostic.html": [
+      18855,
+      1793598197894877174
+    ],
+    "diagnostics/BH_s30_high_psd_diagnostic.html": [
+      18710,
+      1793598198746889843
+    ],
+    "diagnostics/BH_s30_low_psd_diagnostic.html": [
+      18794,
+      1793598199624902897
+    ],
+    "diagnostics/BH_s30_medium_psd_diagnostic.html": [
+      18652,
+      1793598200475915548
+    ],
+    "diagnostics/BH_s31_high_psd_diagnostic.html": [
+      18713,
+      1793598201471930354
+    ],
+    "diagnostics/BH_s31_low_psd_diagnostic.html": [
+      18734,
+      1793598202346943360
+    ],
+    "diagnostics/BH_s31_medium_psd_diagnostic.html": [
+      18800,
+      1793598203241956663
+    ],
+    "diagnostics/BH_s32_high_psd_diagnostic.html": [
+      18681,
+      1793598204083969177
+    ],
+    "diagnostics/BH_s32_low_psd_diagnostic.html": [
+      18754,
+      1793598204913981512
+    ],
+    "diagnostics/BH_s32_medium_psd_diagnostic.html": [
+      18785,
+      1793598205749993935
+    ],
+    "diagnostics/BH_s33_high_psd_diagnostic.html": [
+      18841,
+      1793598206586006358
+    ],
+    "diagnostics/BH_s33_low_psd_diagnostic.html": [
+      18633,
+      1793598207424018809
+    ],
+    "diagnostics/BH_s33_medium_psd_diagnostic.html": [
+      18760,
+      1793598208256031170
+    ],
+    "diagnostics/BH_s34_high_psd_diagnostic.html": [
+      18779,
+      1793598209103043754
+    ],
+    "diagnostics/BH_s34_low_psd_diagnostic.html": [
+      18739,
+      1793598209947056292
+    ],
+    "diagnostics/BH_s34_medium_psd_diagnostic.html": [
+      18707,
+      1793598210798068933
+    ],
+    "plots/absolute_error_distribution.html": [
+      9752,
+      1793598210948071161
+    ],
+    "plots/bland_altman.html": [
+      11421,
+      1793598211006072022
+    ],
+    "plots/failure_categories.html": [
+      8097,
+      1793598211045072602
+    ],
+    "plots/predicted_vs_gt_hr.html": [
+      13127,
+      1793598210909070582
+    ],
+    "plots/recording_mae.html": [
+      12025,
+      1793598210867069958
+    ],
+    "signal_comparisons/BH_s00_high_signal_comparison.html": [
+      106337,
+      1793598121718740819
+    ],
+    "signal_comparisons/BH_s00_low_signal_comparison.html": [
+      106425,
+      1793598122544753183
+    ],
+    "signal_comparisons/BH_s00_medium_signal_comparison.html": [
+      106326,
+      1793598123403766039
+    ],
+    "signal_comparisons/BH_s01_high_signal_comparison.html": [
+      106376,
+      1793598124240778566
+    ],
+    "signal_comparisons/BH_s01_low_signal_comparison.html": [
+      106100,
+      1793598125079791121
+    ],
+    "signal_comparisons/BH_s01_medium_signal_comparison.html": [
+      106450,
+      1793598125991804767
+    ],
+    "signal_comparisons/BH_s02_high_signal_comparison.html": [
+      106592,
+      1793598126884818129
+    ],
+    "signal_comparisons/BH_s02_low_signal_comparison.html": [
+      106030,
+      1793598127773831429
+    ],
+    "signal_comparisons/BH_s02_medium_signal_comparison.html": [
+      106646,
+      1793598128740845894
+    ],
+    "signal_comparisons/BH_s03_high_signal_comparison.html": [
+      106537,
+      1793598129629859192
+    ],
+    "signal_comparisons/BH_s03_low_signal_comparison.html": [
+      106030,
+      1793598130849877440
+    ],
+    "signal_comparisons/BH_s03_medium_signal_comparison.html": [
+      106211,
+      1793598131691890032
+    ],
+    "signal_comparisons/BH_s04_high_signal_comparison.html": [
+      106457,
+      1793598132523902474
+    ],
+    "signal_comparisons/BH_s04_low_signal_comparison.html": [
+      106257,
+      1793598133404915647
+    ],
+    "signal_comparisons/BH_s04_medium_signal_comparison.html": [
+      106481,
+      1793598134247928252
+    ],
+    "signal_comparisons/BH_s05_high_signal_comparison.html": [
+      106602,
+      1793598135159941887
+    ],
+    "signal_comparisons/BH_s05_low_signal_comparison.html": [
+      106125,
+      1793598136060955356
+    ],
+    "signal_comparisons/BH_s05_medium_signal_comparison.html": [
+      106496,
+      1793598136911968077
+    ],
+    "signal_comparisons/BH_s06_high_signal_comparison.html": [
+      106637,
+      1793598137740980468
+    ],
+    "signal_comparisons/BH_s06_low_signal_comparison.html": [
+      106275,
+      1793598138562992753
+    ],
+    "signal_comparisons/BH_s06_medium_signal_comparison.html": [
+      106331,
+      1793598139417005516
+    ],
+    "signal_comparisons/BH_s07_high_signal_comparison.html": [
+      106592,
+      1793598140293018607
+    ],
+    "signal_comparisons/BH_s07_low_signal_comparison.html": [
+      106260,
+      1793598141122030994
+    ],
+    "signal_comparisons/BH_s07_medium_signal_comparison.html": [
+      106596,
+      1793598142015044337
+    ],
+    "signal_comparisons/BH_s08_high_signal_comparison.html": [
+      106532,
+      1793598142876057200
+    ],
+    "signal_comparisons/BH_s08_low_signal_comparison.html": [
+      105905,
+      1793598143773070600
+    ],
+    "signal_comparisons/BH_s08_medium_signal_comparison.html": [
+      106751,
+      1793598144633083447
+    ],
+    "signal_comparisons/BH_s09_high_signal_comparison.html": [
+      106492,
+      1793598145474096008
+    ],
+    "signal_comparisons/BH_s09_low_signal_comparison.html": [
+      106275,
+      1793598146316108584
+    ],
+    "signal_comparisons/BH_s09_medium_signal_comparison.html": [
+      106231,
+      1793598147151121054
+    ],
+    "signal_comparisons/BH_s10_high_signal_comparison.html": [
+      106592,
+      1793598147984133494
+    ],
+    "signal_comparisons/BH_s10_low_signal_comparison.html": [
+      106290,
+      1793598148834146186
+    ],
+    "signal_comparisons/BH_s10_medium_signal_comparison.html": [
+      106516,
+      1793598149676158758
+    ],
+    "signal_comparisons/BH_s11_high_signal_comparison.html": [
+      106427,
+      1793598150596172493
+    ],
+    "signal_comparisons/BH_s11_low_signal_comparison.html": [
+      106237,
+      1793598151450185242
+    ],
+    "signal_comparisons/BH_s11_medium_signal_comparison.html": [
+      106086,
+      1793598152299197916
+    ],
+    "signal_comparisons/BH_s12_high_signal_comparison.html": [
+      106322,
+      1793598153141210484
+    ],
+    "signal_comparisons/BH_s12_low_signal_comparison.html": [
+      106387,
+      1793598153997223260
+    ],
+    "signal_comparisons/BH_s12_medium_signal_comparison.html": [
+      106451,
+      1793598154845235915
+    ],
+    "signal_comparisons/BH_s13_high_signal_comparison.html": [
+      106497,
+      1793598155687248480
+    ],
+    "signal_comparisons/BH_s13_low_signal_comparison.html": [
+      106060,
+      1793598156517260866
+    ],
+    "signal_comparisons/BH_s13_medium_signal_comparison.html": [
+      106941,
+      1793598157398274011
+    ],
+    "signal_comparisons/BH_s14_high_signal_comparison.html": [
+      106387,
+      1793598158237286529
+    ],
+    "signal_comparisons/BH_s14_low_signal_comparison.html": [
+      106085,
+      1793598159083299150
+    ],
+    "signal_comparisons/BH_s14_medium_signal_comparison.html": [
+      106411,
+      1793598159931311800
+    ],
+    "signal_comparisons/BH_s15_high_signal_comparison.html": [
+      106577,
+      1793598160766324255
+    ],
+    "signal_comparisons/BH_s15_low_signal_comparison.html": [
+      105957,
+      1793598161607336799
+    ],
+    "signal_comparisons/BH_s15_medium_signal_comparison.html": [
+      106681,
+      1793598162450349371
+    ],
+    "signal_comparisons/BH_s16_high_signal_comparison.html": [
+      106812,
+      1793598163288361869
+    ],
+    "signal_comparisons/BH_s16_low_signal_comparison.html": [
+      106485,
+      1793598164118374246
+    ],
+    "signal_comparisons/BH_s16_medium_signal_comparison.html": [
+      106491,
+      1793598164961386815
+    ],
+    "signal_comparisons/BH_s17_high_signal_comparison.html": [
+      82872,
+      1793598165580396045
+    ],
+    "signal_comparisons/BH_s17_low_signal_comparison.html": [
+      106272,
+      1793598166422408598
+    ],
+    "signal_comparisons/BH_s17_medium_signal_comparison.html": [
+      106646,
+      1793598167268421210
+    ],
+    "signal_comparisons/BH_s18_high_signal_comparison.html": [
+      106442,
+      1793598168094433523
+    ],
+    "signal_comparisons/BH_s18_low_signal_comparison.html": [
+      105920,
+      1793598168941446148
+    ],
+    "signal_comparisons/BH_s18_medium_signal_comparison.html": [
+      106526,
+      1793598169785458728
+    ],
+    "signal_comparisons/BH_s19_high_signal_comparison.html": [
+      82612,
+      1793598170412468072
+    ],
+    "signal_comparisons/BH_s19_low_signal_comparison.html": [
+      106410,
+      1793598171245480486
+    ],
+    "signal_comparisons/BH_s19_medium_signal_comparison.html": [
+      106546,
+      1793598172074492840
+    ],
+    "signal_comparisons/BH_s20_high_signal_comparison.html": [
+      105962,
+      1793598172912505327
+    ],
+    "signal_comparisons/BH_s20_low_signal_comparison.html": [
+      106162,
+      1793598173753517858
+    ],
+    "signal_comparisons/BH_s20_medium_signal_comparison.html": [
+      106326,
+      1793598174593530372
+    ],
+    "signal_comparisons/BH_s21_high_signal_comparison.html": [
+      106662,
+      1793598175437542946
+    ],
+    "signal_comparisons/BH_s21_low_signal_comparison.html": [
+      106370,
+      1793598176267555310
+    ],
+    "signal_comparisons/BH_s21_medium_signal_comparison.html": [
+      106761,
+      1793598177106567807
+    ],
+    "signal_comparisons/BH_s22_high_signal_comparison.html": [
+      106387,
+      1793598177945580304
+    ],
+    "signal_comparisons/BH_s22_low_signal_comparison.html": [
+      106242,
+      1793598178789592874
+    ],
+    "signal_comparisons/BH_s22_medium_signal_comparison.html": [
+      106101,
+      1793598179621605264
+    ],
+    "signal_comparisons/BH_s23_high_signal_comparison.html": [
+      106627,
+      1793598180461617773
+    ],
+    "signal_comparisons/BH_s23_low_signal_comparison.html": [
+      106360,
+      1793598181303630310
+    ],
+    "signal_comparisons/BH_s23_medium_signal_comparison.html": [
+      106606,
+      1793598182147642877
+    ],
+    "signal_comparisons/BH_s24_high_signal_comparison.html": [
+      106742,
+      1793598182986655368
+    ],
+    "signal_comparisons/BH_s24_low_signal_comparison.html": [
+      106065,
+      1793598183809667620
+    ],
+    "signal_comparisons/BH_s24_medium_signal_comparison.html": [
+      106666,
+      1793598184653680184
+    ],
+    "signal_comparisons/BH_s25_high_signal_comparison.html": [
+      106437,
+      1793598185492692672
+    ],
+    "signal_comparisons/BH_s25_low_signal_comparison.html": [
+      106047,
+      1793598186331705160
+    ],
+    "signal_comparisons/BH_s25_medium_signal_comparison.html": [
+      106421,
+      1793598187181717810
+    ],
+    "signal_comparisons/BH_s26_high_signal_comparison.html": [
+      106552,
+      1793598188040730594
+    ],
+    "signal_comparisons/BH_s26_low_signal_comparison.html": [
+      105975,
+      1793598188954744195
+    ],
+    "signal_comparisons/BH_s26_medium_signal_comparison.html": [
+      106341,
+      1793598189946758955
+    ],
+    "signal_comparisons/BH_s27_high_signal_comparison.html": [
+      106287,
+      1793598190805771736
+    ],
+    "signal_comparisons/BH_s27_low_signal_comparison.html": [
+      106070,
+      1793598191656784396
+    ],
+    "signal_comparisons/BH_s27_medium_signal_comparison.html": [
+      106626,
+      1793598192546797636
+    ],
+    "signal_comparisons/BH_s28_high_signal_comparison.html": [
+      106837,
+      1793598193376809983
+    ],
+    "signal_comparisons/BH_s28_low_signal_comparison.html": [
+      106380,
+      1793598194371824782
+    ],
+    "signal_comparisons/BH_s28_medium_signal_comparison.html": [
+      106326,
+      1793598195242837737
+    ],
+    "signal_comparisons/BH_s29_high_signal_comparison.html": [
+      106592,
+      1793598196068850021
+    ],
+    "signal_comparisons/BH_s29_low_signal_comparison.html": [
+      106615,
+      1793598196914862602
+    ],
+    "signal_comparisons/BH_s29_medium_signal_comparison.html": [
+      106686,
+      1793598197842876401
+    ],
+    "signal_comparisons/BH_s30_high_signal_comparison.html": [
+      106422,
+      1793598198697889114
+    ],
+    "signal_comparisons/BH_s30_low_signal_comparison.html": [
+      106155,
+      1793598199576902183
+    ],
+    "signal_comparisons/BH_s30_medium_signal_comparison.html": [
+      106486,
+      1793598200427914834
+    ],
+    "signal_comparisons/BH_s31_high_signal_comparison.html": [
+      106492,
+      1793598201418929566
+    ],
+    "signal_comparisons/BH_s31_low_signal_comparison.html": [
+      106200,
+      1793598202297942632
+    ],
+    "signal_comparisons/BH_s31_medium_signal_comparison.html": [
+      106876,
+      1793598203193955950
+    ],
+    "signal_comparisons/BH_s32_high_signal_comparison.html": [
+      106397,
+      1793598204034968449
+    ],
+    "signal_comparisons/BH_s32_low_signal_comparison.html": [
+      106455,
+      1793598204865980799
+    ],
+    "signal_comparisons/BH_s32_medium_signal_comparison.html": [
+      106321,
+      1793598205700993207
+    ],
+    "signal_comparisons/BH_s33_high_signal_comparison.html": [
+      106382,
+      1793598206537005630
+    ],
+    "signal_comparisons/BH_s33_low_signal_comparison.html": [
+      106355,
+      1793598207377018111
+    ],
+    "signal_comparisons/BH_s33_medium_signal_comparison.html": [
+      106776,
+      1793598208209030472
+    ],
+    "signal_comparisons/BH_s34_high_signal_comparison.html": [
+      106277,
+      1793598209055043041
+    ],
+    "signal_comparisons/BH_s34_low_signal_comparison.html": [
+      106220,
+      1793598209900055593
+    ],
+    "signal_comparisons/BH_s34_medium_signal_comparison.html": [
+      106601,
+      1793598210750068220
+    ],
+    "signal_tables/BH_s00_high_signals.csv": [
+      128287,
+      1793598121651739816
+    ],
+    "signal_tables/BH_s00_low_signals.csv": [
+      126770,
+      1793598122478752195
+    ],
+    "signal_tables/BH_s00_medium_signals.csv": [
+      131856,
+      1793598123337765052
+    ],
+    "signal_tables/BH_s01_high_signals.csv": [
+      128189,
+      1793598124174777578
+    ],
+    "signal_tables/BH_s01_low_signals.csv": [
+      126835,
+      1793598125011790103
+    ],
+    "signal_tables/BH_s01_medium_signals.csv": [
+      131455,
+      1793598125923803750
+    ],
+    "signal_tables/BH_s02_high_signals.csv": [
+      128057,
+      1793598126816817111
+    ],
+    "signal_tables/BH_s02_low_signals.csv": [
+      126971,
+      1793598127706830426
+    ],
+    "signal_tables/BH_s02_medium_signals.csv": [
+      131419,
+      1793598128668844817
+    ],
+    "signal_tables/BH_s03_high_signals.csv": [
+      128003,
+      1793598129562858190
+    ],
+    "signal_tables/BH_s03_low_signals.csv": [
+      126568,
+      1793598130784876467
+    ],
+    "signal_tables/BH_s03_medium_signals.csv": [
+      131359,
+      1793598131625889045
+    ],
+    "signal_tables/BH_s04_high_signals.csv": [
+      127929,
+      1793598132455901457
+    ],
+    "signal_tables/BH_s04_low_signals.csv": [
+      126687,
+      1793598133337914645
+    ],
+    "signal_tables/BH_s04_medium_signals.csv": [
+      131511,
+      1793598134176927190
+    ],
+    "signal_tables/BH_s05_high_signals.csv": [
+      127977,
+      1793598135088940825
+    ],
+    "signal_tables/BH_s05_low_signals.csv": [
+      126936,
+      1793598135992954339
+    ],
+    "signal_tables/BH_s05_medium_signals.csv": [
+      131468,
+      1793598136840967016
+    ],
+    "signal_tables/BH_s06_high_signals.csv": [
+      128081,
+      1793598137673979466
+    ],
+    "signal_tables/BH_s06_low_signals.csv": [
+      126758,
+      1793598138496991767
+    ],
+    "signal_tables/BH_s06_medium_signals.csv": [
+      131478,
+      1793598139350004515
+    ],
+    "signal_tables/BH_s07_high_signals.csv": [
+      128094,
+      1793598140226017606
+    ],
+    "signal_tables/BH_s07_low_signals.csv": [
+      126860,
+      1793598141054029978
+    ],
+    "signal_tables/BH_s07_medium_signals.csv": [
+      131551,
+      1793598141948043336
+    ],
+    "signal_tables/BH_s08_high_signals.csv": [
+      127774,
+      1793598142808056184
+    ],
+    "signal_tables/BH_s08_low_signals.csv": [
+      126745,
+      1793598143707069614
+    ],
+    "signal_tables/BH_s08_medium_signals.csv": [
+      131358,
+      1793598144565082431
+    ],
+    "signal_tables/BH_s09_high_signals.csv": [
+      128123,
+      1793598145408095023
+    ],
+    "signal_tables/BH_s09_low_signals.csv": [
+      126904,
+      1793598146249107583
+    ],
+    "signal_tables/BH_s09_medium_signals.csv": [
+      131548,
+      1793598147085120069
+    ],
+    "signal_tables/BH_s10_high_signals.csv": [
+      127744,
+      1793598147917132493
+    ],
+    "signal_tables/BH_s10_low_signals.csv": [
+      126493,
+      1793598148768145200
+    ],
+    "signal_tables/BH_s10_medium_signals.csv": [
+      131302,
+      1793598149607157727
+    ],
+    "signal_tables/BH_s11_high_signals.csv": [
+      128154,
+      1793598150530171508
+    ],
+    "signal_tables/BH_s11_low_signals.csv": [
+      126518,
+      1793598151383184242
+    ],
+    "signal_tables/BH_s11_medium_signals.csv": [
+      131990,
+      1793598152231196901
+    ],
+    "signal_tables/BH_s12_high_signals.csv": [
+      127714,
+      1793598153074209484
+    ],
+    "signal_tables/BH_s12_low_signals.csv": [
+      126760,
+      1793598153930222260
+    ],
+    "signal_tables/BH_s12_medium_signals.csv": [
+      131224,
+      1793598154777234901
+    ],
+    "signal_tables/BH_s13_high_signals.csv": [
+      128151,
+      1793598155621247496
+    ],
+    "signal_tables/BH_s13_low_signals.csv": [
+      126800,
+      1793598156450259866
+    ],
+    "signal_tables/BH_s13_medium_signals.csv": [
+      131565,
+      1793598157332273026
+    ],
+    "signal_tables/BH_s14_high_signals.csv": [
+      128199,
+      1793598158172285559
+    ],
+    "signal_tables/BH_s14_low_signals.csv": [
+      126769,
+      1793598159016298150
+    ],
+    "signal_tables/BH_s14_medium_signals.csv": [
+      131507,
+      1793598159865310815
+    ],
+    "signal_tables/BH_s15_high_signals.csv": [
+      128510,
+      1793598160699323255
+    ],
+    "signal_tables/BH_s15_low_signals.csv": [
+      126652,
+      1793598161541335814
+    ],
+    "signal_tables/BH_s15_medium_signals.csv": [
+      131924,
+      1793598162383348372
+    ],
+    "signal_tables/BH_s16_high_signals.csv": [
+      127882,
+      1793598163222360884
+    ],
+    "signal_tables/BH_s16_low_signals.csv": [
+      126603,
+      1793598164052373261
+    ],
+    "signal_tables/BH_s16_medium_signals.csv": [
+      131419,
+      1793598164896385846
+    ],
+    "signal_tables/BH_s17_high_signals.csv": [
+      92837,
+      1793598165517395105
+    ],
+    "signal_tables/BH_s17_low_signals.csv": [
+      126822,
+      1793598166355407599
+    ],
+    "signal_tables/BH_s17_medium_signals.csv": [
+      131604,
+      1793598167201420211
+    ],
+    "signal_tables/BH_s18_high_signals.csv": [
+      128547,
+      1793598168029432554
+    ],
+    "signal_tables/BH_s18_low_signals.csv": [
+      126839,
+      1793598168876445179
+    ],
+    "signal_tables/BH_s18_medium_signals.csv": [
+      131934,
+      1793598169718457729
+    ],
+    "signal_tables/BH_s19_high_signals.csv": [
+      92788,
+      1793598170350467149
+    ],
+    "signal_tables/BH_s19_low_signals.csv": [
+      126469,
+      1793598171179479503
+    ],
+    "signal_tables/BH_s19_medium_signals.csv": [
+      131358,
+      1793598172007491842
+    ],
+    "signal_tables/BH_s20_high_signals.csv": [
+      128359,
+      1793598172845504329
+    ],
+    "signal_tables/BH_s20_low_signals.csv": [
+      126961,
+      1793598173685516845
+    ],
+    "signal_tables/BH_s20_medium_signals.csv": [
+      131835,
+      1793598174526529374
+    ],
+    "signal_tables/BH_s21_high_signals.csv": [
+      127788,
+      1793598175370541948
+    ],
+    "signal_tables/BH_s21_low_signals.csv": [
+      126622,
+      1793598176202554342
+    ],
+    "signal_tables/BH_s21_medium_signals.csv": [
+      131469,
+      1793598177041566839
+    ],
+    "signal_tables/BH_s22_high_signals.csv": [
+      128190,
+      1793598177879579321
+    ],
+    "signal_tables/BH_s22_low_signals.csv": [
+      126480,
+      1793598178724591906
+    ],
+    "signal_tables/BH_s22_medium_signals.csv": [
+      131748,
+      1793598179554604266
+    ],
+    "signal_tables/BH_s23_high_signals.csv": [
+      128172,
+      1793598180395616790
+    ],
+    "signal_tables/BH_s23_low_signals.csv": [
+      126651,
+      1793598181237629327
+    ],
+    "signal_tables/BH_s23_medium_signals.csv": [
+      131836,
+      1793598182080641879
+    ],
+    "signal_tables/BH_s24_high_signals.csv": [
+      128083,
+      1793598182921654400
+    ],
+    "signal_tables/BH_s24_low_signals.csv": [
+      126854,
+      1793598183744666652
+    ],
+    "signal_tables/BH_s24_medium_signals.csv": [
+      131821,
+      1793598184586679186
+    ],
+    "signal_tables/BH_s25_high_signals.csv": [
+      127947,
+      1793598185426691690
+    ],
+    "signal_tables/BH_s25_low_signals.csv": [
+      126888,
+      1793598186264704162
+    ],
+    "signal_tables/BH_s25_medium_signals.csv": [
+      131436,
+      1793598187109716739
+    ],
+    "signal_tables/BH_s26_high_signals.csv": [
+      128121,
+      1793598187972729582
+    ],
+    "signal_tables/BH_s26_low_signals.csv": [
+      126744,
+      1793598188884743153
+    ],
+    "signal_tables/BH_s26_medium_signals.csv": [
+      131741,
+      1793598189877757929
+    ],
+    "signal_tables/BH_s27_high_signals.csv": [
+      128426,
+      1793598190735770694
+    ],
+    "signal_tables/BH_s27_low_signals.csv": [
+      127095,
+      1793598191585783340
+    ],
+    "signal_tables/BH_s27_medium_signals.csv": [
+      131931,
+      1793598192476796595
+    ],
+    "signal_tables/BH_s28_high_signals.csv": [
+      128051,
+      1793598193308808971
+    ],
+    "signal_tables/BH_s28_low_signals.csv": [
+      126582,
+      1793598194141821362
+    ],
+    "signal_tables/BH_s28_medium_signals.csv": [
+      131585,
+      1793598195169836651
+    ],
+    "signal_tables/BH_s29_high_signals.csv": [
+      127905,
+      1793598195999848995
+    ],
+    "signal_tables/BH_s29_low_signals.csv": [
+      126425,
+      1793598196846861591
+    ],
+    "signal_tables/BH_s29_medium_signals.csv": [
+      131515,
+      1793598197764875241
+    ],
+    "signal_tables/BH_s30_high_signals.csv": [
+      127805,
+      1793598198631888133
+    ],
+    "signal_tables/BH_s30_low_signals.csv": [
+      126779,
+      1793598199505901127
+    ],
+    "signal_tables/BH_s30_medium_signals.csv": [
+      131442,
+      1793598200359913823
+    ],
+    "signal_tables/BH_s31_high_signals.csv": [
+      128128,
+      1793598201342928436
+    ],
+    "signal_tables/BH_s31_low_signals.csv": [
+      126671,
+      1793598202229941621
+    ],
+    "signal_tables/BH_s31_medium_signals.csv": [
+      131459,
+      1793598203126954954
+    ],
+    "signal_tables/BH_s32_high_signals.csv": [
+      127875,
+      1793598203966967439
+    ],
+    "signal_tables/BH_s32_low_signals.csv": [
+      126629,
+      1793598204799979818
+    ],
+    "signal_tables/BH_s32_medium_signals.csv": [
+      131589,
+      1793598205633992212
+    ],
+    "signal_tables/BH_s33_high_signals.csv": [
+      127877,
+      1793598206471004649
+    ],
+    "signal_tables/BH_s33_low_signals.csv": [
+      126814,
+      1793598207310017115
+    ],
+    "signal_tables/BH_s33_medium_signals.csv": [
+      131504,
+      1793598208143029492
+    ],
+    "signal_tables/BH_s34_high_signals.csv": [
+      128077,
+      1793598208989042060
+    ],
+    "signal_tables/BH_s34_low_signals.csv": [
+      126720,
+      1793598209834054613
+    ],
+    "signal_tables/BH_s34_medium_signals.csv": [
+      131682,
+      1793598210683067224
+    ],
+    "tables/ALL_MEASUREMENT_RESULTS.csv": [
+      58847,
+      1793598210805069037
+    ],
+    "tables/ALL_RECORDING_RESULTS.csv": [
+      38482,
+      1793598210808069081
+    ],
+    "tables/ERRORS.csv": [
+      0,
+      1793598210822069289
+    ],
+    "tables/EXTENDED_METRICS.csv": [
+      1798,
+      1793598210822069289
+    ],
+    "tables/FAILURE_TYPE_SUMMARY.csv": [
+      138,
+      1793598210818069230
+    ],
+    "tables/GROUPED_RECORDING_SUMMARY.csv": [
+      698,
+      1793598210819069245
+    ],
+    "tables/IMAGE_QUALITY_ERROR_CORRELATION.csv": [
+      592,
+      1793598210822069289
+    ],
+    "tables/NON_CORRECT_MEASUREMENTS.csv": [
+      10608,
+      1793598210813069155
+    ],
+    "tables/PSD_TOP_PEAKS_SUMMARY.csv": [
+      54332,
+      1793598210818069230
+    ],
+    "tables/WORST_100_MEASUREMENTS.csv": [
+      56304,
+      1793598210812069140
+    ],
+    "tables/summary.json": [
+      2053,
+      1793598210822069289
+    ],
+    "tables/summary.txt": [
+      1635,
+      1793598210822069289
+    ]
+  }
+}

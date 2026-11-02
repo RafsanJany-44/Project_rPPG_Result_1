@@ -1,0 +1,216 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-11-02T06:30:04.433908+00:00",
+  "identity": {
+    "checkpoint_sha256": "128056537cbdacd540f4b026e4a95e4ae0a6da98080a458c4326c3724726885a",
+    "manifest_sha256": "a6f6f884eff8a1633b51bf1665ca1ec2952b1cf57e93fd43f95cfcfbf10304b2",
+    "cache_stat_sha256": "5305565437b7cc04714c48ab38173c925f3e0ba883166382928c06aa62fa9ad7",
+    "protocol": {
+      "name": "prism",
+      "display_name": "PRISM Evaluation Protocol",
+      "mode": "window_fft",
+      "aggregation": "window_to_recording",
+      "window_seconds": 10.0,
+      "stride_seconds": 10.0,
+      "nfft": 16384,
+      "bandpass_low_hz": 0.75,
+      "bandpass_high_hz": 2.5,
+      "bandpass_order": 2,
+      "prediction_bpm_min": 45.0,
+      "prediction_bpm_max": 150.0,
+      "gt_bpm_min": 45.0,
+      "gt_bpm_max": 150.0
+    },
+    "output_policy": {
+      "signal_plots": true,
+      "psd_diagnostics": true,
+      "signal_tables": true,
+      "summary_plots": true
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "evaluate_selected_conditional_l0_full.py": "d5b47d0a9070369764e649ca65c5a2906755204b72080613a8bf4d3a1f5a6c92"
+    }
+  },
+  "output_files": {
+    "diagnostics/TOKYOTECH_s01_psd_diagnostic.html": [
+      819608,
+      1793600988378690811
+    ],
+    "diagnostics/TOKYOTECH_s02_psd_diagnostic.html": [
+      818896,
+      1793600990353721252
+    ],
+    "diagnostics/TOKYOTECH_s03_psd_diagnostic.html": [
+      819935,
+      1793600992328751679
+    ],
+    "diagnostics/TOKYOTECH_s04_psd_diagnostic.html": [
+      820051,
+      1793600994371783137
+    ],
+    "diagnostics/TOKYOTECH_s05_psd_diagnostic.html": [
+      819753,
+      1793600996337813395
+    ],
+    "diagnostics/TOKYOTECH_s06_psd_diagnostic.html": [
+      820697,
+      1793600998311843761
+    ],
+    "diagnostics/TOKYOTECH_s07_psd_diagnostic.html": [
+      819979,
+      1793601000266873820
+    ],
+    "diagnostics/TOKYOTECH_s08_psd_diagnostic.html": [
+      819972,
+      1793601002227903957
+    ],
+    "diagnostics/TOKYOTECH_s09_psd_diagnostic.html": [
+      819790,
+      1793601004180933957
+    ],
+    "plots/absolute_error_distribution.html": [
+      9884,
+      1793601004324936169
+    ],
+    "plots/bland_altman.html": [
+      12439,
+      1793601004383937075
+    ],
+    "plots/failure_categories.html": [
+      8047,
+      1793601004424937704
+    ],
+    "plots/predicted_vs_gt_hr.html": [
+      15488,
+      1793601004284935554
+    ],
+    "plots/recording_mae.html": [
+      8340,
+      1793601004242934909
+    ],
+    "signal_comparisons/TOKYOTECH_s01_signal_comparison.html": [
+      1070288,
+      1793600988267689100
+    ],
+    "signal_comparisons/TOKYOTECH_s02_signal_comparison.html": [
+      1069763,
+      1793600990239719496
+    ],
+    "signal_comparisons/TOKYOTECH_s03_signal_comparison.html": [
+      1070405,
+      1793600992214749923
+    ],
+    "signal_comparisons/TOKYOTECH_s04_signal_comparison.html": [
+      1070878,
+      1793600994258781397
+    ],
+    "signal_comparisons/TOKYOTECH_s05_signal_comparison.html": [
+      1070358,
+      1793600996222811625
+    ],
+    "signal_comparisons/TOKYOTECH_s06_signal_comparison.html": [
+      1071610,
+      1793600998197842008
+    ],
+    "signal_comparisons/TOKYOTECH_s07_signal_comparison.html": [
+      1070403,
+      1793601000157872145
+    ],
+    "signal_comparisons/TOKYOTECH_s08_signal_comparison.html": [
+      1070723,
+      1793601002117902267
+    ],
+    "signal_comparisons/TOKYOTECH_s09_signal_comparison.html": [
+      1070193,
+      1793601004069932253
+    ],
+    "signal_tables/TOKYOTECH_s01_signals.csv": [
+      380023,
+      1793600988115686757
+    ],
+    "signal_tables/TOKYOTECH_s02_signals.csv": [
+      379607,
+      1793600990080717046
+    ],
+    "signal_tables/TOKYOTECH_s03_signals.csv": [
+      380057,
+      1793600992056747490
+    ],
+    "signal_tables/TOKYOTECH_s04_signals.csv": [
+      379447,
+      1793600994101778981
+    ],
+    "signal_tables/TOKYOTECH_s05_signals.csv": [
+      379472,
+      1793600996063809179
+    ],
+    "signal_tables/TOKYOTECH_s06_signals.csv": [
+      379895,
+      1793600998039839578
+    ],
+    "signal_tables/TOKYOTECH_s07_signals.csv": [
+      379427,
+      1793601000004869793
+    ],
+    "signal_tables/TOKYOTECH_s08_signals.csv": [
+      379346,
+      1793601001963899901
+    ],
+    "signal_tables/TOKYOTECH_s09_signals.csv": [
+      379928,
+      1793601003910929811
+    ],
+    "tables/ALL_MEASUREMENT_RESULTS.csv": [
+      74691,
+      1793601004188934080
+    ],
+    "tables/ALL_RECORDING_RESULTS.csv": [
+      4427,
+      1793601004189934096
+    ],
+    "tables/ERRORS.csv": [
+      0,
+      1793601004201934280
+    ],
+    "tables/EXTENDED_METRICS.csv": [
+      1801,
+      1793601004202934295
+    ],
+    "tables/FAILURE_TYPE_SUMMARY.csv": [
+      94,
+      1793601004200934264
+    ],
+    "tables/GROUPED_RECORDING_SUMMARY.csv": [
+      212,
+      1793601004200934264
+    ],
+    "tables/IMAGE_QUALITY_ERROR_CORRELATION.csv": [
+      541,
+      1793601004201934280
+    ],
+    "tables/NON_CORRECT_MEASUREMENTS.csv": [
+      5442,
+      1793601004194934172
+    ],
+    "tables/PSD_TOP_PEAKS_SUMMARY.csv": [
+      70998,
+      1793601004200934264
+    ],
+    "tables/WORST_100_MEASUREMENTS.csv": [
+      49346,
+      1793601004193934157
+    ],
+    "tables/summary.json": [
+      2048,
+      1793601004202934295
+    ],
+    "tables/summary.txt": [
+      1639,
+      1793601004202934295
+    ]
+  }
+}
