@@ -1,0 +1,18 @@
+Protocol comparison interpretation
+==================================
+
+official_mamba
+    One HR estimate per reconstructed recording using the exact verified
+    RhythmMamba/rPPG-Toolbox detrending, first-order band-pass and Welch method.
+
+old
+    One HR estimate per overlapping 8-second window. Errors are first averaged
+    within each recording and then averaged across recordings.
+
+prism
+    One HR estimate per non-overlapping 10-second window using the PRISM
+    evaluation protocol only. This does not implement the full PRISM algorithm.
+
+Because the aggregation units differ, the protocol values measure different
+evaluation questions. They should be presented as a protocol-sensitivity study,
+not as three interchangeable estimates of one identical quantity.

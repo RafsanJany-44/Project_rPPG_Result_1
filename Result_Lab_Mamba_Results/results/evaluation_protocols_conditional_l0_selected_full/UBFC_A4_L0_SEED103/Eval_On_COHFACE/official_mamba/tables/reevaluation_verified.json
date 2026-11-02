@@ -1,0 +1,2028 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-11-02T06:14:38.672711+00:00",
+  "identity": {
+    "checkpoint_sha256": "128056537cbdacd540f4b026e4a95e4ae0a6da98080a458c4326c3724726885a",
+    "manifest_sha256": "aa009531f1786c093cc076e23a77baf6007cf18efab4b9552ae8b9576f5dd889",
+    "cache_stat_sha256": "00cf4f4bd052b8169fd1a2d0b70313987d2f7a11c6815fcca26d3f59063f0675",
+    "protocol": {
+      "name": "official_mamba",
+      "display_name": "Official RhythmMamba Evaluation",
+      "mode": "official",
+      "aggregation": "recording",
+      "window_seconds": null,
+      "stride_seconds": null,
+      "nfft": 3333,
+      "bandpass_low_hz": 0.75,
+      "bandpass_high_hz": 2.5,
+      "bandpass_order": 1,
+      "prediction_bpm_min": 45.0,
+      "prediction_bpm_max": 150.0,
+      "gt_bpm_min": 45.0,
+      "gt_bpm_max": 150.0
+    },
+    "output_policy": {
+      "signal_plots": true,
+      "psd_diagnostics": true,
+      "signal_tables": true,
+      "summary_plots": true
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "evaluate_selected_conditional_l0_full.py": "d5b47d0a9070369764e649ca65c5a2906755204b72080613a8bf4d3a1f5a6c92"
+    }
+  },
+  "output_files": {
+    "diagnostics/COHFACE_s01_session0_lamp_psd_diagnostic.html": [
+      18769,
+      1793599825787153339
+    ],
+    "diagnostics/COHFACE_s01_session1_lamp_psd_diagnostic.html": [
+      18834,
+      1793599827177169292
+    ],
+    "diagnostics/COHFACE_s01_session2_natural_psd_diagnostic.html": [
+      18835,
+      1793599828565185228
+    ],
+    "diagnostics/COHFACE_s01_session3_natural_psd_diagnostic.html": [
+      18789,
+      1793599830036202123
+    ],
+    "diagnostics/COHFACE_s02_session0_lamp_psd_diagnostic.html": [
+      18854,
+      1793599831538219381
+    ],
+    "diagnostics/COHFACE_s02_session1_lamp_psd_diagnostic.html": [
+      18779,
+      1793599833049236750
+    ],
+    "diagnostics/COHFACE_s02_session2_natural_psd_diagnostic.html": [
+      18743,
+      1793599834559254114
+    ],
+    "diagnostics/COHFACE_s02_session3_natural_psd_diagnostic.html": [
+      18720,
+      1793599836095271785
+    ],
+    "diagnostics/COHFACE_s03_session0_lamp_psd_diagnostic.html": [
+      18753,
+      1793599837607289186
+    ],
+    "diagnostics/COHFACE_s03_session1_lamp_psd_diagnostic.html": [
+      18795,
+      1793599839145306893
+    ],
+    "diagnostics/COHFACE_s03_session2_natural_psd_diagnostic.html": [
+      18842,
+      1793599840690324689
+    ],
+    "diagnostics/COHFACE_s03_session3_natural_psd_diagnostic.html": [
+      18831,
+      1793599842207342169
+    ],
+    "diagnostics/COHFACE_s04_session0_lamp_psd_diagnostic.html": [
+      18823,
+      1793599843719359598
+    ],
+    "diagnostics/COHFACE_s04_session1_lamp_psd_diagnostic.html": [
+      18824,
+      1793599845222376930
+    ],
+    "diagnostics/COHFACE_s04_session2_natural_psd_diagnostic.html": [
+      18789,
+      1793599846720394211
+    ],
+    "diagnostics/COHFACE_s04_session3_natural_psd_diagnostic.html": [
+      18777,
+      1793599848268412076
+    ],
+    "diagnostics/COHFACE_s05_session0_lamp_psd_diagnostic.html": [
+      18855,
+      1793599849795429706
+    ],
+    "diagnostics/COHFACE_s05_session1_lamp_psd_diagnostic.html": [
+      18865,
+      1793599851297447053
+    ],
+    "diagnostics/COHFACE_s05_session2_natural_psd_diagnostic.html": [
+      18850,
+      1793599852824464697
+    ],
+    "diagnostics/COHFACE_s05_session3_natural_psd_diagnostic.html": [
+      18848,
+      1793599854375482624
+    ],
+    "diagnostics/COHFACE_s06_session0_lamp_psd_diagnostic.html": [
+      18795,
+      1793599855891500154
+    ],
+    "diagnostics/COHFACE_s06_session1_lamp_psd_diagnostic.html": [
+      18756,
+      1793599857410517726
+    ],
+    "diagnostics/COHFACE_s06_session2_natural_psd_diagnostic.html": [
+      18800,
+      1793599858920535199
+    ],
+    "diagnostics/COHFACE_s06_session3_natural_psd_diagnostic.html": [
+      18837,
+      1793599860452552935
+    ],
+    "diagnostics/COHFACE_s07_session0_lamp_psd_diagnostic.html": [
+      18885,
+      1793599861958570375
+    ],
+    "diagnostics/COHFACE_s07_session1_lamp_psd_diagnostic.html": [
+      18803,
+      1793599863482588031
+    ],
+    "diagnostics/COHFACE_s07_session2_natural_psd_diagnostic.html": [
+      18851,
+      1793599864981605404
+    ],
+    "diagnostics/COHFACE_s07_session3_natural_psd_diagnostic.html": [
+      18831,
+      1793599867281632073
+    ],
+    "diagnostics/COHFACE_s08_session0_lamp_psd_diagnostic.html": [
+      18812,
+      1793599868836650111
+    ],
+    "diagnostics/COHFACE_s08_session1_lamp_psd_diagnostic.html": [
+      18814,
+      1793599871292678617
+    ],
+    "diagnostics/COHFACE_s08_session2_natural_psd_diagnostic.html": [
+      18845,
+      1793599872815696301
+    ],
+    "diagnostics/COHFACE_s08_session3_natural_psd_diagnostic.html": [
+      18783,
+      1793599874347714098
+    ],
+    "diagnostics/COHFACE_s09_session0_lamp_psd_diagnostic.html": [
+      18846,
+      1793599875880731912
+    ],
+    "diagnostics/COHFACE_s09_session1_lamp_psd_diagnostic.html": [
+      18829,
+      1793599877711753198
+    ],
+    "diagnostics/COHFACE_s09_session2_natural_psd_diagnostic.html": [
+      18807,
+      1793599880407784556
+    ],
+    "diagnostics/COHFACE_s09_session3_natural_psd_diagnostic.html": [
+      18785,
+      1793599882137804689
+    ],
+    "diagnostics/COHFACE_s10_session0_lamp_psd_diagnostic.html": [
+      18774,
+      1793599883731823247
+    ],
+    "diagnostics/COHFACE_s10_session1_lamp_psd_diagnostic.html": [
+      18781,
+      1793599885361842231
+    ],
+    "diagnostics/COHFACE_s10_session2_natural_psd_diagnostic.html": [
+      18817,
+      1793599886964860908
+    ],
+    "diagnostics/COHFACE_s10_session3_natural_psd_diagnostic.html": [
+      18794,
+      1793599888546879348
+    ],
+    "diagnostics/COHFACE_s11_session0_lamp_psd_diagnostic.html": [
+      18811,
+      1793599890093897385
+    ],
+    "diagnostics/COHFACE_s11_session1_lamp_psd_diagnostic.html": [
+      18777,
+      1793599891645915488
+    ],
+    "diagnostics/COHFACE_s11_session2_natural_psd_diagnostic.html": [
+      18860,
+      1793599893192933539
+    ],
+    "diagnostics/COHFACE_s11_session3_natural_psd_diagnostic.html": [
+      18795,
+      1793599894725951434
+    ],
+    "diagnostics/COHFACE_s12_session0_lamp_psd_diagnostic.html": [
+      18836,
+      1793599896671974158
+    ],
+    "diagnostics/COHFACE_s12_session1_lamp_psd_diagnostic.html": [
+      18796,
+      1793599898229992358
+    ],
+    "diagnostics/COHFACE_s12_session2_natural_psd_diagnostic.html": [
+      18775,
+      1793599899841011185
+    ],
+    "diagnostics/COHFACE_s12_session3_natural_psd_diagnostic.html": [
+      18862,
+      1793599901423029680
+    ],
+    "diagnostics/COHFACE_s13_session0_lamp_psd_diagnostic.html": [
+      18889,
+      1793599902952047561
+    ],
+    "diagnostics/COHFACE_s13_session1_lamp_psd_diagnostic.html": [
+      18811,
+      1793599904499065659
+    ],
+    "diagnostics/COHFACE_s13_session2_natural_psd_diagnostic.html": [
+      18853,
+      1793599906072084068
+    ],
+    "diagnostics/COHFACE_s13_session3_natural_psd_diagnostic.html": [
+      18872,
+      1793599907626102261
+    ],
+    "diagnostics/COHFACE_s14_session0_lamp_psd_diagnostic.html": [
+      18814,
+      1793599909171120355
+    ],
+    "diagnostics/COHFACE_s14_session1_lamp_psd_diagnostic.html": [
+      18722,
+      1793599910805139498
+    ],
+    "diagnostics/COHFACE_s14_session2_natural_psd_diagnostic.html": [
+      18805,
+      1793599912365157780
+    ],
+    "diagnostics/COHFACE_s14_session3_natural_psd_diagnostic.html": [
+      18806,
+      1793599913920176010
+    ],
+    "diagnostics/COHFACE_s15_session0_lamp_psd_diagnostic.html": [
+      18710,
+      1793599915566195315
+    ],
+    "diagnostics/COHFACE_s15_session1_lamp_psd_diagnostic.html": [
+      18881,
+      1793599917090213194
+    ],
+    "diagnostics/COHFACE_s15_session2_natural_psd_diagnostic.html": [
+      18792,
+      1793599918630231268
+    ],
+    "diagnostics/COHFACE_s15_session3_natural_psd_diagnostic.html": [
+      18753,
+      1793599920189249570
+    ],
+    "diagnostics/COHFACE_s16_session0_lamp_psd_diagnostic.html": [
+      18850,
+      1793599921728267644
+    ],
+    "diagnostics/COHFACE_s16_session1_lamp_psd_diagnostic.html": [
+      18802,
+      1793599923217285137
+    ],
+    "diagnostics/COHFACE_s16_session2_natural_psd_diagnostic.html": [
+      18794,
+      1793599924745303093
+    ],
+    "diagnostics/COHFACE_s16_session3_natural_psd_diagnostic.html": [
+      18799,
+      1793599926276321091
+    ],
+    "diagnostics/COHFACE_s17_session0_lamp_psd_diagnostic.html": [
+      18794,
+      1793599927834339413
+    ],
+    "diagnostics/COHFACE_s17_session1_lamp_psd_diagnostic.html": [
+      18781,
+      1793599929404357881
+    ],
+    "diagnostics/COHFACE_s17_session2_natural_psd_diagnostic.html": [
+      18921,
+      1793599930958376168
+    ],
+    "diagnostics/COHFACE_s17_session3_natural_psd_diagnostic.html": [
+      18834,
+      1793599932508394414
+    ],
+    "diagnostics/COHFACE_s18_session0_lamp_psd_diagnostic.html": [
+      18809,
+      1793599934061412700
+    ],
+    "diagnostics/COHFACE_s18_session1_lamp_psd_diagnostic.html": [
+      18769,
+      1793599935795433126
+    ],
+    "diagnostics/COHFACE_s18_session2_natural_psd_diagnostic.html": [
+      18730,
+      1793599937147449057
+    ],
+    "diagnostics/COHFACE_s18_session3_natural_psd_diagnostic.html": [
+      18830,
+      1793599938693467280
+    ],
+    "diagnostics/COHFACE_s19_session0_lamp_psd_diagnostic.html": [
+      18814,
+      1793599940258485732
+    ],
+    "diagnostics/COHFACE_s19_session1_lamp_psd_diagnostic.html": [
+      18819,
+      1793599941881504875
+    ],
+    "diagnostics/COHFACE_s19_session2_natural_psd_diagnostic.html": [
+      18839,
+      1793599943431523163
+    ],
+    "diagnostics/COHFACE_s19_session3_natural_psd_diagnostic.html": [
+      18720,
+      1793599945022541940
+    ],
+    "diagnostics/COHFACE_s20_session0_lamp_psd_diagnostic.html": [
+      18801,
+      1793599946577560299
+    ],
+    "diagnostics/COHFACE_s20_session1_lamp_psd_diagnostic.html": [
+      18851,
+      1793599948128578617
+    ],
+    "diagnostics/COHFACE_s20_session2_natural_psd_diagnostic.html": [
+      18795,
+      1793599949669596822
+    ],
+    "diagnostics/COHFACE_s20_session3_natural_psd_diagnostic.html": [
+      18804,
+      1793599951275615802
+    ],
+    "diagnostics/COHFACE_s21_session0_lamp_psd_diagnostic.html": [
+      18805,
+      1793599952752633262
+    ],
+    "diagnostics/COHFACE_s21_session1_lamp_psd_diagnostic.html": [
+      18837,
+      1793599954290651449
+    ],
+    "diagnostics/COHFACE_s21_session2_natural_psd_diagnostic.html": [
+      18832,
+      1793599955841669796
+    ],
+    "diagnostics/COHFACE_s21_session3_natural_psd_diagnostic.html": [
+      18810,
+      1793599957375687947
+    ],
+    "diagnostics/COHFACE_s22_session0_lamp_psd_diagnostic.html": [
+      18836,
+      1793599958927706316
+    ],
+    "diagnostics/COHFACE_s22_session1_lamp_psd_diagnostic.html": [
+      18785,
+      1793599960469724574
+    ],
+    "diagnostics/COHFACE_s22_session2_natural_psd_diagnostic.html": [
+      18831,
+      1793599962077743618
+    ],
+    "diagnostics/COHFACE_s22_session3_natural_psd_diagnostic.html": [
+      18859,
+      1793599963634762065
+    ],
+    "diagnostics/COHFACE_s23_session0_lamp_psd_diagnostic.html": [
+      18879,
+      1793599965229780967
+    ],
+    "diagnostics/COHFACE_s23_session1_lamp_psd_diagnostic.html": [
+      18824,
+      1793599966766799188
+    ],
+    "diagnostics/COHFACE_s23_session2_natural_psd_diagnostic.html": [
+      18862,
+      1793599968310817498
+    ],
+    "diagnostics/COHFACE_s23_session3_natural_psd_diagnostic.html": [
+      18877,
+      1793599969851835778
+    ],
+    "diagnostics/COHFACE_s24_session0_lamp_psd_diagnostic.html": [
+      18863,
+      1793599971481855119
+    ],
+    "diagnostics/COHFACE_s24_session1_lamp_psd_diagnostic.html": [
+      18804,
+      1793599973066873932
+    ],
+    "diagnostics/COHFACE_s24_session2_natural_psd_diagnostic.html": [
+      18885,
+      1793599974584891956
+    ],
+    "diagnostics/COHFACE_s24_session3_natural_psd_diagnostic.html": [
+      18876,
+      1793599976172910816
+    ],
+    "diagnostics/COHFACE_s25_session0_lamp_psd_diagnostic.html": [
+      18844,
+      1793599977720929207
+    ],
+    "diagnostics/COHFACE_s25_session1_lamp_psd_diagnostic.html": [
+      18765,
+      1793599979260947508
+    ],
+    "diagnostics/COHFACE_s25_session2_natural_psd_diagnostic.html": [
+      18807,
+      1793599980821966065
+    ],
+    "diagnostics/COHFACE_s25_session3_natural_psd_diagnostic.html": [
+      18909,
+      1793599982364984413
+    ],
+    "diagnostics/COHFACE_s26_session0_lamp_psd_diagnostic.html": [
+      18836,
+      1793599983925002968
+    ],
+    "diagnostics/COHFACE_s26_session1_lamp_psd_diagnostic.html": [
+      18879,
+      1793599985477021434
+    ],
+    "diagnostics/COHFACE_s26_session2_natural_psd_diagnostic.html": [
+      18840,
+      1793599987011039691
+    ],
+    "diagnostics/COHFACE_s26_session3_natural_psd_diagnostic.html": [
+      18914,
+      1793599988571058263
+    ],
+    "diagnostics/COHFACE_s27_session0_lamp_psd_diagnostic.html": [
+      18845,
+      1793599990120076710
+    ],
+    "diagnostics/COHFACE_s27_session1_lamp_psd_diagnostic.html": [
+      18829,
+      1793599991781096496
+    ],
+    "diagnostics/COHFACE_s27_session2_natural_psd_diagnostic.html": [
+      18782,
+      1793599993328114930
+    ],
+    "diagnostics/COHFACE_s27_session3_natural_psd_diagnostic.html": [
+      18864,
+      1793599994866133261
+    ],
+    "diagnostics/COHFACE_s28_session0_lamp_psd_diagnostic.html": [
+      18821,
+      1793599996415151730
+    ],
+    "diagnostics/COHFACE_s28_session1_lamp_psd_diagnostic.html": [
+      18826,
+      1793599997994170561
+    ],
+    "diagnostics/COHFACE_s28_session2_natural_psd_diagnostic.html": [
+      18839,
+      1793599999561189255
+    ],
+    "diagnostics/COHFACE_s28_session3_natural_psd_diagnostic.html": [
+      18792,
+      1793600001156208288
+    ],
+    "diagnostics/COHFACE_s29_session0_lamp_psd_diagnostic.html": [
+      18839,
+      1793600004400247017
+    ],
+    "diagnostics/COHFACE_s29_session1_lamp_psd_diagnostic.html": [
+      18739,
+      1793600005965265709
+    ],
+    "diagnostics/COHFACE_s29_session2_natural_psd_diagnostic.html": [
+      18820,
+      1793600007526284359
+    ],
+    "diagnostics/COHFACE_s29_session3_natural_psd_diagnostic.html": [
+      18797,
+      1793600009164303934
+    ],
+    "diagnostics/COHFACE_s30_session0_lamp_psd_diagnostic.html": [
+      18781,
+      1793600010704322343
+    ],
+    "diagnostics/COHFACE_s30_session1_lamp_psd_diagnostic.html": [
+      18833,
+      1793600012242340733
+    ],
+    "diagnostics/COHFACE_s30_session2_natural_psd_diagnostic.html": [
+      18905,
+      1793600013888360421
+    ],
+    "diagnostics/COHFACE_s30_session3_natural_psd_diagnostic.html": [
+      18755,
+      1793600015430378870
+    ],
+    "diagnostics/COHFACE_s31_session0_lamp_psd_diagnostic.html": [
+      18860,
+      1793600016985397479
+    ],
+    "diagnostics/COHFACE_s31_session1_lamp_psd_diagnostic.html": [
+      18862,
+      1793600018574416501
+    ],
+    "diagnostics/COHFACE_s31_session2_natural_psd_diagnostic.html": [
+      18821,
+      1793600020154435421
+    ],
+    "diagnostics/COHFACE_s31_session3_natural_psd_diagnostic.html": [
+      18737,
+      1793600021714454106
+    ],
+    "diagnostics/COHFACE_s32_session0_lamp_psd_diagnostic.html": [
+      18819,
+      1793600023323473383
+    ],
+    "diagnostics/COHFACE_s32_session1_lamp_psd_diagnostic.html": [
+      18798,
+      1793600024882492066
+    ],
+    "diagnostics/COHFACE_s32_session2_natural_psd_diagnostic.html": [
+      18849,
+      1793600026431510635
+    ],
+    "diagnostics/COHFACE_s32_session3_natural_psd_diagnostic.html": [
+      18880,
+      1793600027999529437
+    ],
+    "diagnostics/COHFACE_s33_session0_lamp_psd_diagnostic.html": [
+      18734,
+      1793600029587548484
+    ],
+    "diagnostics/COHFACE_s33_session1_lamp_psd_diagnostic.html": [
+      18793,
+      1793600031121566887
+    ],
+    "diagnostics/COHFACE_s33_session2_natural_psd_diagnostic.html": [
+      18845,
+      1793600032688585692
+    ],
+    "diagnostics/COHFACE_s33_session3_natural_psd_diagnostic.html": [
+      18797,
+      1793600034283604838
+    ],
+    "diagnostics/COHFACE_s34_session0_lamp_psd_diagnostic.html": [
+      18811,
+      1793600035824623341
+    ],
+    "diagnostics/COHFACE_s34_session1_lamp_psd_diagnostic.html": [
+      18807,
+      1793600037367641873
+    ],
+    "diagnostics/COHFACE_s34_session2_natural_psd_diagnostic.html": [
+      18855,
+      1793600039004661539
+    ],
+    "diagnostics/COHFACE_s34_session3_natural_psd_diagnostic.html": [
+      18813,
+      1793600040566680310
+    ],
+    "diagnostics/COHFACE_s35_session0_lamp_psd_diagnostic.html": [
+      18826,
+      1793600042134699157
+    ],
+    "diagnostics/COHFACE_s35_session1_lamp_psd_diagnostic.html": [
+      18775,
+      1793600043725718285
+    ],
+    "diagnostics/COHFACE_s35_session2_natural_psd_diagnostic.html": [
+      18845,
+      1793600045261736758
+    ],
+    "diagnostics/COHFACE_s35_session3_natural_psd_diagnostic.html": [
+      18797,
+      1793600046807755355
+    ],
+    "diagnostics/COHFACE_s36_session0_lamp_psd_diagnostic.html": [
+      18871,
+      1793600048453775161
+    ],
+    "diagnostics/COHFACE_s36_session1_lamp_psd_diagnostic.html": [
+      18881,
+      1793600050011793913
+    ],
+    "diagnostics/COHFACE_s36_session2_natural_psd_diagnostic.html": [
+      18790,
+      1793600051564812610
+    ],
+    "diagnostics/COHFACE_s36_session3_natural_psd_diagnostic.html": [
+      18884,
+      1793600053106831178
+    ],
+    "diagnostics/COHFACE_s37_session0_lamp_psd_diagnostic.html": [
+      18865,
+      1793600054657849860
+    ],
+    "diagnostics/COHFACE_s37_session1_lamp_psd_diagnostic.html": [
+      18774,
+      1793600056230868812
+    ],
+    "diagnostics/COHFACE_s37_session2_natural_psd_diagnostic.html": [
+      18854,
+      1793600057844888263
+    ],
+    "diagnostics/COHFACE_s37_session3_natural_psd_diagnostic.html": [
+      18852,
+      1793600059402907044
+    ],
+    "diagnostics/COHFACE_s38_session0_lamp_psd_diagnostic.html": [
+      18888,
+      1793600060963925866
+    ],
+    "diagnostics/COHFACE_s38_session1_lamp_psd_diagnostic.html": [
+      18808,
+      1793600062525944704
+    ],
+    "diagnostics/COHFACE_s38_session2_natural_psd_diagnostic.html": [
+      18802,
+      1793600064151964320
+    ],
+    "diagnostics/COHFACE_s38_session3_natural_psd_diagnostic.html": [
+      18862,
+      1793600065704983060
+    ],
+    "diagnostics/COHFACE_s39_session0_lamp_psd_diagnostic.html": [
+      18746,
+      1793600067256001780
+    ],
+    "diagnostics/COHFACE_s39_session1_lamp_psd_diagnostic.html": [
+      18819,
+      1793600068889021495
+    ],
+    "diagnostics/COHFACE_s39_session2_natural_psd_diagnostic.html": [
+      18829,
+      1793600070450040346
+    ],
+    "diagnostics/COHFACE_s39_session3_natural_psd_diagnostic.html": [
+      18853,
+      1793600072022059334
+    ],
+    "diagnostics/COHFACE_s40_session0_lamp_psd_diagnostic.html": [
+      18868,
+      1793600073549077783
+    ],
+    "diagnostics/COHFACE_s40_session1_lamp_psd_diagnostic.html": [
+      18863,
+      1793600075166097324
+    ],
+    "diagnostics/COHFACE_s40_session2_natural_psd_diagnostic.html": [
+      18810,
+      1793600076730116230
+    ],
+    "diagnostics/COHFACE_s40_session3_natural_psd_diagnostic.html": [
+      18800,
+      1793600078365135999
+    ],
+    "plots/absolute_error_distribution.html": [
+      10721,
+      1793600078525137934
+    ],
+    "plots/bland_altman.html": [
+      12655,
+      1793600078582138623
+    ],
+    "plots/failure_categories.html": [
+      8129,
+      1793600078621139095
+    ],
+    "plots/predicted_vs_gt_hr.html": [
+      18045,
+      1793600078485137450
+    ],
+    "plots/recording_mae.html": [
+      16623,
+      1793600078444136954
+    ],
+    "signal_comparisons/COHFACE_s01_session0_lamp_signal_comparison.html": [
+      106455,
+      1793599825739152788
+    ],
+    "signal_comparisons/COHFACE_s01_session1_lamp_signal_comparison.html": [
+      106625,
+      1793599827128168729
+    ],
+    "signal_comparisons/COHFACE_s01_session2_natural_signal_comparison.html": [
+      106851,
+      1793599828518184688
+    ],
+    "signal_comparisons/COHFACE_s01_session3_natural_signal_comparison.html": [
+      106561,
+      1793599829990201594
+    ],
+    "signal_comparisons/COHFACE_s02_session0_lamp_signal_comparison.html": [
+      106595,
+      1793599831492218853
+    ],
+    "signal_comparisons/COHFACE_s02_session1_lamp_signal_comparison.html": [
+      106320,
+      1793599833003236221
+    ],
+    "signal_comparisons/COHFACE_s02_session2_natural_signal_comparison.html": [
+      106476,
+      1793599834512253574
+    ],
+    "signal_comparisons/COHFACE_s02_session3_natural_signal_comparison.html": [
+      106226,
+      1793599836048271244
+    ],
+    "signal_comparisons/COHFACE_s03_session0_lamp_signal_comparison.html": [
+      106112,
+      1793599837560288645
+    ],
+    "signal_comparisons/COHFACE_s03_session1_lamp_signal_comparison.html": [
+      105710,
+      1793599839097306341
+    ],
+    "signal_comparisons/COHFACE_s03_session2_natural_signal_comparison.html": [
+      106486,
+      1793599840642324136
+    ],
+    "signal_comparisons/COHFACE_s03_session3_natural_signal_comparison.html": [
+      106231,
+      1793599842160341627
+    ],
+    "signal_comparisons/COHFACE_s04_session0_lamp_signal_comparison.html": [
+      106225,
+      1793599843670359033
+    ],
+    "signal_comparisons/COHFACE_s04_session1_lamp_signal_comparison.html": [
+      105830,
+      1793599845174376376
+    ],
+    "signal_comparisons/COHFACE_s04_session2_natural_signal_comparison.html": [
+      106366,
+      1793599846672393657
+    ],
+    "signal_comparisons/COHFACE_s04_session3_natural_signal_comparison.html": [
+      106156,
+      1793599848221411534
+    ],
+    "signal_comparisons/COHFACE_s05_session0_lamp_signal_comparison.html": [
+      106057,
+      1793599849747429151
+    ],
+    "signal_comparisons/COHFACE_s05_session1_lamp_signal_comparison.html": [
+      106525,
+      1793599851249446499
+    ],
+    "signal_comparisons/COHFACE_s05_session2_natural_signal_comparison.html": [
+      106366,
+      1793599852778464165
+    ],
+    "signal_comparisons/COHFACE_s05_session3_natural_signal_comparison.html": [
+      106751,
+      1793599854327482070
+    ],
+    "signal_comparisons/COHFACE_s06_session0_lamp_signal_comparison.html": [
+      106282,
+      1793599855844499611
+    ],
+    "signal_comparisons/COHFACE_s06_session1_lamp_signal_comparison.html": [
+      106337,
+      1793599857362517170
+    ],
+    "signal_comparisons/COHFACE_s06_session2_natural_signal_comparison.html": [
+      106551,
+      1793599858872534644
+    ],
+    "signal_comparisons/COHFACE_s06_session3_natural_signal_comparison.html": [
+      106521,
+      1793599860404552379
+    ],
+    "signal_comparisons/COHFACE_s07_session0_lamp_signal_comparison.html": [
+      105977,
+      1793599861911569831
+    ],
+    "signal_comparisons/COHFACE_s07_session1_lamp_signal_comparison.html": [
+      106105,
+      1793599863434587475
+    ],
+    "signal_comparisons/COHFACE_s07_session2_natural_signal_comparison.html": [
+      106248,
+      1793599864934604859
+    ],
+    "signal_comparisons/COHFACE_s07_session3_natural_signal_comparison.html": [
+      105903,
+      1793599867234631527
+    ],
+    "signal_comparisons/COHFACE_s08_session0_lamp_signal_comparison.html": [
+      106245,
+      1793599868789649566
+    ],
+    "signal_comparisons/COHFACE_s08_session1_lamp_signal_comparison.html": [
+      106485,
+      1793599871237677978
+    ],
+    "signal_comparisons/COHFACE_s08_session2_natural_signal_comparison.html": [
+      106501,
+      1793599872766695733
+    ],
+    "signal_comparisons/COHFACE_s08_session3_natural_signal_comparison.html": [
+      106126,
+      1793599874299713540
+    ],
+    "signal_comparisons/COHFACE_s09_session0_lamp_signal_comparison.html": [
+      106515,
+      1793599875832731354
+    ],
+    "signal_comparisons/COHFACE_s09_session1_lamp_signal_comparison.html": [
+      106615,
+      1793599877664752651
+    ],
+    "signal_comparisons/COHFACE_s09_session2_natural_signal_comparison.html": [
+      106266,
+      1793599880347783857
+    ],
+    "signal_comparisons/COHFACE_s09_session3_natural_signal_comparison.html": [
+      106106,
+      1793599882089804130
+    ],
+    "signal_comparisons/COHFACE_s10_session0_lamp_signal_comparison.html": [
+      106310,
+      1793599883683822688
+    ],
+    "signal_comparisons/COHFACE_s10_session1_lamp_signal_comparison.html": [
+      106535,
+      1793599885313841672
+    ],
+    "signal_comparisons/COHFACE_s10_session2_natural_signal_comparison.html": [
+      106626,
+      1793599886917860360
+    ],
+    "signal_comparisons/COHFACE_s10_session3_natural_signal_comparison.html": [
+      106521,
+      1793599888499878800
+    ],
+    "signal_comparisons/COHFACE_s11_session0_lamp_signal_comparison.html": [
+      106335,
+      1793599890045896825
+    ],
+    "signal_comparisons/COHFACE_s11_session1_lamp_signal_comparison.html": [
+      106030,
+      1793599891597914928
+    ],
+    "signal_comparisons/COHFACE_s11_session2_natural_signal_comparison.html": [
+      106276,
+      1793599893144932979
+    ],
+    "signal_comparisons/COHFACE_s11_session3_natural_signal_comparison.html": [
+      106256,
+      1793599894677950873
+    ],
+    "signal_comparisons/COHFACE_s12_session0_lamp_signal_comparison.html": [
+      129790,
+      1793599896621973574
+    ],
+    "signal_comparisons/COHFACE_s12_session1_lamp_signal_comparison.html": [
+      106125,
+      1793599898181991798
+    ],
+    "signal_comparisons/COHFACE_s12_session2_natural_signal_comparison.html": [
+      114292,
+      1793599899791010601
+    ],
+    "signal_comparisons/COHFACE_s12_session3_natural_signal_comparison.html": [
+      106571,
+      1793599901375029118
+    ],
+    "signal_comparisons/COHFACE_s13_session0_lamp_signal_comparison.html": [
+      106570,
+      1793599902903046988
+    ],
+    "signal_comparisons/COHFACE_s13_session1_lamp_signal_comparison.html": [
+      106420,
+      1793599904451065098
+    ],
+    "signal_comparisons/COHFACE_s13_session2_natural_signal_comparison.html": [
+      106531,
+      1793599906024083506
+    ],
+    "signal_comparisons/COHFACE_s13_session3_natural_signal_comparison.html": [
+      106441,
+      1793599907578101699
+    ],
+    "signal_comparisons/COHFACE_s14_session0_lamp_signal_comparison.html": [
+      106205,
+      1793599909123119792
+    ],
+    "signal_comparisons/COHFACE_s14_session1_lamp_signal_comparison.html": [
+      106120,
+      1793599910758138947
+    ],
+    "signal_comparisons/COHFACE_s14_session2_natural_signal_comparison.html": [
+      106181,
+      1793599912317157218
+    ],
+    "signal_comparisons/COHFACE_s14_session3_natural_signal_comparison.html": [
+      105966,
+      1793599913872175448
+    ],
+    "signal_comparisons/COHFACE_s15_session0_lamp_signal_comparison.html": [
+      114156,
+      1793599915518194752
+    ],
+    "signal_comparisons/COHFACE_s15_session1_lamp_signal_comparison.html": [
+      106375,
+      1793599917042212631
+    ],
+    "signal_comparisons/COHFACE_s15_session2_natural_signal_comparison.html": [
+      106246,
+      1793599918583230716
+    ],
+    "signal_comparisons/COHFACE_s15_session3_natural_signal_comparison.html": [
+      106496,
+      1793599920141249007
+    ],
+    "signal_comparisons/COHFACE_s16_session0_lamp_signal_comparison.html": [
+      106362,
+      1793599921680267080
+    ],
+    "signal_comparisons/COHFACE_s16_session1_lamp_signal_comparison.html": [
+      106429,
+      1793599923169284573
+    ],
+    "signal_comparisons/COHFACE_s16_session2_natural_signal_comparison.html": [
+      105963,
+      1793599924697302529
+    ],
+    "signal_comparisons/COHFACE_s16_session3_natural_signal_comparison.html": [
+      106708,
+      1793599926228320527
+    ],
+    "signal_comparisons/COHFACE_s17_session0_lamp_signal_comparison.html": [
+      106310,
+      1793599927786338848
+    ],
+    "signal_comparisons/COHFACE_s17_session1_lamp_signal_comparison.html": [
+      106285,
+      1793599929357357328
+    ],
+    "signal_comparisons/COHFACE_s17_session2_natural_signal_comparison.html": [
+      106308,
+      1793599930910375603
+    ],
+    "signal_comparisons/COHFACE_s17_session3_natural_signal_comparison.html": [
+      106246,
+      1793599932460393849
+    ],
+    "signal_comparisons/COHFACE_s18_session0_lamp_signal_comparison.html": [
+      106610,
+      1793599934013412135
+    ],
+    "signal_comparisons/COHFACE_s18_session1_lamp_signal_comparison.html": [
+      106075,
+      1793599935745432537
+    ],
+    "signal_comparisons/COHFACE_s18_session2_natural_signal_comparison.html": [
+      106221,
+      1793599937100448503
+    ],
+    "signal_comparisons/COHFACE_s18_session3_natural_signal_comparison.html": [
+      106616,
+      1793599938646466726
+    ],
+    "signal_comparisons/COHFACE_s19_session0_lamp_signal_comparison.html": [
+      105940,
+      1793599940211485178
+    ],
+    "signal_comparisons/COHFACE_s19_session1_lamp_signal_comparison.html": [
+      106065,
+      1793599941834504321
+    ],
+    "signal_comparisons/COHFACE_s19_session2_natural_signal_comparison.html": [
+      105943,
+      1793599943383522597
+    ],
+    "signal_comparisons/COHFACE_s19_session3_natural_signal_comparison.html": [
+      105911,
+      1793599944975541386
+    ],
+    "signal_comparisons/COHFACE_s20_session0_lamp_signal_comparison.html": [
+      106620,
+      1793599946530559745
+    ],
+    "signal_comparisons/COHFACE_s20_session1_lamp_signal_comparison.html": [
+      106590,
+      1793599948080578050
+    ],
+    "signal_comparisons/COHFACE_s20_session2_natural_signal_comparison.html": [
+      106631,
+      1793599949622596267
+    ],
+    "signal_comparisons/COHFACE_s20_session3_natural_signal_comparison.html": [
+      106286,
+      1793599951229615258
+    ],
+    "signal_comparisons/COHFACE_s21_session0_lamp_signal_comparison.html": [
+      106360,
+      1793599952704632694
+    ],
+    "signal_comparisons/COHFACE_s21_session1_lamp_signal_comparison.html": [
+      106710,
+      1793599954242650881
+    ],
+    "signal_comparisons/COHFACE_s21_session2_natural_signal_comparison.html": [
+      106436,
+      1793599955793669228
+    ],
+    "signal_comparisons/COHFACE_s21_session3_natural_signal_comparison.html": [
+      106116,
+      1793599957329687402
+    ],
+    "signal_comparisons/COHFACE_s22_session0_lamp_signal_comparison.html": [
+      106237,
+      1793599958879705748
+    ],
+    "signal_comparisons/COHFACE_s22_session1_lamp_signal_comparison.html": [
+      106377,
+      1793599960423724029
+    ],
+    "signal_comparisons/COHFACE_s22_session2_natural_signal_comparison.html": [
+      106498,
+      1793599962030743062
+    ],
+    "signal_comparisons/COHFACE_s22_session3_natural_signal_comparison.html": [
+      106471,
+      1793599963587761508
+    ],
+    "signal_comparisons/COHFACE_s23_session0_lamp_signal_comparison.html": [
+      106685,
+      1793599965181780399
+    ],
+    "signal_comparisons/COHFACE_s23_session1_lamp_signal_comparison.html": [
+      106360,
+      1793599966718798619
+    ],
+    "signal_comparisons/COHFACE_s23_session2_natural_signal_comparison.html": [
+      106836,
+      1793599968262816929
+    ],
+    "signal_comparisons/COHFACE_s23_session3_natural_signal_comparison.html": [
+      106436,
+      1793599969804835220
+    ],
+    "signal_comparisons/COHFACE_s24_session0_lamp_signal_comparison.html": [
+      105985,
+      1793599971434854561
+    ],
+    "signal_comparisons/COHFACE_s24_session1_lamp_signal_comparison.html": [
+      106095,
+      1793599973017873350
+    ],
+    "signal_comparisons/COHFACE_s24_session2_natural_signal_comparison.html": [
+      106293,
+      1793599974536891386
+    ],
+    "signal_comparisons/COHFACE_s24_session3_natural_signal_comparison.html": [
+      106028,
+      1793599976124910246
+    ],
+    "signal_comparisons/COHFACE_s25_session0_lamp_signal_comparison.html": [
+      106235,
+      1793599977672928636
+    ],
+    "signal_comparisons/COHFACE_s25_session1_lamp_signal_comparison.html": [
+      106177,
+      1793599979212946938
+    ],
+    "signal_comparisons/COHFACE_s25_session2_natural_signal_comparison.html": [
+      106631,
+      1793599980772965482
+    ],
+    "signal_comparisons/COHFACE_s25_session3_natural_signal_comparison.html": [
+      106518,
+      1793599982316983842
+    ],
+    "signal_comparisons/COHFACE_s26_session0_lamp_signal_comparison.html": [
+      106360,
+      1793599983877002397
+    ],
+    "signal_comparisons/COHFACE_s26_session1_lamp_signal_comparison.html": [
+      106295,
+      1793599985430020875
+    ],
+    "signal_comparisons/COHFACE_s26_session2_natural_signal_comparison.html": [
+      106258,
+      1793599986964039131
+    ],
+    "signal_comparisons/COHFACE_s26_session3_natural_signal_comparison.html": [
+      106518,
+      1793599988523057692
+    ],
+    "signal_comparisons/COHFACE_s27_session0_lamp_signal_comparison.html": [
+      106065,
+      1793599990072076138
+    ],
+    "signal_comparisons/COHFACE_s27_session1_lamp_signal_comparison.html": [
+      106125,
+      1793599991733095924
+    ],
+    "signal_comparisons/COHFACE_s27_session2_natural_signal_comparison.html": [
+      106091,
+      1793599993280114358
+    ],
+    "signal_comparisons/COHFACE_s27_session3_natural_signal_comparison.html": [
+      106313,
+      1793599994819132701
+    ],
+    "signal_comparisons/COHFACE_s28_session0_lamp_signal_comparison.html": [
+      105912,
+      1793599996368151169
+    ],
+    "signal_comparisons/COHFACE_s28_session1_lamp_signal_comparison.html": [
+      105907,
+      1793599997946169989
+    ],
+    "signal_comparisons/COHFACE_s28_session2_natural_signal_comparison.html": [
+      105993,
+      1793599999512188671
+    ],
+    "signal_comparisons/COHFACE_s28_session3_natural_signal_comparison.html": [
+      105901,
+      1793600001108207716
+    ],
+    "signal_comparisons/COHFACE_s29_session0_lamp_signal_comparison.html": [
+      177160,
+      1793600004350246420
+    ],
+    "signal_comparisons/COHFACE_s29_session1_lamp_signal_comparison.html": [
+      106265,
+      1793600005917265136
+    ],
+    "signal_comparisons/COHFACE_s29_session2_natural_signal_comparison.html": [
+      106261,
+      1793600007477283773
+    ],
+    "signal_comparisons/COHFACE_s29_session3_natural_signal_comparison.html": [
+      114392,
+      1793600009116303360
+    ],
+    "signal_comparisons/COHFACE_s30_session0_lamp_signal_comparison.html": [
+      106440,
+      1793600010656321769
+    ],
+    "signal_comparisons/COHFACE_s30_session1_lamp_signal_comparison.html": [
+      106455,
+      1793600012195340171
+    ],
+    "signal_comparisons/COHFACE_s30_session2_natural_signal_comparison.html": [
+      106736,
+      1793600013841359859
+    ],
+    "signal_comparisons/COHFACE_s30_session3_natural_signal_comparison.html": [
+      106301,
+      1793600015382378296
+    ],
+    "signal_comparisons/COHFACE_s31_session0_lamp_signal_comparison.html": [
+      106462,
+      1793600016937396905
+    ],
+    "signal_comparisons/COHFACE_s31_session1_lamp_signal_comparison.html": [
+      106047,
+      1793600018527415939
+    ],
+    "signal_comparisons/COHFACE_s31_session2_natural_signal_comparison.html": [
+      106248,
+      1793600020106434846
+    ],
+    "signal_comparisons/COHFACE_s31_session3_natural_signal_comparison.html": [
+      106453,
+      1793600021666453531
+    ],
+    "signal_comparisons/COHFACE_s32_session0_lamp_signal_comparison.html": [
+      106485,
+      1793600023275472808
+    ],
+    "signal_comparisons/COHFACE_s32_session1_lamp_signal_comparison.html": [
+      106655,
+      1793600024834491491
+    ],
+    "signal_comparisons/COHFACE_s32_session2_natural_signal_comparison.html": [
+      106411,
+      1793600026383510060
+    ],
+    "signal_comparisons/COHFACE_s32_session3_natural_signal_comparison.html": [
+      106926,
+      1793600027950528849
+    ],
+    "signal_comparisons/COHFACE_s33_session0_lamp_signal_comparison.html": [
+      106315,
+      1793600029540547920
+    ],
+    "signal_comparisons/COHFACE_s33_session1_lamp_signal_comparison.html": [
+      106552,
+      1793600031073566311
+    ],
+    "signal_comparisons/COHFACE_s33_session2_natural_signal_comparison.html": [
+      106326,
+      1793600032640585116
+    ],
+    "signal_comparisons/COHFACE_s33_session3_natural_signal_comparison.html": [
+      106606,
+      1793600034236604274
+    ],
+    "signal_comparisons/COHFACE_s34_session0_lamp_signal_comparison.html": [
+      106110,
+      1793600035776622765
+    ],
+    "signal_comparisons/COHFACE_s34_session1_lamp_signal_comparison.html": [
+      106200,
+      1793600037319641296
+    ],
+    "signal_comparisons/COHFACE_s34_session2_natural_signal_comparison.html": [
+      106326,
+      1793600038957660974
+    ],
+    "signal_comparisons/COHFACE_s34_session3_natural_signal_comparison.html": [
+      106431,
+      1793600040518679733
+    ],
+    "signal_comparisons/COHFACE_s35_session0_lamp_signal_comparison.html": [
+      106240,
+      1793600042086698579
+    ],
+    "signal_comparisons/COHFACE_s35_session1_lamp_signal_comparison.html": [
+      106280,
+      1793600043677717708
+    ],
+    "signal_comparisons/COHFACE_s35_session2_natural_signal_comparison.html": [
+      106476,
+      1793600045213736181
+    ],
+    "signal_comparisons/COHFACE_s35_session3_natural_signal_comparison.html": [
+      106341,
+      1793600046759754778
+    ],
+    "signal_comparisons/COHFACE_s36_session0_lamp_signal_comparison.html": [
+      106085,
+      1793600048406774596
+    ],
+    "signal_comparisons/COHFACE_s36_session1_lamp_signal_comparison.html": [
+      106100,
+      1793600049964793347
+    ],
+    "signal_comparisons/COHFACE_s36_session2_natural_signal_comparison.html": [
+      106206,
+      1793600051516812032
+    ],
+    "signal_comparisons/COHFACE_s36_session3_natural_signal_comparison.html": [
+      106418,
+      1793600053058830600
+    ],
+    "signal_comparisons/COHFACE_s37_session0_lamp_signal_comparison.html": [
+      106337,
+      1793600054610849294
+    ],
+    "signal_comparisons/COHFACE_s37_session1_lamp_signal_comparison.html": [
+      106255,
+      1793600056182868234
+    ],
+    "signal_comparisons/COHFACE_s37_session2_natural_signal_comparison.html": [
+      106403,
+      1793600057796887685
+    ],
+    "signal_comparisons/COHFACE_s37_session3_natural_signal_comparison.html": [
+      106378,
+      1793600059353906453
+    ],
+    "signal_comparisons/COHFACE_s38_session0_lamp_signal_comparison.html": [
+      106185,
+      1793600060915925287
+    ],
+    "signal_comparisons/COHFACE_s38_session1_lamp_signal_comparison.html": [
+      106315,
+      1793600062477944126
+    ],
+    "signal_comparisons/COHFACE_s38_session2_natural_signal_comparison.html": [
+      106106,
+      1793600064103963741
+    ],
+    "signal_comparisons/COHFACE_s38_session3_natural_signal_comparison.html": [
+      106186,
+      1793600065657982493
+    ],
+    "signal_comparisons/COHFACE_s39_session0_lamp_signal_comparison.html": [
+      106140,
+      1793600067208001201
+    ],
+    "signal_comparisons/COHFACE_s39_session1_lamp_signal_comparison.html": [
+      106630,
+      1793600068841020915
+    ],
+    "signal_comparisons/COHFACE_s39_session2_natural_signal_comparison.html": [
+      106658,
+      1793600070402039766
+    ],
+    "signal_comparisons/COHFACE_s39_session3_natural_signal_comparison.html": [
+      106458,
+      1793600071975058766
+    ],
+    "signal_comparisons/COHFACE_s40_session0_lamp_signal_comparison.html": [
+      106500,
+      1793600073503077227
+    ],
+    "signal_comparisons/COHFACE_s40_session1_lamp_signal_comparison.html": [
+      106395,
+      1793600075119096756
+    ],
+    "signal_comparisons/COHFACE_s40_session2_natural_signal_comparison.html": [
+      106661,
+      1793600076682115650
+    ],
+    "signal_comparisons/COHFACE_s40_session3_natural_signal_comparison.html": [
+      106521,
+      1793600078317135418
+    ],
+    "signal_tables/COHFACE_s01_session0_lamp_signals.csv": [
+      152869,
+      1793599825667151962
+    ],
+    "signal_tables/COHFACE_s01_session1_lamp_signals.csv": [
+      152875,
+      1793599827055167891
+    ],
+    "signal_tables/COHFACE_s01_session2_natural_signals.csv": [
+      158253,
+      1793599828445183850
+    ],
+    "signal_tables/COHFACE_s01_session3_natural_signals.csv": [
+      158288,
+      1793599829919200779
+    ],
+    "signal_tables/COHFACE_s02_session0_lamp_signals.csv": [
+      152817,
+      1793599831421218037
+    ],
+    "signal_tables/COHFACE_s02_session1_lamp_signals.csv": [
+      152811,
+      1793599832931235393
+    ],
+    "signal_tables/COHFACE_s02_session2_natural_signals.csv": [
+      158012,
+      1793599834441252757
+    ],
+    "signal_tables/COHFACE_s02_session3_natural_signals.csv": [
+      157916,
+      1793599835978270438
+    ],
+    "signal_tables/COHFACE_s03_session0_lamp_signals.csv": [
+      153032,
+      1793599837489287828
+    ],
+    "signal_tables/COHFACE_s03_session1_lamp_signals.csv": [
+      153106,
+      1793599839027305534
+    ],
+    "signal_tables/COHFACE_s03_session2_natural_signals.csv": [
+      158136,
+      1793599840572323330
+    ],
+    "signal_tables/COHFACE_s03_session3_natural_signals.csv": [
+      158228,
+      1793599842089340809
+    ],
+    "signal_tables/COHFACE_s04_session0_lamp_signals.csv": [
+      153946,
+      1793599843599358215
+    ],
+    "signal_tables/COHFACE_s04_session1_lamp_signals.csv": [
+      153467,
+      1793599845103375557
+    ],
+    "signal_tables/COHFACE_s04_session2_natural_signals.csv": [
+      158635,
+      1793599846600392827
+    ],
+    "signal_tables/COHFACE_s04_session3_natural_signals.csv": [
+      158475,
+      1793599848149410703
+    ],
+    "signal_tables/COHFACE_s05_session0_lamp_signals.csv": [
+      153188,
+      1793599849673428297
+    ],
+    "signal_tables/COHFACE_s05_session1_lamp_signals.csv": [
+      152750,
+      1793599851178445679
+    ],
+    "signal_tables/COHFACE_s05_session2_natural_signals.csv": [
+      158225,
+      1793599852707463345
+    ],
+    "signal_tables/COHFACE_s05_session3_natural_signals.csv": [
+      158122,
+      1793599854255481237
+    ],
+    "signal_tables/COHFACE_s06_session0_lamp_signals.csv": [
+      152926,
+      1793599855774498801
+    ],
+    "signal_tables/COHFACE_s06_session1_lamp_signals.csv": [
+      153002,
+      1793599857289516326
+    ],
+    "signal_tables/COHFACE_s06_session2_natural_signals.csv": [
+      158199,
+      1793599858800533810
+    ],
+    "signal_tables/COHFACE_s06_session3_natural_signals.csv": [
+      158165,
+      1793599860333551557
+    ],
+    "signal_tables/COHFACE_s07_session0_lamp_signals.csv": [
+      153463,
+      1793599861840569009
+    ],
+    "signal_tables/COHFACE_s07_session1_lamp_signals.csv": [
+      153296,
+      1793599863361586629
+    ],
+    "signal_tables/COHFACE_s07_session2_natural_signals.csv": [
+      158592,
+      1793599864864604048
+    ],
+    "signal_tables/COHFACE_s07_session3_natural_signals.csv": [
+      158568,
+      1793599867160630669
+    ],
+    "signal_tables/COHFACE_s08_session0_lamp_signals.csv": [
+      153091,
+      1793599868717648731
+    ],
+    "signal_tables/COHFACE_s08_session1_lamp_signals.csv": [
+      152919,
+      1793599871164677130
+    ],
+    "signal_tables/COHFACE_s08_session2_natural_signals.csv": [
+      158074,
+      1793599872695694908
+    ],
+    "signal_tables/COHFACE_s08_session3_natural_signals.csv": [
+      158336,
+      1793599874227712703
+    ],
+    "signal_tables/COHFACE_s09_session0_lamp_signals.csv": [
+      152693,
+      1793599875760730517
+    ],
+    "signal_tables/COHFACE_s09_session1_lamp_signals.csv": [
+      152591,
+      1793599877593751826
+    ],
+    "signal_tables/COHFACE_s09_session2_natural_signals.csv": [
+      157864,
+      1793599880266782915
+    ],
+    "signal_tables/COHFACE_s09_session3_natural_signals.csv": [
+      158054,
+      1793599882015803269
+    ],
+    "signal_tables/COHFACE_s10_session0_lamp_signals.csv": [
+      152481,
+      1793599883611821850
+    ],
+    "signal_tables/COHFACE_s10_session1_lamp_signals.csv": [
+      152505,
+      1793599885242840845
+    ],
+    "signal_tables/COHFACE_s10_session2_natural_signals.csv": [
+      157813,
+      1793599886847859545
+    ],
+    "signal_tables/COHFACE_s10_session3_natural_signals.csv": [
+      157702,
+      1793599888427877960
+    ],
+    "signal_tables/COHFACE_s11_session0_lamp_signals.csv": [
+      152872,
+      1793599889972895974
+    ],
+    "signal_tables/COHFACE_s11_session1_lamp_signals.csv": [
+      152728,
+      1793599891525914088
+    ],
+    "signal_tables/COHFACE_s11_session2_natural_signals.csv": [
+      157970,
+      1793599893072932139
+    ],
+    "signal_tables/COHFACE_s11_session3_natural_signals.csv": [
+      158019,
+      1793599894605950033
+    ],
+    "signal_tables/COHFACE_s12_session0_lamp_signals.csv": [
+      195312,
+      1793599896554972791
+    ],
+    "signal_tables/COHFACE_s12_session1_lamp_signals.csv": [
+      153166,
+      1793599898109990956
+    ],
+    "signal_tables/COHFACE_s12_session2_natural_signals.csv": [
+      173051,
+      1793599899725009829
+    ],
+    "signal_tables/COHFACE_s12_session3_natural_signals.csv": [
+      158431,
+      1793599901303028277
+    ],
+    "signal_tables/COHFACE_s13_session0_lamp_signals.csv": [
+      153106,
+      1793599902832046157
+    ],
+    "signal_tables/COHFACE_s13_session1_lamp_signals.csv": [
+      152975,
+      1793599904379064255
+    ],
+    "signal_tables/COHFACE_s13_session2_natural_signals.csv": [
+      158099,
+      1793599905952082663
+    ],
+    "signal_tables/COHFACE_s13_session3_natural_signals.csv": [
+      158216,
+      1793599907506100856
+    ],
+    "signal_tables/COHFACE_s14_session0_lamp_signals.csv": [
+      153105,
+      1793599909050118937
+    ],
+    "signal_tables/COHFACE_s14_session1_lamp_signals.csv": [
+      152784,
+      1793599910685138092
+    ],
+    "signal_tables/COHFACE_s14_session2_natural_signals.csv": [
+      158233,
+      1793599912245156374
+    ],
+    "signal_tables/COHFACE_s14_session3_natural_signals.csv": [
+      158154,
+      1793599913799174592
+    ],
+    "signal_tables/COHFACE_s15_session0_lamp_signals.csv": [
+      167038,
+      1793599915453193989
+    ],
+    "signal_tables/COHFACE_s15_session1_lamp_signals.csv": [
+      153048,
+      1793599916970211786
+    ],
+    "signal_tables/COHFACE_s15_session2_natural_signals.csv": [
+      158101,
+      1793599918511229871
+    ],
+    "signal_tables/COHFACE_s15_session3_natural_signals.csv": [
+      157995,
+      1793599920069248161
+    ],
+    "signal_tables/COHFACE_s16_session0_lamp_signals.csv": [
+      153076,
+      1793599921606266211
+    ],
+    "signal_tables/COHFACE_s16_session1_lamp_signals.csv": [
+      153118,
+      1793599923097283727
+    ],
+    "signal_tables/COHFACE_s16_session2_natural_signals.csv": [
+      158421,
+      1793599924626301695
+    ],
+    "signal_tables/COHFACE_s16_session3_natural_signals.csv": [
+      158222,
+      1793599926156319680
+    ],
+    "signal_tables/COHFACE_s17_session0_lamp_signals.csv": [
+      153083,
+      1793599927714338001
+    ],
+    "signal_tables/COHFACE_s17_session1_lamp_signals.csv": [
+      153002,
+      1793599929286356493
+    ],
+    "signal_tables/COHFACE_s17_session2_natural_signals.csv": [
+      158106,
+      1793599930838374756
+    ],
+    "signal_tables/COHFACE_s17_session3_natural_signals.csv": [
+      158281,
+      1793599932388393001
+    ],
+    "signal_tables/COHFACE_s18_session0_lamp_signals.csv": [
+      152603,
+      1793599933940411275
+    ],
+    "signal_tables/COHFACE_s18_session1_lamp_signals.csv": [
+      152700,
+      1793599935486429486
+    ],
+    "signal_tables/COHFACE_s18_session2_natural_signals.csv": [
+      158068,
+      1793599937029447667
+    ],
+    "signal_tables/COHFACE_s18_session3_natural_signals.csv": [
+      157973,
+      1793599938576465900
+    ],
+    "signal_tables/COHFACE_s19_session0_lamp_signals.csv": [
+      153449,
+      1793599940140484341
+    ],
+    "signal_tables/COHFACE_s19_session1_lamp_signals.csv": [
+      152967,
+      1793599941763503483
+    ],
+    "signal_tables/COHFACE_s19_session2_natural_signals.csv": [
+      158359,
+      1793599943311521747
+    ],
+    "signal_tables/COHFACE_s19_session3_natural_signals.csv": [
+      158259,
+      1793599944903540536
+    ],
+    "signal_tables/COHFACE_s20_session0_lamp_signals.csv": [
+      152618,
+      1793599946458558894
+    ],
+    "signal_tables/COHFACE_s20_session1_lamp_signals.csv": [
+      152522,
+      1793599948008577199
+    ],
+    "signal_tables/COHFACE_s20_session2_natural_signals.csv": [
+      157910,
+      1793599949551595428
+    ],
+    "signal_tables/COHFACE_s20_session3_natural_signals.csv": [
+      157963,
+      1793599951158614419
+    ],
+    "signal_tables/COHFACE_s21_session0_lamp_signals.csv": [
+      152679,
+      1793599952632631843
+    ],
+    "signal_tables/COHFACE_s21_session1_lamp_signals.csv": [
+      152571,
+      1793599954169650018
+    ],
+    "signal_tables/COHFACE_s21_session2_natural_signals.csv": [
+      158173,
+      1793599955720668364
+    ],
+    "signal_tables/COHFACE_s21_session3_natural_signals.csv": [
+      158042,
+      1793599957259686574
+    ],
+    "signal_tables/COHFACE_s22_session0_lamp_signals.csv": [
+      153157,
+      1793599958807704896
+    ],
+    "signal_tables/COHFACE_s22_session1_lamp_signals.csv": [
+      153152,
+      1793599960351723177
+    ],
+    "signal_tables/COHFACE_s22_session2_natural_signals.csv": [
+      158103,
+      1793599961958742209
+    ],
+    "signal_tables/COHFACE_s22_session3_natural_signals.csv": [
+      158362,
+      1793599963515760655
+    ],
+    "signal_tables/COHFACE_s23_session0_lamp_signals.csv": [
+      152586,
+      1793599965110779557
+    ],
+    "signal_tables/COHFACE_s23_session1_lamp_signals.csv": [
+      152745,
+      1793599966647797778
+    ],
+    "signal_tables/COHFACE_s23_session2_natural_signals.csv": [
+      157920,
+      1793599968190816075
+    ],
+    "signal_tables/COHFACE_s23_session3_natural_signals.csv": [
+      157824,
+      1793599969733834378
+    ],
+    "signal_tables/COHFACE_s24_session0_lamp_signals.csv": [
+      153177,
+      1793599971363853718
+    ],
+    "signal_tables/COHFACE_s24_session1_lamp_signals.csv": [
+      152699,
+      1793599972944872484
+    ],
+    "signal_tables/COHFACE_s24_session2_natural_signals.csv": [
+      158402,
+      1793599974463890519
+    ],
+    "signal_tables/COHFACE_s24_session3_natural_signals.csv": [
+      158574,
+      1793599976052909390
+    ],
+    "signal_tables/COHFACE_s25_session0_lamp_signals.csv": [
+      153020,
+      1793599977599927769
+    ],
+    "signal_tables/COHFACE_s25_session1_lamp_signals.csv": [
+      153131,
+      1793599979140946082
+    ],
+    "signal_tables/COHFACE_s25_session2_natural_signals.csv": [
+      158059,
+      1793599980700964626
+    ],
+    "signal_tables/COHFACE_s25_session3_natural_signals.csv": [
+      158153,
+      1793599982243982973
+    ],
+    "signal_tables/COHFACE_s26_session0_lamp_signals.csv": [
+      153049,
+      1793599983805001540
+    ],
+    "signal_tables/COHFACE_s26_session1_lamp_signals.csv": [
+      153086,
+      1793599985358020018
+    ],
+    "signal_tables/COHFACE_s26_session2_natural_signals.csv": [
+      158484,
+      1793599986892038274
+    ],
+    "signal_tables/COHFACE_s26_session3_natural_signals.csv": [
+      158099,
+      1793599988450056822
+    ],
+    "signal_tables/COHFACE_s27_session0_lamp_signals.csv": [
+      153436,
+      1793599990000075280
+    ],
+    "signal_tables/COHFACE_s27_session1_lamp_signals.csv": [
+      153228,
+      1793599991660095054
+    ],
+    "signal_tables/COHFACE_s27_session2_natural_signals.csv": [
+      158425,
+      1793599993207113488
+    ],
+    "signal_tables/COHFACE_s27_session3_natural_signals.csv": [
+      158350,
+      1793599994748131855
+    ],
+    "signal_tables/COHFACE_s28_session0_lamp_signals.csv": [
+      153582,
+      1793599996296150311
+    ],
+    "signal_tables/COHFACE_s28_session1_lamp_signals.csv": [
+      153458,
+      1793599997873169118
+    ],
+    "signal_tables/COHFACE_s28_session2_natural_signals.csv": [
+      158960,
+      1793599999440187812
+    ],
+    "signal_tables/COHFACE_s28_session3_natural_signals.csv": [
+      158933,
+      1793600001036206856
+    ],
+    "signal_tables/COHFACE_s29_session0_lamp_signals.csv": [
+      279371,
+      1793600004283245620
+    ],
+    "signal_tables/COHFACE_s29_session1_lamp_signals.csv": [
+      153223,
+      1793600005846264288
+    ],
+    "signal_tables/COHFACE_s29_session2_natural_signals.csv": [
+      158562,
+      1793600007405282913
+    ],
+    "signal_tables/COHFACE_s29_session3_natural_signals.csv": [
+      172754,
+      1793600009052302595
+    ],
+    "signal_tables/COHFACE_s30_session0_lamp_signals.csv": [
+      153193,
+      1793600010584320908
+    ],
+    "signal_tables/COHFACE_s30_session1_lamp_signals.csv": [
+      153053,
+      1793600012123339310
+    ],
+    "signal_tables/COHFACE_s30_session2_natural_signals.csv": [
+      158326,
+      1793600013768358986
+    ],
+    "signal_tables/COHFACE_s30_session3_natural_signals.csv": [
+      158175,
+      1793600015310377434
+    ],
+    "signal_tables/COHFACE_s31_session0_lamp_signals.csv": [
+      153606,
+      1793600016865396043
+    ],
+    "signal_tables/COHFACE_s31_session1_lamp_signals.csv": [
+      153500,
+      1793600018454415065
+    ],
+    "signal_tables/COHFACE_s31_session2_natural_signals.csv": [
+      158894,
+      1793600020034433983
+    ],
+    "signal_tables/COHFACE_s31_session3_natural_signals.csv": [
+      158645,
+      1793600021594452668
+    ],
+    "signal_tables/COHFACE_s32_session0_lamp_signals.csv": [
+      152985,
+      1793600023202471933
+    ],
+    "signal_tables/COHFACE_s32_session1_lamp_signals.csv": [
+      152904,
+      1793600024762490628
+    ],
+    "signal_tables/COHFACE_s32_session2_natural_signals.csv": [
+      158066,
+      1793600026311509197
+    ],
+    "signal_tables/COHFACE_s32_session3_natural_signals.csv": [
+      158081,
+      1793600027877527974
+    ],
+    "signal_tables/COHFACE_s33_session0_lamp_signals.csv": [
+      152807,
+      1793600029469547068
+    ],
+    "signal_tables/COHFACE_s33_session1_lamp_signals.csv": [
+      152826,
+      1793600031001565447
+    ],
+    "signal_tables/COHFACE_s33_session2_natural_signals.csv": [
+      157918,
+      1793600032569584264
+    ],
+    "signal_tables/COHFACE_s33_session3_natural_signals.csv": [
+      158088,
+      1793600034165603422
+    ],
+    "signal_tables/COHFACE_s34_session0_lamp_signals.csv": [
+      153726,
+      1793600035704621900
+    ],
+    "signal_tables/COHFACE_s34_session1_lamp_signals.csv": [
+      153282,
+      1793600037246640420
+    ],
+    "signal_tables/COHFACE_s34_session2_natural_signals.csv": [
+      158389,
+      1793600038884660097
+    ],
+    "signal_tables/COHFACE_s34_session3_natural_signals.csv": [
+      158373,
+      1793600040445678855
+    ],
+    "signal_tables/COHFACE_s35_session0_lamp_signals.csv": [
+      152750,
+      1793600042015697726
+    ],
+    "signal_tables/COHFACE_s35_session1_lamp_signals.csv": [
+      152819,
+      1793600043606716855
+    ],
+    "signal_tables/COHFACE_s35_session2_natural_signals.csv": [
+      158337,
+      1793600045141735315
+    ],
+    "signal_tables/COHFACE_s35_session3_natural_signals.csv": [
+      158457,
+      1793600046687753912
+    ],
+    "signal_tables/COHFACE_s36_session0_lamp_signals.csv": [
+      153455,
+      1793600048334773729
+    ],
+    "signal_tables/COHFACE_s36_session1_lamp_signals.csv": [
+      153644,
+      1793600049892792480
+    ],
+    "signal_tables/COHFACE_s36_session2_natural_signals.csv": [
+      159192,
+      1793600051444811165
+    ],
+    "signal_tables/COHFACE_s36_session3_natural_signals.csv": [
+      159199,
+      1793600052987829745
+    ],
+    "signal_tables/COHFACE_s37_session0_lamp_signals.csv": [
+      153084,
+      1793600054538848427
+    ],
+    "signal_tables/COHFACE_s37_session1_lamp_signals.csv": [
+      153001,
+      1793600056110867366
+    ],
+    "signal_tables/COHFACE_s37_session2_natural_signals.csv": [
+      158304,
+      1793600057725886829
+    ],
+    "signal_tables/COHFACE_s37_session3_natural_signals.csv": [
+      158277,
+      1793600059281905585
+    ],
+    "signal_tables/COHFACE_s38_session0_lamp_signals.csv": [
+      153398,
+      1793600060843924419
+    ],
+    "signal_tables/COHFACE_s38_session1_lamp_signals.csv": [
+      153444,
+      1793600062404943245
+    ],
+    "signal_tables/COHFACE_s38_session2_natural_signals.csv": [
+      158593,
+      1793600064029962848
+    ],
+    "signal_tables/COHFACE_s38_session3_natural_signals.csv": [
+      158522,
+      1793600065584981612
+    ],
+    "signal_tables/COHFACE_s39_session0_lamp_signals.csv": [
+      153090,
+      1793600067136000331
+    ],
+    "signal_tables/COHFACE_s39_session1_lamp_signals.csv": [
+      152821,
+      1793600068768020034
+    ],
+    "signal_tables/COHFACE_s39_session2_natural_signals.csv": [
+      158156,
+      1793600070330038896
+    ],
+    "signal_tables/COHFACE_s39_session3_natural_signals.csv": [
+      158132,
+      1793600071904057908
+    ],
+    "signal_tables/COHFACE_s40_session0_lamp_signals.csv": [
+      152826,
+      1793600073432076369
+    ],
+    "signal_tables/COHFACE_s40_session1_lamp_signals.csv": [
+      152959,
+      1793600075048095898
+    ],
+    "signal_tables/COHFACE_s40_session2_natural_signals.csv": [
+      158399,
+      1793600076610114779
+    ],
+    "signal_tables/COHFACE_s40_session3_natural_signals.csv": [
+      158149,
+      1793600078245134548
+    ],
+    "tables/ALL_MEASUREMENT_RESULTS.csv": [
+      92406,
+      1793600078380136180
+    ],
+    "tables/ALL_RECORDING_RESULTS.csv": [
+      61620,
+      1793600078384136229
+    ],
+    "tables/ERRORS.csv": [
+      0,
+      1793600078402136446
+    ],
+    "tables/EXTENDED_METRICS.csv": [
+      1809,
+      1793600078403136458
+    ],
+    "tables/FAILURE_TYPE_SUMMARY.csv": [
+      154,
+      1793600078398136398
+    ],
+    "tables/GROUPED_RECORDING_SUMMARY.csv": [
+      670,
+      1793600078399136410
+    ],
+    "tables/IMAGE_QUALITY_ERROR_CORRELATION.csv": [
+      597,
+      1793600078402136446
+    ],
+    "tables/NON_CORRECT_MEASUREMENTS.csv": [
+      28896,
+      1793600078391136313
+    ],
+    "tables/PSD_TOP_PEAKS_SUMMARY.csv": [
+      85922,
+      1793600078398136398
+    ],
+    "tables/WORST_100_MEASUREMENTS.csv": [
+      58643,
+      1793600078389136289
+    ],
+    "tables/summary.json": [
+      2064,
+      1793600078403136458
+    ],
+    "tables/summary.txt": [
+      1646,
+      1793600078403136458
+    ]
+  }
+}
