@@ -1,0 +1,828 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-11-02T05:54:48.635826+00:00",
+  "identity": {
+    "checkpoint_sha256": "128056537cbdacd540f4b026e4a95e4ae0a6da98080a458c4326c3724726885a",
+    "manifest_sha256": "1f5e2184781a5cc95fe7ef2d4bf3f7dcd908424cbb6588b49b9bde429455a0c4",
+    "cache_stat_sha256": "7754b0d51f337a6cab2ad03b848b18f3b9a2e15e8951a0ce38d023e65b572701",
+    "protocol": {
+      "name": "official_mamba",
+      "display_name": "Official RhythmMamba Evaluation",
+      "mode": "official",
+      "aggregation": "recording",
+      "window_seconds": null,
+      "stride_seconds": null,
+      "nfft": 3333,
+      "bandpass_low_hz": 0.75,
+      "bandpass_high_hz": 2.5,
+      "bandpass_order": 1,
+      "prediction_bpm_min": 45.0,
+      "prediction_bpm_max": 150.0,
+      "gt_bpm_min": 45.0,
+      "gt_bpm_max": 150.0
+    },
+    "output_policy": {
+      "signal_plots": true,
+      "psd_diagnostics": true,
+      "signal_tables": true,
+      "summary_plots": true
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "evaluate_selected_conditional_l0_full.py": "d5b47d0a9070369764e649ca65c5a2906755204b72080613a8bf4d3a1f5a6c92"
+    }
+  },
+  "output_files": {
+    "diagnostics/UBFC_PHYS_s01_T1_test_psd_diagnostic.html": [
+      18825,
+      1793598698672211017
+    ],
+    "diagnostics/UBFC_PHYS_s01_T2_test_psd_diagnostic.html": [
+      18892,
+      1793598701479251669
+    ],
+    "diagnostics/UBFC_PHYS_s01_T3_test_psd_diagnostic.html": [
+      18779,
+      1793598703847285960
+    ],
+    "diagnostics/UBFC_PHYS_s02_T1_ctrl_psd_diagnostic.html": [
+      18889,
+      1793598706577325491
+    ],
+    "diagnostics/UBFC_PHYS_s02_T2_ctrl_psd_diagnostic.html": [
+      18927,
+      1793598708811357837
+    ],
+    "diagnostics/UBFC_PHYS_s02_T3_ctrl_psd_diagnostic.html": [
+      18890,
+      1793598711531397217
+    ],
+    "diagnostics/UBFC_PHYS_s03_T1_ctrl_psd_diagnostic.html": [
+      18870,
+      1793598713929431932
+    ],
+    "diagnostics/UBFC_PHYS_s03_T2_ctrl_psd_diagnostic.html": [
+      18805,
+      1793598716191464676
+    ],
+    "diagnostics/UBFC_PHYS_s03_T3_ctrl_psd_diagnostic.html": [
+      18791,
+      1793598719143507405
+    ],
+    "diagnostics/UBFC_PHYS_s04_T1_test_psd_diagnostic.html": [
+      18830,
+      1793598721488541345
+    ],
+    "diagnostics/UBFC_PHYS_s04_T2_test_psd_diagnostic.html": [
+      18831,
+      1793598723769574357
+    ],
+    "diagnostics/UBFC_PHYS_s04_T3_test_psd_diagnostic.html": [
+      18859,
+      1793598727679630939
+    ],
+    "diagnostics/UBFC_PHYS_s05_T1_ctrl_psd_diagnostic.html": [
+      18810,
+      1793598731311683492
+    ],
+    "diagnostics/UBFC_PHYS_s05_T2_ctrl_psd_diagnostic.html": [
+      18886,
+      1793598734374727807
+    ],
+    "diagnostics/UBFC_PHYS_s05_T3_ctrl_psd_diagnostic.html": [
+      18832,
+      1793598737003765840
+    ],
+    "diagnostics/UBFC_PHYS_s06_T1_test_psd_diagnostic.html": [
+      18747,
+      1793598740246812752
+    ],
+    "diagnostics/UBFC_PHYS_s06_T2_test_psd_diagnostic.html": [
+      18860,
+      1793598742666847756
+    ],
+    "diagnostics/UBFC_PHYS_s06_T3_test_psd_diagnostic.html": [
+      18713,
+      1793598744993881412
+    ],
+    "diagnostics/UBFC_PHYS_s07_T1_ctrl_psd_diagnostic.html": [
+      18822,
+      1793598747290914633
+    ],
+    "diagnostics/UBFC_PHYS_s07_T2_ctrl_psd_diagnostic.html": [
+      18798,
+      1793598749533947070
+    ],
+    "diagnostics/UBFC_PHYS_s07_T3_ctrl_psd_diagnostic.html": [
+      18862,
+      1793598751785979635
+    ],
+    "diagnostics/UBFC_PHYS_s08_T1_ctrl_psd_diagnostic.html": [
+      18828,
+      1793598754075012733
+    ],
+    "diagnostics/UBFC_PHYS_s08_T2_ctrl_psd_diagnostic.html": [
+      18808,
+      1793598756694050601
+    ],
+    "diagnostics/UBFC_PHYS_s08_T3_ctrl_psd_diagnostic.html": [
+      18901,
+      1793598759181086557
+    ],
+    "diagnostics/UBFC_PHYS_s09_T1_test_psd_diagnostic.html": [
+      18820,
+      1793598761458119474
+    ],
+    "diagnostics/UBFC_PHYS_s09_T2_test_psd_diagnostic.html": [
+      18819,
+      1793598763718152144
+    ],
+    "diagnostics/UBFC_PHYS_s09_T3_test_psd_diagnostic.html": [
+      18948,
+      1793598765955184480
+    ],
+    "diagnostics/UBFC_PHYS_s10_T1_ctrl_psd_diagnostic.html": [
+      18795,
+      1793598768204216987
+    ],
+    "diagnostics/UBFC_PHYS_s10_T2_ctrl_psd_diagnostic.html": [
+      18812,
+      1793598770503250214
+    ],
+    "diagnostics/UBFC_PHYS_s10_T3_ctrl_psd_diagnostic.html": [
+      18775,
+      1793598772756282775
+    ],
+    "diagnostics/UBFC_PHYS_s11_T1_test_psd_diagnostic.html": [
+      18750,
+      1793598775990329510
+    ],
+    "diagnostics/UBFC_PHYS_s11_T2_test_psd_diagnostic.html": [
+      18812,
+      1793598781394407594
+    ],
+    "diagnostics/UBFC_PHYS_s11_T3_test_psd_diagnostic.html": [
+      18817,
+      1793598786976488239
+    ],
+    "diagnostics/UBFC_PHYS_s12_T1_ctrl_psd_diagnostic.html": [
+      18837,
+      1793598790335536762
+    ],
+    "diagnostics/UBFC_PHYS_s12_T2_ctrl_psd_diagnostic.html": [
+      18874,
+      1793598792562568930
+    ],
+    "diagnostics/UBFC_PHYS_s12_T3_ctrl_psd_diagnostic.html": [
+      18780,
+      1793598795803615742
+    ],
+    "diagnostics/UBFC_PHYS_s13_T1_ctrl_psd_diagnostic.html": [
+      18928,
+      1793598798088648743
+    ],
+    "diagnostics/UBFC_PHYS_s13_T2_ctrl_psd_diagnostic.html": [
+      18877,
+      1793598800347681366
+    ],
+    "diagnostics/UBFC_PHYS_s13_T3_ctrl_psd_diagnostic.html": [
+      18781,
+      1793598803481726623
+    ],
+    "diagnostics/UBFC_PHYS_s14_T1_ctrl_psd_diagnostic.html": [
+      18920,
+      1793598805796760051
+    ],
+    "diagnostics/UBFC_PHYS_s14_T2_ctrl_psd_diagnostic.html": [
+      18883,
+      1793598808334796696
+    ],
+    "diagnostics/UBFC_PHYS_s14_T3_ctrl_psd_diagnostic.html": [
+      18792,
+      1793598810658830250
+    ],
+    "diagnostics/UBFC_PHYS_s15_T1_test_psd_diagnostic.html": [
+      18847,
+      1793598812916862848
+    ],
+    "diagnostics/UBFC_PHYS_s15_T2_test_psd_diagnostic.html": [
+      18922,
+      1793598816570915597
+    ],
+    "diagnostics/UBFC_PHYS_s15_T3_test_psd_diagnostic.html": [
+      18820,
+      1793598818835948292
+    ],
+    "diagnostics/UBFC_PHYS_s16_T1_ctrl_psd_diagnostic.html": [
+      18840,
+      1793598821128981389
+    ],
+    "diagnostics/UBFC_PHYS_s16_T2_ctrl_psd_diagnostic.html": [
+      18892,
+      1793598825601045932
+    ],
+    "diagnostics/UBFC_PHYS_s16_T3_ctrl_psd_diagnostic.html": [
+      18826,
+      1793598830693119415
+    ],
+    "diagnostics/UBFC_PHYS_s17_T1_ctrl_psd_diagnostic.html": [
+      18805,
+      1793598835676191316
+    ],
+    "diagnostics/UBFC_PHYS_s17_T2_ctrl_psd_diagnostic.html": [
+      18876,
+      1793598840533261391
+    ],
+    "diagnostics/UBFC_PHYS_s17_T3_ctrl_psd_diagnostic.html": [
+      18880,
+      1793598845127327664
+    ],
+    "diagnostics/UBFC_PHYS_s18_T1_test_psd_diagnostic.html": [
+      18770,
+      1793598849972397550
+    ],
+    "diagnostics/UBFC_PHYS_s18_T2_test_psd_diagnostic.html": [
+      18765,
+      1793598854800467183
+    ],
+    "diagnostics/UBFC_PHYS_s18_T3_test_psd_diagnostic.html": [
+      18770,
+      1793598859646537068
+    ],
+    "diagnostics/UBFC_PHYS_s19_T1_test_psd_diagnostic.html": [
+      18710,
+      1793598864473606670
+    ],
+    "diagnostics/UBFC_PHYS_s19_T2_test_psd_diagnostic.html": [
+      18839,
+      1793598869161674262
+    ],
+    "diagnostics/UBFC_PHYS_s19_T3_test_psd_diagnostic.html": [
+      18876,
+      1793598873748740390
+    ],
+    "diagnostics/UBFC_PHYS_s20_T1_ctrl_psd_diagnostic.html": [
+      18731,
+      1793598878383807203
+    ],
+    "diagnostics/UBFC_PHYS_s20_T2_ctrl_psd_diagnostic.html": [
+      18889,
+      1793598883611882556
+    ],
+    "diagnostics/UBFC_PHYS_s20_T3_ctrl_psd_diagnostic.html": [
+      18807,
+      1793598888375951214
+    ],
+    "plots/absolute_error_distribution.html": [
+      8883,
+      1793598888516953246
+    ],
+    "plots/bland_altman.html": [
+      10282,
+      1793598888576954110
+    ],
+    "plots/failure_categories.html": [
+      8152,
+      1793598888617954701
+    ],
+    "plots/predicted_vs_gt_hr.html": [
+      11654,
+      1793598888476952669
+    ],
+    "plots/recording_mae.html": [
+      10786,
+      1793598888435952079
+    ],
+    "signal_comparisons/UBFC_PHYS_s01_T1_test_signal_comparison.html": [
+      279832,
+      1793598698621210278
+    ],
+    "signal_comparisons/UBFC_PHYS_s01_T2_test_signal_comparison.html": [
+      278274,
+      1793598701427250915
+    ],
+    "signal_comparisons/UBFC_PHYS_s01_T3_test_signal_comparison.html": [
+      278492,
+      1793598703793285178
+    ],
+    "signal_comparisons/UBFC_PHYS_s02_T1_ctrl_signal_comparison.html": [
+      279627,
+      1793598706525324738
+    ],
+    "signal_comparisons/UBFC_PHYS_s02_T2_ctrl_signal_comparison.html": [
+      278312,
+      1793598708760357098
+    ],
+    "signal_comparisons/UBFC_PHYS_s02_T3_ctrl_signal_comparison.html": [
+      277942,
+      1793598711479396464
+    ],
+    "signal_comparisons/UBFC_PHYS_s03_T1_ctrl_signal_comparison.html": [
+      279072,
+      1793598713877431180
+    ],
+    "signal_comparisons/UBFC_PHYS_s03_T2_ctrl_signal_comparison.html": [
+      279087,
+      1793598716138463909
+    ],
+    "signal_comparisons/UBFC_PHYS_s03_T3_ctrl_signal_comparison.html": [
+      279039,
+      1793598719091506652
+    ],
+    "signal_comparisons/UBFC_PHYS_s04_T1_test_signal_comparison.html": [
+      278682,
+      1793598721436540593
+    ],
+    "signal_comparisons/UBFC_PHYS_s04_T2_test_signal_comparison.html": [
+      278642,
+      1793598723715573575
+    ],
+    "signal_comparisons/UBFC_PHYS_s04_T3_test_signal_comparison.html": [
+      278167,
+      1793598727626630172
+    ],
+    "signal_comparisons/UBFC_PHYS_s05_T1_ctrl_signal_comparison.html": [
+      279457,
+      1793598731259682739
+    ],
+    "signal_comparisons/UBFC_PHYS_s05_T2_ctrl_signal_comparison.html": [
+      278164,
+      1793598734321727040
+    ],
+    "signal_comparisons/UBFC_PHYS_s05_T3_ctrl_signal_comparison.html": [
+      278004,
+      1793598736948765045
+    ],
+    "signal_comparisons/UBFC_PHYS_s06_T1_test_signal_comparison.html": [
+      279362,
+      1793598740192811971
+    ],
+    "signal_comparisons/UBFC_PHYS_s06_T2_test_signal_comparison.html": [
+      278736,
+      1793598742614847004
+    ],
+    "signal_comparisons/UBFC_PHYS_s06_T3_test_signal_comparison.html": [
+      278901,
+      1793598744940880646
+    ],
+    "signal_comparisons/UBFC_PHYS_s07_T1_ctrl_signal_comparison.html": [
+      279947,
+      1793598747238913881
+    ],
+    "signal_comparisons/UBFC_PHYS_s07_T2_ctrl_signal_comparison.html": [
+      278032,
+      1793598749481946318
+    ],
+    "signal_comparisons/UBFC_PHYS_s07_T3_ctrl_signal_comparison.html": [
+      277599,
+      1793598751734978898
+    ],
+    "signal_comparisons/UBFC_PHYS_s08_T1_ctrl_signal_comparison.html": [
+      279321,
+      1793598754023011981
+    ],
+    "signal_comparisons/UBFC_PHYS_s08_T2_ctrl_signal_comparison.html": [
+      278534,
+      1793598756641049834
+    ],
+    "signal_comparisons/UBFC_PHYS_s08_T3_ctrl_signal_comparison.html": [
+      278414,
+      1793598759130085819
+    ],
+    "signal_comparisons/UBFC_PHYS_s09_T1_test_signal_comparison.html": [
+      279126,
+      1793598761405118708
+    ],
+    "signal_comparisons/UBFC_PHYS_s09_T2_test_signal_comparison.html": [
+      277869,
+      1793598763666151393
+    ],
+    "signal_comparisons/UBFC_PHYS_s09_T3_test_signal_comparison.html": [
+      278186,
+      1793598765902183714
+    ],
+    "signal_comparisons/UBFC_PHYS_s10_T1_ctrl_signal_comparison.html": [
+      279672,
+      1793598768151216221
+    ],
+    "signal_comparisons/UBFC_PHYS_s10_T2_ctrl_signal_comparison.html": [
+      278752,
+      1793598770450249448
+    ],
+    "signal_comparisons/UBFC_PHYS_s10_T3_ctrl_signal_comparison.html": [
+      278152,
+      1793598772703282009
+    ],
+    "signal_comparisons/UBFC_PHYS_s11_T1_test_signal_comparison.html": [
+      278812,
+      1793598775938328758
+    ],
+    "signal_comparisons/UBFC_PHYS_s11_T2_test_signal_comparison.html": [
+      278397,
+      1793598781342406843
+    ],
+    "signal_comparisons/UBFC_PHYS_s11_T3_test_signal_comparison.html": [
+      278367,
+      1793598786922487459
+    ],
+    "signal_comparisons/UBFC_PHYS_s12_T1_ctrl_signal_comparison.html": [
+      279742,
+      1793598790282535997
+    ],
+    "signal_comparisons/UBFC_PHYS_s12_T2_ctrl_signal_comparison.html": [
+      278422,
+      1793598792510568179
+    ],
+    "signal_comparisons/UBFC_PHYS_s12_T3_ctrl_signal_comparison.html": [
+      279097,
+      1793598795750614977
+    ],
+    "signal_comparisons/UBFC_PHYS_s13_T1_ctrl_signal_comparison.html": [
+      279147,
+      1793598798037648007
+    ],
+    "signal_comparisons/UBFC_PHYS_s13_T2_ctrl_signal_comparison.html": [
+      277819,
+      1793598800293680587
+    ],
+    "signal_comparisons/UBFC_PHYS_s13_T3_ctrl_signal_comparison.html": [
+      279147,
+      1793598803429725872
+    ],
+    "signal_comparisons/UBFC_PHYS_s14_T1_ctrl_signal_comparison.html": [
+      279622,
+      1793598805743759286
+    ],
+    "signal_comparisons/UBFC_PHYS_s14_T2_ctrl_signal_comparison.html": [
+      278501,
+      1793598808282795945
+    ],
+    "signal_comparisons/UBFC_PHYS_s14_T3_ctrl_signal_comparison.html": [
+      278369,
+      1793598810606829499
+    ],
+    "signal_comparisons/UBFC_PHYS_s15_T1_test_signal_comparison.html": [
+      278707,
+      1793598812864862097
+    ],
+    "signal_comparisons/UBFC_PHYS_s15_T2_test_signal_comparison.html": [
+      278592,
+      1793598816520914875
+    ],
+    "signal_comparisons/UBFC_PHYS_s15_T3_test_signal_comparison.html": [
+      279022,
+      1793598818783947541
+    ],
+    "signal_comparisons/UBFC_PHYS_s16_T1_ctrl_signal_comparison.html": [
+      280047,
+      1793598821076980638
+    ],
+    "signal_comparisons/UBFC_PHYS_s16_T2_ctrl_signal_comparison.html": [
+      277772,
+      1793598825547045153
+    ],
+    "signal_comparisons/UBFC_PHYS_s16_T3_ctrl_signal_comparison.html": [
+      279427,
+      1793598830642118679
+    ],
+    "signal_comparisons/UBFC_PHYS_s17_T1_ctrl_signal_comparison.html": [
+      279992,
+      1793598835625190580
+    ],
+    "signal_comparisons/UBFC_PHYS_s17_T2_ctrl_signal_comparison.html": [
+      279177,
+      1793598840482260655
+    ],
+    "signal_comparisons/UBFC_PHYS_s17_T3_ctrl_signal_comparison.html": [
+      278727,
+      1793598845075326914
+    ],
+    "signal_comparisons/UBFC_PHYS_s18_T1_test_signal_comparison.html": [
+      279807,
+      1793598849920396800
+    ],
+    "signal_comparisons/UBFC_PHYS_s18_T2_test_signal_comparison.html": [
+      279737,
+      1793598854748466433
+    ],
+    "signal_comparisons/UBFC_PHYS_s18_T3_test_signal_comparison.html": [
+      279432,
+      1793598859594536318
+    ],
+    "signal_comparisons/UBFC_PHYS_s19_T1_test_signal_comparison.html": [
+      279202,
+      1793598864421605921
+    ],
+    "signal_comparisons/UBFC_PHYS_s19_T2_test_signal_comparison.html": [
+      277554,
+      1793598869110673527
+    ],
+    "signal_comparisons/UBFC_PHYS_s19_T3_test_signal_comparison.html": [
+      278819,
+      1793598873696739640
+    ],
+    "signal_comparisons/UBFC_PHYS_s20_T1_ctrl_signal_comparison.html": [
+      279122,
+      1793598878318806266
+    ],
+    "signal_comparisons/UBFC_PHYS_s20_T2_ctrl_signal_comparison.html": [
+      278624,
+      1793598883557881778
+    ],
+    "signal_comparisons/UBFC_PHYS_s20_T3_ctrl_signal_comparison.html": [
+      278997,
+      1793598888299950119
+    ],
+    "signal_tables/UBFC_PHYS_s01_T1_test_signals.csv": [
+      439059,
+      1793598698549209235
+    ],
+    "signal_tables/UBFC_PHYS_s01_T2_test_signals.csv": [
+      442578,
+      1793598701352249829
+    ],
+    "signal_tables/UBFC_PHYS_s01_T3_test_signals.csv": [
+      441753,
+      1793598703719284107
+    ],
+    "signal_tables/UBFC_PHYS_s02_T1_ctrl_signals.csv": [
+      440054,
+      1793598706453323695
+    ],
+    "signal_tables/UBFC_PHYS_s02_T2_ctrl_signals.csv": [
+      441990,
+      1793598708688356056
+    ],
+    "signal_tables/UBFC_PHYS_s02_T3_ctrl_signals.csv": [
+      441626,
+      1793598711408395436
+    ],
+    "signal_tables/UBFC_PHYS_s03_T1_ctrl_signals.csv": [
+      439077,
+      1793598713805430137
+    ],
+    "signal_tables/UBFC_PHYS_s03_T2_ctrl_signals.csv": [
+      440994,
+      1793598716065462852
+    ],
+    "signal_tables/UBFC_PHYS_s03_T3_ctrl_signals.csv": [
+      441079,
+      1793598719018505596
+    ],
+    "signal_tables/UBFC_PHYS_s04_T1_test_signals.csv": [
+      440731,
+      1793598721363539536
+    ],
+    "signal_tables/UBFC_PHYS_s04_T2_test_signals.csv": [
+      442078,
+      1793598723641572504
+    ],
+    "signal_tables/UBFC_PHYS_s04_T3_test_signals.csv": [
+      441627,
+      1793598727554629130
+    ],
+    "signal_tables/UBFC_PHYS_s05_T1_ctrl_signals.csv": [
+      439870,
+      1793598731186681683
+    ],
+    "signal_tables/UBFC_PHYS_s05_T2_ctrl_signals.csv": [
+      442534,
+      1793598734248725984
+    ],
+    "signal_tables/UBFC_PHYS_s05_T3_ctrl_signals.csv": [
+      443321,
+      1793598736873763960
+    ],
+    "signal_tables/UBFC_PHYS_s06_T1_test_signals.csv": [
+      439308,
+      1793598740114810843
+    ],
+    "signal_tables/UBFC_PHYS_s06_T2_test_signals.csv": [
+      441983,
+      1793598742539845919
+    ],
+    "signal_tables/UBFC_PHYS_s06_T3_test_signals.csv": [
+      441220,
+      1793598744869879619
+    ],
+    "signal_tables/UBFC_PHYS_s07_T1_ctrl_signals.csv": [
+      438998,
+      1793598747164912810
+    ],
+    "signal_tables/UBFC_PHYS_s07_T2_ctrl_signals.csv": [
+      442819,
+      1793598749407945248
+    ],
+    "signal_tables/UBFC_PHYS_s07_T3_ctrl_signals.csv": [
+      442447,
+      1793598751661977842
+    ],
+    "signal_tables/UBFC_PHYS_s08_T1_ctrl_signals.csv": [
+      439261,
+      1793598753951010940
+    ],
+    "signal_tables/UBFC_PHYS_s08_T2_ctrl_signals.csv": [
+      441167,
+      1793598756568048779
+    ],
+    "signal_tables/UBFC_PHYS_s08_T3_ctrl_signals.csv": [
+      442527,
+      1793598759058084778
+    ],
+    "signal_tables/UBFC_PHYS_s09_T1_test_signals.csv": [
+      440802,
+      1793598761331117638
+    ],
+    "signal_tables/UBFC_PHYS_s09_T2_test_signals.csv": [
+      443141,
+      1793598763593150337
+    ],
+    "signal_tables/UBFC_PHYS_s09_T3_test_signals.csv": [
+      443003,
+      1793598765829182659
+    ],
+    "signal_tables/UBFC_PHYS_s10_T1_ctrl_signals.csv": [
+      439126,
+      1793598768078215166
+    ],
+    "signal_tables/UBFC_PHYS_s10_T2_ctrl_signals.csv": [
+      441865,
+      1793598770378248408
+    ],
+    "signal_tables/UBFC_PHYS_s10_T3_ctrl_signals.csv": [
+      442099,
+      1793598772632280983
+    ],
+    "signal_tables/UBFC_PHYS_s11_T1_test_signals.csv": [
+      440818,
+      1793598775867327732
+    ],
+    "signal_tables/UBFC_PHYS_s11_T2_test_signals.csv": [
+      442806,
+      1793598781271405817
+    ],
+    "signal_tables/UBFC_PHYS_s11_T3_test_signals.csv": [
+      442931,
+      1793598786847486376
+    ],
+    "signal_tables/UBFC_PHYS_s12_T1_ctrl_signals.csv": [
+      438763,
+      1793598790209534942
+    ],
+    "signal_tables/UBFC_PHYS_s12_T2_ctrl_signals.csv": [
+      442165,
+      1793598792437567125
+    ],
+    "signal_tables/UBFC_PHYS_s12_T3_ctrl_signals.csv": [
+      441203,
+      1793598795677613922
+    ],
+    "signal_tables/UBFC_PHYS_s13_T1_ctrl_signals.csv": [
+      439688,
+      1793598797964646952
+    ],
+    "signal_tables/UBFC_PHYS_s13_T2_ctrl_signals.csv": [
+      443389,
+      1793598800219679518
+    ],
+    "signal_tables/UBFC_PHYS_s13_T3_ctrl_signals.csv": [
+      441432,
+      1793598803356724818
+    ],
+    "signal_tables/UBFC_PHYS_s14_T1_ctrl_signals.csv": [
+      439736,
+      1793598805670758232
+    ],
+    "signal_tables/UBFC_PHYS_s14_T2_ctrl_signals.csv": [
+      442062,
+      1793598808210794906
+    ],
+    "signal_tables/UBFC_PHYS_s14_T3_ctrl_signals.csv": [
+      443041,
+      1793598810532828431
+    ],
+    "signal_tables/UBFC_PHYS_s15_T1_test_signals.csv": [
+      440759,
+      1793598812791861044
+    ],
+    "signal_tables/UBFC_PHYS_s15_T2_test_signals.csv": [
+      441335,
+      1793598816449913850
+    ],
+    "signal_tables/UBFC_PHYS_s15_T3_test_signals.csv": [
+      440487,
+      1793598818709946473
+    ],
+    "signal_tables/UBFC_PHYS_s16_T1_ctrl_signals.csv": [
+      439479,
+      1793598821003979585
+    ],
+    "signal_tables/UBFC_PHYS_s16_T2_ctrl_signals.csv": [
+      442535,
+      1793598825475044114
+    ],
+    "signal_tables/UBFC_PHYS_s16_T3_ctrl_signals.csv": [
+      440223,
+      1793598830568117611
+    ],
+    "signal_tables/UBFC_PHYS_s17_T1_ctrl_signals.csv": [
+      438685,
+      1793598835551189513
+    ],
+    "signal_tables/UBFC_PHYS_s17_T2_ctrl_signals.csv": [
+      441109,
+      1793598840409259602
+    ],
+    "signal_tables/UBFC_PHYS_s17_T3_ctrl_signals.csv": [
+      441912,
+      1793598845003325875
+    ],
+    "signal_tables/UBFC_PHYS_s18_T1_test_signals.csv": [
+      439262,
+      1793598849847395747
+    ],
+    "signal_tables/UBFC_PHYS_s18_T2_test_signals.csv": [
+      439229,
+      1793598854677465409
+    ],
+    "signal_tables/UBFC_PHYS_s18_T3_test_signals.csv": [
+      439734,
+      1793598859521535265
+    ],
+    "signal_tables/UBFC_PHYS_s19_T1_test_signals.csv": [
+      439196,
+      1793598864350604897
+    ],
+    "signal_tables/UBFC_PHYS_s19_T2_test_signals.csv": [
+      443646,
+      1793598869038672489
+    ],
+    "signal_tables/UBFC_PHYS_s19_T3_test_signals.csv": [
+      442964,
+      1793598873625738617
+    ],
+    "signal_tables/UBFC_PHYS_s20_T1_ctrl_signals.csv": [
+      439643,
+      1793598878232805027
+    ],
+    "signal_tables/UBFC_PHYS_s20_T2_ctrl_signals.csv": [
+      441769,
+      1793598883484880726
+    ],
+    "signal_tables/UBFC_PHYS_s20_T3_ctrl_signals.csv": [
+      441646,
+      1793598888216948923
+    ],
+    "tables/ALL_MEASUREMENT_RESULTS.csv": [
+      33583,
+      1793598888379951272
+    ],
+    "tables/ALL_RECORDING_RESULTS.csv": [
+      23146,
+      1793598888381951300
+    ],
+    "tables/ERRORS.csv": [
+      0,
+      1793598888390951430
+    ],
+    "tables/EXTENDED_METRICS.csv": [
+      1829,
+      1793598888390951430
+    ],
+    "tables/FAILURE_TYPE_SUMMARY.csv": [
+      180,
+      1793598888388951401
+    ],
+    "tables/GROUPED_RECORDING_SUMMARY.csv": [
+      577,
+      1793598888388951401
+    ],
+    "tables/IMAGE_QUALITY_ERROR_CORRELATION.csv": [
+      541,
+      1793598888390951430
+    ],
+    "tables/NON_CORRECT_MEASUREMENTS.csv": [
+      15042,
+      1793598888385951358
+    ],
+    "tables/PSD_TOP_PEAKS_SUMMARY.csv": [
+      32734,
+      1793598888387951387
+    ],
+    "tables/WORST_100_MEASUREMENTS.csv": [
+      33583,
+      1793598888384951344
+    ],
+    "tables/summary.json": [
+      2084,
+      1793598888391951445
+    ],
+    "tables/summary.txt": [
+      1650,
+      1793598888391951445
+    ]
+  }
+}
