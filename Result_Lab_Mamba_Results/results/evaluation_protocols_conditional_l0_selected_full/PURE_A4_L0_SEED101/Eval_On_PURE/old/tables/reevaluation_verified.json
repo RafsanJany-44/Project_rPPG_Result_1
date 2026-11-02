@@ -1,0 +1,252 @@
+{
+  "status": "PASSED",
+  "verified_utc": "2026-11-02T05:33:34.528352+00:00",
+  "identity": {
+    "checkpoint_sha256": "b412fb1c2898ebffc0945d858c85fdf4735c0cb4c9e270ee7dfd08b7e6504b0e",
+    "manifest_sha256": "678713fffd847605f723888bf578a7c6f953692245e83268185a6fe6be239603",
+    "cache_stat_sha256": "b071505d78d4ec46a58f1db7b34bf37855edac1299285e6de99050dc1f353671",
+    "protocol": {
+      "name": "old",
+      "display_name": "Old Protocol",
+      "mode": "window_fft",
+      "aggregation": "window_to_recording",
+      "window_seconds": 8.0,
+      "stride_seconds": 1.0,
+      "nfft": 1800,
+      "bandpass_low_hz": 0.67,
+      "bandpass_high_hz": 3.0,
+      "bandpass_order": 3,
+      "prediction_bpm_min": 40.0,
+      "prediction_bpm_max": 180.0,
+      "gt_bpm_min": 40.0,
+      "gt_bpm_max": 150.0
+    },
+    "output_policy": {
+      "signal_plots": true,
+      "psd_diagnostics": true,
+      "signal_tables": true,
+      "summary_plots": true
+    },
+    "source_hashes": {
+      "eval_protocols.py": "d60620641f7939dd6983370abcaa714c9cf1cb3d429a67e6589ec56b3a079548",
+      "model.py": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "metrics.py": "eaac6a33e7c95fc3a63c8e189f15552f2e66a027df6d220a09c6dd0347acd19b",
+      "dataset.py": "6fd2343d1961ceadcceaec17f8d50d38acd3528f5ca5ec81640b8a1a4fdb4c18",
+      "evaluate_selected_conditional_l0_full.py": "d5b47d0a9070369764e649ca65c5a2906755204b72080613a8bf4d3a1f5a6c92"
+    }
+  },
+  "output_files": {
+    "diagnostics/1001_psd_diagnostic.html": [
+      523417,
+      1793597555006920152
+    ],
+    "diagnostics/1002_psd_diagnostic.html": [
+      525113,
+      1793597560101003765
+    ],
+    "diagnostics/1003_psd_diagnostic.html": [
+      634372,
+      1793597566083101813
+    ],
+    "diagnostics/1004_psd_diagnostic.html": [
+      633777,
+      1793597572501206842
+    ],
+    "diagnostics/1005_psd_diagnostic.html": [
+      523837,
+      1793597577504288598
+    ],
+    "diagnostics/1006_psd_diagnostic.html": [
+      523357,
+      1793597582415368752
+    ],
+    "diagnostics/901_psd_diagnostic.html": [
+      525823,
+      1793597587184446495
+    ],
+    "diagnostics/902_psd_diagnostic.html": [
+      524776,
+      1793597592116526800
+    ],
+    "diagnostics/903_psd_diagnostic.html": [
+      635267,
+      1793597597808619359
+    ],
+    "diagnostics/904_psd_diagnostic.html": [
+      764818,
+      1793597604531728521
+    ],
+    "diagnostics/905_psd_diagnostic.html": [
+      525108,
+      1793597609539809723
+    ],
+    "diagnostics/906_psd_diagnostic.html": [
+      524278,
+      1793597614240885860
+    ],
+    "plots/absolute_error_distribution.html": [
+      10860,
+      1793597614414888676
+    ],
+    "plots/bland_altman.html": [
+      25119,
+      1793597614473889631
+    ],
+    "plots/failure_categories.html": [
+      8032,
+      1793597614513890279
+    ],
+    "plots/predicted_vs_gt_hr.html": [
+      35955,
+      1793597614372887996
+    ],
+    "plots/recording_mae.html": [
+      8337,
+      1793597614328887284
+    ],
+    "signal_comparisons/1001_signal_comparison.html": [
+      1184599,
+      1793597554750915947
+    ],
+    "signal_comparisons/1002_signal_comparison.html": [
+      1185618,
+      1793597559814999073
+    ],
+    "signal_comparisons/1003_signal_comparison.html": [
+      1405304,
+      1793597565785096932
+    ],
+    "signal_comparisons/1004_signal_comparison.html": [
+      1405434,
+      1793597572192201790
+    ],
+    "signal_comparisons/1005_signal_comparison.html": [
+      1183814,
+      1793597577241284303
+    ],
+    "signal_comparisons/1006_signal_comparison.html": [
+      1183684,
+      1793597582166364690
+    ],
+    "signal_comparisons/901_signal_comparison.html": [
+      1186711,
+      1793597586933442405
+    ],
+    "signal_comparisons/902_signal_comparison.html": [
+      1185211,
+      1793597591869522780
+    ],
+    "signal_comparisons/903_signal_comparison.html": [
+      1406181,
+      1793597597528614809
+    ],
+    "signal_comparisons/904_signal_comparison.html": [
+      1655482,
+      1793597604198723118
+    ],
+    "signal_comparisons/905_signal_comparison.html": [
+      1185446,
+      1793597609301805866
+    ],
+    "signal_comparisons/906_signal_comparison.html": [
+      1184211,
+      1793597613990881813
+    ],
+    "signal_tables/1001_signals.csv": [
+      897456,
+      1793597554362909574
+    ],
+    "signal_tables/1002_signals.csv": [
+      899171,
+      1793597559403992330
+    ],
+    "signal_tables/1003_signals.csv": [
+      1053506,
+      1793597565331089495
+    ],
+    "signal_tables/1004_signals.csv": [
+      1053220,
+      1793597571575191699
+    ],
+    "signal_tables/1005_signals.csv": [
+      896277,
+      1793597576862278113
+    ],
+    "signal_tables/1006_signals.csv": [
+      896744,
+      1793597581796358654
+    ],
+    "signal_tables/901_signals.csv": [
+      885054,
+      1793597586561436344
+    ],
+    "signal_tables/902_signals.csv": [
+      884024,
+      1793597591500516775
+    ],
+    "signal_tables/903_signals.csv": [
+      1038399,
+      1793597597100607853
+    ],
+    "signal_tables/904_signals.csv": [
+      1210064,
+      1793597603711715216
+    ],
+    "signal_tables/905_signals.csv": [
+      883579,
+      1793597608952800210
+    ],
+    "signal_tables/906_signals.csv": [
+      884212,
+      1793597613623875872
+    ],
+    "tables/ALL_MEASUREMENT_RESULTS.csv": [
+      232398,
+      1793597614264886248
+    ],
+    "tables/ALL_RECORDING_RESULTS.csv": [
+      4049,
+      1793597614264886248
+    ],
+    "tables/ERRORS.csv": [
+      0,
+      1793597614287886621
+    ],
+    "tables/EXTENDED_METRICS.csv": [
+      1760,
+      1793597614287886621
+    ],
+    "tables/FAILURE_TYPE_SUMMARY.csv": [
+      97,
+      1793597614287886621
+    ],
+    "tables/GROUPED_RECORDING_SUMMARY.csv": [
+      0,
+      1793597614287886621
+    ],
+    "tables/IMAGE_QUALITY_ERROR_CORRELATION.csv": [
+      0,
+      1793597614287886621
+    ],
+    "tables/NON_CORRECT_MEASUREMENTS.csv": [
+      1933,
+      1793597614268886313
+    ],
+    "tables/PSD_TOP_PEAKS_SUMMARY.csv": [
+      207868,
+      1793597614287886621
+    ],
+    "tables/WORST_100_MEASUREMENTS.csv": [
+      33400,
+      1793597614267886297
+    ],
+    "tables/summary.json": [
+      2007,
+      1793597614287886621
+    ],
+    "tables/summary.txt": [
+      1614,
+      1793597614287886621
+    ]
+  }
+}
