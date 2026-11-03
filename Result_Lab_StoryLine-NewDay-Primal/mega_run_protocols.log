@@ -1,0 +1,522 @@
+[2026-11-03 02:30:19] ==========================================================================
+[2026-11-03 02:30:19] MEGA RUN start | device=cuda | models=7 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal
+[2026-11-03 02:30:19] models: ['branch1_projector', 'two_projection_CHROM_ADAPTIVE', 'branch2_tcn_rf31_h8', 'MiUNet', 'three_branch_mi_se_attention', 'b1_adaptive_b2_raw_b3_mi__SE', 'three_branch_mi_reliability_gate']
+[2026-11-03 02:30:19] ==========================================================================
+[2026-11-03 02:30:19] --------------------------------------------------------------------------
+[2026-11-03 02:30:19] [1/7] MODEL: branch1_projector
+[2026-11-03 02:30:19]   checkpoint already exists — skipping training for 'branch1_projector'
+[2026-11-03 02:30:19]   ERROR on 'branch1_projector': [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+[2026-11-03 02:30:19] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 540, in main
+    proto_results = run_protocols_for_model(name, save_dir)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 402, in run_protocols_for_model
+    eval_df = pd.read_csv(E.MANIFEST_PATH,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+
+[2026-11-03 02:30:19] --------------------------------------------------------------------------
+[2026-11-03 02:30:19] [2/7] MODEL: two_projection_CHROM_ADAPTIVE
+[2026-11-03 02:30:19]   checkpoint already exists — skipping training for 'two_projection_CHROM_ADAPTIVE'
+[2026-11-03 02:30:19]   ERROR on 'two_projection_CHROM_ADAPTIVE': [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+[2026-11-03 02:30:19] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 540, in main
+    proto_results = run_protocols_for_model(name, save_dir)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 402, in run_protocols_for_model
+    eval_df = pd.read_csv(E.MANIFEST_PATH,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+
+[2026-11-03 02:30:19] --------------------------------------------------------------------------
+[2026-11-03 02:30:19] [3/7] MODEL: branch2_tcn_rf31_h8
+[2026-11-03 02:30:19]   checkpoint already exists — skipping training for 'branch2_tcn_rf31_h8'
+[2026-11-03 02:30:19]   ERROR on 'branch2_tcn_rf31_h8': [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+[2026-11-03 02:30:19] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 540, in main
+    proto_results = run_protocols_for_model(name, save_dir)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 402, in run_protocols_for_model
+    eval_df = pd.read_csv(E.MANIFEST_PATH,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+
+[2026-11-03 02:30:19] --------------------------------------------------------------------------
+[2026-11-03 02:30:19] [4/7] MODEL: MiUNet
+[2026-11-03 02:30:19]   checkpoint already exists — skipping training for 'MiUNet'
+[2026-11-03 02:30:19]   ERROR on 'MiUNet': [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+[2026-11-03 02:30:19] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 540, in main
+    proto_results = run_protocols_for_model(name, save_dir)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 402, in run_protocols_for_model
+    eval_df = pd.read_csv(E.MANIFEST_PATH,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+
+[2026-11-03 02:30:19] --------------------------------------------------------------------------
+[2026-11-03 02:30:19] [5/7] MODEL: three_branch_mi_se_attention
+[2026-11-03 02:30:19]   checkpoint already exists — skipping training for 'three_branch_mi_se_attention'
+[2026-11-03 02:30:19]   ERROR on 'three_branch_mi_se_attention': [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+[2026-11-03 02:30:19] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 540, in main
+    proto_results = run_protocols_for_model(name, save_dir)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 402, in run_protocols_for_model
+    eval_df = pd.read_csv(E.MANIFEST_PATH,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+
+[2026-11-03 02:30:19] --------------------------------------------------------------------------
+[2026-11-03 02:30:19] [6/7] MODEL: b1_adaptive_b2_raw_b3_mi__SE
+[2026-11-03 02:30:19]   checkpoint already exists — skipping training for 'b1_adaptive_b2_raw_b3_mi__SE'
+[2026-11-03 02:30:19]   ERROR on 'b1_adaptive_b2_raw_b3_mi__SE': [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+[2026-11-03 02:30:19] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 540, in main
+    proto_results = run_protocols_for_model(name, save_dir)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 402, in run_protocols_for_model
+    eval_df = pd.read_csv(E.MANIFEST_PATH,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+
+[2026-11-03 02:30:19] --------------------------------------------------------------------------
+[2026-11-03 02:30:19] [7/7] MODEL: three_branch_mi_reliability_gate
+[2026-11-03 02:30:19]   checkpoint already exists — skipping training for 'three_branch_mi_reliability_gate'
+[2026-11-03 02:30:19]   ERROR on 'three_branch_mi_reliability_gate': [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+[2026-11-03 02:30:19] Traceback (most recent call last):
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 540, in main
+    proto_results = run_protocols_for_model(name, save_dir)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/data/rPPG/Code/GitHub/Project_rPPG_2.0/Code/main/launch_train.py", line 402, in run_protocols_for_model
+    eval_df = pd.read_csv(E.MANIFEST_PATH,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/rafsan/miniconda3/envs/rPPG_env_1/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/media/data/rPPG/Code/GitHub/Project_rPPG/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv'
+
+[2026-11-03 02:30:19] ==========================================================================
+[2026-11-03 02:30:19] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MEGA_SUMMARY.csv
+[2026-11-03 02:30:19] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MEGA_PROTOCOL_ABLATION.csv
+[2026-11-03 02:30:19] ==========================================================================
+[2026-11-03 02:30:19] Generating dashboard...
+[2026-11-03 02:31:24] ==========================================================================
+[2026-11-03 02:31:24] MEGA RUN start | device=cuda | models=7 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal
+[2026-11-03 02:31:24] models: ['branch1_projector', 'two_projection_CHROM_ADAPTIVE', 'branch2_tcn_rf31_h8', 'MiUNet', 'three_branch_mi_se_attention', 'b1_adaptive_b2_raw_b3_mi__SE', 'three_branch_mi_reliability_gate']
+[2026-11-03 02:31:24] ==========================================================================
+[2026-11-03 02:31:24] --------------------------------------------------------------------------
+[2026-11-03 02:31:24] [1/7] MODEL: branch1_projector
+[2026-11-03 02:31:24]   checkpoint already exists — skipping training for 'branch1_projector'
+[2026-11-03 02:31:24]   evaluating checkpoint 'best_hr_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch1_projector/best_hr_model
+[2026-11-03 02:31:24]   [best_hr_model.pt] evaluating 'branch1_projector' under 'old' ...
+[2026-11-03 02:36:14]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch1_projector/best_hr_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 02:36:14]   [best_hr_model.pt] evaluating 'branch1_projector' under 'prism' ...
+[2026-11-03 02:37:10]   [best_hr_model.pt] evaluating 'branch1_projector' under 'toolbox' ...
+[2026-11-03 02:37:38]   evaluating checkpoint 'last_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch1_projector/last_model
+[2026-11-03 02:37:38]   [last_model.pt] evaluating 'branch1_projector' under 'old' ...
+[2026-11-03 02:42:20]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch1_projector/last_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 02:42:20]   [last_model.pt] evaluating 'branch1_projector' under 'prism' ...
+[2026-11-03 02:43:12]   [last_model.pt] evaluating 'branch1_projector' under 'toolbox' ...
+[2026-11-03 02:43:37]   evaluating checkpoint 'best_loss_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch1_projector/best_loss_model
+[2026-11-03 02:43:37]   [best_loss_model.pt] evaluating 'branch1_projector' under 'old' ...
+[2026-11-03 02:48:17]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch1_projector/best_loss_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 02:48:17]   [best_loss_model.pt] evaluating 'branch1_projector' under 'prism' ...
+[2026-11-03 02:49:09]   [best_loss_model.pt] evaluating 'branch1_projector' under 'toolbox' ...
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [best_hr_model.pt | old]: val_model_mae=nan
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [best_hr_model.pt | prism]: val_model_mae=1.091
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [best_hr_model.pt | toolbox]: val_model_mae=0.809
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [last_model.pt | old]: val_model_mae=nan
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [last_model.pt | prism]: val_model_mae=0.774
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [last_model.pt | toolbox]: val_model_mae=0.809
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [best_loss_model.pt | old]: val_model_mae=nan
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [best_loss_model.pt | prism]: val_model_mae=1.218
+[2026-11-03 02:49:32]   DONE 'branch1_projector' [best_loss_model.pt | toolbox]: val_model_mae=0.953
+[2026-11-03 02:49:32] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-11-03 02:49:32] 
+protocol                              prism  toolbox
+model             checkpoint                        
+branch1_projector best_hr_model.pt    1.091    0.809
+                  best_loss_model.pt  1.218    0.953
+                  last_model.pt       0.774    0.809
+[2026-11-03 02:49:32] --------------------------------------------------------------------------
+[2026-11-03 02:49:32] [2/7] MODEL: two_projection_CHROM_ADAPTIVE
+[2026-11-03 02:49:32]   checkpoint already exists — skipping training for 'two_projection_CHROM_ADAPTIVE'
+[2026-11-03 02:49:32]   evaluating checkpoint 'best_hr_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/two_projection_CHROM_ADAPTIVE/best_hr_model
+[2026-11-03 02:49:32]   [best_hr_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'old' ...
+[2026-11-03 02:54:18]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/two_projection_CHROM_ADAPTIVE/best_hr_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 02:54:18]   [best_hr_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'prism' ...
+[2026-11-03 02:55:10]   [best_hr_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'toolbox' ...
+[2026-11-03 02:55:34]   evaluating checkpoint 'last_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/two_projection_CHROM_ADAPTIVE/last_model
+[2026-11-03 02:55:34]   [last_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'old' ...
+[2026-11-03 03:00:19]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/two_projection_CHROM_ADAPTIVE/last_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:00:19]   [last_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'prism' ...
+[2026-11-03 03:01:11]   [last_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'toolbox' ...
+[2026-11-03 03:01:35]   evaluating checkpoint 'best_loss_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/two_projection_CHROM_ADAPTIVE/best_loss_model
+[2026-11-03 03:01:35]   [best_loss_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'old' ...
+[2026-11-03 03:06:20]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/two_projection_CHROM_ADAPTIVE/best_loss_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:06:20]   [best_loss_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'prism' ...
+[2026-11-03 03:07:12]   [best_loss_model.pt] evaluating 'two_projection_CHROM_ADAPTIVE' under 'toolbox' ...
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [best_hr_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [best_hr_model.pt | prism]: val_model_mae=0.665
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [best_hr_model.pt | toolbox]: val_model_mae=0.875
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [last_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [last_model.pt | prism]: val_model_mae=0.742
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [last_model.pt | toolbox]: val_model_mae=0.872
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [best_loss_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [best_loss_model.pt | prism]: val_model_mae=1.238
+[2026-11-03 03:07:36]   DONE 'two_projection_CHROM_ADAPTIVE' [best_loss_model.pt | toolbox]: val_model_mae=0.878
+[2026-11-03 03:07:36] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-11-03 03:07:36] 
+protocol                                          prism  toolbox
+model                         checkpoint                        
+branch1_projector             best_hr_model.pt    1.091    0.809
+                              best_loss_model.pt  1.218    0.953
+                              last_model.pt       0.774    0.809
+two_projection_CHROM_ADAPTIVE best_hr_model.pt    0.665    0.875
+                              best_loss_model.pt  1.238    0.878
+                              last_model.pt       0.742    0.872
+[2026-11-03 03:07:36] --------------------------------------------------------------------------
+[2026-11-03 03:07:36] [3/7] MODEL: branch2_tcn_rf31_h8
+[2026-11-03 03:07:36]   checkpoint already exists — skipping training for 'branch2_tcn_rf31_h8'
+[2026-11-03 03:07:36]   evaluating checkpoint 'best_hr_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch2_tcn_rf31_h8/best_hr_model
+[2026-11-03 03:07:36]   [best_hr_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'old' ...
+[2026-11-03 03:13:02]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch2_tcn_rf31_h8/best_hr_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:13:02]   [best_hr_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'prism' ...
+[2026-11-03 03:13:59]   [best_hr_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'toolbox' ...
+[2026-11-03 03:14:25]   evaluating checkpoint 'last_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch2_tcn_rf31_h8/last_model
+[2026-11-03 03:14:25]   [last_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'old' ...
+[2026-11-03 03:19:51]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch2_tcn_rf31_h8/last_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:19:51]   [last_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'prism' ...
+[2026-11-03 03:20:48]   [last_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'toolbox' ...
+[2026-11-03 03:21:14]   evaluating checkpoint 'best_loss_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch2_tcn_rf31_h8/best_loss_model
+[2026-11-03 03:21:14]   [best_loss_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'old' ...
+[2026-11-03 03:26:40]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/branch2_tcn_rf31_h8/best_loss_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:26:40]   [best_loss_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'prism' ...
+[2026-11-03 03:27:37]   [best_loss_model.pt] evaluating 'branch2_tcn_rf31_h8' under 'toolbox' ...
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [best_hr_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [best_hr_model.pt | prism]: val_model_mae=0.726
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [best_hr_model.pt | toolbox]: val_model_mae=0.572
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [last_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [last_model.pt | prism]: val_model_mae=0.726
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [last_model.pt | toolbox]: val_model_mae=0.572
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [best_loss_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [best_loss_model.pt | prism]: val_model_mae=1.500
+[2026-11-03 03:28:04]   DONE 'branch2_tcn_rf31_h8' [best_loss_model.pt | toolbox]: val_model_mae=0.583
+[2026-11-03 03:28:04] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-11-03 03:28:04] 
+protocol                                          prism  toolbox
+model                         checkpoint                        
+branch1_projector             best_hr_model.pt    1.091    0.809
+                              best_loss_model.pt  1.218    0.953
+                              last_model.pt       0.774    0.809
+branch2_tcn_rf31_h8           best_hr_model.pt    0.726    0.572
+                              best_loss_model.pt  1.500    0.583
+                              last_model.pt       0.726    0.572
+two_projection_CHROM_ADAPTIVE best_hr_model.pt    0.665    0.875
+                              best_loss_model.pt  1.238    0.878
+                              last_model.pt       0.742    0.872
+[2026-11-03 03:28:04] --------------------------------------------------------------------------
+[2026-11-03 03:28:04] [4/7] MODEL: MiUNet
+[2026-11-03 03:28:04]   checkpoint already exists — skipping training for 'MiUNet'
+[2026-11-03 03:28:04]   evaluating checkpoint 'best_hr_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MiUNet/best_hr_model
+[2026-11-03 03:28:04]   [best_hr_model.pt] evaluating 'MiUNet' under 'old' ...
+[2026-11-03 03:33:38]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MiUNet/best_hr_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:33:38]   [best_hr_model.pt] evaluating 'MiUNet' under 'prism' ...
+[2026-11-03 03:34:36]   [best_hr_model.pt] evaluating 'MiUNet' under 'toolbox' ...
+[2026-11-03 03:35:03]   evaluating checkpoint 'last_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MiUNet/last_model
+[2026-11-03 03:35:03]   [last_model.pt] evaluating 'MiUNet' under 'old' ...
+[2026-11-03 03:40:36]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MiUNet/last_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:40:36]   [last_model.pt] evaluating 'MiUNet' under 'prism' ...
+[2026-11-03 03:41:34]   [last_model.pt] evaluating 'MiUNet' under 'toolbox' ...
+[2026-11-03 03:42:01]   evaluating checkpoint 'best_loss_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MiUNet/best_loss_model
+[2026-11-03 03:42:01]   [best_loss_model.pt] evaluating 'MiUNet' under 'old' ...
+[2026-11-03 03:47:34]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MiUNet/best_loss_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:47:34]   [best_loss_model.pt] evaluating 'MiUNet' under 'prism' ...
+[2026-11-03 03:48:32]   [best_loss_model.pt] evaluating 'MiUNet' under 'toolbox' ...
+[2026-11-03 03:48:59]   DONE 'MiUNet' [best_hr_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:48:59]   DONE 'MiUNet' [best_hr_model.pt | prism]: val_model_mae=0.720
+[2026-11-03 03:48:59]   DONE 'MiUNet' [best_hr_model.pt | toolbox]: val_model_mae=0.463
+[2026-11-03 03:48:59]   DONE 'MiUNet' [last_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:48:59]   DONE 'MiUNet' [last_model.pt | prism]: val_model_mae=0.842
+[2026-11-03 03:48:59]   DONE 'MiUNet' [last_model.pt | toolbox]: val_model_mae=0.367
+[2026-11-03 03:48:59]   DONE 'MiUNet' [best_loss_model.pt | old]: val_model_mae=nan
+[2026-11-03 03:48:59]   DONE 'MiUNet' [best_loss_model.pt | prism]: val_model_mae=0.681
+[2026-11-03 03:48:59]   DONE 'MiUNet' [best_loss_model.pt | toolbox]: val_model_mae=0.445
+[2026-11-03 03:48:59] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-11-03 03:48:59] 
+protocol                                          prism  toolbox
+model                         checkpoint                        
+MiUNet                        best_hr_model.pt    0.720    0.463
+                              best_loss_model.pt  0.681    0.445
+                              last_model.pt       0.842    0.367
+branch1_projector             best_hr_model.pt    1.091    0.809
+                              best_loss_model.pt  1.218    0.953
+                              last_model.pt       0.774    0.809
+branch2_tcn_rf31_h8           best_hr_model.pt    0.726    0.572
+                              best_loss_model.pt  1.500    0.583
+                              last_model.pt       0.726    0.572
+two_projection_CHROM_ADAPTIVE best_hr_model.pt    0.665    0.875
+                              best_loss_model.pt  1.238    0.878
+                              last_model.pt       0.742    0.872
+[2026-11-03 03:48:59] --------------------------------------------------------------------------
+[2026-11-03 03:48:59] [5/7] MODEL: three_branch_mi_se_attention
+[2026-11-03 03:48:59]   checkpoint already exists — skipping training for 'three_branch_mi_se_attention'
+[2026-11-03 03:48:59]   evaluating checkpoint 'best_hr_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_se_attention/best_hr_model
+[2026-11-03 03:48:59]   [best_hr_model.pt] evaluating 'three_branch_mi_se_attention' under 'old' ...
+[2026-11-03 03:55:43]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_se_attention/best_hr_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 03:55:43]   [best_hr_model.pt] evaluating 'three_branch_mi_se_attention' under 'prism' ...
+[2026-11-03 03:56:48]   [best_hr_model.pt] evaluating 'three_branch_mi_se_attention' under 'toolbox' ...
+[2026-11-03 03:57:19]   evaluating checkpoint 'last_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_se_attention/last_model
+[2026-11-03 03:57:19]   [last_model.pt] evaluating 'three_branch_mi_se_attention' under 'old' ...
+[2026-11-03 04:04:02]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_se_attention/last_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 04:04:02]   [last_model.pt] evaluating 'three_branch_mi_se_attention' under 'prism' ...
+[2026-11-03 04:05:08]   [last_model.pt] evaluating 'three_branch_mi_se_attention' under 'toolbox' ...
+[2026-11-03 04:05:39]   evaluating checkpoint 'best_loss_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_se_attention/best_loss_model
+[2026-11-03 04:05:39]   [best_loss_model.pt] evaluating 'three_branch_mi_se_attention' under 'old' ...
+[2026-11-03 04:12:26]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_se_attention/best_loss_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 04:12:26]   [best_loss_model.pt] evaluating 'three_branch_mi_se_attention' under 'prism' ...
+[2026-11-03 04:13:32]   [best_loss_model.pt] evaluating 'three_branch_mi_se_attention' under 'toolbox' ...
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [best_hr_model.pt | old]: val_model_mae=nan
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [best_hr_model.pt | prism]: val_model_mae=0.940
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [best_hr_model.pt | toolbox]: val_model_mae=0.465
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [last_model.pt | old]: val_model_mae=nan
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [last_model.pt | prism]: val_model_mae=0.760
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [last_model.pt | toolbox]: val_model_mae=0.422
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [best_loss_model.pt | old]: val_model_mae=nan
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [best_loss_model.pt | prism]: val_model_mae=2.597
+[2026-11-03 04:14:04]   DONE 'three_branch_mi_se_attention' [best_loss_model.pt | toolbox]: val_model_mae=0.567
+[2026-11-03 04:14:04] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-11-03 04:14:04] 
+protocol                                          prism  toolbox
+model                         checkpoint                        
+MiUNet                        best_hr_model.pt    0.720    0.463
+                              best_loss_model.pt  0.681    0.445
+                              last_model.pt       0.842    0.367
+branch1_projector             best_hr_model.pt    1.091    0.809
+                              best_loss_model.pt  1.218    0.953
+                              last_model.pt       0.774    0.809
+branch2_tcn_rf31_h8           best_hr_model.pt    0.726    0.572
+                              best_loss_model.pt  1.500    0.583
+                              last_model.pt       0.726    0.572
+three_branch_mi_se_attention  best_hr_model.pt    0.940    0.465
+                              best_loss_model.pt  2.597    0.567
+                              last_model.pt       0.760    0.422
+two_projection_CHROM_ADAPTIVE best_hr_model.pt    0.665    0.875
+                              best_loss_model.pt  1.238    0.878
+                              last_model.pt       0.742    0.872
+[2026-11-03 04:14:04] --------------------------------------------------------------------------
+[2026-11-03 04:14:04] [6/7] MODEL: b1_adaptive_b2_raw_b3_mi__SE
+[2026-11-03 04:14:04]   checkpoint already exists — skipping training for 'b1_adaptive_b2_raw_b3_mi__SE'
+[2026-11-03 04:14:04]   evaluating checkpoint 'best_hr_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/b1_adaptive_b2_raw_b3_mi__SE/best_hr_model
+[2026-11-03 04:14:04]   [best_hr_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'old' ...
+[2026-11-03 04:20:54]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/b1_adaptive_b2_raw_b3_mi__SE/best_hr_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 04:20:54]   [best_hr_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'prism' ...
+[2026-11-03 04:22:00]   [best_hr_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'toolbox' ...
+[2026-11-03 04:22:32]   evaluating checkpoint 'last_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/b1_adaptive_b2_raw_b3_mi__SE/last_model
+[2026-11-03 04:22:32]   [last_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'old' ...
+[2026-11-03 04:29:20]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/b1_adaptive_b2_raw_b3_mi__SE/last_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 04:29:20]   [last_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'prism' ...
+[2026-11-03 04:30:25]   [last_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'toolbox' ...
+[2026-11-03 04:30:57]   evaluating checkpoint 'best_loss_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/b1_adaptive_b2_raw_b3_mi__SE/best_loss_model
+[2026-11-03 04:30:57]   [best_loss_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'old' ...
+[2026-11-03 04:37:46]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/b1_adaptive_b2_raw_b3_mi__SE/best_loss_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 04:37:46]   [best_loss_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'prism' ...
+[2026-11-03 04:38:52]   [best_loss_model.pt] evaluating 'b1_adaptive_b2_raw_b3_mi__SE' under 'toolbox' ...
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [best_hr_model.pt | old]: val_model_mae=nan
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [best_hr_model.pt | prism]: val_model_mae=0.755
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [best_hr_model.pt | toolbox]: val_model_mae=0.422
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [last_model.pt | old]: val_model_mae=nan
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [last_model.pt | prism]: val_model_mae=0.982
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [last_model.pt | toolbox]: val_model_mae=0.367
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [best_loss_model.pt | old]: val_model_mae=nan
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [best_loss_model.pt | prism]: val_model_mae=1.223
+[2026-11-03 04:39:24]   DONE 'b1_adaptive_b2_raw_b3_mi__SE' [best_loss_model.pt | toolbox]: val_model_mae=0.848
+[2026-11-03 04:39:24] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-11-03 04:39:24] 
+protocol                                          prism  toolbox
+model                         checkpoint                        
+MiUNet                        best_hr_model.pt    0.720    0.463
+                              best_loss_model.pt  0.681    0.445
+                              last_model.pt       0.842    0.367
+b1_adaptive_b2_raw_b3_mi__SE  best_hr_model.pt    0.755    0.422
+                              best_loss_model.pt  1.223    0.848
+                              last_model.pt       0.982    0.367
+branch1_projector             best_hr_model.pt    1.091    0.809
+                              best_loss_model.pt  1.218    0.953
+                              last_model.pt       0.774    0.809
+branch2_tcn_rf31_h8           best_hr_model.pt    0.726    0.572
+                              best_loss_model.pt  1.500    0.583
+                              last_model.pt       0.726    0.572
+three_branch_mi_se_attention  best_hr_model.pt    0.940    0.465
+                              best_loss_model.pt  2.597    0.567
+                              last_model.pt       0.760    0.422
+two_projection_CHROM_ADAPTIVE best_hr_model.pt    0.665    0.875
+                              best_loss_model.pt  1.238    0.878
+                              last_model.pt       0.742    0.872
+[2026-11-03 04:39:24] --------------------------------------------------------------------------
+[2026-11-03 04:39:24] [7/7] MODEL: three_branch_mi_reliability_gate
+[2026-11-03 04:39:24]   checkpoint already exists — skipping training for 'three_branch_mi_reliability_gate'
+[2026-11-03 04:39:24]   evaluating checkpoint 'best_hr_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_reliability_gate/best_hr_model
+[2026-11-03 04:39:24]   [best_hr_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'old' ...
+[2026-11-03 04:46:28]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_reliability_gate/best_hr_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 04:46:28]   [best_hr_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'prism' ...
+[2026-11-03 04:47:35]   [best_hr_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'toolbox' ...
+[2026-11-03 04:48:08]   evaluating checkpoint 'last_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_reliability_gate/last_model
+[2026-11-03 04:48:08]   [last_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'old' ...
+[2026-11-03 04:55:16]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_reliability_gate/last_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 04:55:16]   [last_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'prism' ...
+[2026-11-03 04:56:24]   [last_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'toolbox' ...
+[2026-11-03 04:56:56]   evaluating checkpoint 'best_loss_model.pt' -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_reliability_gate/best_loss_model
+[2026-11-03 04:56:56]   [best_loss_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'old' ...
+[2026-11-03 05:04:03]   WARNING: eval CSV not found at /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/three_branch_mi_reliability_gate/best_loss_model/EVAL_PROTOCOL_old/tables/ALL_EVAL_RESULTS.csv
+[2026-11-03 05:04:03]   [best_loss_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'prism' ...
+[2026-11-03 05:05:11]   [best_loss_model.pt] evaluating 'three_branch_mi_reliability_gate' under 'toolbox' ...
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [best_hr_model.pt | old]: val_model_mae=nan
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [best_hr_model.pt | prism]: val_model_mae=0.635
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [best_hr_model.pt | toolbox]: val_model_mae=0.483
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [last_model.pt | old]: val_model_mae=nan
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [last_model.pt | prism]: val_model_mae=0.625
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [last_model.pt | toolbox]: val_model_mae=0.354
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [best_loss_model.pt | old]: val_model_mae=nan
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [best_loss_model.pt | prism]: val_model_mae=0.644
+[2026-11-03 05:05:44]   DONE 'three_branch_mi_reliability_gate' [best_loss_model.pt | toolbox]: val_model_mae=0.419
+[2026-11-03 05:05:44] 
+PROTOCOL ABLATION (val model MAE, model x protocol):
+[2026-11-03 05:05:44] 
+protocol                                             prism  toolbox
+model                            checkpoint                        
+MiUNet                           best_hr_model.pt    0.720    0.463
+                                 best_loss_model.pt  0.681    0.445
+                                 last_model.pt       0.842    0.367
+b1_adaptive_b2_raw_b3_mi__SE     best_hr_model.pt    0.755    0.422
+                                 best_loss_model.pt  1.223    0.848
+                                 last_model.pt       0.982    0.367
+branch1_projector                best_hr_model.pt    1.091    0.809
+                                 best_loss_model.pt  1.218    0.953
+                                 last_model.pt       0.774    0.809
+branch2_tcn_rf31_h8              best_hr_model.pt    0.726    0.572
+                                 best_loss_model.pt  1.500    0.583
+                                 last_model.pt       0.726    0.572
+three_branch_mi_reliability_gate best_hr_model.pt    0.635    0.483
+                                 best_loss_model.pt  0.644    0.419
+                                 last_model.pt       0.625    0.354
+three_branch_mi_se_attention     best_hr_model.pt    0.940    0.465
+                                 best_loss_model.pt  2.597    0.567
+                                 last_model.pt       0.760    0.422
+two_projection_CHROM_ADAPTIVE    best_hr_model.pt    0.665    0.875
+                                 best_loss_model.pt  1.238    0.878
+                                 last_model.pt       0.742    0.872
+[2026-11-03 05:05:44] ==========================================================================
+[2026-11-03 05:05:44] MEGA RUN complete. Summary -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MEGA_SUMMARY.csv
+[2026-11-03 05:05:44] Ablation table   -> /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Primal/MEGA_PROTOCOL_ABLATION.csv
+[2026-11-03 05:05:44] ==========================================================================
+[2026-11-03 05:05:44] Generating dashboard...
