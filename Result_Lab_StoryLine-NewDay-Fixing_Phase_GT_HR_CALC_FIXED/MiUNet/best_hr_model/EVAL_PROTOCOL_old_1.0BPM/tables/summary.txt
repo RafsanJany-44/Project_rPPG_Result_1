@@ -1,0 +1,71 @@
+================================================================================
+EVALUATION CONFIGURATION
+================================================================================
+
+Protocol:      Old Approach  (key='old')
+Checkpoint:    /media/data/rPPG/GitHub/Project_rPPG_Result_2/Result_Lab_StoryLine-NewDay-Fixing_Phase_GT_HR_CALC_FIXED/MiUNet/best_hr_model.pt
+Manifest:      /media/data/rPPG/GitHub/Project_rPPG_2.0/Dataset/3_ROI/PURE-x-UBFC-x-Tokoyo/manifest_split_BALANCED.csv
+Window:        8.0s
+Stride:        1.0s
+Aggregation:   window
+FFT nfft:      1800  (None = signal length)
+Bandpass:      0.67-3.0 Hz, order 3
+Note:          protocol-only evaluation (no dual-band harmonic check)
+HR range:      40.0-180.0 BPM (GT max 150.0)
+Hann taper:    False
+G_SNR thresh:  1.7
+
+================================================================================
+SPLIT-WISE SUMMARY
+================================================================================
+
+Split: train
+  N=144
+  Model: HR MAE=1.056 BPM | Pearson=0.682
+  CHROM: HR MAE=1.747 BPM | Pearson=0.379
+
+Split: val
+  N=38
+  Model: HR MAE=0.699 BPM | Pearson=0.708
+  CHROM: HR MAE=2.129 BPM | Pearson=0.342
+
+================================================================================
+EXTENDED METRICS (MAE / RMSE / SD / Acc@5BPM)
+================================================================================
+
+Split: train
+  Model: MAE=1.056  RMSE=2.036  SD=1.741  Acc@5=97.2%
+  CHROM: MAE=1.747  RMSE=3.320  SD=2.824  Acc@5=93.1%
+
+Split: val
+  Model: MAE=0.699  RMSE=0.873  SD=0.522  Acc@5=100.0%
+  CHROM: MAE=2.129  RMSE=3.897  SD=3.264  Acc@5=89.5%
+
+================================================================================
+DATASET + SPLIT SUMMARY
+================================================================================
+
+Dataset=PURE | Split=train | N=47
+  Model: HR MAE=0.871 | Pearson=0.820
+  CHROM: HR MAE=0.730 | Pearson=0.644
+
+Dataset=PURE | Split=val | N=12
+  Model: HR MAE=0.422 | Pearson=0.873
+  CHROM: HR MAE=0.496 | Pearson=0.709
+
+Dataset=TokyoTech | Split=train | N=63
+  Model: HR MAE=1.091 | Pearson=0.719
+  CHROM: HR MAE=2.465 | Pearson=0.239
+
+Dataset=TokyoTech | Split=val | N=18
+  Model: HR MAE=0.575 | Pearson=0.801
+  CHROM: HR MAE=3.258 | Pearson=0.136
+
+Dataset=UBFC | Split=train | N=34
+  Model: HR MAE=1.247 | Pearson=0.424
+  CHROM: HR MAE=1.823 | Pearson=0.273
+
+Dataset=UBFC | Split=val | N=8
+  Model: HR MAE=1.396 | Pearson=0.250
+  CHROM: HR MAE=2.035 | Pearson=0.254
+
