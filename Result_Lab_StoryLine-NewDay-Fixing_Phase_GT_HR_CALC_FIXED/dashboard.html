@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIMIC_CHROM Evaluation Dashboard</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
+h1 { text-align: center; margin-bottom: 5px; color: #2B579A; }
+.subtitle { text-align: center; color: #666; margin-bottom: 20px; font-size: 14px; }
+.controls { display: flex; gap: 15px; align-items: center; margin-bottom: 20px;
+             padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.controls label { font-weight: 600; font-size: 14px; }
+.controls select { padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; min-width: 200px; }
+.copy-btn { padding: 6px 14px; background: #2B579A; color: #fff; border: none; border-radius: 4px;
+             cursor: pointer; font-size: 12px; margin-bottom: 8px; }
+.copy-btn:hover { background: #1a3d6e; }
+.copy-btn:active { background: #0d2540; }
+.copied { background: #27ae60 !important; }
+.section { display: none; }
+.section.active { display: block; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background: #fff;
+         box-shadow: 0 1px 3px rgba(0,0,0,0.08); font-size: 12px; }
+th { background: #2B579A; color: #fff; padding: 8px 6px; text-align: center;
+      position: sticky; top: 0; z-index: 10; white-space: nowrap; }
+td { padding: 6px; text-align: center; border: 1px solid #e0e0e0; }
+.model-name { text-align: left; font-weight: 600; white-space: nowrap; min-width: 180px; }
+.chrom-row { background: #FFF3E0; }
+.empty { color: #ccc; }
+.err-low { background: #e8f5e9; color: #2e7d32; font-weight: 600; }
+.err-high { background: #fff3e0; color: #e65100; font-weight: 600; }
+.err-extreme { background: #ffebee; color: #c62828; font-weight: 700; }
+.harm { background: #ffcdd2; color: #b71c1c; font-weight: 700; }
+.rec-list { text-align: left; font-size: 11px; max-width: 300px; word-wrap: break-word; }
+tbody tr:hover { background: #e3f2fd; }
+h3 { margin: 15px 0 8px 0; color: #2B579A; }
+</style>
+</head>
+<body>
+<h1>MIMIC_CHROM — Evaluation Dashboard</h1>
+<p class="subtitle">Auto-generated from: /media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Fixing_Phase_GT_HR_CALC_FIXED/</p>
+
+<div class="controls">
+  <label>View:</label>
+  <select id="primary" onchange="updateView()">
+    <option value="mae">MAE Tables</option>
+    <option value="error">Error Analysis</option>
+  </select>
+
+  <label>Detail:</label>
+  <select id="secondary" onchange="updateView()">
+  </select>
+</div>
+
+<!-- MAE Window Val + Train -->
+<div id="sec_mae_window" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Validation MAE — Window-Level</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td class="err-low">0.421</td><td class="err-low">0.364</td><td class="err-low">0.119</td><td>0.575</td><td class="err-low">0.397</td><td class="err-low">0.177</td><td>1.317</td><td>1.332</td><td>1.234</td><td>0.728</td><td>0.651</td><td class="err-low">0.381</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td class="err-low">0.456</td><td class="err-high">2.224</td><td class="err-low">0.018</td><td>0.889</td><td>0.549</td><td class="err-low">0.220</td><td>1.334</td><td>1.309</td><td>1.210</td><td>0.803</td><td>1.580</td><td class="err-low">0.365</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td class="err-low">0.407</td><td class="err-low">0.368</td><td class="err-low">0.119</td><td>0.577</td><td class="err-low">0.400</td><td class="err-low">0.146</td><td>1.325</td><td>1.171</td><td>1.275</td><td>0.723</td><td>0.607</td><td class="err-low">0.375</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td class="err-low">0.401</td><td class="err-low">0.384</td><td class="err-low">0.110</td><td>0.532</td><td>0.580</td><td class="err-low">0.171</td><td>1.388</td><td>1.492</td><td>1.248</td><td>0.733</td><td>0.749</td><td class="err-low">0.378</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td class="err-low">0.473</td><td class="err-low">0.451</td><td class="err-low">0.018</td><td>0.775</td><td>0.543</td><td class="err-low">0.214</td><td>1.207</td><td>1.281</td><td>1.470</td><td>0.753</td><td>0.712</td><td class="err-low">0.417</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td class="err-low">0.397</td><td class="err-low">0.389</td><td class="err-low">0.110</td><td>0.576</td><td>0.589</td><td class="err-low">0.189</td><td>1.356</td><td>1.438</td><td>1.237</td><td>0.728</td><td>0.738</td><td class="err-low">0.385</td></tr>
+<tr class="chrom-row"><td class="model-name">CHROM (baseline)</td><td class="err-low">0.491</td><td class="err-low">0.469</td><td class="err-low">0.403</td><td class="err-high">3.258</td><td class="err-high">2.945</td><td class="err-low">0.354</td><td>1.988</td><td class="err-high">2.191</td><td>1.755</td><td>1.411</td><td>1.528</td><td>0.664</td></tr>
+</tbody></table>
+
+  <h3>Training MAE — Window-Level</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td>0.845</td><td>1.123</td><td class="err-low">0.437</td><td>1.091</td><td>0.990</td><td>0.657</td><td>1.245</td><td>1.361</td><td class="err-high">2.202</td><td>1.020</td><td>1.172</td><td>0.950</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td>0.879</td><td>1.331</td><td class="err-low">0.199</td><td>1.822</td><td>1.386</td><td>0.940</td><td>1.798</td><td>1.570</td><td>1.762</td><td>1.335</td><td>1.419</td><td>0.892</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td>0.888</td><td>0.873</td><td class="err-low">0.383</td><td>1.011</td><td>1.044</td><td>0.734</td><td>1.338</td><td>1.274</td><td class="err-high">2.294</td><td>1.063</td><td>1.036</td><td>0.988</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td>0.734</td><td>0.912</td><td class="err-low">0.201</td><td>1.050</td><td>0.980</td><td>0.692</td><td>1.410</td><td>1.258</td><td class="err-high">2.312</td><td>1.015</td><td>1.037</td><td>0.914</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td>0.903</td><td>1.226</td><td class="err-low">0.194</td><td>1.776</td><td>1.355</td><td>1.064</td><td>1.778</td><td>1.535</td><td class="err-high">2.166</td><td>1.334</td><td>1.351</td><td>1.040</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td>0.770</td><td>1.025</td><td class="err-low">0.262</td><td>0.957</td><td>1.038</td><td>0.654</td><td>1.371</td><td>1.272</td><td class="err-high">2.139</td><td>1.007</td><td>1.107</td><td>0.877</td></tr>
+<tr class="chrom-row"><td class="model-name">CHROM (baseline)</td><td>0.723</td><td>0.844</td><td>0.638</td><td class="err-high">2.465</td><td>1.213</td><td>1.001</td><td>1.826</td><td>1.437</td><td class="err-high">2.229</td><td>1.357</td><td>1.108</td><td>1.173</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- MAE Recording Val + Train -->
+<div id="sec_mae_recording" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Validation MAE — Recording-Level (summary.txt)</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td class="err-low">0.422</td><td class="err-low">0.356</td><td class="err-low">0.119</td><td>0.575</td><td class="err-low">0.397</td><td class="err-low">0.177</td><td>1.396</td><td>1.519</td><td>1.234</td><td>0.699</td><td>0.620</td><td class="err-low">0.381</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td class="err-low">0.457</td><td class="err-high">2.023</td><td class="err-low">0.018</td><td>0.889</td><td>0.549</td><td class="err-low">0.220</td><td>1.413</td><td>1.462</td><td>1.210</td><td>0.863</td><td>1.207</td><td class="err-low">0.365</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td class="err-low">0.408</td><td class="err-low">0.358</td><td class="err-low">0.119</td><td>0.577</td><td class="err-low">0.400</td><td class="err-low">0.146</td><td>1.400</td><td>1.290</td><td>1.275</td><td>0.697</td><td>0.574</td><td class="err-low">0.375</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td class="err-low">0.403</td><td class="err-low">0.374</td><td class="err-low">0.110</td><td>0.532</td><td>0.580</td><td class="err-low">0.171</td><td>1.457</td><td>1.767</td><td>1.248</td><td>0.686</td><td>0.765</td><td class="err-low">0.378</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td class="err-low">0.474</td><td class="err-low">0.441</td><td class="err-low">0.018</td><td>0.775</td><td>0.543</td><td class="err-low">0.214</td><td>1.250</td><td>1.438</td><td>1.470</td><td>0.780</td><td>0.699</td><td class="err-low">0.417</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td class="err-low">0.399</td><td class="err-low">0.380</td><td class="err-low">0.110</td><td>0.576</td><td>0.589</td><td class="err-low">0.189</td><td>1.427</td><td>1.709</td><td>1.237</td><td>0.699</td><td>0.759</td><td class="err-low">0.385</td></tr>
+</tbody></table>
+
+  <h3>Training MAE — Recording-Level (summary.txt)</h3>
+<table class="mae-table">
+<thead><tr><th rowspan="2">Model + Setup</th><th colspan="3">PURE</th><th colspan="3">TokyoTech</th><th colspan="3">UBFC</th><th colspan="3">Overall</th></tr>
+<tr><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th><th>Old@1BPM</th><th>PRISM</th><th>Toolbox</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td>0.871</td><td>1.143</td><td class="err-low">0.437</td><td>1.091</td><td>0.990</td><td>0.657</td><td>1.247</td><td>1.355</td><td class="err-high">2.202</td><td>1.056</td><td>1.126</td><td>0.950</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td>0.907</td><td>1.395</td><td class="err-low">0.199</td><td>1.822</td><td>1.386</td><td>0.940</td><td>1.797</td><td>1.563</td><td>1.762</td><td>1.518</td><td>1.431</td><td>0.892</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td>0.917</td><td>0.912</td><td class="err-low">0.383</td><td>1.011</td><td>1.044</td><td>0.734</td><td>1.344</td><td>1.270</td><td class="err-high">2.294</td><td>1.059</td><td>1.054</td><td>0.988</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td>0.753</td><td>0.943</td><td class="err-low">0.201</td><td>1.050</td><td>0.980</td><td>0.692</td><td>1.413</td><td>1.254</td><td class="err-high">2.312</td><td>1.039</td><td>1.033</td><td>0.914</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td>0.930</td><td>1.252</td><td class="err-low">0.194</td><td>1.776</td><td>1.355</td><td>1.064</td><td>1.778</td><td>1.529</td><td class="err-high">2.166</td><td>1.500</td><td>1.362</td><td>1.040</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td>0.791</td><td>1.064</td><td class="err-low">0.262</td><td>0.957</td><td>1.038</td><td>0.654</td><td>1.376</td><td>1.270</td><td class="err-high">2.139</td><td>1.002</td><td>1.101</td><td>0.877</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- Error Old -->
+<div id="sec_error_old" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Training — Error Type Counts (Old@1BPM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td>5743</td><td>4391 (76.5%)</td><td>815 (14.2%)</td><td>280 (4.9%)</td><td>133 (2.3%)</td><td>124 (2.2%)</td><td class="harm">1</td><td class="harm">6</td><td class="harm">3</td><td>114</td><td class="err-extreme">85.4 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag2; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_14; UBFC|vid_15; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_37; UBFC|vid_43; UBFC|vid_44; UBFC|vid_46; UBFC|vid_47; UBFC|vid_9</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td>5743</td><td>4242 (73.9%)</td><td>797 (13.9%)</td><td>308 (5.4%)</td><td>184 (3.2%)</td><td>212 (3.7%)</td><td class="harm">4</td><td class="harm">2</td><td class="harm">8</td><td>197</td><td class="err-extreme">82.1 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag2; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_05_Exercise_Frag4; TokyoTech|Subj_06_Exercise_Frag4; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Exercise_Frag6; TokyoTech|Subj_06_Post_Relax_Frag8; TokyoTech|Subj_06_Post_Relax_Frag9; TokyoTech|Subj_06_Pre_Relax_Frag2; TokyoTech|Subj_06_Pre_Relax_Frag3; UBFC|vid_11; UBFC|vid_14; UBFC|vid_15; UBFC|vid_17; UBFC|vid_18; UBFC|vid_22; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_37; UBFC|vid_39; UBFC|vid_41; UBFC|vid_43; UBFC|vid_45; UBFC|vid_46; UBFC|vid_48; UBFC|vid_8; UBFC|vid_9</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td>5743</td><td>4429 (77.1%)</td><td>782 (13.6%)</td><td>254 (4.4%)</td><td>142 (2.5%)</td><td>136 (2.4%)</td><td class="">0</td><td class="harm">5</td><td class="harm">4</td><td>127</td><td class="err-extreme">85.6 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag7; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; UBFC|vid_14; UBFC|vid_15; UBFC|vid_22; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_37; UBFC|vid_43; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_47; UBFC|vid_8; UBFC|vid_9</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td>5743</td><td>4299 (74.9%)</td><td>894 (15.6%)</td><td>283 (4.9%)</td><td>137 (2.4%)</td><td>130 (2.3%)</td><td class="">0</td><td class="harm">5</td><td class="harm">1</td><td>123</td><td class="err-extreme">65.0 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag2; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; UBFC|vid_14; UBFC|vid_15; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_37; UBFC|vid_43; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_47; UBFC|vid_8; UBFC|vid_9</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td>5743</td><td>4217 (73.4%)</td><td>857 (14.9%)</td><td>297 (5.2%)</td><td>167 (2.9%)</td><td>205 (3.6%)</td><td class="harm">4</td><td class="harm">2</td><td class="harm">7</td><td>188</td><td class="err-extreme">81.3 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag8; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag2; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Exercise_Frag4; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Exercise_Frag6; TokyoTech|Subj_06_Post_Relax_Frag8; TokyoTech|Subj_06_Post_Relax_Frag9; TokyoTech|Subj_06_Pre_Relax_Frag2; TokyoTech|Subj_06_Pre_Relax_Frag3; UBFC|vid_14; UBFC|vid_15; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_37; UBFC|vid_41; UBFC|vid_43; UBFC|vid_44; UBFC|vid_45; UBFC|vid_46; UBFC|vid_48; UBFC|vid_8; UBFC|vid_9</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td>5743</td><td>4358 (75.9%)</td><td>864 (15.0%)</td><td>258 (4.5%)</td><td>147 (2.6%)</td><td>116 (2.0%)</td><td class="">0</td><td class="harm">3</td><td class="harm">2</td><td>110</td><td class="err-extreme">65.0 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag7; TokyoTech|Subj_03_Pre_Relax_Frag1; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; UBFC|vid_14; UBFC|vid_15; UBFC|vid_24; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_37; UBFC|vid_43; UBFC|vid_44; UBFC|vid_46; UBFC|vid_47; UBFC|vid_8; UBFC|vid_9</td></tr>
+</tbody></table>
+
+  <h3>Validation — Error Type Counts (Old@1BPM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td>1442</td><td>1180 (81.8%)</td><td>186 (12.9%)</td><td>42 (2.9%)</td><td>18 (1.2%)</td><td>16 (1.1%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>16</td><td class="err-extreme">22.3 BPM</td><td class="rec-list">PURE|10; UBFC|vid_20; UBFC|vid_25; UBFC|vid_32; UBFC|vid_4; UBFC|vid_49</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td>1442</td><td>1139 (79.0%)</td><td>219 (15.2%)</td><td>44 (3.1%)</td><td>26 (1.8%)</td><td>14 (1.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>14</td><td class="err-extreme">40.3 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_08_Post_Relax_Frag9; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td>1442</td><td>1171 (81.2%)</td><td>195 (13.5%)</td><td>45 (3.1%)</td><td>16 (1.1%)</td><td>15 (1.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>15</td><td class="err-extreme">20.3 BPM</td><td class="rec-list">PURE|10; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td>1442</td><td>1162 (80.6%)</td><td>207 (14.4%)</td><td>44 (3.1%)</td><td>15 (1.0%)</td><td>14 (1.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>14</td><td class="err-extreme">21.0 BPM</td><td class="rec-list">PURE|10; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td>1442</td><td>1150 (79.8%)</td><td>216 (15.0%)</td><td>47 (3.3%)</td><td>16 (1.1%)</td><td>13 (0.9%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>12</td><td class="err-extreme">24.7 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_08_Post_Relax_Frag9; UBFC|vid_20; UBFC|vid_32; UBFC|vid_4; UBFC|vid_49</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td>1442</td><td>1166 (80.9%)</td><td>203 (14.1%)</td><td>40 (2.8%)</td><td>19 (1.3%)</td><td>14 (1.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>14</td><td class="err-extreme">20.3 BPM</td><td class="rec-list">PURE|10; TokyoTech|Subj_09_Post_Relax_Frag7; UBFC|vid_20; UBFC|vid_30; UBFC|vid_32; UBFC|vid_4</td></tr>
+</tbody></table>
+
+</div>
+
+<!-- Error PRISM -->
+<div id="sec_error_prism" class="section">
+  <button class="copy-btn" onclick="copyTable(this)">Copy Tables</button>
+  <h3>Training — Error Type Counts (PRISM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td>629</td><td>507 (80.6%)</td><td>61 (9.7%)</td><td>26 (4.1%)</td><td>7 (1.1%)</td><td>28 (4.5%)</td><td class="harm">1</td><td class="">0</td><td class="">0</td><td>27</td><td class="err-extreme">67.1 BPM</td><td class="rec-list">PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_14; UBFC|vid_15; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_9</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td>629</td><td>481 (76.5%)</td><td>74 (11.8%)</td><td>29 (4.6%)</td><td>11 (1.7%)</td><td>34 (5.4%)</td><td class="">0</td><td class="harm">2</td><td class="harm">1</td><td>31</td><td class="err-extreme">56.0 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Post_Relax_Frag9; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_14; UBFC|vid_15; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_41; UBFC|vid_9</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td>629</td><td>513 (81.6%)</td><td>60 (9.5%)</td><td>22 (3.5%)</td><td>9 (1.4%)</td><td>25 (4.0%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>25</td><td class="err-extreme">63.4 BPM</td><td class="rec-list">PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag7; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_14; UBFC|vid_15; UBFC|vid_27; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_9</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td>629</td><td>506 (80.4%)</td><td>67 (10.7%)</td><td>23 (3.7%)</td><td>11 (1.7%)</td><td>22 (3.5%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>22</td><td class="err-extreme">63.3 BPM</td><td class="rec-list">PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_06_Pre_Relax_Frag2; UBFC|vid_14; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_9</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td>629</td><td>481 (76.5%)</td><td>76 (12.1%)</td><td>27 (4.3%)</td><td>10 (1.6%)</td><td>35 (5.6%)</td><td class="harm">1</td><td class="">0</td><td class="harm">1</td><td>33</td><td class="err-extreme">64.1 BPM</td><td class="rec-list">PURE|02; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Pre_Relax_Frag3; TokyoTech|Subj_04_Exercise_Frag6; TokyoTech|Subj_06_Exercise_Frag4; TokyoTech|Subj_06_Exercise_Frag5; TokyoTech|Subj_06_Exercise_Frag6; TokyoTech|Subj_06_Post_Relax_Frag8; TokyoTech|Subj_06_Post_Relax_Frag9; UBFC|vid_14; UBFC|vid_15; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_41; UBFC|vid_9</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td>629</td><td>516 (82.0%)</td><td>52 (8.3%)</td><td>25 (4.0%)</td><td>12 (1.9%)</td><td>24 (3.8%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>24</td><td class="err-extreme">63.4 BPM</td><td class="rec-list">PURE|02; PURE|04; PURE|05; PURE|07; TokyoTech|Subj_03_Exercise_Frag4; TokyoTech|Subj_03_Exercise_Frag5; TokyoTech|Subj_03_Exercise_Frag6; TokyoTech|Subj_03_Post_Relax_Frag7; TokyoTech|Subj_03_Pre_Relax_Frag3; UBFC|vid_14; UBFC|vid_18; UBFC|vid_3; UBFC|vid_33; UBFC|vid_35; UBFC|vid_9</td></tr>
+</tbody></table>
+
+  <h3>Validation — Error Type Counts (PRISM)</h3>
+<table class="error-table">
+<thead><tr><th>Model</th><th>N</th><th>≤1 BPM</th><th>1-2 BPM</th><th>2-3 BPM</th><th>3-5 BPM</th><th>&gt;5 BPM</th><th>SubH</th><th>SupH</th><th>3:2</th><th>Large Err</th><th>Max Err</th><th>Max Error Recording(s)</th></tr></thead>
+<tbody>
+<tr><td class="model-name">MiUNet/best_hr_model</td><td>159</td><td>141 (88.7%)</td><td>12 (7.5%)</td><td>2 (1.3%)</td><td>0 (0.0%)</td><td>4 (2.5%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>4</td><td class="err-high">17.0 BPM</td><td class="rec-list">PURE|10; UBFC|vid_32; UBFC|vid_4</td></tr>
+<tr><td class="model-name">MiUNet/best_loss_model</td><td>159</td><td>127 (79.9%)</td><td>25 (15.7%)</td><td>1 (0.6%)</td><td>0 (0.0%)</td><td>6 (3.8%)</td><td class="">0</td><td class="harm">3</td><td class="">0</td><td>3</td><td class="err-extreme">46.6 BPM</td><td class="rec-list">PURE|09; PURE|10; UBFC|vid_20; UBFC|vid_4</td></tr>
+<tr><td class="model-name">MiUNet/last_model</td><td>159</td><td>141 (88.7%)</td><td>13 (8.2%)</td><td>2 (1.3%)</td><td>0 (0.0%)</td><td>3 (1.9%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>3</td><td class="err-high">13.6 BPM</td><td class="rec-list">PURE|10; UBFC|vid_32; UBFC|vid_4</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_hr_model</td><td>159</td><td>136 (85.5%)</td><td>18 (11.3%)</td><td>1 (0.6%)</td><td>0 (0.0%)</td><td>4 (2.5%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>4</td><td class="err-high">17.2 BPM</td><td class="rec-list">PURE|10; UBFC|vid_20; UBFC|vid_4</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/best_loss_model</td><td>159</td><td>137 (86.2%)</td><td>18 (11.3%)</td><td>1 (0.6%)</td><td>0 (0.0%)</td><td>3 (1.9%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>3</td><td class="err-high">16.9 BPM</td><td class="rec-list">PURE|10; UBFC|vid_20; UBFC|vid_4</td></tr>
+<tr><td class="model-name">three_branch_mi_adaptive_branch_weight/last_model</td><td>159</td><td>135 (84.9%)</td><td>20 (12.6%)</td><td>1 (0.6%)</td><td>0 (0.0%)</td><td>3 (1.9%)</td><td class="">0</td><td class="">0</td><td class="">0</td><td>3</td><td class="err-high">16.9 BPM</td><td class="rec-list">PURE|10; UBFC|vid_4</td></tr>
+</tbody></table>
+
+</div>
+
+<script>
+const secondaryOptions = {
+  mae: [
+    {value: "mae_window",    label: "Window-Level MAE"},
+    {value: "mae_recording", label: "Recording-Level MAE (summary.txt)"},
+  ],
+  error: [
+    {value: "error_old",   label: "Old@1BPM Protocol Errors"},
+    {value: "error_prism", label: "PRISM Protocol Errors"},
+  ],
+};
+
+function updateView() {
+  const primary = document.getElementById("primary").value;
+  const secSelect = document.getElementById("secondary");
+
+  // Update secondary options
+  const opts = secondaryOptions[primary];
+  const currentSec = secSelect.value;
+  secSelect.innerHTML = "";
+  opts.forEach(o => {
+    const opt = document.createElement("option");
+    opt.value = o.value;
+    opt.textContent = o.label;
+    secSelect.appendChild(opt);
+  });
+
+  // Keep selection if still valid
+  if (opts.some(o => o.value === currentSec)) {
+    secSelect.value = currentSec;
+  }
+
+  // Show/hide sections
+  document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+  const activeId = "sec_" + secSelect.value;
+  const el = document.getElementById(activeId);
+  if (el) el.classList.add("active");
+}
+
+function copyTable(btn) {
+  const section = btn.parentElement;
+  const tables = section.querySelectorAll("table");
+  let text = "";
+  tables.forEach((table, idx) => {
+    // Get preceding h3
+    const h3 = table.previousElementSibling;
+    if (h3 && h3.tagName === "H3") text += h3.textContent + "\n";
+
+    const rows = table.querySelectorAll("tr");
+    rows.forEach(row => {
+      const cells = row.querySelectorAll("th, td");
+      const vals = Array.from(cells).map(c => c.textContent.trim());
+      text += vals.join("\t") + "\n";
+    });
+    text += "\n";
+  });
+
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = "Copied!";
+    btn.classList.add("copied");
+    setTimeout(() => {
+      btn.textContent = "Copy Tables";
+      btn.classList.remove("copied");
+    }, 2000);
+  });
+}
+
+// Initialize
+updateView();
+</script>
+</body>
+</html>
