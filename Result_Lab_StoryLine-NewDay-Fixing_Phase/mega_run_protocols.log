@@ -1,0 +1,12 @@
+[2026-11-06 14:07:12] ==========================================================================
+[2026-11-06 14:07:12] MEGA RUN start | device=cuda | models=1 | protocols=['old', 'prism', 'toolbox'] | epochs<= 300 | root=/media/data/rPPG/Code/GitHub/Project_rPPG_Result/Result_Lab_StoryLine-NewDay-Fixing_Phase
+[2026-11-06 14:07:12] models: ['three_branch_mi_adaptive_branch_weight']
+[2026-11-06 14:07:12] ==========================================================================
+[2026-11-06 14:07:12] --------------------------------------------------------------------------
+[2026-11-06 14:07:12] [1/1] MODEL: three_branch_mi_adaptive_branch_weight
+[2026-11-06 14:07:12]   built 'three_branch_mi_adaptive_branch_weight': params=170136, reach=96 samples (3.20s @30fps)
+[2026-11-06 14:32:49]     epoch   1 | train_loss=0.6940 val_loss=0.5479 val_hr_mae=3.251 lr=3.0e-04
+[2026-11-06 18:17:48]     epoch  10 | train_loss=0.3748 val_loss=0.5532 val_hr_mae=2.854 lr=3.0e-04
+[2026-11-06 22:25:00]     epoch  20 | train_loss=0.4176 val_loss=0.6184 val_hr_mae=2.585 lr=3.0e-04
+[2026-11-07 02:34:13]     epoch  30 | train_loss=0.4570 val_loss=0.6745 val_hr_mae=2.653 lr=3.0e-04
+[2026-11-07 06:48:05]     epoch  40 | train_loss=0.4314 val_loss=0.6665 val_hr_mae=2.903 lr=3.0e-04
